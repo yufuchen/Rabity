@@ -23,4 +23,11 @@ public class MobileLoginEntity extends BaseEntity{
 	public String getMobile() {
 		return mobile;
 	}
+	
+	@Override
+	public void init() {
+		super.init();
+		this.password = null;
+		this.mobile = null;
+	}
 }

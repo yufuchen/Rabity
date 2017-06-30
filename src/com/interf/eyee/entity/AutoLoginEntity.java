@@ -4,5 +4,8 @@ package com.interf.eyee.entity;
  *
  */
 public class AutoLoginEntity extends BaseEntity {
-	
+	@Override
+	public void init() {
+		super.init();
+	}
 }

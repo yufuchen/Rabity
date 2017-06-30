@@ -11,13 +11,12 @@ import com.interf.eyee.entity.BaseEntity;
  *
  */
 public class InitParam {
-	private static Properties p = null;
 	private static String config = System.getProperty("user.dir") + "/config.properties";
+	private static Properties p = ConfigUtils.getProperties(config);
 	private static Log log = new Log(InitParam.class);
 	
 	public static <T extends BaseEntity> T reSetDefault(T input) {
 		T defaultParam = input;
-		p = ConfigUtils.getProperties(config);
 		if (p != null) {
 			defaultParam.setVersion(p.getProperty("version"));
 			defaultParam.setLang(p.getProperty("lang"));
@@ -32,7 +31,6 @@ public class InitParam {
 	}
 	
 	public static void init(BaseEntity input) {
-		p = ConfigUtils.getProperties(config);
 		if (p != null) {
 			input.setVersion(p.getProperty("version"));
 			input.setLang(p.getProperty("lang"));
@@ -66,11 +64,39 @@ public class InitParam {
 		
 	}
 	
-	public static String handleParam(HashMap<String, String> map) {
-		String param = map.get("param");
-		if (param == null || param.equals("")) {
-			param = "";
+	public static String caseSet(HashMap<String, String> map, String key){
+		String value = map.get(key);
+		if (value == null || value.equals("")) {
+			value = "";
 		}
-		return param;
+		return value;
+	}
+	
+	public static String handleRegisterType(HashMap<String, String> map) {
+		String registerType = map.get("registertype");
+		if (registerType == null || registerType.equals("")) {
+			if (p != null) {
+				String key = p.getProperty("platform");
+				switch (key) {
+				case "ios":
+					registerType = "3";
+					break;
+				case "android":
+					registerType = "4";
+					break;
+				case "h5":
+					registerType = "5";
+					break;
+				default:
+					registerType = "";
+					break;
+				}
+			} else {
+				log.error("生成registertype时读取配置文件失败");
+				throw new RuntimeException("错误，请确保配置文件内容正确！");
+			}
+		}
+		return registerType;
+		
 	}
 }

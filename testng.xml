@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Eyee_API_20170630">
-  <test name="MobileLogin">
+<suite name="Debug">
+  <test name="Register">
     <classes>
-      <class name="com.interf.eyee.script.MobileLogin">
+      <class name="com.interf.eyee.script.Register">
        <methods>
-        <include name="MobileLoginTest" />
+        <include name="registerTest" />
        </methods>
       </class>
     </classes>
-  </test> <!-- MobileLogin -->
-  <test name="AutoLogin">
-    <classes>
-      <class name="com.interf.eyee.script.AutoLogin">
-       <methods>
-        <include name="AutoLoginTest" />
-       </methods>
-      </class>
-    </classes>
-  </test> <!-- AutoLogin --> 
-</suite> <!-- Eyee_API_20170630 -->
+  </test> <!-- Register -->
+</suite> <!-- Debug -->
