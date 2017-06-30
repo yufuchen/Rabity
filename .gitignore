@@ -1,0 +1,5 @@
+/bin/
+/test-output
+/testdata
+/src/*.java
+/src/com/interf/eyee/script/*.java
