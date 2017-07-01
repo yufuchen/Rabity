@@ -18,9 +18,9 @@ import com.interf.eyee.entity.ExpectBaseEntity;
  * @author Ksewen
  *
  */
-public class XMLUntils {
+public class XMLUntils_bak {
 	public static LinkedHashMap<String, BaseDataEntity> readXMLDocument(String path) {
-		Log log = new Log(XMLUntils.class);
+		Log log = new Log(XMLUntils_bak.class);
 		File xmlFile = new File(path);
 		if (!xmlFile.exists()) {
 			log.error("找不到" + path + "文件！");

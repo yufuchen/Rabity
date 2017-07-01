@@ -61,6 +61,8 @@ public class InitParam {
 		String token = map.get("token");
 		if (token == null || token.equals("")) {
 			token = TokenManager.getToken();
+		} else if (token.equals("null")) {
+			token = "";
 		}
 		return token;
 		
@@ -89,9 +91,11 @@ public class InitParam {
 				case "h5":
 					registerType = "5";
 					break;
+				case "debugger":
+					registerType = "5";
 				default:
-					registerType = "";
-					break;
+					log.error("设备类型不正确");
+					throw new RuntimeException("设备类型错误");
 				}
 			} else {
 				log.error("生成registertype时读取配置文件失败");

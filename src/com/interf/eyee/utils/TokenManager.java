@@ -19,6 +19,7 @@ public class TokenManager {
 		try {
 			fw = new FileWriter(file);
 			fw.write("token=" + token);
+			log.info("储存token成功 : " + token);
 			fw.flush();
 			fw.close();
 		} catch (IOException e) {
@@ -36,6 +37,7 @@ public class TokenManager {
 			try {
 				fw = new FileWriter(file);
 				fw.write("token=" + token);
+				log.info("储存token成功 : " + token);
 				fw.flush();
 				fw.close();
 			} catch (IOException e) {

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Debug">
-  <test name="Register">
+  <test name="ProductDetail">
     <classes>
-      <class name="com.interf.eyee.script.Register">
+      <class name="com.interf.eyee.script.ProductDetail">
        <methods>
-        <include name="registerTest" />
+        <include name="productDetailTest" />
        </methods>
       </class>
     </classes>
-  </test> <!-- Register -->
+  </test> <!-- ProductDetail -->
 </suite> <!-- Debug -->
