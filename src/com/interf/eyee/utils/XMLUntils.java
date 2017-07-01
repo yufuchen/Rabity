@@ -10,7 +10,8 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
-import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 
 /**
  * @author Ksewen
@@ -42,18 +43,21 @@ public class XMLUntils {
 			// 循环获取<TestCase>的子标签
 			for (Iterator<?> j = page.elementIterator(); j.hasNext();) {
 				Element nodes = (Element) j.next();
-				// 提取baseLine标签特殊处理，其他加入HashMap
+				// 提取baseLine标签特殊处理，其他加入JSONObject
 				if (!nodes.getName().equals("baseLine")) {
 					if (nodes.elementIterator().hasNext()) {
 						for (Iterator<?> k = nodes.elementIterator(); k.hasNext();) {
 							Element element = (Element) k.next();
 							if (element.getName().equals("list")) {
-								// 待实现，获取list子标签里的内容并转成JSONArray字符串
+								// 待实现，获取list子标签里的内容并转成JSONArray
 							} else {
 								log.error("用例文件格式不正确，确保子标签为list");
 							}
 						}
 					} else {
+						if (nodes.getText().equals("")) {
+							input.put(nodes.getName(), null);
+						}
 						input.put(nodes.getName(), nodes.getText());
 					}
 
@@ -61,18 +65,20 @@ public class XMLUntils {
 					// 循环获取<baseLine>的子标签
 					for (Iterator<?> k = nodes.elementIterator(); k.hasNext();) {
 						Element element = (Element) k.next();
-						// 提取data标签特殊处理，其他加入HashMap
+						// 提取data标签特殊处理，其他加入JSONObject
 						if (!element.getName().equals("data")) {
 							baseline.put(element.getName(), element.getText());
 						} else {
-							// data标签放入data容器，并转化成Json字符串
-							HashMap<String, String> data = new HashMap<String, String>();
+							// data标签放入data容器，并转化成JSONObject
+							JSONObject data = new JSONObject();
 							for (Iterator<?> l = element.elementIterator(); l.hasNext();) {
 								Element sub = (Element) l.next();
+								if (sub.getText().equals("")) {
+									input.put(sub.getName(), null);
+								}
 								data.put(sub.getName(), sub.getText());
 							}
-							String dataJson = JSON.toJSONString(data);
-							baseline.put(element.getName(), dataJson);
+							baseline.put(element.getName(), data.toJSONString());
 						}
 					}
 				}

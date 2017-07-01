@@ -1,5 +1,6 @@
 package com.interf.eyee.dataprovider;
 
+import com.alibaba.fastjson.JSONArray;
 import com.interf.eyee.utils.XMLUntils;
 
 import java.lang.reflect.Method;
