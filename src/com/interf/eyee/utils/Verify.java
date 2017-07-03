@@ -134,22 +134,22 @@ public class Verify {
 		flag = Verify.verifyEquals(response.getMsg(), baseLine.getMsg());
 		HandleLog.write(flag, "msg", response.getMsg(), baseLine.getMsg());
 
-		if (!baseLine.getData().toJSONString().equals("{}")) {
-			JSONObject baseLineJson = baseLine.getData();
-			JSONObject aDataJson = response.getData();
-			Set<String> set = baseLineJson.keySet();
-			for (String key : set) {
-				if (!baseLineJson.getString(key).equals("null") && !baseLineJson.getString(key).equals("")) {
-					flag = Verify.verifyEquals(aDataJson.getString(key), baseLineJson.getString(key));
-					HandleLog.write(flag, key, aDataJson.getString(key), baseLineJson.getString(key));
-				} else if (baseLineJson.getString(key).equals("null") || baseLineJson.getString(key).equals("") || baseLineJson.getString(key) == null) {
-					Verify.verifyNull(aDataJson.getString(key));
-					HandleLog.write(flag, aDataJson.getString(key), "null", "null");
-				}
-			}
-		} else if (baseLine.getData().toJSONString().equals("{}")) {
-			flag = Verify.verifyNull(response.getData());
-			HandleLog.write(flag, "data", "null", "null");
-		}
+//		if (!baseLine.getData().toJSONString().equals("{}")) {
+//			JSONObject baseLineJson = baseLine.getData();
+//			JSONObject aDataJson = response.getData();
+//			Set<String> set = baseLineJson.keySet();
+//			for (String key : set) {
+//				if (!baseLineJson.getString(key).equals("null") && !baseLineJson.getString(key).equals("")) {
+//					flag = Verify.verifyEquals(aDataJson.getString(key), baseLineJson.getString(key));
+//					HandleLog.write(flag, key, aDataJson.getString(key), baseLineJson.getString(key));
+//				} else if (baseLineJson.getString(key).equals("null") || baseLineJson.getString(key).equals("") || baseLineJson.getString(key) == null) {
+//					Verify.verifyNull(aDataJson.getString(key));
+//					HandleLog.write(flag, aDataJson.getString(key), "null", "null");
+//				}
+//			}
+//		} else if (baseLine.getData().toJSONString().equals("{}")) {
+//			flag = Verify.verifyNull(response.getData());
+//			HandleLog.write(flag, "data", "null", "null");
+//		}
 	}
 }

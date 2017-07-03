@@ -1,8 +1,5 @@
 package com.interf.eyee.entity;
-/**
- * @author Ksewen
- *
- */
+
 
 import com.alibaba.fastjson.JSONObject;
 

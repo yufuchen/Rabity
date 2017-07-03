@@ -1,4 +1,8 @@
 package com.interf.eyee.entity;
+
+
+import com.interf.eyee.entity.BaseEntity;
+
 /**
  * @author Ksewen
  *

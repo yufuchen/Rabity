@@ -1,7 +1,6 @@
 package com.interf.eyee.utils.xmlanalysis;
 
 import java.io.File;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -14,8 +13,8 @@ import org.dom4j.io.SAXReader;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.interf.eyee.entity.BaseDataEntity;
-import com.interf.eyee.entity.XMLEntity;
-import com.interf.eyee.entity.expect.ExpectBaseEntity;
+import com.interf.eyee.entity.ExpectBaseDataEntity;
+import com.interf.eyee.entity.ExpectBaseEntity;
 import com.interf.eyee.utils.Log;
 
 /**
@@ -23,7 +22,7 @@ import com.interf.eyee.utils.Log;
  *
  */
 public class XMLUntils {
-	protected static Log log = new Log(BaseXMLUntils.class);
+	protected static Log log = new Log(XMLUntils.class);
 	
 	public static LinkedHashMap<String, BaseDataEntity> readXMLCase(String path) {
 		File xmlFile = new File(path);
@@ -46,6 +45,7 @@ public class XMLUntils {
 			BaseDataEntity baseDate = new BaseDataEntity();
 			baseDate = j.toJavaObject(baseDate.getClass());
 			caseMap.put(page.attributeValue("id") + "_" + page.attributeValue("name"), baseDate);
+		
 		}
 		return caseMap;
 	}
