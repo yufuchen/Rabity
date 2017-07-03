@@ -4,17 +4,12 @@ package com.interf.eyee.entity;
  *
  */
 
-import java.util.HashMap;
-
-import javax.swing.plaf.basic.BasicScrollPaneUI.HSBChangeListener;
-
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.interf.eyee.entity.expect.ExpectBaseEntity;
 
-public class BaseDataEntity {
+public class XMLEntity {
 	private String api;
-	private HashMap<String, String> input;
+	private JSONObject input;
 	private ExpectBaseEntity baseline;
 	public String getApi() {
 		return api;
@@ -22,10 +17,10 @@ public class BaseDataEntity {
 	public void setApi(String api) {
 		this.api = api;
 	}
-	public HashMap<String, String> getInput() {
+	public JSONObject getInput() {
 		return input;
 	}
-	public void setInput(HashMap<String, String> input) {
+	public void setInput(JSONObject input) {
 		this.input = input;
 	}
 	public ExpectBaseEntity getBaseline() {
@@ -35,8 +30,4 @@ public class BaseDataEntity {
 		this.baseline = baseline;
 	}
 	
-	@Override
-	public String toString() {
-		return JSON.toJSONString(this);
-	}
 }

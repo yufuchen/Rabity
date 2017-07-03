@@ -3,7 +3,7 @@ package com.interf.eyee.dataprovider;
 import com.alibaba.fastjson.JSONArray;
 import com.interf.eyee.entity.BaseDataEntity;
 import com.interf.eyee.utils.xmlanalysis.BaseXMLUntils;
-import com.interf.eyee.utils.xmlanalysis.XMLUntils;
+import com.interf.eyee.utils.xmlanalysis.XMLUntilsOld;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -18,14 +18,15 @@ import org.testng.annotations.DataProvider;
  * @author Ksewen
  *
  */
-public class BaseDataProvider {
+public class BaseDataProvider_bak {
 	private static ArrayList<Object[]> testCases = null;
 	private static LinkedHashMap<String, BaseDataEntity> caseMap = null;
 
   @DataProvider(name="BaseData")
   public static Iterator<Object[]> dp(Method method) {
 		String path = "./testdata/" + method.getName() + "Case.xml";
-		caseMap = XMLUntils.readXMLCase(path);
+		BaseXMLUntils xml = new BaseXMLUntils();
+		caseMap = xml.readXMLDocument(path);
 		testCases = new ArrayList<Object[]>();
 		for (Map.Entry<String, BaseDataEntity> entry : caseMap.entrySet()) {
 			String testName = entry.getKey();
