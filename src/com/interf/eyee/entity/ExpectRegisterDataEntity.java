@@ -3,7 +3,7 @@ package com.interf.eyee.entity;
  * @author Ksewen
  *
  */
-public class ExpectRegisterDataEntity {
+public class ExpectRegisterDataEntity extends ExpectBaseDataEntity {
 	private String uid;
 	private String username;
 	private String mobile;

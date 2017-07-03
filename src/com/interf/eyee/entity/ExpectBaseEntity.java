@@ -1,5 +1,6 @@
 package com.interf.eyee.entity;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
 /**
@@ -36,5 +37,8 @@ public class ExpectBaseEntity {
 		this.serverTime = serverTime;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return JSON.toJSONString(this);
+	}
 }

@@ -1,4 +1,4 @@
-package com.interf.eyee.utils;
+package com.interf.eyee.utils.xmlanalysis;
 
 import java.io.File;
 import java.util.HashMap;
@@ -13,6 +13,7 @@ import org.dom4j.io.SAXReader;
 import com.alibaba.fastjson.JSONObject;
 import com.interf.eyee.entity.BaseDataEntity;
 import com.interf.eyee.entity.ExpectBaseEntity;
+import com.interf.eyee.utils.Log;
 
 /**
  * @author Ksewen
@@ -79,7 +80,7 @@ public class XMLUntils {
 							for (Iterator<?> l = element.elementIterator(); l.hasNext();) {
 								Element sub = (Element) l.next();
 								if (sub.getText().equals("")) {
-									input.put(sub.getName(), "null");
+									data.put(sub.getName(), "null");
 								}
 								data.put(sub.getName(), sub.getText());
 							}

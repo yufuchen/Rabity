@@ -1,267 +1,241 @@
-2017-07-01 18:16:59.712 INFO  30 info - com.interf.eyee.script.BaseCase: ==== http://140.207.155.74/ - 开始测试 ====
-2017-07-01 18:16:59.712 INFO  30 info - com.interf.eyee.script.MobileLogin: --------------- com.interf.eyee.script.MobileLogin ----------
-2017-07-01 18:16:59.844 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:16:59.862 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 0_使用正确的手机号和密码登录
-2017-07-01 18:16:59.881 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-17740887033","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
-2017-07-01 18:17:00.913 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:00.918 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：1032
-2017-07-01 18:17:00.919 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:00.919 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511200,"msg":"请求已完成","data":{"uid":"7975325267954effa5080d79bdcafab5","username":"bdcafab5","mobile":"+86-17740887033","mobileconfirmed":true,"email":null,"emailconfirmed":false,"sex":2,"country":null,"address":null,"birthday":null,"imageurl":"http://api.eyee.com/EYEE/Icons/defaulthead.jpg","credits":100.00,"currcredits":100.00,"lastlogintime":"2017-07-01 18:17:14 +8","balance":0.00,"firstreggift":1,"rankname":"v0","rankpic":"http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png","token":"AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJIMnWK2Te+qK/8F98v3+sIwgIvNF/aAQ9g==","themeurl":null,"registertype":3,"isbindhobby":0,"isagent":0,"promocode":null,"hastradepwd":0,"haspwd":1,"bindweixin":0,"bindweibo":0,"bindqq":0,"facevalue":0.0},"servertime":"2017-07-01 18:17:14 +8"}
-2017-07-01 18:17:00.919 INFO  30 info - com.interf.eyee.utils.TokenManager: 储存token成功 : AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJIMnWK2Te+qK/8F98v3+sIwgIvNF/aAQ9g==
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : haspwd   实际结果 : 1 ========= 预期结果 : 1
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : sex   实际结果 : 2 ========= 预期结果 : 2
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : mobile   实际结果 : +86-17740887033 ========= 预期结果 : +86-17740887033
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : isagent   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : bindqq   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : hastradepwd   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : bindweixin   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : facevalue   实际结果 : 0.0 ========= 预期结果 : 0.0
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : uid   实际结果 : 7975325267954effa5080d79bdcafab5 ========= 预期结果 : 7975325267954effa5080d79bdcafab5
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : rankpic   实际结果 : http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png ========= 预期结果 : http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : isbindhobby   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : balance   实际结果 : 0.00 ========= 预期结果 : 0.00
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : credits   实际结果 : 100.00 ========= 预期结果 : 100.00
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : emailconfirmed   实际结果 : false ========= 预期结果 : false
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : bindweibo   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : imageurl   实际结果 : http://api.eyee.com/EYEE/Icons/defaulthead.jpg ========= 预期结果 : http://api.eyee.com/EYEE/Icons/defaulthead.jpg
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : currcredits   实际结果 : 100.00 ========= 预期结果 : 100.00
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : rankname   实际结果 : v0 ========= 预期结果 : v0
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : registertype   实际结果 : 3 ========= 预期结果 : 3
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : mobileconfirmed   实际结果 : true ========= 预期结果 : true
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : firstreggift   实际结果 : 1 ========= 预期结果 : 1
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : username   实际结果 : bdcafab5 ========= 预期结果 : bdcafab5
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:00.935 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 1_使用正确的手机号和错误的密码登录
-2017-07-01 18:17:00.951 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-17740887033","param":"","password":"75496dbfbebb296508150e41a03f5788","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
-2017-07-01 18:17:01.282 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:01.282 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：330
-2017-07-01 18:17:01.282 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:01.282 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511542,"msg":"账号或密码错误","data":null,"servertime":"2017-07-01 18:17:15 +8"}
-2017-07-01 18:17:01.282 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511542 ========= 预期结果 : 1511542
-2017-07-01 18:17:01.282 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 账号或密码错误 ========= 预期结果 : 账号或密码错误
-2017-07-01 18:17:01.282 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:01.282 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:01.282 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:01.298 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 2_使用正确的手机号和空密码登录
-2017-07-01 18:17:01.298 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-17740887033","param":"","password":"d41d8cd98f00b204e9800998ecf8427e","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
-2017-07-01 18:17:01.613 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:01.613 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：315
-2017-07-01 18:17:01.613 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:01.613 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511542,"msg":"账号或密码错误","data":null,"servertime":"2017-07-01 18:17:15 +8"}
-2017-07-01 18:17:01.613 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511542 ========= 预期结果 : 1511542
-2017-07-01 18:17:01.613 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 账号或密码错误 ========= 预期结果 : 账号或密码错误
-2017-07-01 18:17:01.613 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:01.613 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:01.613 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:01.613 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 3_使用无国家号的手机号登录
-2017-07-01 18:17:01.613 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"17740887033","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
-2017-07-01 18:17:02.028 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:02.043 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：415
-2017-07-01 18:17:02.044 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:02.044 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511572,"msg":"手机号码格式不正确","data":null,"servertime":"2017-07-01 18:17:16 +8"}
-2017-07-01 18:17:02.044 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511572 ========= 预期结果 : 1511572
-2017-07-01 18:17:02.044 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 手机号码格式不正确 ========= 预期结果 : 手机号码格式不正确
-2017-07-01 18:17:02.044 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:02.044 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:02.044 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:02.044 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 4_使用不存在的用户手机号登录
-2017-07-01 18:17:02.044 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-12340887033","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
-2017-07-01 18:17:02.481 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:02.481 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：437
-2017-07-01 18:17:02.481 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:02.481 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511540,"msg":"用户不存在","data":null,"servertime":"2017-07-01 18:17:16 +8"}
-2017-07-01 18:17:02.481 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511540 ========= 预期结果 : 1511540
-2017-07-01 18:17:02.481 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 用户不存在 ========= 预期结果 : 用户不存在
-2017-07-01 18:17:02.481 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:02.481 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:02.481 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:02.481 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 5_使用空手机号登录
-2017-07-01 18:17:02.481 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
-2017-07-01 18:17:02.897 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:02.897 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：416
-2017-07-01 18:17:02.897 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:02.897 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511503,"msg":"缺少必要的参数","data":null,"servertime":"2017-07-01 18:17:17 +8"}
-2017-07-01 18:17:02.897 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511503 ========= 预期结果 : 1511503
-2017-07-01 18:17:02.897 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 缺少必要的参数 ========= 预期结果 : 缺少必要的参数
-2017-07-01 18:17:02.897 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:02.897 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:02.897 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:02.897 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 6_使用缺少一位的手机号登录
-2017-07-01 18:17:02.897 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-1774088703","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
-2017-07-01 18:17:03.328 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:03.340 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：431
-2017-07-01 18:17:03.340 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:03.341 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511540,"msg":"用户不存在","data":null,"servertime":"2017-07-01 18:17:17 +8"}
-2017-07-01 18:17:03.341 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511540 ========= 预期结果 : 1511540
-2017-07-01 18:17:03.341 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 用户不存在 ========= 预期结果 : 用户不存在
-2017-07-01 18:17:03.341 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:03.341 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:03.341 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:03.341 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 7_使用多一位的手机号登录
-2017-07-01 18:17:03.341 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-177408870333","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
-2017-07-01 18:17:03.813 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:03.813 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：472
-2017-07-01 18:17:03.813 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:03.813 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511572,"msg":"手机号码格式不正确","data":null,"servertime":"2017-07-01 18:17:17 +8"}
-2017-07-01 18:17:03.813 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511572 ========= 预期结果 : 1511572
-2017-07-01 18:17:03.813 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 手机号码格式不正确 ========= 预期结果 : 手机号码格式不正确
-2017-07-01 18:17:03.813 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:03.813 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:03.813 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:03.813 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 8_使用含错误国家号的手机号登录
-2017-07-01 18:17:03.813 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"86-17740887033","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
-2017-07-01 18:17:04.165 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:04.165 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：352
-2017-07-01 18:17:04.165 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:04.165 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511572,"msg":"手机号码格式不正确","data":null,"servertime":"2017-07-01 18:17:18 +8"}
-2017-07-01 18:17:04.165 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511572 ========= 预期结果 : 1511572
-2017-07-01 18:17:04.165 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 手机号码格式不正确 ========= 预期结果 : 手机号码格式不正确
-2017-07-01 18:17:04.165 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:04.181 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:04.181 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:04.181 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 8_使用含有中文的手机号登录
-2017-07-01 18:17:04.181 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"手机号","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
-2017-07-01 18:17:04.629 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:04.643 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：448
-2017-07-01 18:17:04.643 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:04.643 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511572,"msg":"手机号码格式不正确","data":null,"servertime":"2017-07-01 18:17:18 +8"}
-2017-07-01 18:17:04.643 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511572 ========= 预期结果 : 1511572
-2017-07-01 18:17:04.643 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 手机号码格式不正确 ========= 预期结果 : 手机号码格式不正确
-2017-07-01 18:17:04.643 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:04.643 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:04.666 INFO  30 info - com.interf.eyee.script.AutoLogin: --------------- com.interf.eyee.script.AutoLogin ----------
-2017-07-01 18:17:04.666 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:04.666 INFO  30 info - com.interf.eyee.script.AutoLogin: 用例名称 : 0_使用正确的sign和token登录
-2017-07-01 18:17:04.666 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","sign":"24c8273683610926804968fdb827c0d4","token":"AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJIMnWK2Te+qK/8F98v3+sIwgIvNF/aAQ9g==","version":"2.2.5"}
-2017-07-01 18:17:05.328 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:05.328 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：662
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : haspwd   实际结果 : 1 ========= 预期结果 : 1
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : sex   实际结果 : 2 ========= 预期结果 : 2
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : mobile   实际结果 : +86-17740887033 ========= 预期结果 : +86-17740887033
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : isagent   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : bindqq   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : hastradepwd   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : bindweixin   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : facevalue   实际结果 : 0.0 ========= 预期结果 : 0.0
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : uid   实际结果 : 7975325267954effa5080d79bdcafab5 ========= 预期结果 : 7975325267954effa5080d79bdcafab5
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : rankpic   实际结果 : http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png ========= 预期结果 : http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : isbindhobby   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : balance   实际结果 : 0.00 ========= 预期结果 : 0.00
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : credits   实际结果 : 100.00 ========= 预期结果 : 100.00
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : emailconfirmed   实际结果 : false ========= 预期结果 : false
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : bindweibo   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : imageurl   实际结果 : http://api.eyee.com/EYEE/Icons/defaulthead.jpg ========= 预期结果 : http://api.eyee.com/EYEE/Icons/defaulthead.jpg
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : currcredits   实际结果 : 100.00 ========= 预期结果 : 100.00
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : rankname   实际结果 : v0 ========= 预期结果 : v0
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : registertype   实际结果 : 3 ========= 预期结果 : 3
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : mobileconfirmed   实际结果 : true ========= 预期结果 : true
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : firstreggift   实际结果 : 1 ========= 预期结果 : 1
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : username   实际结果 : bdcafab5 ========= 预期结果 : bdcafab5
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:05.344 INFO  30 info - com.interf.eyee.script.AutoLogin: 用例名称 : 1_使用正确的sign和错误格式的token登录
-2017-07-01 18:17:05.360 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","sign":"5d3ef1733b73ae3490981ed7a3947bf7","token":"tail","version":"2.2.5"}
-2017-07-01 18:17:05.766 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:05.770 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：406
-2017-07-01 18:17:05.770 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:05.771 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511543 ========= 预期结果 : 1511543
-2017-07-01 18:17:05.771 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的用户token ========= 预期结果 : 无效的用户token
-2017-07-01 18:17:05.771 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:05.771 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:05.771 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:05.771 INFO  30 info - com.interf.eyee.script.AutoLogin: 用例名称 : 2_使用正确的sign和错误内容的token登录
-2017-07-01 18:17:05.771 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","sign":"05b85eda9965fe45029c3907721fe3c8","token":"WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ==","version":"2.2.5"}
-2017-07-01 18:17:06.182 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:06.182 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：411
-2017-07-01 18:17:06.182 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:06.182 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511543 ========= 预期结果 : 1511543
-2017-07-01 18:17:06.182 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的用户token ========= 预期结果 : 无效的用户token
-2017-07-01 18:17:06.182 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:06.182 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:06.182 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:06.197 INFO  30 info - com.interf.eyee.script.AutoLogin: 用例名称 : 3_使用错误的sign和正确的token登录
-2017-07-01 18:17:06.197 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","sign":"53324558ab4d27787bdc6b7aef40df5b","token":"AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJIMnWK2Te+qK/8F98v3+sIwgIvNF/aAQ9g==","version":"2.2.5"}
-2017-07-01 18:17:06.466 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:06.482 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：269
-2017-07-01 18:17:06.482 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:06.482 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511501 ========= 预期结果 : 1511501
-2017-07-01 18:17:06.482 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的请求 ========= 预期结果 : 无效的请求
-2017-07-01 18:17:06.482 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:06.482 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:06.482 INFO  30 info - com.interf.eyee.script.Register: --------------- com.interf.eyee.script.Register ----------
-2017-07-01 18:17:06.497 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:06.497 INFO  30 info - com.interf.eyee.script.Register: 用例名称 : 0_使用正确信息注册
-2017-07-01 18:17:06.497 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-13818043122","param":"","password":"1bacee75c5a66fbc8e637159f9e6e8e7","platform":"ios","promocode":"null","registerType":"3","registerTypeCode":"","sign":"9e52ef413200985cad4fe793961d1130","token":"","validCode":"9999","version":"2.2.5"}
-2017-07-01 18:17:07.044 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:07.057 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：547
-2017-07-01 18:17:07.057 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:07.058 INFO  30 info - com.interf.eyee.script.Register: 接口返回 : {"code":1511200,"msg":"请求已完成","data":{"uid":"2dfb2273672c495eabb9a4cfcead2157","username":"cead2157","mobile":"+86-13818043122","mobileconfirmed":true,"email":null,"emailconfirmed":false,"sex":2,"country":null,"address":null,"birthday":null,"imageurl":"http://api.eyee.com/EYEE/Icons/defaulthead.jpg","credits":100.00,"currcredits":100.00,"lastlogintime":"2017-07-01 18:17:21 +8","balance":0.00,"firstreggift":0,"rankname":"v0","rankpic":"http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png","token":"TZKdEcX3VOvolWFipeOYaGxadKd6slcZ3YmdRhMwvQOIikIwI5Edrn9fE/+JD8aKh3py+cQvmYoNqhPJZNQLNXA1w6AzBE185NJJoEwwxNAoUAawYG0W1Q==","themeurl":null,"registertype":3,"isbindhobby":0,"isagent":0,"promocode":null,"hastradepwd":0,"haspwd":1,"bindweixin":0,"bindweibo":0,"bindqq":0,"facevalue":88.0},"servertime":"2017-07-01 18:17:21 +8"}
-2017-07-01 18:17:07.058 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
-2017-07-01 18:17:07.059 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
-2017-07-01 18:17:07.059 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : null   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:07.059 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : null   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:07.060 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : hastradepwd   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:07.060 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : facevalue   实际结果 : 88.0 ========= 预期结果 : 88.0
-2017-07-01 18:17:07.060 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : rankpic   实际结果 : http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png ========= 预期结果 : http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png
-2017-07-01 18:17:07.061 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : isbindhobby   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:07.061 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : balance   实际结果 : 0.00 ========= 预期结果 : 0.00
-2017-07-01 18:17:07.061 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : credits   实际结果 : 100.00 ========= 预期结果 : 100.00
-2017-07-01 18:17:07.061 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : bindweibo   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:07.061 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : registertype   实际结果 : 3 ========= 预期结果 : 3
-2017-07-01 18:17:07.061 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : mobileconfirmed   实际结果 : true ========= 预期结果 : true
-2017-07-01 18:17:07.062 ERROR 46 error - com.interf.eyee.utils.HandleLog: 字段名称 :email   实际结果 : null ========= 预期结果 : nodata
-2017-07-01 18:17:07.063 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : firstreggift   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:07.063 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : null   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:07.063 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : null   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:07.064 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : sex   实际结果 : 2 ========= 预期结果 : 2
-2017-07-01 18:17:07.064 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : haspwd   实际结果 : 1 ========= 预期结果 : 1
-2017-07-01 18:17:07.064 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : mobile   实际结果 : +86-13818043122 ========= 预期结果 : +86-13818043122
-2017-07-01 18:17:07.064 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : isagent   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:07.065 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : null   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:07.065 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : bindqq   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:07.065 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : bindweixin   实际结果 : 0 ========= 预期结果 : 0
-2017-07-01 18:17:07.065 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : emailconfirmed   实际结果 : false ========= 预期结果 : false
-2017-07-01 18:17:07.065 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : imageurl   实际结果 : http://api.eyee.com/EYEE/Icons/defaulthead.jpg ========= 预期结果 : http://api.eyee.com/EYEE/Icons/defaulthead.jpg
-2017-07-01 18:17:07.065 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : currcredits   实际结果 : 100.00 ========= 预期结果 : 100.00
-2017-07-01 18:17:07.066 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : rankname   实际结果 : v0 ========= 预期结果 : v0
-2017-07-01 18:17:07.066 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:07.066 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:07.066 INFO  30 info - com.interf.eyee.script.Register: 用例名称 : 1_使用已被注册的手机号注册
-2017-07-01 18:17:07.066 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-17740887033","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","promocode":"","registerType":"3","registerTypeCode":"","sign":"9e52ef413200985cad4fe793961d1130","token":"","validCode":"9999","version":"2.2.5"}
-2017-07-01 18:17:07.513 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:07.513 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：447
-2017-07-01 18:17:07.513 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:07.513 INFO  30 info - com.interf.eyee.script.Register: 接口返回 : {"code":1511541,"msg":"该手机号已注册，请直接使用手机号登录","data":null,"servertime":"2017-07-01 18:17:21 +8"}
-2017-07-01 18:17:07.513 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511541 ========= 预期结果 : 1511541
-2017-07-01 18:17:07.513 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 该手机号已注册，请直接使用手机号登录 ========= 预期结果 : 该手机号已注册，请直接使用手机号登录
-2017-07-01 18:17:07.513 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:07.513 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:07.513 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:07.513 INFO  30 info - com.interf.eyee.script.Register: 用例名称 : 2_使用空手机号注册
-2017-07-01 18:17:07.528 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","promocode":"","registerType":"3","registerTypeCode":"","sign":"9e52ef413200985cad4fe793961d1130","token":"","validCode":"9999","version":"2.2.5"}
-2017-07-01 18:17:07.945 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:07.945 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：417
-2017-07-01 18:17:07.945 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:07.945 INFO  30 info - com.interf.eyee.script.Register: 接口返回 : {"code":1511503,"msg":"缺少必要的参数","data":null,"servertime":"2017-07-01 18:17:22 +8"}
-2017-07-01 18:17:07.945 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511503 ========= 预期结果 : 1511503
-2017-07-01 18:17:07.945 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 缺少必要的参数 ========= 预期结果 : 缺少必要的参数
-2017-07-01 18:17:07.945 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:07.963 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:07.964 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-01 18:17:07.966 INFO  30 info - com.interf.eyee.script.Register: 用例名称 : 3_使用格式不正确的手机号注册
-2017-07-01 18:17:07.966 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"17740887033","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","promocode":"","registerType":"3","registerTypeCode":"","sign":"9e52ef413200985cad4fe793961d1130","token":"","validCode":"9999","version":"2.2.5"}
-2017-07-01 18:17:08.383 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-01 18:17:08.393 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：416
-2017-07-01 18:17:08.394 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-01 18:17:08.394 INFO  30 info - com.interf.eyee.script.Register: 接口返回 : {"code":1511572,"msg":"手机号码格式不正确","data":null,"servertime":"2017-07-01 18:17:22 +8"}
-2017-07-01 18:17:08.394 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511572 ========= 预期结果 : 1511572
-2017-07-01 18:17:08.394 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 手机号码格式不正确 ========= 预期结果 : 手机号码格式不正确
-2017-07-01 18:17:08.394 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-01 18:17:08.394 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-01 18:17:08.409 INFO  30 info - com.interf.eyee.script.BaseCase: ==== 结束测试 ====
+2017-07-03 09:58:13.981 INFO  30 info - com.interf.eyee.script.BaseCase: ==== http://140.207.155.74/ - 开始测试 ====
+2017-07-03 09:58:13.989 INFO  30 info - com.interf.eyee.script.MobileLogin: --------------- com.interf.eyee.script.MobileLogin ----------
+2017-07-03 09:58:14.115 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:14.120 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 0_使用正确的手机号和密码登录
+2017-07-03 09:58:14.143 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-17740887033","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
+2017-07-03 09:58:14.946 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:14.946 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：800
+2017-07-03 09:58:14.949 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:14.949 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511200,"msg":"请求已完成","data":{"uid":"7975325267954effa5080d79bdcafab5","username":"bdcafab5","mobile":"+86-17740887033","mobileconfirmed":true,"email":null,"emailconfirmed":false,"sex":2,"country":null,"address":null,"birthday":null,"imageurl":"http://api.eyee.com/EYEE/Icons/defaulthead.jpg","credits":100.00,"currcredits":100.00,"lastlogintime":"2017-07-03 09:58:29 +8","balance":0.00,"firstreggift":1,"rankname":"v0","rankpic":"http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png","token":"AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJIMnWK2Te+qKOUWYV7DY3IBiXFNQcjCQlQ==","themeurl":null,"registertype":3,"isbindhobby":0,"isagent":0,"promocode":null,"hastradepwd":0,"haspwd":1,"bindweixin":0,"bindweibo":0,"bindqq":0,"facevalue":0.0},"servertime":"2017-07-03 09:58:29 +8"}
+2017-07-03 09:58:14.962 INFO  30 info - com.interf.eyee.utils.TokenManager: 储存token成功 : AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJIMnWK2Te+qKOUWYV7DY3IBiXFNQcjCQlQ==
+2017-07-03 09:58:14.967 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
+2017-07-03 09:58:14.967 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
+2017-07-03 09:58:14.967 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : haspwd   实际结果 : 1 ========= 预期结果 : 1
+2017-07-03 09:58:14.968 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : sex   实际结果 : 2 ========= 预期结果 : 2
+2017-07-03 09:58:14.968 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : mobile   实际结果 : +86-17740887033 ========= 预期结果 : +86-17740887033
+2017-07-03 09:58:14.968 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : isagent   实际结果 : 0 ========= 预期结果 : 0
+2017-07-03 09:58:14.969 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : bindqq   实际结果 : 0 ========= 预期结果 : 0
+2017-07-03 09:58:14.969 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : hastradepwd   实际结果 : 0 ========= 预期结果 : 0
+2017-07-03 09:58:14.970 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : bindweixin   实际结果 : 0 ========= 预期结果 : 0
+2017-07-03 09:58:14.970 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : facevalue   实际结果 : 0.0 ========= 预期结果 : 0.0
+2017-07-03 09:58:14.970 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : uid   实际结果 : 7975325267954effa5080d79bdcafab5 ========= 预期结果 : 7975325267954effa5080d79bdcafab5
+2017-07-03 09:58:14.971 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : rankpic   实际结果 : http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png ========= 预期结果 : http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png
+2017-07-03 09:58:14.972 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : isbindhobby   实际结果 : 0 ========= 预期结果 : 0
+2017-07-03 09:58:14.972 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : balance   实际结果 : 0.00 ========= 预期结果 : 0.00
+2017-07-03 09:58:14.972 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : credits   实际结果 : 100.00 ========= 预期结果 : 100.00
+2017-07-03 09:58:14.973 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : emailconfirmed   实际结果 : false ========= 预期结果 : false
+2017-07-03 09:58:14.973 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : bindweibo   实际结果 : 0 ========= 预期结果 : 0
+2017-07-03 09:58:14.974 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : imageurl   实际结果 : http://api.eyee.com/EYEE/Icons/defaulthead.jpg ========= 预期结果 : http://api.eyee.com/EYEE/Icons/defaulthead.jpg
+2017-07-03 09:58:14.974 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : currcredits   实际结果 : 100.00 ========= 预期结果 : 100.00
+2017-07-03 09:58:14.974 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : rankname   实际结果 : v0 ========= 预期结果 : v0
+2017-07-03 09:58:14.975 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : registertype   实际结果 : 3 ========= 预期结果 : 3
+2017-07-03 09:58:14.975 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : mobileconfirmed   实际结果 : true ========= 预期结果 : true
+2017-07-03 09:58:14.975 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : firstreggift   实际结果 : 1 ========= 预期结果 : 1
+2017-07-03 09:58:14.976 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : username   实际结果 : bdcafab5 ========= 预期结果 : bdcafab5
+2017-07-03 09:58:14.977 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:14.978 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:14.979 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 1_使用正确的手机号和错误的密码登录
+2017-07-03 09:58:14.980 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-17740887033","param":"","password":"75496dbfbebb296508150e41a03f5788","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
+2017-07-03 09:58:15.418 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:15.419 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：437
+2017-07-03 09:58:15.419 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:15.419 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511542,"msg":"账号或密码错误","data":null,"servertime":"2017-07-03 09:58:29 +8"}
+2017-07-03 09:58:15.420 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511542 ========= 预期结果 : 1511542
+2017-07-03 09:58:15.420 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 账号或密码错误 ========= 预期结果 : 账号或密码错误
+2017-07-03 09:58:15.420 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-03 09:58:15.421 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:15.422 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:15.425 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 2_使用正确的手机号和空密码登录
+2017-07-03 09:58:15.428 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-17740887033","param":"","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
+2017-07-03 09:58:15.835 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:15.835 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：407
+2017-07-03 09:58:15.835 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:15.836 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511503,"msg":"缺少必要的参数","data":null,"servertime":"2017-07-03 09:58:30 +8"}
+2017-07-03 09:58:15.836 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511503 ========= 预期结果 : 1511503
+2017-07-03 09:58:15.836 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 缺少必要的参数 ========= 预期结果 : 缺少必要的参数
+2017-07-03 09:58:15.836 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-03 09:58:15.837 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:15.838 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:15.840 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 3_使用无国家号的手机号登录
+2017-07-03 09:58:15.841 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"17740887033","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
+2017-07-03 09:58:16.269 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:16.269 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：428
+2017-07-03 09:58:16.269 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:16.270 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511572,"msg":"手机号码格式不正确","data":null,"servertime":"2017-07-03 09:58:30 +8"}
+2017-07-03 09:58:16.270 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511572 ========= 预期结果 : 1511572
+2017-07-03 09:58:16.270 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 手机号码格式不正确 ========= 预期结果 : 手机号码格式不正确
+2017-07-03 09:58:16.271 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-03 09:58:16.272 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:16.273 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:16.275 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 4_使用不存在的用户手机号登录
+2017-07-03 09:58:16.276 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-12340887033","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
+2017-07-03 09:58:16.738 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:16.738 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：461
+2017-07-03 09:58:16.739 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:16.740 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511540,"msg":"用户不存在","data":null,"servertime":"2017-07-03 09:58:31 +8"}
+2017-07-03 09:58:16.740 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511540 ========= 预期结果 : 1511540
+2017-07-03 09:58:16.741 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 用户不存在 ========= 预期结果 : 用户不存在
+2017-07-03 09:58:16.742 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-03 09:58:16.746 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:16.748 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:16.751 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 5_使用空手机号登录
+2017-07-03 09:58:16.753 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
+2017-07-03 09:58:17.170 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:17.171 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：416
+2017-07-03 09:58:17.171 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:17.171 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511503,"msg":"缺少必要的参数","data":null,"servertime":"2017-07-03 09:58:31 +8"}
+2017-07-03 09:58:17.171 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511503 ========= 预期结果 : 1511503
+2017-07-03 09:58:17.172 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 缺少必要的参数 ========= 预期结果 : 缺少必要的参数
+2017-07-03 09:58:17.172 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-03 09:58:17.173 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:17.174 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:17.175 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 6_使用缺少一位的手机号登录
+2017-07-03 09:58:17.176 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-1774088703","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
+2017-07-03 09:58:17.579 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:17.579 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：402
+2017-07-03 09:58:17.580 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:17.580 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511540,"msg":"用户不存在","data":null,"servertime":"2017-07-03 09:58:31 +8"}
+2017-07-03 09:58:17.580 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511540 ========= 预期结果 : 1511540
+2017-07-03 09:58:17.581 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 用户不存在 ========= 预期结果 : 用户不存在
+2017-07-03 09:58:17.581 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-03 09:58:17.582 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:17.583 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:17.584 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 7_使用多一位的手机号登录
+2017-07-03 09:58:17.585 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-177408870333","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
+2017-07-03 09:58:17.996 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:17.997 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：411
+2017-07-03 09:58:17.997 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:17.998 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511572,"msg":"手机号码格式不正确","data":null,"servertime":"2017-07-03 09:58:32 +8"}
+2017-07-03 09:58:17.998 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511572 ========= 预期结果 : 1511572
+2017-07-03 09:58:17.998 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 手机号码格式不正确 ========= 预期结果 : 手机号码格式不正确
+2017-07-03 09:58:17.998 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-03 09:58:18.000 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:18.001 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:18.002 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 8_使用含错误国家号的手机号登录
+2017-07-03 09:58:18.003 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"86-17740887033","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
+2017-07-03 09:58:18.441 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:18.441 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：437
+2017-07-03 09:58:18.442 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:18.442 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511572,"msg":"手机号码格式不正确","data":null,"servertime":"2017-07-03 09:58:32 +8"}
+2017-07-03 09:58:18.443 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511572 ========= 预期结果 : 1511572
+2017-07-03 09:58:18.443 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 手机号码格式不正确 ========= 预期结果 : 手机号码格式不正确
+2017-07-03 09:58:18.443 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-03 09:58:18.445 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:18.445 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:18.447 INFO  30 info - com.interf.eyee.script.MobileLogin: 用例名称 : 8_使用含有中文的手机号登录
+2017-07-03 09:58:18.448 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"手机号","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
+2017-07-03 09:58:18.891 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:18.891 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：443
+2017-07-03 09:58:18.892 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:18.892 INFO  30 info - com.interf.eyee.script.MobileLogin: 接口返回 : {"code":1511572,"msg":"手机号码格式不正确","data":null,"servertime":"2017-07-03 09:58:33 +8"}
+2017-07-03 09:58:18.893 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511572 ========= 预期结果 : 1511572
+2017-07-03 09:58:18.893 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 手机号码格式不正确 ========= 预期结果 : 手机号码格式不正确
+2017-07-03 09:58:18.893 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-03 09:58:18.897 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:18.916 INFO  30 info - com.interf.eyee.script.AutoLogin: --------------- com.interf.eyee.script.AutoLogin ----------
+2017-07-03 09:58:18.924 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:18.925 INFO  30 info - com.interf.eyee.script.AutoLogin: 用例名称 : 0_使用正确的sign和token登录
+2017-07-03 09:58:18.926 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","sign":"47ef574c44d4ec9f57771cab3bc37be5","token":"AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJIMnWK2Te+qKOUWYV7DY3IBiXFNQcjCQlQ==","version":"2.2.5"}
+2017-07-03 09:58:19.414 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:19.415 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：488
+2017-07-03 09:58:19.415 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:19.416 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
+2017-07-03 09:58:19.416 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
+2017-07-03 09:58:19.417 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : haspwd   实际结果 : 1 ========= 预期结果 : 1
+2017-07-03 09:58:19.417 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : sex   实际结果 : 2 ========= 预期结果 : 2
+2017-07-03 09:58:19.417 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : mobile   实际结果 : +86-17740887033 ========= 预期结果 : +86-17740887033
+2017-07-03 09:58:19.418 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : isagent   实际结果 : 0 ========= 预期结果 : 0
+2017-07-03 09:58:19.418 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : bindqq   实际结果 : 0 ========= 预期结果 : 0
+2017-07-03 09:58:19.418 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : hastradepwd   实际结果 : 0 ========= 预期结果 : 0
+2017-07-03 09:58:19.418 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : bindweixin   实际结果 : 0 ========= 预期结果 : 0
+2017-07-03 09:58:19.419 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : facevalue   实际结果 : 0.0 ========= 预期结果 : 0.0
+2017-07-03 09:58:19.419 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : uid   实际结果 : 7975325267954effa5080d79bdcafab5 ========= 预期结果 : 7975325267954effa5080d79bdcafab5
+2017-07-03 09:58:19.419 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : rankpic   实际结果 : http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png ========= 预期结果 : http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png
+2017-07-03 09:58:19.419 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : isbindhobby   实际结果 : 0 ========= 预期结果 : 0
+2017-07-03 09:58:19.420 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : balance   实际结果 : 0.00 ========= 预期结果 : 0.00
+2017-07-03 09:58:19.420 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : credits   实际结果 : 100.00 ========= 预期结果 : 100.00
+2017-07-03 09:58:19.420 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : emailconfirmed   实际结果 : false ========= 预期结果 : false
+2017-07-03 09:58:19.421 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : bindweibo   实际结果 : 0 ========= 预期结果 : 0
+2017-07-03 09:58:19.421 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : imageurl   实际结果 : http://api.eyee.com/EYEE/Icons/defaulthead.jpg ========= 预期结果 : http://api.eyee.com/EYEE/Icons/defaulthead.jpg
+2017-07-03 09:58:19.421 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : currcredits   实际结果 : 100.00 ========= 预期结果 : 100.00
+2017-07-03 09:58:19.422 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : rankname   实际结果 : v0 ========= 预期结果 : v0
+2017-07-03 09:58:19.422 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : registertype   实际结果 : 3 ========= 预期结果 : 3
+2017-07-03 09:58:19.422 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : mobileconfirmed   实际结果 : true ========= 预期结果 : true
+2017-07-03 09:58:19.422 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : firstreggift   实际结果 : 1 ========= 预期结果 : 1
+2017-07-03 09:58:19.423 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : username   实际结果 : bdcafab5 ========= 预期结果 : bdcafab5
+2017-07-03 09:58:19.424 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:19.425 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:19.426 INFO  30 info - com.interf.eyee.script.AutoLogin: 用例名称 : 1_使用正确的sign和错误格式的token登录
+2017-07-03 09:58:19.427 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","sign":"5d3ef1733b73ae3490981ed7a3947bf7","token":"tail","version":"2.2.5"}
+2017-07-03 09:58:20.176 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:20.176 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：748
+2017-07-03 09:58:20.178 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:20.178 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511543 ========= 预期结果 : 1511543
+2017-07-03 09:58:20.178 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的用户token ========= 预期结果 : 无效的用户token
+2017-07-03 09:58:20.178 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-03 09:58:20.180 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:20.181 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:20.182 INFO  30 info - com.interf.eyee.script.AutoLogin: 用例名称 : 2_使用正确的sign和错误内容的token登录
+2017-07-03 09:58:20.183 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","sign":"05b85eda9965fe45029c3907721fe3c8","token":"WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ==","version":"2.2.5"}
+2017-07-03 09:58:20.719 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:20.720 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：536
+2017-07-03 09:58:20.721 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:20.721 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511543 ========= 预期结果 : 1511543
+2017-07-03 09:58:20.722 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的用户token ========= 预期结果 : 无效的用户token
+2017-07-03 09:58:20.723 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-03 09:58:20.726 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:20.727 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:20.729 INFO  30 info - com.interf.eyee.script.AutoLogin: 用例名称 : 3_使用错误的sign和正确的token登录
+2017-07-03 09:58:20.731 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","sign":"53324558ab4d27787bdc6b7aef40df5b","token":"AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJIMnWK2Te+qKOUWYV7DY3IBiXFNQcjCQlQ==","version":"2.2.5"}
+2017-07-03 09:58:21.288 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:21.288 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：557
+2017-07-03 09:58:21.289 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:21.289 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511501 ========= 预期结果 : 1511501
+2017-07-03 09:58:21.289 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的请求 ========= 预期结果 : 无效的请求
+2017-07-03 09:58:21.289 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-03 09:58:21.292 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:21.303 INFO  30 info - com.interf.eyee.script.Register: --------------- com.interf.eyee.script.Register ----------
+2017-07-03 09:58:21.314 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:21.315 INFO  30 info - com.interf.eyee.script.Register: 用例名称 : 0_使用正确信息注册
+2017-07-03 09:58:21.316 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-13818043122","param":"","password":"1bacee75c5a66fbc8e637159f9e6e8e7","platform":"ios","promocode":"","registerType":"3","registerTypeCode":"","sign":"9e52ef413200985cad4fe793961d1130","token":"","validCode":"9999","version":"2.2.5"}
+2017-07-03 09:58:21.919 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:21.919 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：603
+2017-07-03 09:58:21.920 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:21.920 INFO  30 info - com.interf.eyee.script.Register: 接口返回 : {"code":1511541,"msg":"该手机号已注册，请直接使用手机号登录","data":null,"servertime":"2017-07-03 09:58:36 +8"}
+2017-07-03 09:58:21.921 ERROR 46 error - com.interf.eyee.utils.HandleLog: 字段名称 :code   实际结果 : 1511541 ========= 预期结果 : 1511200
+2017-07-03 09:58:21.922 ERROR 46 error - com.interf.eyee.utils.HandleLog: 字段名称 :msg   实际结果 : 该手机号已注册，请直接使用手机号登录 ========= 预期结果 : 请求已完成
+2017-07-03 09:58:21.930 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:21.932 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:21.933 INFO  30 info - com.interf.eyee.script.Register: 用例名称 : 1_使用已被注册的手机号注册
+2017-07-03 09:58:21.934 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"+86-17740887033","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","promocode":"","registerType":"3","registerTypeCode":"","sign":"9e52ef413200985cad4fe793961d1130","token":"","validCode":"9999","version":"2.2.5"}
+2017-07-03 09:58:22.722 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:22.722 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：787
+2017-07-03 09:58:22.723 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:22.724 INFO  30 info - com.interf.eyee.script.Register: 接口返回 : {"code":1511541,"msg":"该手机号已注册，请直接使用手机号登录","data":null,"servertime":"2017-07-03 09:58:36 +8"}
+2017-07-03 09:58:22.724 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511541 ========= 预期结果 : 1511541
+2017-07-03 09:58:22.724 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 该手机号已注册，请直接使用手机号登录 ========= 预期结果 : 该手机号已注册，请直接使用手机号登录
+2017-07-03 09:58:22.725 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-03 09:58:22.729 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:22.730 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:22.732 INFO  30 info - com.interf.eyee.script.Register: 用例名称 : 2_使用空手机号注册
+2017-07-03 09:58:22.733 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","promocode":"","registerType":"3","registerTypeCode":"","sign":"9e52ef413200985cad4fe793961d1130","token":"","validCode":"9999","version":"2.2.5"}
+2017-07-03 09:58:23.315 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:23.315 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：581
+2017-07-03 09:58:23.316 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:23.316 INFO  30 info - com.interf.eyee.script.Register: 接口返回 : {"code":1511503,"msg":"缺少必要的参数","data":null,"servertime":"2017-07-03 09:58:37 +8"}
+2017-07-03 09:58:23.316 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511503 ========= 预期结果 : 1511503
+2017-07-03 09:58:23.316 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 缺少必要的参数 ========= 预期结果 : 缺少必要的参数
+2017-07-03 09:58:23.317 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-03 09:58:23.319 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:23.320 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-03 09:58:23.321 INFO  30 info - com.interf.eyee.script.Register: 用例名称 : 3_使用格式不正确的手机号注册
+2017-07-03 09:58:23.321 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","mobile":"17740887033","param":"","password":"ce6d4c3fb430931ee2d94671bff91fb7","platform":"ios","promocode":"","registerType":"3","registerTypeCode":"","sign":"9e52ef413200985cad4fe793961d1130","token":"","validCode":"9999","version":"2.2.5"}
+2017-07-03 09:58:24.003 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-03 09:58:24.004 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：681
+2017-07-03 09:58:24.004 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-03 09:58:24.004 INFO  30 info - com.interf.eyee.script.Register: 接口返回 : {"code":1511572,"msg":"手机号码格式不正确","data":null,"servertime":"2017-07-03 09:58:38 +8"}
+2017-07-03 09:58:24.005 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511572 ========= 预期结果 : 1511572
+2017-07-03 09:58:24.005 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 手机号码格式不正确 ========= 预期结果 : 手机号码格式不正确
+2017-07-03 09:58:24.005 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-03 09:58:24.006 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-03 09:58:24.013 INFO  30 info - com.interf.eyee.script.BaseCase: ==== 结束测试 ====

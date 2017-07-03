@@ -14,17 +14,20 @@ public class MD5 {
 	private static Log log = new Log(MD5.class);
 
 	public static String EncoderByMd5(String param) {
-		MessageDigest md5 = null;
-		try {
-			md5 = MessageDigest.getInstance("MD5");
-		} catch (NoSuchAlgorithmException e) {
-			log.error("MD5加密失败");
-			e.printStackTrace();
+		String result = null;
+		if (param != null) {
+			MessageDigest md5 = null;
+			try {
+				md5 = MessageDigest.getInstance("MD5");
+			} catch (NoSuchAlgorithmException e) {
+				log.error("获取MD5实例失败");
+				e.printStackTrace();
+			}
+			md5.update(param.getBytes());
+			String temp = new BigInteger(1, md5.digest()).toString(16);
+			result =  fillMD5(temp);
 		}
-		md5.update(param.getBytes());
-		String result = new BigInteger(1, md5.digest()).toString(16);
-		return fillMD5(result);
-
+		return result;
 	}
 
 	public static String fillMD5(String result) {
