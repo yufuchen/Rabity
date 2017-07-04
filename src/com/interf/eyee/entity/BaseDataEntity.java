@@ -4,6 +4,7 @@ package com.interf.eyee.entity;
 import java.util.HashMap;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.interf.eyee.entity.ExpectBaseEntity;
 
 public class BaseDataEntity {
@@ -11,11 +12,6 @@ public class BaseDataEntity {
 	private HashMap<String, String> input;
 	private ExpectBaseEntity baseline;
 	
-	
-	@Override
-	public String toString() {
-		return JSON.toJSONString(this);
-	}
 
 
 	public String getApi() {
@@ -25,6 +21,16 @@ public class BaseDataEntity {
 
 	public void setApi(String api) {
 		this.api = api;
+	}
+
+
+	public ExpectBaseEntity getBaseline() {
+		return baseline;
+	}
+
+
+	public void setBaseline(ExpectBaseEntity baseline) {
+		this.baseline = baseline;
 	}
 
 
@@ -38,13 +44,6 @@ public class BaseDataEntity {
 	}
 
 
-	public ExpectBaseEntity getBaseline() {
-		return baseline;
-	}
 
-
-	public void setBaseline(ExpectBaseEntity baseline) {
-		this.baseline = baseline;
-	}
 
 }

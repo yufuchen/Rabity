@@ -11,8 +11,8 @@ import com.alibaba.fastjson.JSONObject;
 public class ExpectBaseEntity {
 	private long code;
 	private String msg;
-	private JSONObject data;
 	private String serverTime;
+	private JSONObject data;
 	
 	
 	public long getCode() {
@@ -21,17 +21,12 @@ public class ExpectBaseEntity {
 	public void setCode(long code) {
 		this.code = code;
 	}
+	
 	public String getMsg() {
 		return msg;
 	}
 	public void setMsg(String msg) {
 		this.msg = msg;
-	}
-	public JSONObject getData() {
-		return data;
-	}
-	public void setData(JSONObject data) {
-		this.data = data;
 	}
 	public String getServerTime() {
 		return serverTime;
@@ -40,8 +35,11 @@ public class ExpectBaseEntity {
 		this.serverTime = serverTime;
 	}
 	
-	@Override
-	public String toString() {
-		return JSON.toJSONString(this);
+	
+	public JSONObject getData() {
+		return data;
+	}
+	public void setData(JSONObject data) {
+		this.data = data;
 	}
 }

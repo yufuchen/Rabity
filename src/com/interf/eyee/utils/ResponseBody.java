@@ -15,7 +15,7 @@ public class ResponseBody {
 		JSONObject temp = JSON.parseObject(body);
 		response.setCode(temp.getLong("code"));
 		response.setMsg(temp.getString("msg"));
-		response.setData(temp.getJSONObject("data"));
+		response.setData(temp.getString("data"));
 		return response;
 	}
 }

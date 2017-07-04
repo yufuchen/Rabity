@@ -2,12 +2,8 @@ package com.interf.eyee.utils;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
-
 import org.testng.Assert;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.interf.eyee.entity.ExpectBaseEntity;
 import com.interf.eyee.entity.ResponseEntity;
 

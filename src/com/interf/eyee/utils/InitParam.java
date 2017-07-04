@@ -1,10 +1,8 @@
 package com.interf.eyee.utils;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Properties;
 
-import com.alibaba.fastjson.JSONObject;
 import com.interf.eyee.entity.BaseEntity;
 
 
@@ -53,7 +51,10 @@ public class InitParam {
 	}
 	
 	public static String handlePwd(HashMap<String, String> map) {
-		String pwd = MD5.EncoderByMd5(map.get("password"));
+		String pwd = map.get("password");
+		if (pwd != null && !pwd.equals("")) {
+			pwd = MD5.EncoderByMd5(map.get("password"));
+		}
 		return pwd;
 	}
 	
