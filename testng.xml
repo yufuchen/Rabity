@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Debug">
-  <test name="ProductDetail">
+  <test name="MobileLogin">
     <classes>
-      <class name="com.interf.eyee.script.ProductDetail">
+      <class name="com.interf.eyee.script.MobileLogin">
        <methods>
-        <include name="productDetailTest" />
+        <include name="MobileLoginTest" />
        </methods>
       </class>
     </classes>

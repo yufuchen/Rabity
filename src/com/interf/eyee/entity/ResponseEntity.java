@@ -1,12 +1,9 @@
 package com.interf.eyee.entity;
 
-
-import com.alibaba.fastjson.JSONObject;
-
 public class ResponseEntity {
 	private long code;
 	private String msg;
-	private String data;
+	private Object data;
 	private String serverTime;
 	public long getCode() {
 		return code;
@@ -26,10 +23,10 @@ public class ResponseEntity {
 	public void setServerTime(String serverTime) {
 		this.serverTime = serverTime;
 	}
-	public String getData() {
+	public Object getData() {
 		return data;
 	}
-	public void setData(String data) {
+	public void setData(Object data) {
 		this.data = data;
 	}
 }

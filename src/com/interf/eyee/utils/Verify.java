@@ -123,12 +123,12 @@ public class Verify {
 		return verifyFlag;
 	}
 
-	public static void doAssert(ResponseEntity response, ExpectBaseEntity baseLine) {
-		boolean flag = false;
-		flag = Verify.verifyEquals(response.getCode(), baseLine.getCode());
-		HandleLog.write(flag, "code", Long.toString(response.getCode()), Long.toString(baseLine.getCode()));
-		flag = Verify.verifyEquals(response.getMsg(), baseLine.getMsg());
-		HandleLog.write(flag, "msg", response.getMsg(), baseLine.getMsg());
+//	public static void doAssert(ResponseEntity response, ExpectBaseEntity baseLine) {
+//		boolean flag = false;
+//		flag = Verify.verifyEquals(response.getCode(), baseLine.getCode());
+//		HandleLog.write(flag, "code", Long.toString(response.getCode()), Long.toString(baseLine.getCode()));
+//		flag = Verify.verifyEquals(response.getMsg(), baseLine.getMsg());
+//		HandleLog.write(flag, "msg", response.getMsg(), baseLine.getMsg());
 
 //		if (!baseLine.getData().toJSONString().equals("{}")) {
 //			JSONObject baseLineJson = baseLine.getData();
@@ -147,5 +147,5 @@ public class Verify {
 //			flag = Verify.verifyNull(response.getData());
 //			HandleLog.write(flag, "data", "null", "null");
 //		}
-	}
+//	}
 }

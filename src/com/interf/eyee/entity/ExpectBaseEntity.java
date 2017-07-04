@@ -1,9 +1,5 @@
 package com.interf.eyee.entity;
 
-
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-
 /**
  * @author Ksewen
  *
@@ -12,7 +8,8 @@ public class ExpectBaseEntity {
 	private long code;
 	private String msg;
 	private String serverTime;
-	private JSONObject data;
+	//data属性待升级，目前对含字符串data标签有bug
+	private Object data;
 	
 	
 	public long getCode() {
@@ -36,10 +33,10 @@ public class ExpectBaseEntity {
 	}
 	
 	
-	public JSONObject getData() {
+	public Object getData() {
 		return data;
 	}
-	public void setData(JSONObject data) {
+	public void setData(Object data) {
 		this.data = data;
 	}
 }
