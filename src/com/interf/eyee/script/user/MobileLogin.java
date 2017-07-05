@@ -1,13 +1,10 @@
 package com.interf.eyee.script.user;
 
-import org.apache.http.impl.conn.SystemDefaultDnsResolver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.google.gson.JsonObject;
 import com.interf.eyee.dataprovider.BaseDataProvider;
 import com.interf.eyee.entity.BaseDataEntity;
 import com.interf.eyee.entity.MobileLoginEntity;
@@ -18,7 +15,6 @@ import com.interf.eyee.utils.Log;
 import com.interf.eyee.utils.Post;
 import com.interf.eyee.utils.ResponseBody;
 import com.interf.eyee.utils.TokenManager;
-import com.interf.eyee.utils.Verify;
 import com.interf.eyee.utils.responseassert.NormalAssert;
 
 /**

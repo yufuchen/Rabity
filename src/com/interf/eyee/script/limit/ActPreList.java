@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import com.interf.eyee.dataprovider.BaseDataProvider;
 import com.interf.eyee.entity.ActPreListEntity;
+import com.interf.eyee.entity.ActPreListParamEntity;
 import com.interf.eyee.entity.BaseDataEntity;
 import com.interf.eyee.entity.ResponseEntity;
 import com.interf.eyee.script.BaseCase;
@@ -12,6 +13,7 @@ import com.interf.eyee.utils.Log;
 import com.interf.eyee.utils.Post;
 import com.interf.eyee.utils.ResponseBody;
 import com.interf.eyee.utils.responseassert.NormalAssert;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 
@@ -27,8 +29,10 @@ public class ActPreList extends BaseCase {
 		testCase = data.getInput();
 		baseLine = data.getBaseline();
 		baseApi = data.getApi();
-		 
-//		actPreListEntity.setParam(InitParam.handleParam(new ActPreListParamEntity(), testCase));
+		
+		//封装用例获取的参数/param可为空值
+//		actPreListEntity.setToken(InitParam.handleToken(testCase));
+		actPreListEntity.setParam(InitParam.handleParam(testCase));
 		actPreListEntity.setSign(InitParam.handleSign(testCase, actPreListEntity.getToken(), actPreListEntity.getPlatform()));
 		
 		// 调用接口

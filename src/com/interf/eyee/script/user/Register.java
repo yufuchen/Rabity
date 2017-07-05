@@ -11,7 +11,6 @@ import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;
 import com.interf.eyee.utils.Post;
 import com.interf.eyee.utils.ResponseBody;
-import com.interf.eyee.utils.Verify;
 import com.interf.eyee.utils.responseassert.NormalAssert;
 
 import org.testng.annotations.BeforeClass;
@@ -32,7 +31,7 @@ public class Register extends BaseCase {
 
 		// 封装用例读取的参数
 		registerEntity.setSign(InitParam.handleSign(testCase, registerEntity.getToken(), registerEntity.getPlatform()));
-		registerEntity.setMobile(testCase.get("mobile"));
+		registerEntity.setMobile(InitParam.caseSet(testCase, "mobile"));
 		registerEntity.setPassword(InitParam.handlePwd(testCase));
 		registerEntity.setValidCode(InitParam.caseSet(testCase, "validcode"));
 		registerEntity.setRegisterType(InitParam.handleRegisterType(testCase));

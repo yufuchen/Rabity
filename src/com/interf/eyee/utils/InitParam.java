@@ -3,7 +3,9 @@ package com.interf.eyee.utils;
 import java.util.HashMap;
 import java.util.Properties;
 
+import com.alibaba.fastjson.JSONObject;
 import com.interf.eyee.entity.BaseEntity;
+import com.interf.eyee.entity.BaseParamEntity;
 
 
 /**
@@ -42,44 +44,67 @@ public class InitParam {
 		}
 	}
 	
-	public static String handleSign(HashMap<String, String> map,String token, String platform) {
-		String sign = map.get("sign");
-		if (sign == null || sign.equals("")) {
+	public static String handleSign(HashMap<String, Object> map,String token, String platform) {
+		String sign = "";
+		if (map.get("sign") instanceof String) {
+			sign = map.get("sign").toString();
+		}
+		if (null == sign || sign.equals("")) {
 			sign = MD5.getMd5(token, platform);
 		}
 		return sign;
 	}
 	
-	public static String handlePwd(HashMap<String, String> map) {
-		String pwd = map.get("password");
-		if (pwd != null && !pwd.equals("")) {
-			pwd = MD5.EncoderByMd5(map.get("password"));
+	public static String handlePwd(HashMap<String, Object> map) {
+		String pwd = "";
+		if (map.get("password") instanceof String) {
+			pwd = map.get("password").toString();	
+		}
+		if (null != pwd && !pwd.equals("")) {
+			pwd = MD5.EncoderByMd5(pwd);
 		}
 		return pwd;
 	}
 	
-	public static String handleToken(HashMap<String, String> map) {
-		String token = map.get("token");
-		if (token == null || token.equals("")) {
+	public static String handleToken(HashMap<String, Object> map) {
+		String token = "";
+		if (map.get("token") instanceof String) {
+			token = map.get("token").toString();
+		}
+		if (null == token || token.equals("")) {
 			token = TokenManager.getToken();
-		} else if (token.equals("null")) {
-			token = "";
 		}
 		return token;
 		
 	}
 	
-	public static String caseSet(HashMap<String, String> map, String key){
-		String value = map.get(key);
-		if (value == null || value.equals("")) {
+	public static String caseSet(HashMap<String, Object> map, String key){
+		String value = "";
+		if (map.get(key) instanceof String) {
+			value = map.get(key).toString();
+		}
+		if (null == value || value.equals("")) {
 			value = "";
 		}
 		return value;
 	}
 	
-	public static String handleRegisterType(HashMap<String, String> map) {
-		String registerType = map.get("registertype");
-		if (registerType == null || registerType.equals("")) {
+	public static String handleParam(HashMap<String, Object> map) {
+		if (map.get("param") instanceof JSONObject) {
+			JSONObject json = (JSONObject) map.get("param");
+			return json.toJSONString();
+		} else if (map.get("param") instanceof String) {
+			return map.get("param").toString();
+		}
+		return null;
+	}
+	
+	public static String handleRegisterType(HashMap<String, Object> map) {
+		String registerType = "";
+		if (map.get("registertype") instanceof String) {
+			registerType = map.get("registertype").toString();
+		}
+		if (null == registerType || registerType.equals("")) {
 			if (p != null) {
 				String key = p.getProperty("platform");
 				switch (key) {

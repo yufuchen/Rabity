@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import org.testng.Assert;
 
-import com.interf.eyee.entity.ExpectBaseEntity;
-import com.interf.eyee.entity.ResponseEntity;
-
 /**
  * @author Ksewen
  *

@@ -2,8 +2,6 @@ package com.interf.eyee.script.product;
 
 import org.testng.annotations.Test;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.interf.eyee.dataprovider.BaseDataProvider;
 import com.interf.eyee.entity.BaseDataEntity;
 import com.interf.eyee.entity.ProductDetailEntity;
@@ -13,11 +11,12 @@ import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;
 import com.interf.eyee.utils.Post;
 import com.interf.eyee.utils.ResponseBody;
-import com.interf.eyee.utils.Verify;
 import com.interf.eyee.utils.responseassert.NormalAssert;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 
+@Listeners({ com.interf.eyee.listener.VerifyListener.class })
 public class ProductDetail extends BaseCase {
 	private Log log = new Log(ProductDetail.class);
 	private ProductDetailEntity productDetailEntity = null;

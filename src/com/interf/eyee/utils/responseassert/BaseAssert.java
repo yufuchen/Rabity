@@ -4,8 +4,6 @@ package com.interf.eyee.utils.responseassert;
  *
  */
 
-import static org.testng.Assert.assertEquals;
-
 import com.interf.eyee.entity.ExpectBaseEntity;
 import com.interf.eyee.entity.ResponseEntity;
 import com.interf.eyee.utils.HandleLog;

@@ -7,7 +7,7 @@ import com.interf.eyee.entity.ExpectBaseEntity;
 
 public class BaseDataEntity {
 	private String api;
-	private HashMap<String, String> input;
+	private HashMap<String, Object> input;
 	private ExpectBaseEntity baseline;
 	
 
@@ -32,12 +32,12 @@ public class BaseDataEntity {
 	}
 
 
-	public HashMap<String, String> getInput() {
+	public HashMap<String, Object> getInput() {
 		return input;
 	}
 
 
-	public void setInput(HashMap<String, String> input) {
+	public void setInput(HashMap<String, Object> input) {
 		this.input = input;
 	}
 

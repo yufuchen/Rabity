@@ -18,7 +18,7 @@ public class BaseCase {
 	protected static String baseUrl;
 	protected static String baseApi;
 	protected boolean flag = false;
-	protected HashMap<String, String> testCase = null;
+	protected HashMap<String, Object> testCase = null;
 	protected ExpectBaseEntity baseLine = null;
 	
 	private Properties p = ConfigUtils.getProperties(config);

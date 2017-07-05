@@ -15,7 +15,7 @@ public class BaseEntity {
 	private String deviceudid;
 	private String sign;
 	private String token;
-	private String param;
+	private Object param;
 	
 	public void setVersion(String version) {
 		this.version = version;
@@ -69,7 +69,7 @@ public class BaseEntity {
 		return token;
 	}
 	
-	public String getParam() {
+	public Object getParam() {
 		return param;
 	}
 	
@@ -86,5 +86,9 @@ public class BaseEntity {
 	@Override
 	public String toString() {
 		return JSON.toJSONString(this);
+	}
+
+	public void setParam(Object param) {
+		this.param = param;
 	}
 }
