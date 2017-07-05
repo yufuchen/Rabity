@@ -17,7 +17,7 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 
-@Listeners({ com.interf.eyee.listener.VerifyListener.class })
+
 public class ActPreList extends BaseCase {
 	private Log log = new Log(ActPreList.class);
 	private ActPreListEntity actPreListEntity = null;
@@ -47,7 +47,7 @@ public class ActPreList extends BaseCase {
 		NormalAssert normal = new NormalAssert(response, baseLine);
 		normal.assertCode();
 		normal.assertMsg();
-		// normal.assertData();
+		normal.assertData();
 	}
 
 	@BeforeClass

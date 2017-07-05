@@ -20,7 +20,7 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
  *
  */
 
-@Listeners({ com.interf.eyee.listener.VerifyListener.class })
+
 public class AutoLogin extends BaseCase {
 	private AutoLoginEntity autoLoginEntity = null;
 	private Log log = new Log(AutoLogin.class);

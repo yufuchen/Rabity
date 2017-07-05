@@ -22,7 +22,7 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
  *
  */
 
-@Listeners({ com.interf.eyee.listener.VerifyListener.class })
+
 public class MobileLogin extends BaseCase {
 	private Log log = new Log(MobileLogin.class);
 	private MobileLoginEntity mobileLoginEntity = null;

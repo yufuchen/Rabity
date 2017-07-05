@@ -16,7 +16,7 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 
-@Listeners({ com.interf.eyee.listener.VerifyListener.class })
+
 public class ProductDetail extends BaseCase {
 	private Log log = new Log(ProductDetail.class);
 	private ProductDetailEntity productDetailEntity = null;

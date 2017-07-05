@@ -1,13 +1,35 @@
-2017-07-05 17:10:22.387 INFO  30 info - com.interf.eyee.script.BaseCase: ==== http://140.207.155.74/ - 开始测试 ====
-2017-07-05 17:10:22.396 INFO  30 info - com.interf.eyee.script.limit.ActPreList: --------------- com.interf.eyee.script.limit.ActPreList ----------
-2017-07-05 17:10:22.575 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
-2017-07-05 17:10:22.580 INFO  30 info - com.interf.eyee.script.limit.ActPreList: 用例名称 : 0_使用正确的sign和token登录
-2017-07-05 17:10:22.604 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
-2017-07-05 17:10:23.313 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
-2017-07-05 17:10:23.314 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：705
-2017-07-05 17:10:23.316 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
-2017-07-05 17:10:23.317 INFO  30 info - com.interf.eyee.script.limit.ActPreList: 接口返回 : {"code":1511200,"msg":"请求已完成","data":[{"productid":"13a5243c401e45e5a3c274b517a341ba","title":"123","picurl":"http://files.eyee.com/Shop/system/main/ba4872c3979e4214ae1da8521de5b195.jpg","saleprice":574.45,"specialprice":574.45,"foreshowtime":"2017-05-12 00:00:00 +8","begintime":"2017-06-17 11:09:00 +8","endtime":"2017-07-05 23:56:00 +8","type":0,"stock":1,"issoldout":false},{"productid":"9dc508af06714b04939009a23030080a","title":"huhuhaha","picurl":"http://files.eyee.com/Shop/system/main/1e3b843f73b44056a01d1476d7b92da6.jpg","saleprice":2636.0,"specialprice":2635.0,"foreshowtime":"2017-07-04 00:00:00 +8","begintime":"2017-07-07 00:00:00 +8","endtime":"2017-07-14 00:00:00 +8","type":1,"stock":9,"issoldout":false}],"servertime":"2017-07-05 17:10:31 +8"}
-2017-07-05 17:10:23.335 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
-2017-07-05 17:10:23.335 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
-2017-07-05 17:10:23.337 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
-2017-07-05 17:10:23.359 INFO  30 info - com.interf.eyee.script.BaseCase: ==== 结束测试 ====
+2017-07-05 17:45:39.810 INFO  30 info - com.interf.eyee.script.BaseCase: ==== http://140.207.155.74/ - 开始测试 ====
+2017-07-05 17:45:39.819 INFO  30 info - com.interf.eyee.script.limit.ActPreList: --------------- com.interf.eyee.script.limit.ActPreList ----------
+2017-07-05 17:45:39.989 INFO  30 info - com.interf.eyee.script.BaseCase: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-05 17:45:39.994 INFO  30 info - com.interf.eyee.script.limit.ActPreList: 用例名称 : 0_使用正确的sign和token登录
+2017-07-05 17:45:40.019 INFO  30 info - com.interf.eyee.utils.Post: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"{\"channel\":\"eyee\",\"idfa\":\"b8ccd9578ece423e80230e1bebf886d1\"}","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
+2017-07-05 17:45:40.823 INFO  30 info - com.interf.eyee.utils.Post: statusCode:200
+2017-07-05 17:45:40.823 INFO  30 info - com.interf.eyee.utils.Post: 调用API 花费时间(单位：毫秒)：800
+2017-07-05 17:45:40.825 INFO  30 info - com.interf.eyee.utils.Post: 调用接口状态：0
+2017-07-05 17:45:40.826 INFO  30 info - com.interf.eyee.script.limit.ActPreList: 接口返回 : {"code":1511200,"msg":"请求已完成","data":[{"productid":"13a5243c401e45e5a3c274b517a341ba","title":"123","picurl":"http://files.eyee.com/Shop/system/main/ba4872c3979e4214ae1da8521de5b195.jpg","saleprice":574.45,"specialprice":574.45,"foreshowtime":"2017-05-12 00:00:00 +8","begintime":"2017-06-17 11:09:00 +8","endtime":"2017-07-05 23:56:00 +8","type":0,"stock":1,"issoldout":false},{"productid":"9dc508af06714b04939009a23030080a","title":"huhuhaha","picurl":"http://files.eyee.com/Shop/system/main/1e3b843f73b44056a01d1476d7b92da6.jpg","saleprice":2636.0,"specialprice":2635.0,"foreshowtime":"2017-07-04 00:00:00 +8","begintime":"2017-07-07 00:00:00 +8","endtime":"2017-07-14 00:00:00 +8","type":1,"stock":9,"issoldout":false}],"servertime":"2017-07-05 17:45:49 +8"}
+2017-07-05 17:45:40.835 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
+2017-07-05 17:45:40.835 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
+2017-07-05 17:45:40.836 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : picurl   实际结果 : http://files.eyee.com/Shop/system/main/ba4872c3979e4214ae1da8521de5b195.jpg ========= 预期结果 : http://files.eyee.com/Shop/system/main/ba4872c3979e4214ae1da8521de5b195.jpg
+2017-07-05 17:45:40.837 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : issoldout   实际结果 : false ========= 预期结果 : false
+2017-07-05 17:45:40.837 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : productid   实际结果 : 13a5243c401e45e5a3c274b517a341ba ========= 预期结果 : 13a5243c401e45e5a3c274b517a341ba
+2017-07-05 17:45:40.837 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : foreshowtime   实际结果 : 2017-05-12 00:00:00 +8 ========= 预期结果 : 2017-05-12 00:00:00 +8
+2017-07-05 17:45:40.837 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : saleprice   实际结果 : 574.45 ========= 预期结果 : 574.45
+2017-07-05 17:45:40.838 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : endtime   实际结果 : 2017-07-05 23:56:00 +8 ========= 预期结果 : 2017-07-05 23:56:00 +8
+2017-07-05 17:45:40.838 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : begintime   实际结果 : 2017-06-17 11:09:00 +8 ========= 预期结果 : 2017-06-17 11:09:00 +8
+2017-07-05 17:45:40.838 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : title   实际结果 : 123 ========= 预期结果 : 123
+2017-07-05 17:45:40.839 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : type   实际结果 : 0 ========= 预期结果 : 0
+2017-07-05 17:45:40.839 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : stock   实际结果 : 1 ========= 预期结果 : 1
+2017-07-05 17:45:40.840 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : specialprice   实际结果 : 574.45 ========= 预期结果 : 574.45
+2017-07-05 17:45:40.840 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : picurl   实际结果 : http://files.eyee.com/Shop/system/main/1e3b843f73b44056a01d1476d7b92da6.jpg ========= 预期结果 : http://files.eyee.com/Shop/system/main/1e3b843f73b44056a01d1476d7b92da6.jpg
+2017-07-05 17:45:40.840 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : issoldout   实际结果 : false ========= 预期结果 : false
+2017-07-05 17:45:40.841 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : productid   实际结果 : 9dc508af06714b04939009a23030080a ========= 预期结果 : 9dc508af06714b04939009a23030080a
+2017-07-05 17:45:40.841 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : foreshowtime   实际结果 : 2017-07-04 00:00:00 +8 ========= 预期结果 : 2017-07-04 00:00:00 +8
+2017-07-05 17:45:40.842 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : saleprice   实际结果 : 2636.0 ========= 预期结果 : 2636.0
+2017-07-05 17:45:40.842 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : endtime   实际结果 : 2017-07-14 00:00:00 +8 ========= 预期结果 : 2017-07-14 00:00:00 +8
+2017-07-05 17:45:40.842 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : begintime   实际结果 : 2017-07-07 00:00:00 +8 ========= 预期结果 : 2017-07-07 00:00:00 +8
+2017-07-05 17:45:40.843 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : title   实际结果 : huhuhaha ========= 预期结果 : huhuhaha
+2017-07-05 17:45:40.843 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : type   实际结果 : 1 ========= 预期结果 : 1
+2017-07-05 17:45:40.844 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : stock   实际结果 : 9 ========= 预期结果 : 9
+2017-07-05 17:45:40.844 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : specialprice   实际结果 : 2635.0 ========= 预期结果 : 2635.0
+2017-07-05 17:45:40.845 INFO  30 info - com.interf.eyee.script.BaseCase: 清除本条用例数据完成
+2017-07-05 17:45:40.864 INFO  30 info - com.interf.eyee.script.BaseCase: ==== 结束测试 ====

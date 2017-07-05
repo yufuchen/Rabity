@@ -16,7 +16,7 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 
-@Listeners({ com.interf.eyee.listener.VerifyListener.class })
+
 public class Register extends BaseCase {
 	private RegisterEntity registerEntity = null;
 	private Log log = new Log(Register.class);
