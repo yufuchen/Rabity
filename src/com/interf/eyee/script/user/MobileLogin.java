@@ -1,4 +1,4 @@
-package com.interf.eyee.script;
+package com.interf.eyee.script.user;
 
 import org.apache.http.impl.conn.SystemDefaultDnsResolver;
 import org.testng.annotations.BeforeClass;
@@ -12,6 +12,7 @@ import com.interf.eyee.dataprovider.BaseDataProvider;
 import com.interf.eyee.entity.BaseDataEntity;
 import com.interf.eyee.entity.MobileLoginEntity;
 import com.interf.eyee.entity.ResponseEntity;
+import com.interf.eyee.script.BaseCase;
 import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;
 import com.interf.eyee.utils.Post;

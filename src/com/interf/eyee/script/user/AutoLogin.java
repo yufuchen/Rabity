@@ -1,4 +1,4 @@
-package com.interf.eyee.script;
+package com.interf.eyee.script.user;
 
 import java.util.Set;
 
@@ -11,6 +11,7 @@ import com.interf.eyee.dataprovider.BaseDataProvider;
 import com.interf.eyee.entity.AutoLoginEntity;
 import com.interf.eyee.entity.BaseDataEntity;
 import com.interf.eyee.entity.ResponseEntity;
+import com.interf.eyee.script.BaseCase;
 import com.interf.eyee.utils.HandleLog;
 import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;

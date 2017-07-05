@@ -3,7 +3,7 @@
 <suite name="Eyee_API_20170630">
 	<test name="MobileLogin">
 		<classes>
-			<class name="com.interf.eyee.script.MobileLogin">
+			<class name="com.interf.eyee.script.user.MobileLogin">
 				<methods>
 					<include name="MobileLoginTest" />
 				</methods>
@@ -12,7 +12,7 @@
 	</test> <!-- MobileLogin -->
 	<test name="AutoLogin">
 		<classes>
-			<class name="com.interf.eyee.script.AutoLogin">
+			<class name="com.interf.eyee.script.user.AutoLogin">
 				<methods>
 					<include name="AutoLoginTest" />
 				</methods>
@@ -21,7 +21,7 @@
 	</test> <!-- AutoLogin -->
 	<test name="Register">
 		<classes>
-			<class name="com.interf.eyee.script.Register">
+			<class name="com.interf.eyee.script.user.Register">
 				<methods>
 					<include name="registerTest" />
 				</methods>
@@ -30,7 +30,7 @@
 	</test> <!-- Register -->
 	<test name="ProductDetail">
 		<classes>
-			<class name="com.interf.eyee.script.ProductDetail">
+			<class name="com.interf.eyee.script.product.ProductDetail">
 				<methods>
 					<include name="productDetailTest" />
 				</methods>

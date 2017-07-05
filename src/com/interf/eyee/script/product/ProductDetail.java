@@ -1,4 +1,4 @@
-package com.interf.eyee.script;
+package com.interf.eyee.script.product;
 
 import org.testng.annotations.Test;
 
@@ -8,6 +8,7 @@ import com.interf.eyee.dataprovider.BaseDataProvider;
 import com.interf.eyee.entity.BaseDataEntity;
 import com.interf.eyee.entity.ProductDetailEntity;
 import com.interf.eyee.entity.ResponseEntity;
+import com.interf.eyee.script.BaseCase;
 import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;
 import com.interf.eyee.utils.Post;
