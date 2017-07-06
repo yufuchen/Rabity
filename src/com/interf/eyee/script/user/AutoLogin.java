@@ -22,7 +22,7 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
 
 public class AutoLogin extends BaseCase {
 	private EmptyEntity autoLoginEntity = null;
-	private Log log = new Log(AutoLogin.class);
+	private Log log = new Log(this.getClass());
 
 	@BeforeClass
 	public void beforeClass() {

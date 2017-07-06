@@ -18,7 +18,7 @@ import org.testng.annotations.BeforeClass;
 
 public class BaseValue extends BaseCase {
 
-	private Log log = new Log(MobileLogin.class);
+	private Log log = new Log(this.getClass());
 	private EmptyEntity baseValueEntity = null;
 
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)

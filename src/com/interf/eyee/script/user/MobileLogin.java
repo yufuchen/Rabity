@@ -23,7 +23,7 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
 
 
 public class MobileLogin extends BaseCase {
-	private Log log = new Log(MobileLogin.class);
+	private Log log = new Log(this.getClass());
 	private MobileLoginEntity mobileLoginEntity = null;
 
 	@BeforeClass

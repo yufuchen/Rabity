@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import com.interf.eyee.dataprovider.BaseDataProvider;
 import com.interf.eyee.entity.BaseDataEntity;
-import com.interf.eyee.entity.ProductDetailEntity;
+import com.interf.eyee.entity.NewSearchV218Entity;
 import com.interf.eyee.entity.ResponseEntity;
 import com.interf.eyee.script.BaseCase;
 import com.interf.eyee.utils.HttpUntils;
@@ -15,45 +15,41 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
 
 import org.testng.annotations.BeforeClass;
 
-
-public class ProductDetail extends BaseCase {
+public class NewSearchV218 extends BaseCase {
 	private Log log = new Log(this.getClass());
-	private ProductDetailEntity productDetailEntity = null;
+	NewSearchV218Entity newSearchV218Entity = null;
 
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)
-	public void productDetailTest(String testName, BaseDataEntity data) {
-
+	public void newSearchV218Test(String testName, BaseDataEntity data) {
 		log.info("用例名称 : " + testName);
 
 		testCase = data.getInput();
 		baseLine = data.getBaseline();
 		baseApi = data.getApi();
 
-		// 封装用例读取的参数
-		productDetailEntity.setProductId(InitParam.caseSet(testCase, "productid"));
-		productDetailEntity.setToken(InitParam.handleToken(testCase));
-		productDetailEntity.setSign(
-				InitParam.handleSign(testCase, productDetailEntity.getToken(), productDetailEntity.getPlatform()));
-
-		// 调用接口
-		String body = HttpUntils.post(baseUrl + baseApi, productDetailEntity);
+		newSearchV218Entity.setSign(
+				InitParam.handleSign(testCase, newSearchV218Entity.getToken(), newSearchV218Entity.getPlatform()));
+		newSearchV218Entity.setIsRecommendOver(Integer.parseInt(InitParam.caseSet(testCase, "isrecommendover")));
+		newSearchV218Entity.setIsSearchAll(Integer.parseInt(InitParam.caseSet(testCase, "issearchall")));
+		newSearchV218Entity.setPageIndex(Integer.parseInt(InitParam.caseSet(testCase, "pageindex")));
+		
+		
+		String body = HttpUntils.post(baseUrl + baseApi, newSearchV218Entity);
 		log.info("接口返回 : " + body);
 
-		// 读取返回实体
 		ResponseEntity response = ResponseBody.handle(body);
-		
-		// 断言
+
 		NormalAssert normal = new NormalAssert(response, baseLine);
 		normal.assertCode();
 		normal.assertMsg();
-		// data断言待增加，需重写断言类
+		// data断言待增加，需重写断言类，修改用例data字段
 	}
 
 	@BeforeClass
 	public void beforeClass() {
-		productDetailEntity = new ProductDetailEntity();
-		super.setEntity(productDetailEntity);
-		log.info("--------------- " + ProductDetail.class.getName() + " ----------");
+		newSearchV218Entity = new NewSearchV218Entity();
+		super.setEntity(newSearchV218Entity);
+		log.info("--------------- " + NewSearchV218.class.getName() + " ----------");
 	}
 
 }

@@ -22,10 +22,10 @@ public class BaseCase {
 	protected boolean flag = false;
 	protected HashMap<String, Object> testCase = null;
 	protected ExpectBaseEntity baseLine = null;
-	
+
 	private Properties p = ConfigUtils.getProperties(config);
 	private static String config = System.getProperty("user.dir") + "/config.properties";
-	private Log log = new Log(BaseCase.class);
+	private Log log = new Log(this.getClass());
 	private BaseEntity entity;
 
 	public void setEntity(BaseEntity entity) {

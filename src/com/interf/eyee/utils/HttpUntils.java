@@ -31,6 +31,7 @@ public class HttpUntils {
 		String param = postEntity.toString();
 		String body = null;
 		
+		log.info("正在发起请求 : " + baseUrl);
 		log.info("输入参数: " + param);
 
 		if (postMethod != null && param != null && !"".equals(param.trim())) {

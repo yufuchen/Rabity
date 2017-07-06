@@ -15,7 +15,7 @@ import com.interf.eyee.utils.ResponseBody;
 import com.interf.eyee.utils.responseassert.NormalAssert;
 
 public class AddUserLogInfo extends BaseCase {
-	private Log log = new Log(AddUserLogInfo.class);
+	private Log log = new Log(this.getClass());
 	private AddUserLogInfoEntity addUserLogInfoEntity = null;
 
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)

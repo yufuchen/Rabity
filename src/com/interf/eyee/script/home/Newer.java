@@ -16,7 +16,7 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
 import org.testng.annotations.BeforeClass;
 
 public class Newer extends BaseCase {
-	private Log log = new Log(Newer.class);
+	private Log log = new Log(this.getClass());
 	private EmptyEntity newerEntity = null;
 
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)

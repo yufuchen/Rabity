@@ -18,7 +18,7 @@ import org.testng.annotations.BeforeClass;
 
 public class Register extends BaseCase {
 	private RegisterEntity registerEntity = null;
-	private Log log = new Log(Register.class);
+	private Log log = new Log(this.getClass());
 
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)
 	public void registerTest(String testName, BaseDataEntity data) {
