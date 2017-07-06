@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Debug">
-  <test name="ActPreList">
+  <test name="Newer">
     <classes>
-      <class name="com.interf.eyee.script.limit.ActPreList">
+      <class name="com.interf.eyee.script.home.Newer">
        <methods>
-        <include name="actPreListTest" />
+        <include name="newerTest" />
        </methods>
       </class>
     </classes>
-  </test> <!-- ProductDetail -->
+  </test> <!-- Newer -->
 </suite> <!-- Debug -->

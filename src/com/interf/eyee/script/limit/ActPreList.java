@@ -4,18 +4,16 @@ import org.testng.annotations.Test;
 
 import com.interf.eyee.dataprovider.BaseDataProvider;
 import com.interf.eyee.entity.ActPreListEntity;
-import com.interf.eyee.entity.ActPreListParamEntity;
 import com.interf.eyee.entity.BaseDataEntity;
 import com.interf.eyee.entity.ResponseEntity;
 import com.interf.eyee.script.BaseCase;
+import com.interf.eyee.utils.HttpUntils;
 import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;
-import com.interf.eyee.utils.Post;
 import com.interf.eyee.utils.ResponseBody;
 import com.interf.eyee.utils.responseassert.NormalAssert;
 
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
 
 
 public class ActPreList extends BaseCase {
@@ -36,8 +34,7 @@ public class ActPreList extends BaseCase {
 		actPreListEntity.setSign(InitParam.handleSign(testCase, actPreListEntity.getToken(), actPreListEntity.getPlatform()));
 		
 		// 调用接口
-		Post post = new Post();
-		String body = post.doPost(baseUrl + baseApi, actPreListEntity);
+		String body = HttpUntils.post(baseUrl + baseApi, actPreListEntity);
 		log.info("接口返回 : " + body);
 
 		// 读取返回实体

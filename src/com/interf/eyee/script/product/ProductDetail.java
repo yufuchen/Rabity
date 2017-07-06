@@ -7,14 +7,13 @@ import com.interf.eyee.entity.BaseDataEntity;
 import com.interf.eyee.entity.ProductDetailEntity;
 import com.interf.eyee.entity.ResponseEntity;
 import com.interf.eyee.script.BaseCase;
+import com.interf.eyee.utils.HttpUntils;
 import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;
-import com.interf.eyee.utils.Post;
 import com.interf.eyee.utils.ResponseBody;
 import com.interf.eyee.utils.responseassert.NormalAssert;
 
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
 
 
 public class ProductDetail extends BaseCase {
@@ -37,8 +36,7 @@ public class ProductDetail extends BaseCase {
 				InitParam.handleSign(testCase, productDetailEntity.getToken(), productDetailEntity.getPlatform()));
 
 		// 调用接口
-		Post post = new Post();
-		String body = post.doPost(baseUrl + baseApi, productDetailEntity);
+		String body = HttpUntils.post(baseUrl + baseApi, productDetailEntity);
 		log.info("接口返回 : " + body);
 
 		// 读取返回实体
@@ -48,7 +46,7 @@ public class ProductDetail extends BaseCase {
 		NormalAssert normal = new NormalAssert(response, baseLine);
 		normal.assertCode();
 		normal.assertMsg();
-//		normal.assertData();
+		// data断言待增加，需重写断言类
 	}
 
 	@BeforeClass

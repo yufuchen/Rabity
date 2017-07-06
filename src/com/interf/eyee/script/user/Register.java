@@ -7,14 +7,13 @@ import com.interf.eyee.entity.BaseDataEntity;
 import com.interf.eyee.entity.RegisterEntity;
 import com.interf.eyee.entity.ResponseEntity;
 import com.interf.eyee.script.BaseCase;
+import com.interf.eyee.utils.HttpUntils;
 import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;
-import com.interf.eyee.utils.Post;
 import com.interf.eyee.utils.ResponseBody;
 import com.interf.eyee.utils.responseassert.NormalAssert;
 
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
 
 
 public class Register extends BaseCase {
@@ -39,8 +38,7 @@ public class Register extends BaseCase {
 		registerEntity.setPromocode(InitParam.caseSet(testCase, "promocode"));
 
 		// 调用接口
-		Post post = new Post();
-		String body = post.doPost(baseUrl + baseApi, registerEntity);
+		String body = HttpUntils.post(baseUrl + baseApi, registerEntity);
 		log.info("接口返回 : " + body);
 
 		// 读取返回实体

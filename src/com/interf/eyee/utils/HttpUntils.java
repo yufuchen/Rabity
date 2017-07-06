@@ -17,15 +17,15 @@ import com.interf.eyee.entity.BaseEntity;
  * @author Ksewen
  *
  */
-public class Post {
-	private HttpClient httpClient = null;
-	private HttpPost postMethod = null;
-	private long startTime = 0L;
-	private long endTime = 0L;
-	private int status = 0;
+public class HttpUntils {
+	private static HttpClient httpClient = null;
+	private static HttpPost postMethod = null;
+	private static long startTime = 0L;
+	private static long endTime = 0L;
+	private static int status = 0;
+	private static Log log = new Log(HttpUntils.class);
 
-	public String doPost(String baseUrl, BaseEntity postEntity) {
-		Log log = new Log(Post.class);
+	public static String post(String baseUrl, BaseEntity postEntity) {
 		httpClient = new DefaultHttpClient();
 		postMethod = new HttpPost(baseUrl);
 		String param = postEntity.toString();

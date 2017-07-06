@@ -1,17 +1,16 @@
 package com.interf.eyee.script.user;
 
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.interf.eyee.dataprovider.BaseDataProvider;
-import com.interf.eyee.entity.AutoLoginEntity;
 import com.interf.eyee.entity.BaseDataEntity;
+import com.interf.eyee.entity.EmptyEntity;
 import com.interf.eyee.entity.ResponseEntity;
 import com.interf.eyee.script.BaseCase;
+import com.interf.eyee.utils.HttpUntils;
 import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;
-import com.interf.eyee.utils.Post;
 import com.interf.eyee.utils.ResponseBody;
 import com.interf.eyee.utils.responseassert.NormalAssert;
 
@@ -22,12 +21,12 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
 
 
 public class AutoLogin extends BaseCase {
-	private AutoLoginEntity autoLoginEntity = null;
+	private EmptyEntity autoLoginEntity = null;
 	private Log log = new Log(AutoLogin.class);
 
 	@BeforeClass
 	public void beforeClass() {
-		autoLoginEntity = new AutoLoginEntity();
+		autoLoginEntity = new EmptyEntity();
 		super.setEntity(autoLoginEntity);
 		log.info("--------------- " + AutoLogin.class.getName() + " ----------");
 	}
@@ -44,8 +43,9 @@ public class AutoLogin extends BaseCase {
 		autoLoginEntity.setParam(InitParam.caseSet(testCase, "param"));
 		autoLoginEntity
 				.setSign(InitParam.handleSign(testCase, autoLoginEntity.getToken(), autoLoginEntity.getPlatform()));
-		Post post = new Post();
-		String body = post.doPost(baseUrl + baseApi, autoLoginEntity);
+		
+		
+		String body = HttpUntils.post(baseUrl + baseApi, autoLoginEntity);
 
 		// 读取返回实体
 		ResponseEntity response = ResponseBody.handle(body);

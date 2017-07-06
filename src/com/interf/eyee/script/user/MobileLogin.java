@@ -1,7 +1,6 @@
 package com.interf.eyee.script.user;
 
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.alibaba.fastjson.JSONObject;
@@ -10,9 +9,9 @@ import com.interf.eyee.entity.BaseDataEntity;
 import com.interf.eyee.entity.MobileLoginEntity;
 import com.interf.eyee.entity.ResponseEntity;
 import com.interf.eyee.script.BaseCase;
+import com.interf.eyee.utils.HttpUntils;
 import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;
-import com.interf.eyee.utils.Post;
 import com.interf.eyee.utils.ResponseBody;
 import com.interf.eyee.utils.TokenManager;
 import com.interf.eyee.utils.responseassert.NormalAssert;
@@ -49,8 +48,7 @@ public class MobileLogin extends BaseCase {
 				.setSign(InitParam.handleSign(testCase, mobileLoginEntity.getToken(), mobileLoginEntity.getPlatform()));
 
 		// 调用接口
-		Post post = new Post();
-		String body = post.doPost(baseUrl + baseApi, mobileLoginEntity);
+		String body = HttpUntils.post(baseUrl + baseApi, mobileLoginEntity);
 		log.info("接口返回 : " + body);
 
 		// 读取返回实体

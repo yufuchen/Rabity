@@ -38,12 +38,21 @@
 		</classes>
 	</test> <!-- ProductDetail -->
 	<test name="ActPreList">
-    <classes>
-      <class name="com.interf.eyee.script.limit.ActPreList">
-       <methods>
-        <include name="actPreListTest" />
-       </methods>
-      </class>
-    </classes>
-  </test> <!-- ActPreList -->
+		<classes>
+			<class name="com.interf.eyee.script.limit.ActPreList">
+				<methods>
+					<include name="actPreListTest" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- ActPreList -->
+	<test name="BaseValue">
+		<classes>
+			<class name="com.interf.eyee.script.home.BaseValue">
+				<methods>
+					<include name="baseValueTest" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- BaseValue -->
 </suite> <!-- Eyee_API_20170630 -->
