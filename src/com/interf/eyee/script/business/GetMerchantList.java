@@ -12,7 +12,6 @@ import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;
 import com.interf.eyee.utils.ResponseBody;
 import com.interf.eyee.utils.responseassert.NormalAssert;
-
 import org.testng.annotations.BeforeClass;
 
 public class GetMerchantList extends BaseCase {
