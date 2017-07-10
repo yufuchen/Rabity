@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import com.interf.eyee.dataprovider.BaseDataProvider;
 import com.interf.eyee.entity.BaseDataEntity;
-import com.interf.eyee.entity.ProductDetailEntity;
+import com.interf.eyee.entity.EmptyEntity;
 import com.interf.eyee.entity.ResponseEntity;
 import com.interf.eyee.script.BaseCase;
 import com.interf.eyee.utils.HttpUntils;
@@ -15,33 +15,28 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
 
 import org.testng.annotations.BeforeClass;
 
-
-public class ProductDetail extends BaseCase {
+public class TabBrands extends BaseCase {
 	private Log log = new Log(this.getClass());
-	private ProductDetailEntity productDetailEntity = null;
+	private EmptyEntity tabBrandsEntity = null;
 
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)
-	public void productDetailTest(String testName, BaseDataEntity data) {
-
+	public void tabBrandsTest(String testName, BaseDataEntity data) {
 		log.info("用例名称 : " + testName);
 
 		testCase = data.getInput();
 		baseLine = data.getBaseline();
 		baseApi = data.getApi();
 
-		// 封装用例读取的参数
-		productDetailEntity.setProductId(InitParam.caseSet(testCase, "productid"));
-		productDetailEntity.setToken(InitParam.handleToken(testCase));
-		productDetailEntity.setSign(
-				InitParam.handleSign(testCase, productDetailEntity.getToken(), productDetailEntity.getPlatform()));
+		tabBrandsEntity.setToken(InitParam.handleToken(testCase));
+		tabBrandsEntity
+				.setSign(InitParam.handleSign(testCase, tabBrandsEntity.getToken(), tabBrandsEntity.getPlatform()));
 
-		// 调用接口
-		String body = HttpUntils.post(baseUrl + baseApi, productDetailEntity);
+		String body = HttpUntils.post(baseUrl + baseApi, tabBrandsEntity);
 		log.info("接口返回 : " + body);
 
 		// 读取返回实体
 		ResponseEntity response = ResponseBody.handle(body);
-		
+
 		// 断言
 		NormalAssert normal = new NormalAssert(response, baseLine);
 		normal.assertCode();
@@ -51,9 +46,9 @@ public class ProductDetail extends BaseCase {
 
 	@BeforeClass
 	public void beforeClass() {
-		productDetailEntity = new ProductDetailEntity();
-		super.setEntity(productDetailEntity);
-		log.info("--------------- " + ProductDetail.class.getName() + " ----------");
+		tabBrandsEntity = new EmptyEntity();
+		super.setEntity(tabBrandsEntity);
+		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 
 }

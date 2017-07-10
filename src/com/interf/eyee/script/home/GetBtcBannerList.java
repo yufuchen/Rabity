@@ -46,7 +46,7 @@ public class GetBtcBannerList extends BaseCase {
 	public void beforeClass() {
 		getBtcBannerListEntity = new EmptyEntity();
 		super.setEntity(getBtcBannerListEntity);
-		log.info("--------------- " + GetBtcBannerList.class.getName() + " ----------");
+		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 
 }

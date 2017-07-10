@@ -1,10 +1,10 @@
-package com.interf.eyee.script.home;
+package com.interf.eyee.script.product;
 
 import org.testng.annotations.Test;
 
 import com.interf.eyee.dataprovider.BaseDataProvider;
 import com.interf.eyee.entity.BaseDataEntity;
-import com.interf.eyee.entity.EmptyEntity;
+import com.interf.eyee.entity.NewProductDetailEntity;
 import com.interf.eyee.entity.ResponseEntity;
 import com.interf.eyee.script.BaseCase;
 import com.interf.eyee.utils.HttpUntils;
@@ -15,36 +15,44 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
 
 import org.testng.annotations.BeforeClass;
 
-public class Newer extends BaseCase {
+
+public class NewProductDetail extends BaseCase {
 	private Log log = new Log(this.getClass());
-	private EmptyEntity newerEntity = null;
+	private NewProductDetailEntity productDetailEntity = null;
 
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)
-	public void newerTest(String testName, BaseDataEntity data) {
+	public void newProductDetailTest(String testName, BaseDataEntity data) {
+
 		log.info("用例名称 : " + testName);
 
 		testCase = data.getInput();
 		baseLine = data.getBaseline();
 		baseApi = data.getApi();
 
-		newerEntity.setSign(InitParam.handleSign(testCase, newerEntity.getToken(), newerEntity.getPlatform()));
-		
-		String body = HttpUntils.post(baseUrl + baseApi, newerEntity);
+		// 封装用例读取的参数
+		productDetailEntity.setProductId(InitParam.caseSet(testCase, "productid"));
+		productDetailEntity.setToken(InitParam.handleToken(testCase));
+		productDetailEntity.setSign(
+				InitParam.handleSign(testCase, productDetailEntity.getToken(), productDetailEntity.getPlatform()));
+
+		// 调用接口
+		String body = HttpUntils.post(baseUrl + baseApi, productDetailEntity);
 		log.info("接口返回 : " + body);
-		
+
+		// 读取返回实体
 		ResponseEntity response = ResponseBody.handle(body);
 		
+		// 断言
 		NormalAssert normal = new NormalAssert(response, baseLine);
 		normal.assertCode();
 		normal.assertMsg();
-		// data断言待增加，需重写断言类，增加xml用例信息
-
+		// data断言待增加，需重写断言类
 	}
 
 	@BeforeClass
 	public void beforeClass() {
-		newerEntity = new EmptyEntity();
-		super.setEntity(newerEntity);
+		productDetailEntity = new NewProductDetailEntity();
+		super.setEntity(productDetailEntity);
 		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 

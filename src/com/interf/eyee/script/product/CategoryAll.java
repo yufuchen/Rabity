@@ -45,7 +45,7 @@ public class CategoryAll extends BaseCase {
 	public void beforeClass() {
 		cateGoryAllEntity = new EmptyEntity();
 		super.setEntity(cateGoryAllEntity);
-		log.info("--------------- " + CategoryAll.class.getName() + " ----------");
+		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 
 }

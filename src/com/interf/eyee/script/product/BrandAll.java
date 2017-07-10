@@ -1,4 +1,4 @@
-package com.interf.eyee.script.home;
+package com.interf.eyee.script.product;
 
 import org.testng.annotations.Test;
 
@@ -15,36 +15,38 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
 
 import org.testng.annotations.BeforeClass;
 
-public class Newer extends BaseCase {
+public class BrandAll extends BaseCase {
 	private Log log = new Log(this.getClass());
-	private EmptyEntity newerEntity = null;
+	private EmptyEntity brandAllEntity = null;
 
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)
-	public void newerTest(String testName, BaseDataEntity data) {
+	public void brandAllTest(String testName, BaseDataEntity data) {
 		log.info("用例名称 : " + testName);
 
 		testCase = data.getInput();
 		baseLine = data.getBaseline();
 		baseApi = data.getApi();
 
-		newerEntity.setSign(InitParam.handleSign(testCase, newerEntity.getToken(), newerEntity.getPlatform()));
-		
-		String body = HttpUntils.post(baseUrl + baseApi, newerEntity);
+		// brandAll.setToken(InitParam.handleToken(testCase));
+		brandAllEntity.setSign(InitParam.handleSign(testCase, brandAllEntity.getToken(), brandAllEntity.getPlatform()));
+
+		String body = HttpUntils.post(baseUrl + baseApi, brandAllEntity);
 		log.info("接口返回 : " + body);
-		
+
+		// 读取返回实体
 		ResponseEntity response = ResponseBody.handle(body);
-		
+
+		// 断言
 		NormalAssert normal = new NormalAssert(response, baseLine);
 		normal.assertCode();
 		normal.assertMsg();
-		// data断言待增加，需重写断言类，增加xml用例信息
-
+		// data断言待增加，需重写断言类
 	}
 
 	@BeforeClass
 	public void beforeClass() {
-		newerEntity = new EmptyEntity();
-		super.setEntity(newerEntity);
+		brandAllEntity = new EmptyEntity();
+		super.setEntity(brandAllEntity);
 		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 

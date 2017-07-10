@@ -30,7 +30,7 @@ public class MobileLogin extends BaseCase {
 	public void beforeTest() {
 		mobileLoginEntity = new MobileLoginEntity();
 		super.setEntity(mobileLoginEntity);
-		log.info("--------------- " + MobileLogin.class.getName() + " ----------");
+		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)

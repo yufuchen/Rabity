@@ -28,7 +28,7 @@ public class AutoLogin extends BaseCase {
 	public void beforeClass() {
 		autoLoginEntity = new EmptyEntity();
 		super.setEntity(autoLoginEntity);
-		log.info("--------------- " + AutoLogin.class.getName() + " ----------");
+		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)

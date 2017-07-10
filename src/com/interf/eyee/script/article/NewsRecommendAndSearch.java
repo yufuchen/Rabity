@@ -1,10 +1,10 @@
-package com.interf.eyee.script.user;
+package com.interf.eyee.script.article;
 
 import org.testng.annotations.Test;
 
 import com.interf.eyee.dataprovider.BaseDataProvider;
 import com.interf.eyee.entity.BaseDataEntity;
-import com.interf.eyee.entity.RegisterEntity;
+import com.interf.eyee.entity.NewsRecommendAndSearchEntity;
 import com.interf.eyee.entity.ResponseEntity;
 import com.interf.eyee.script.BaseCase;
 import com.interf.eyee.utils.HttpUntils;
@@ -13,15 +13,15 @@ import com.interf.eyee.utils.Log;
 import com.interf.eyee.utils.ResponseBody;
 import com.interf.eyee.utils.responseassert.NormalAssert;
 
+import org.omg.Messaging.SyncScopeHelper;
 import org.testng.annotations.BeforeClass;
 
-
-public class Register extends BaseCase {
-	private RegisterEntity registerEntity = null;
+public class NewsRecommendAndSearch extends BaseCase {
 	private Log log = new Log(this.getClass());
+	NewsRecommendAndSearchEntity newsRecommendAndSearchEntity = null;
 
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)
-	public void registerTest(String testName, BaseDataEntity data) {
+	public void newsRecommendAndSearchTest(String testName, BaseDataEntity data) {
 		log.info("用例名称 : " + testName);
 
 		testCase = data.getInput();
@@ -29,16 +29,14 @@ public class Register extends BaseCase {
 		baseApi = data.getApi();
 
 		// 封装用例读取的参数
-		registerEntity.setSign(InitParam.handleSign(testCase, registerEntity.getToken(), registerEntity.getPlatform()));
-		registerEntity.setMobile(InitParam.caseSet(testCase, "mobile"));
-		registerEntity.setPassword(InitParam.handlePwd(testCase));
-		registerEntity.setValidCode(InitParam.caseSet(testCase, "validcode"));
-		registerEntity.setRegisterType(InitParam.handleRegisterType(testCase));
-		registerEntity.setRegisterTypeCode(InitParam.caseSet(testCase, "registertypecode"));
-		registerEntity.setPromocode(InitParam.caseSet(testCase, "promocode"));
-
+		newsRecommendAndSearchEntity.setSign(
+				InitParam.handleSign(testCase, newsRecommendAndSearchEntity.getToken(), newsRecommendAndSearchEntity.getPlatform()));
+		newsRecommendAndSearchEntity.setPageIndex(Integer.parseInt(InitParam.caseSet(testCase, "pageindex")));
+		newsRecommendAndSearchEntity.setType(InitParam.caseSet(testCase, "type"));
+		newsRecommendAndSearchEntity.setIsRecommendOver(Integer.parseInt(InitParam.caseSet(testCase, "isrecommendover")));
+		
 		// 调用接口
-		String body = HttpUntils.post(baseUrl + baseApi, registerEntity);
+		String body = HttpUntils.post(baseUrl + baseApi, newsRecommendAndSearchEntity);
 		log.info("接口返回 : " + body);
 
 		// 读取返回实体
@@ -48,15 +46,13 @@ public class Register extends BaseCase {
 		NormalAssert normal = new NormalAssert(response, baseLine);
 		normal.assertCode();
 		normal.assertMsg();
-		normal.assertData();
-
-		
+		// data断言待增加，需重写断言类，修改用例data字段
 	}
 
 	@BeforeClass
 	public void beforeClass() {
-		registerEntity = new RegisterEntity();
-		super.setEntity(registerEntity);
+		newsRecommendAndSearchEntity = new NewsRecommendAndSearchEntity();
+		super.setEntity(newsRecommendAndSearchEntity);
 		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 

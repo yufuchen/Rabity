@@ -47,6 +47,6 @@ public class AddUserLogInfo extends BaseCase {
 	public void beforeClass() {
 		addUserLogInfoEntity = new AddUserLogInfoEntity();
 		super.setEntity(addUserLogInfoEntity);
-		log.info("--------------- " + AddUserLogInfo.class.getName() + " ----------");
+		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 }

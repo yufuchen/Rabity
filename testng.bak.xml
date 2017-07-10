@@ -28,15 +28,15 @@
 			</class>
 		</classes>
 	</test> <!-- Register -->
-	<test name="ProductDetail">
+	<test name="NewProductDetail">
 		<classes>
-			<class name="com.interf.eyee.script.product.ProductDetail">
+			<class name="com.interf.eyee.script.product.NewProductDetail">
 				<methods>
-					<include name="productDetailTest" />
+					<include name="newProductDetailTest" />
 				</methods>
 			</class>
 		</classes>
-	</test> <!-- ProductDetail -->
+	</test> <!-- NewProductDetail -->
 	<test name="ActPreList">
 		<classes>
 			<class name="com.interf.eyee.script.limit.ActPreList">

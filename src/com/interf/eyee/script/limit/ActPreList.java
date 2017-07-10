@@ -51,7 +51,7 @@ public class ActPreList extends BaseCase {
 	public void beforeClass() {
 		actPreListEntity = new ActPreListEntity();
 		super.setEntity(actPreListEntity);
-		log.info("--------------- " + ActPreList.class.getName() + " ----------");
+		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 
 }

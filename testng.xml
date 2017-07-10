@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Debug">
-  <test name="GetMerchantList">
+  <test name="ListCanAll">
     <classes>
-      <class name="com.interf.eyee.script.business.GetMerchantList">
+      <class name="com.interf.eyee.script.coupon.ListCanAll">
        <methods>
-        <include name="getMerchantListTest" />
+        <include name="listCanAllTest" />
        </methods>
       </class>
     </classes>
-  </test> <!-- GetMerchantList -->
+  </test> <!-- ListCanAll -->
 </suite> <!-- Debug -->

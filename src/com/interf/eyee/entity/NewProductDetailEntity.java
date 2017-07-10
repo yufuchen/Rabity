@@ -8,7 +8,7 @@ import com.interf.eyee.entity.BaseEntity;
  *
  */
 
-public class ProductDetailEntity extends BaseEntity {
+public class NewProductDetailEntity extends BaseEntity {
 	private String productId;
 
 	public String getProductId() {

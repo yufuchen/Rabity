@@ -49,7 +49,7 @@ public class NewSearchV218 extends BaseCase {
 	public void beforeClass() {
 		newSearchV218Entity = new NewSearchV218Entity();
 		super.setEntity(newSearchV218Entity);
-		log.info("--------------- " + NewSearchV218.class.getName() + " ----------");
+		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 
 }

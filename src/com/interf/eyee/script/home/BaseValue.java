@@ -51,7 +51,7 @@ public class BaseValue extends BaseCase {
 	public void beforeClass() {
 		baseValueEntity = new EmptyEntity();
 		super.setEntity(baseValueEntity);
-		log.info("--------------- " + MobileLogin.class.getName() + " ----------");
+		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 
 }

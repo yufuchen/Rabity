@@ -51,7 +51,7 @@ public class GetMerchantList extends BaseCase {
 	public void beforeClass() {
 		getMerchantListEntity = new GetMerchantListEntity();
 		super.setEntity(getMerchantListEntity);
-		log.info("--------------- " + GetMerchantList.class.getName() + " ----------");
+		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 
 }
