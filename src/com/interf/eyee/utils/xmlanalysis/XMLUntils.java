@@ -56,7 +56,10 @@ public class XMLUntils {
 		} else {
 			// 有子元素
 			String prev = null;
-			boolean guess = true; // 默认按照数组处理
+			boolean guess = false; // 默认按照数组处理
+			if (((Element) elements.iterator().next()).getName().equals("listelement")) {
+				guess = true;
+			}
 
 			Iterator<?> iterator = elements.iterator();
 			while (iterator.hasNext()) {

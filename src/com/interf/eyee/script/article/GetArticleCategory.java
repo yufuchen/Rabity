@@ -1,4 +1,4 @@
-package com.interf.eyee.script.home;
+package com.interf.eyee.script.article;
 
 import org.testng.annotations.Test;
 
@@ -15,30 +15,27 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
 
 import org.testng.annotations.BeforeClass;
 
-public class BaseValue extends BaseCase {
-
+public class GetArticleCategory extends BaseCase {
 	private Log log = new Log(this.getClass());
-	private EmptyEntity baseValueEntity = null;
+	private EmptyEntity getArticleCategoryEntity = null;
 
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)
-	public void baseValueTest(String testName, BaseDataEntity data) {
+	public void getArticleCategoryTest(String testName, BaseDataEntity data) {
 		log.info("用例名称 : " + testName);
 
 		testCase = data.getInput();
 		baseLine = data.getBaseline();
 		baseApi = data.getApi();
 
-		// 封装用例读取的参数
-		baseValueEntity
-				.setSign(InitParam.handleSign(testCase, baseValueEntity.getToken(), baseValueEntity.getPlatform()));
+		getArticleCategoryEntity.setSign(InitParam.handleSign(testCase, getArticleCategoryEntity.getToken(),
+				getArticleCategoryEntity.getPlatform()));
 
-		// 调用接口
-		String body = HttpUntils.post(baseUrl + baseApi, baseValueEntity);
+		String body = HttpUntils.post(baseUrl + baseApi, getArticleCategoryEntity);
 		log.info("接口返回 : " + body);
 
 		// 读取返回实体
 		ResponseEntity response = ResponseBody.handle(body);
-		
+
 		// 断言
 		NormalAssert normal = new NormalAssert(response, baseLine);
 		normal.assertCode();
@@ -48,8 +45,8 @@ public class BaseValue extends BaseCase {
 
 	@BeforeClass
 	public void beforeClass() {
-		baseValueEntity = new EmptyEntity();
-		super.setEntity(baseValueEntity);
+		getArticleCategoryEntity = new EmptyEntity();
+		super.setEntity(getArticleCategoryEntity);
 		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 

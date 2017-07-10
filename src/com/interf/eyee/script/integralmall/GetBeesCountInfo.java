@@ -1,4 +1,4 @@
-package com.interf.eyee.script.home;
+package com.interf.eyee.script.integralmall;
 
 import org.testng.annotations.Test;
 
@@ -15,41 +15,37 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
 
 import org.testng.annotations.BeforeClass;
 
-public class BaseValue extends BaseCase {
-
+public class GetBeesCountInfo extends BaseCase {
 	private Log log = new Log(this.getClass());
-	private EmptyEntity baseValueEntity = null;
+	private EmptyEntity getBeesCountInfoEntity = null;
 
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)
-	public void baseValueTest(String testName, BaseDataEntity data) {
+	public void getBeesCountInfoTest(String testName, BaseDataEntity data) {
 		log.info("用例名称 : " + testName);
 
 		testCase = data.getInput();
 		baseLine = data.getBaseline();
 		baseApi = data.getApi();
 
-		// 封装用例读取的参数
-		baseValueEntity
-				.setSign(InitParam.handleSign(testCase, baseValueEntity.getToken(), baseValueEntity.getPlatform()));
+		getBeesCountInfoEntity.setToken(InitParam.handleToken(testCase));
+		getBeesCountInfoEntity.setSign(InitParam.handleSign(testCase, getBeesCountInfoEntity.getToken(),
+				getBeesCountInfoEntity.getPlatform()));
 
-		// 调用接口
-		String body = HttpUntils.post(baseUrl + baseApi, baseValueEntity);
+		String body = HttpUntils.post(baseUrl + baseApi, getBeesCountInfoEntity);
 		log.info("接口返回 : " + body);
 
-		// 读取返回实体
 		ResponseEntity response = ResponseBody.handle(body);
-		
-		// 断言
+
 		NormalAssert normal = new NormalAssert(response, baseLine);
 		normal.assertCode();
 		normal.assertMsg();
-		// data断言待增加，需重写断言类
+		normal.assertData();
 	}
 
 	@BeforeClass
 	public void beforeClass() {
-		baseValueEntity = new EmptyEntity();
-		super.setEntity(baseValueEntity);
+		getBeesCountInfoEntity = new EmptyEntity();
+		super.setEntity(getBeesCountInfoEntity);
 		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 

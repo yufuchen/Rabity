@@ -1,10 +1,15 @@
 package com.interf.eyee.utils;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Properties;
 
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.serializer.JSONAwareSerializer;
 import com.interf.eyee.entity.BaseEntity;
+import com.interf.eyee.entity.BindHobbyLabelsItemEntity;
 
 
 /**
@@ -79,7 +84,7 @@ public class InitParam {
 	
 	public static String caseSet(HashMap<String, Object> map, String key){
 		String value = "";
-		if (map.get(key) instanceof String) {
+		if (map.get(key) instanceof String || map.get(key) instanceof JSONArray) {
 			value = map.get(key).toString();
 		}
 		if (null == value || value.equals("")) {
@@ -128,6 +133,20 @@ public class InitParam {
 			}
 		}
 		return registerType;
-		
+	}
+	
+	public static List<BindHobbyLabelsItemEntity> handleHobbyLabels(HashMap<String, Object> map) {
+		List<BindHobbyLabelsItemEntity> result = new ArrayList<BindHobbyLabelsItemEntity>();
+		if (map.get("hobbylabels") instanceof JSONArray) {
+			JSONArray array = (JSONArray) map.get("hobbylabels");
+			for (int i = 0; i < array.size(); i++) {
+				BindHobbyLabelsItemEntity temp = new BindHobbyLabelsItemEntity();
+				temp.setHobbylabelId(array.getString(i));
+				result.add(temp);
+			}
+			return result;
+		} else {
+			return null;
+		}
 	}
 }

@@ -1,10 +1,11 @@
-package com.interf.eyee.script.home;
+package com.interf.eyee.script.user;
 
 import org.testng.annotations.Test;
 
 import com.interf.eyee.dataprovider.BaseDataProvider;
 import com.interf.eyee.entity.BaseDataEntity;
 import com.interf.eyee.entity.EmptyEntity;
+import com.interf.eyee.entity.NewHomeEntity;
 import com.interf.eyee.entity.ResponseEntity;
 import com.interf.eyee.script.BaseCase;
 import com.interf.eyee.utils.HttpUntils;
@@ -15,30 +16,27 @@ import com.interf.eyee.utils.responseassert.NormalAssert;
 
 import org.testng.annotations.BeforeClass;
 
-public class BaseValue extends BaseCase {
-
+public class HobbyLabels extends BaseCase {
 	private Log log = new Log(this.getClass());
-	private EmptyEntity baseValueEntity = null;
+	private EmptyEntity hobbyLabelsEntity = null;
 
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)
-	public void baseValueTest(String testName, BaseDataEntity data) {
+	public void hobbyLabelsTest(String testName, BaseDataEntity data) {
 		log.info("用例名称 : " + testName);
 
 		testCase = data.getInput();
 		baseLine = data.getBaseline();
 		baseApi = data.getApi();
 
-		// 封装用例读取的参数
-		baseValueEntity
-				.setSign(InitParam.handleSign(testCase, baseValueEntity.getToken(), baseValueEntity.getPlatform()));
-
-		// 调用接口
-		String body = HttpUntils.post(baseUrl + baseApi, baseValueEntity);
+		hobbyLabelsEntity.setToken(InitParam.handleToken(testCase));
+		hobbyLabelsEntity.setSign(InitParam.handleSign(testCase, hobbyLabelsEntity.getToken(), hobbyLabelsEntity.getPlatform()));
+		
+		String body = HttpUntils.post(baseUrl + baseApi, hobbyLabelsEntity);
 		log.info("接口返回 : " + body);
 
 		// 读取返回实体
 		ResponseEntity response = ResponseBody.handle(body);
-		
+
 		// 断言
 		NormalAssert normal = new NormalAssert(response, baseLine);
 		normal.assertCode();
@@ -48,8 +46,8 @@ public class BaseValue extends BaseCase {
 
 	@BeforeClass
 	public void beforeClass() {
-		baseValueEntity = new EmptyEntity();
-		super.setEntity(baseValueEntity);
+		hobbyLabelsEntity = new EmptyEntity();
+		super.setEntity(hobbyLabelsEntity);
 		log.info("--------------- " + this.getClass().getName() + " ----------");
 	}
 
