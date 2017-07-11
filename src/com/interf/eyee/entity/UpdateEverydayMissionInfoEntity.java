@@ -4,8 +4,6 @@ package com.interf.eyee.entity;
  *
  */
 
-import java.util.List;
-
 public class UpdateEverydayMissionInfoEntity extends BaseEntity {
 	private String items;
 

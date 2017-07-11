@@ -36,7 +36,12 @@ public class NormalAssert extends BaseAssert {
 			}
 		} else if (expect.getData() == null || expect.getData().toString().equals("")) {
 			flag = Verify.verifyNull(actual.getData());
-			HandleLog.write(flag, "data", "null", "null");
+			if (flag) {
+				HandleLog.write(flag, "data", "null", "null");
+			} else {
+				HandleLog.write(flag, "data", "null", actual.getData().toString());
+			}
+			
 		} else {
 			flag = Verify.verifyEquals(actual.getData().toString(), expect.getData().toString());
 			HandleLog.write(flag, "data", actual.getData().toString(), expect.getData().toString());

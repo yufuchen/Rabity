@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import com.interf.eyee.dataprovider.BaseDataProvider;
 import com.interf.eyee.entity.BaseDataEntity;
 import com.interf.eyee.entity.EmptyEntity;
-import com.interf.eyee.entity.NewHomeEntity;
 import com.interf.eyee.entity.ResponseEntity;
 import com.interf.eyee.script.BaseCase;
 import com.interf.eyee.utils.HttpUntils;

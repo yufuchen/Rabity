@@ -7,7 +7,6 @@ import java.util.Properties;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.serializer.JSONAwareSerializer;
 import com.interf.eyee.entity.BaseEntity;
 import com.interf.eyee.entity.BindHobbyLabelsItemEntity;
 

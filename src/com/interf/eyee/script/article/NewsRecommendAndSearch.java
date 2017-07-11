@@ -13,7 +13,6 @@ import com.interf.eyee.utils.Log;
 import com.interf.eyee.utils.ResponseBody;
 import com.interf.eyee.utils.responseassert.NormalAssert;
 
-import org.omg.Messaging.SyncScopeHelper;
 import org.testng.annotations.BeforeClass;
 
 public class NewsRecommendAndSearch extends BaseCase {

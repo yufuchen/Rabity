@@ -2,11 +2,9 @@ package com.interf.eyee.script.user;
 
 import org.testng.annotations.Test;
 
-import com.alibaba.fastjson.JSONArray;
 import com.interf.eyee.dataprovider.BaseDataProvider;
 import com.interf.eyee.entity.BaseDataEntity;
 import com.interf.eyee.entity.BindHobbyLabelsEntity;
-import com.interf.eyee.entity.NewHomeEntity;
 import com.interf.eyee.entity.ResponseEntity;
 import com.interf.eyee.script.BaseCase;
 import com.interf.eyee.utils.HttpUntils;
@@ -14,9 +12,6 @@ import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;
 import com.interf.eyee.utils.ResponseBody;
 import com.interf.eyee.utils.responseassert.NormalAssert;
-import com.sun.corba.se.spi.orbutil.fsm.Input;
-import com.sun.org.apache.xml.internal.security.Init;
-
 import org.testng.annotations.BeforeClass;
 
 public class BindHobbyLabels extends BaseCase {

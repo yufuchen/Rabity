@@ -42,6 +42,7 @@ public class XMLUntils {
 		for (Iterator<?> i = root.elementIterator(); i.hasNext();) {
 			Element page = (Element) i.next();
 			JSONObject j = (JSONObject) JSONObject.toJSON(parse(page));
+//			System.err.println(j);
 			BaseDataEntity baseData = new BaseDataEntity();
 			baseData = j.toJavaObject(baseData.getClass());
 			caseMap.put(page.attributeValue("id") + "_" + page.attributeValue("name"), baseData);
@@ -56,7 +57,7 @@ public class XMLUntils {
 		} else {
 			// 有子元素
 			String prev = null;
-			boolean guess = false; // 默认按照数组处理
+			boolean guess = false; // 默认按照对象处理
 			if (((Element) elements.iterator().next()).getName().equals("listelement")) {
 				guess = true;
 			}
