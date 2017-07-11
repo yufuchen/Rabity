@@ -11,6 +11,7 @@ import com.interf.eyee.utils.HttpUntils;
 import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;
 import com.interf.eyee.utils.ResponseBody;
+import com.interf.eyee.utils.responseassert.SimpleAssert;
 import com.interf.eyee.utils.responseassert.NormalAssert;
 
 import org.testng.annotations.BeforeClass;
@@ -40,10 +41,10 @@ public class UpdateEverydayMissionInfo extends BaseCase {
 		ResponseEntity response = ResponseBody.handle(body);
 
 		// 断言
-		NormalAssert normal = new NormalAssert(response, baseLine);
-		normal.assertCode();
-		normal.assertMsg();
-		normal.assertData();
+		SimpleAssert simple = new SimpleAssert(response, baseLine);
+		simple.assertCode();
+		simple.assertMsg();
+//		normal.assertData();
 	}
 
 	@BeforeClass

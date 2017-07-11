@@ -9,10 +9,10 @@ import com.interf.eyee.entity.ResponseEntity;
 import com.interf.eyee.utils.HandleLog;
 import com.interf.eyee.utils.Verify;
 
-public abstract class BaseAssert {
+public class BaseAssert {
 	protected ResponseEntity actual;
 	protected ExpectBaseEntity expect;
-	boolean flag = false;
+	protected boolean flag = false;
 
 	public BaseAssert(ResponseEntity actual, ExpectBaseEntity expect) {
 		this.actual = actual;
@@ -28,8 +28,6 @@ public abstract class BaseAssert {
 		flag = Verify.verifyEquals(actual.getMsg(), expect.getMsg());
 		HandleLog.write(flag, "msg", actual.getMsg(), expect.getMsg());
 	}
-	
-	public abstract void assertData();
 
 	public ResponseEntity getActual() {
 		return actual;

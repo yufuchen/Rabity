@@ -13,52 +13,39 @@ import com.interf.eyee.utils.Verify;
  * @author Ksewen
  *
  */
-public class NormalAssert extends BaseAssert {
-
+public class NormalAssert extends BaseAssert{
+	private String keyName = "data";
+	
 	public NormalAssert(ResponseEntity actual, ExpectBaseEntity expect) {
 		super(actual, expect);
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public void assertData() {
-		if (expect.getData().toString().startsWith("{") && expect.getData().toString().endsWith("}")) {
-			JSONObject expectJson = JSONObject.parseObject(expect.getData().toString());
-			JSONObject actualJson = JSONObject.parseObject(actual.getData().toString());
-			traversalVerify(actualJson, expectJson, flag);
-		} else if (expect.getData().toString().startsWith("[") && expect.getData().toString().endsWith("]")) {
-			JSONArray expectArray = JSONArray.parseArray(expect.getData().toString());
-			JSONArray actualArray = JSONArray.parseArray(actual.getData().toString());
+	public void assertData(Object actual, Object expect) {
+		if (expect.toString().startsWith("{") && expect.toString().endsWith("}")) {
+			JSONObject expectJson = JSONObject.parseObject(expect.toString());
+			JSONObject actualJson = JSONObject.parseObject(actual.toString());
+			for (Iterator<?> i = expectJson.keySet().iterator(); i.hasNext();) {
+				String key = (String) i.next();
+				keyName = key;
+				assertData(actualJson.get(key), expectJson.get(key));
+			}
+		} else if (expect.toString().startsWith("[") && expect.toString().endsWith("]")) {
+			JSONArray expectArray = JSONArray.parseArray(expect.toString());
+			JSONArray actualArray = JSONArray.parseArray(actual.toString());
 			for (int index = 0; index < expectArray.size(); index++) {
-				JSONObject expectJson = expectArray.getJSONObject(index);
-				JSONObject actualJson = actualArray.getJSONObject(index);
-				traversalVerify(actualJson, expectJson, flag);
+				assertData(actualArray.get(index), expectArray.get(index));
 			}
-		} else if (expect.getData() == null || expect.getData().toString().equals("")) {
-			flag = Verify.verifyNull(actual.getData());
+		} else if (expect == null || expect.equals("")) {
+			flag = Verify.verifyNull(actual);
 			if (flag) {
-				HandleLog.write(flag, "data", "null", "null");
+				HandleLog.write(flag, keyName, "null", "null");
 			} else {
-				HandleLog.write(flag, "data", "null", actual.getData().toString());
+				HandleLog.write(flag, keyName, "null", actual.toString());
 			}
-			
 		} else {
-			flag = Verify.verifyEquals(actual.getData().toString(), expect.getData().toString());
-			HandleLog.write(flag, "data", actual.getData().toString(), expect.getData().toString());
+			flag = Verify.verifyEquals(actual.toString(), expect.toString());
+			HandleLog.write(flag, keyName, actual.toString(), expect.toString());
 		}
 	}
-	
-	protected static void traversalVerify(JSONObject actualJson, JSONObject expectJson, boolean flag) {
-		for (Iterator<?> i = expectJson.keySet().iterator(); i.hasNext();) {
-			String key = (String) i.next();
-			if (expectJson.getString(key).equals("") || expectJson.get(key) == null) {
-				flag = Verify.verifyNull(actualJson.get(key));
-				HandleLog.write(flag, key, "null", "null");
-			} else {
-				flag = Verify.verifyEquals(actualJson.getString(key), expectJson.getString(key));
-				HandleLog.write(flag, key, actualJson.getString(key), expectJson.getString(key));
-			}
-		}
-	}
-
 }

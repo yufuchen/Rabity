@@ -12,6 +12,7 @@ import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;
 import com.interf.eyee.utils.ResponseBody;
 import com.interf.eyee.utils.responseassert.NormalAssert;
+import com.interf.eyee.utils.responseassert.SimpleAssert;
 
 import org.testng.annotations.BeforeClass;
 
@@ -43,7 +44,7 @@ public class BaseValue extends BaseCase {
 		NormalAssert normal = new NormalAssert(response, baseLine);
 		normal.assertCode();
 		normal.assertMsg();
-		// data断言待增加，需重写断言类
+		normal.assertData(response.getData(), baseLine.getData());
 	}
 
 	@BeforeClass

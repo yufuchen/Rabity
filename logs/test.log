@@ -1,25 +1,39 @@
-2017-07-11 11:20:54.439 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : custpolicy   实际结果 : 999999999 ========= 预期结果 : 999999999
-2017-07-11 11:20:54.440 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : registerbgimg   实际结果 : http://files.eyee.com/EYEE/icons/regbg.jpg ========= 预期结果 : http://files.eyee.com/EYEE/icons/regbg.jpg
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : hotline   实际结果 : 400-8253-313 ========= 预期结果 : 400-8253-313
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : servicemail   实际结果 : service@eyee.com ========= 预期结果 : service@eyee.com
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : searchkey   实际结果 : supreme ========= 预期结果 : supreme
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : taxexempt   实际结果 : 0 ========= 预期结果 : 0
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : icon   实际结果 : http://files.eyee.com/EYEE/icons/sharelogo.png ========= 预期结果 : http://files.eyee.com/EYEE/icons/sharelogo.png
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : title   实际结果 : EYEE蜂潮，潮流生活上蜂潮！ ========= 预期结果 : EYEE蜂潮，潮流生活上蜂潮！
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : type   实际结果 : 0 ========= 预期结果 : 0
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : content   实际结果 : EYEE蜂潮专注潮流生活，实时获取国内外一手潮流资讯和全球潮流商品。 ========= 预期结果 : EYEE蜂潮专注潮流生活，实时获取国内外一手潮流资讯和全球潮流商品。
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : url   实际结果 : http://inner.eyee.com/news ========= 预期结果 : http://inner.eyee.com/news
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : icon   实际结果 : http://files.eyee.com/EYEE/icons/sharelogo.png ========= 预期结果 : http://files.eyee.com/EYEE/icons/sharelogo.png
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : title   实际结果 : EYEE蜂潮，潮流生活上蜂潮！ ========= 预期结果 : EYEE蜂潮，潮流生活上蜂潮！
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : type   实际结果 : 1 ========= 预期结果 : 1
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : content   实际结果 : EYEE蜂潮专注潮流生活，实时获取国内外一手潮流资讯和全球潮流商品。 ========= 预期结果 : EYEE蜂潮专注潮流生活，实时获取国内外一手潮流资讯和全球潮流商品。
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : url   实际结果 : http://inner.eyee.com/mall ========= 预期结果 : http://inner.eyee.com/mall
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : aboutus   实际结果 : http://inner.eyee.com/aboutus ========= 预期结果 : http://inner.eyee.com/aboutus
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : shoppingtips   实际结果 : http://inner.eyee.com/shoppingtips ========= 预期结果 : http://inner.eyee.com/shoppingtips
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : coupondesc   实际结果 : http://inner.eyee.com/coupondescription ========= 预期结果 : http://inner.eyee.com/coupondescription
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : updverlog   实际结果 :  2.1.5版更新内容：\\n新增加彩蛋活动，详情请见app内活动说明。\\n适配iOS10，修复部分bug，提高稳定性。 ========= 预期结果 :  2.1.5版更新内容：\\n新增加彩蛋活动，详情请见app内活动说明。\\n适配iOS10，修复部分bug，提高稳定性。
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : newestver   实际结果 : 2.1.5 ========= 预期结果 : 2.1.5
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : loadurl   实际结果 : https://itunes.apple.com/cn/app/eyee/id962223967?mt=8 ========= 预期结果 : https://itunes.apple.com/cn/app/eyee/id962223967?mt=8
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : isnewer   实际结果 : false ========= 预期结果 : false
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : slas   实际结果 : http://inner.eyee.com/slas ========= 预期结果 : http://inner.eyee.com/slas
-2017-07-11 11:20:54.441 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : launchurl   实际结果 : http://files.eyee.com/Shop/system/main/526637416e37495b895b655690976278.jpg ========= 预期结果 : http://files.eyee.com/Shop/system/main/526637416e37495b895b655690976278.jpg
+2017-07-11 15:11:52.132 INFO  30 info - com.interf.eyee.script.home.BaseValue: ==== http://140.207.155.74/ - 开始测试 ====
+2017-07-11 15:11:52.139 INFO  30 info - com.interf.eyee.script.home.BaseValue: --------------- com.interf.eyee.script.home.BaseValue ----------
+2017-07-11 15:11:52.307 INFO  30 info - com.interf.eyee.script.home.BaseValue: 默认参数初始化完成 : {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","token":"","version":"2.2.5"}
+2017-07-11 15:11:52.312 INFO  30 info - com.interf.eyee.script.home.BaseValue: 用例名称 : 0_使用空token值拉取配置数据
+2017-07-11 15:11:52.335 INFO  30 info - com.interf.eyee.utils.HttpUntils: 正在发起请求 : http://140.207.155.74/api/Home/BaseValue
+2017-07-11 15:11:52.336 INFO  30 info - com.interf.eyee.utils.HttpUntils: 输入参数: {"deviceudid":"b8ccd9578ece423e80230e1bebf886d1","lang":"zh","param":"","platform":"ios","sign":"9e52ef413200985cad4fe793961d1130","token":"","version":"2.2.5"}
+2017-07-11 15:11:53.077 INFO  30 info - com.interf.eyee.utils.HttpUntils: statusCode:200
+2017-07-11 15:11:53.077 INFO  30 info - com.interf.eyee.utils.HttpUntils: 调用API 花费时间(单位：毫秒)：736
+2017-07-11 15:11:53.080 INFO  30 info - com.interf.eyee.utils.HttpUntils: 调用接口状态：0
+2017-07-11 15:11:53.080 INFO  30 info - com.interf.eyee.script.home.BaseValue: 接口返回 : {"code":1511200,"msg":"请求已完成","data":{"configs":{"custpolicy":"999999999","hotline":"400-8253-313","registerbgimg":"http://files.eyee.com/Shop/system/main/fca3f7dcbc3b4728b2fd2c65a85f75eb.jpg","searchkey":"supreme","servicemail":"service@eyee.com","taxexempt":"0"},"shareinfos":[{"icon":"http://files.eyee.com/EYEE/icons/sharelogo.png","title":"EYEE蜂潮，潮流生活上蜂潮！","content":"EYEE蜂潮专注潮流生活，实时获取国内外一手潮流资讯和全球潮流商品。","url":"http://inner.eyee.com/news","type":0},{"icon":"http://files.eyee.com/EYEE/icons/sharelogo.png","title":"EYEE蜂潮，潮流生活上蜂潮！","content":"EYEE蜂潮专注潮流生活，实时获取国内外一手潮流资讯和全球潮流商品。","url":"http://inner.eyee.com/mall","type":1}],"launchurl":"http://files.eyee.com/Shop/system/main/734cc33daa814fb19dae5ad26830a7bb.jpg","aboutus":"http://inner.eyee.com/aboutus","shoppingtips":"http://inner.eyee.com/shoppingtips","slas":"http://inner.eyee.com/slas","coupondesc":"http://inner.eyee.com/coupondescription","version":{"isnewer":false,"newestver":"2.1.5","updverlog":" 2.1.5版更新内容：\\n 新增加彩蛋活动，详情请见app内活动说明。\\n适配iOS10，修复部分bug，提高稳定性。","loadurl":"https://itunes.apple.com/cn/app/eyee/id962223967?mt=8"}},"servertime":"2017-07-11 15:11:55 +8"}
+2017-07-11 15:11:53.092 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
+2017-07-11 15:11:53.093 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
+2017-07-11 15:11:53.094 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : custpolicy   实际结果 : 999999999 ========= 预期结果 : 999999999
+2017-07-11 15:11:53.094 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : registerbgimg   实际结果 : http://files.eyee.com/Shop/system/main/fca3f7dcbc3b4728b2fd2c65a85f75eb.jpg ========= 预期结果 : http://files.eyee.com/Shop/system/main/fca3f7dcbc3b4728b2fd2c65a85f75eb.jpg
+2017-07-11 15:11:53.095 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : hotline   实际结果 : 400-8253-313 ========= 预期结果 : 400-8253-313
+2017-07-11 15:11:53.095 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : servicemail   实际结果 : service@eyee.com ========= 预期结果 : service@eyee.com
+2017-07-11 15:11:53.095 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : searchkey   实际结果 : supreme ========= 预期结果 : supreme
+2017-07-11 15:11:53.096 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : taxexempt   实际结果 : 0 ========= 预期结果 : 0
+2017-07-11 15:11:53.097 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : icon   实际结果 : http://files.eyee.com/EYEE/icons/sharelogo.png ========= 预期结果 : http://files.eyee.com/EYEE/icons/sharelogo.png
+2017-07-11 15:11:53.097 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : title   实际结果 : EYEE蜂潮，潮流生活上蜂潮！ ========= 预期结果 : EYEE蜂潮，潮流生活上蜂潮！
+2017-07-11 15:11:53.097 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : type   实际结果 : 0 ========= 预期结果 : 0
+2017-07-11 15:11:53.098 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : content   实际结果 : EYEE蜂潮专注潮流生活，实时获取国内外一手潮流资讯和全球潮流商品。 ========= 预期结果 : EYEE蜂潮专注潮流生活，实时获取国内外一手潮流资讯和全球潮流商品。
+2017-07-11 15:11:53.098 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : url   实际结果 : http://inner.eyee.com/news ========= 预期结果 : http://inner.eyee.com/news
+2017-07-11 15:11:53.098 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : icon   实际结果 : http://files.eyee.com/EYEE/icons/sharelogo.png ========= 预期结果 : http://files.eyee.com/EYEE/icons/sharelogo.png
+2017-07-11 15:11:53.099 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : title   实际结果 : EYEE蜂潮，潮流生活上蜂潮！ ========= 预期结果 : EYEE蜂潮，潮流生活上蜂潮！
+2017-07-11 15:11:53.099 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : type   实际结果 : 1 ========= 预期结果 : 1
+2017-07-11 15:11:53.099 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : content   实际结果 : EYEE蜂潮专注潮流生活，实时获取国内外一手潮流资讯和全球潮流商品。 ========= 预期结果 : EYEE蜂潮专注潮流生活，实时获取国内外一手潮流资讯和全球潮流商品。
+2017-07-11 15:11:53.099 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : url   实际结果 : http://inner.eyee.com/mall ========= 预期结果 : http://inner.eyee.com/mall
+2017-07-11 15:11:53.100 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : aboutus   实际结果 : http://inner.eyee.com/aboutus ========= 预期结果 : http://inner.eyee.com/aboutus
+2017-07-11 15:11:53.100 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : shoppingtips   实际结果 : http://inner.eyee.com/shoppingtips ========= 预期结果 : http://inner.eyee.com/shoppingtips
+2017-07-11 15:11:53.100 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : coupondesc   实际结果 : http://inner.eyee.com/coupondescription ========= 预期结果 : http://inner.eyee.com/coupondescription
+2017-07-11 15:11:53.101 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : updverlog   实际结果 :  2.1.5版更新内容：\n 新增加彩蛋活动，详情请见app内活动说明。\n适配iOS10，修复部分bug，提高稳定性。 ========= 预期结果 :  2.1.5版更新内容：\n 新增加彩蛋活动，详情请见app内活动说明。\n适配iOS10，修复部分bug，提高稳定性。
+2017-07-11 15:11:53.101 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : newestver   实际结果 : 2.1.5 ========= 预期结果 : 2.1.5
+2017-07-11 15:11:53.101 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : loadurl   实际结果 : https://itunes.apple.com/cn/app/eyee/id962223967?mt=8 ========= 预期结果 : https://itunes.apple.com/cn/app/eyee/id962223967?mt=8
+2017-07-11 15:11:53.102 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : isnewer   实际结果 : false ========= 预期结果 : false
+2017-07-11 15:11:53.102 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : slas   实际结果 : http://inner.eyee.com/slas ========= 预期结果 : http://inner.eyee.com/slas
+2017-07-11 15:11:53.102 INFO  30 info - com.interf.eyee.utils.HandleLog: 字段名称 : launchurl   实际结果 : http://files.eyee.com/Shop/system/main/734cc33daa814fb19dae5ad26830a7bb.jpg ========= 预期结果 : http://files.eyee.com/Shop/system/main/734cc33daa814fb19dae5ad26830a7bb.jpg
+2017-07-11 15:11:53.104 INFO  30 info - com.interf.eyee.script.home.BaseValue: 清除本条用例数据完成
+2017-07-11 15:11:53.122 INFO  30 info - com.interf.eyee.script.home.BaseValue: ==== 结束测试 ====

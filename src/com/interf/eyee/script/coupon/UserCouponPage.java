@@ -11,7 +11,7 @@ import com.interf.eyee.utils.HttpUntils;
 import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;
 import com.interf.eyee.utils.ResponseBody;
-import com.interf.eyee.utils.responseassert.NormalAssert;
+import com.interf.eyee.utils.responseassert.SimpleAssert;
 
 import org.testng.annotations.BeforeClass;
 
@@ -37,10 +37,10 @@ public class UserCouponPage extends BaseCase {
 
 		ResponseEntity response = ResponseBody.handle(body);
 
-		NormalAssert normal = new NormalAssert(response, baseLine);
-		normal.assertCode();
-		normal.assertMsg();
-		normal.assertData(); //需重写增加复杂data断言，增加用例data数据
+		SimpleAssert simple = new SimpleAssert(response, baseLine);
+		simple.assertCode();
+		simple.assertMsg();
+		simple.assertData(); //需重写增加复杂data断言，增加用例data数据
   }
   @BeforeClass
   public void beforeClass() {
