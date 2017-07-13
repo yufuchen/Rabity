@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TASK>
+	<TestCase id="0" name="使用正确的手机号和密码登录">
+		<api>api/User/Login</api>
+		<MobileLoginInput>
+			<mobile>+86-17740887033</mobile>
+			<password>miyahug77126</password>
+		</MobileLoginInput>
+		<MobileLoginBaseLine>
+			<code>1511200</code>
+			<msg>请求已完成</msg>
+			<MobileLoginData>
+				<balance>0.00</balance>
+				<bindqq>0</bindqq>
+				<bindweibo>0</bindweibo>
+				<bindweixin>0</bindweixin>
+				<credits>106.00</credits>
+				<currcredits>106.00</currcredits>
+				<emailconfirmed>false</emailconfirmed>
+				<facevalue>0.0</facevalue>
+				<firstreggift>1</firstreggift>
+				<haspwd>1</haspwd>
+				<hastradepwd>0</hastradepwd>
+				<imageurl>http://api.eyee.com/EYEE/Icons/defaulthead.jpg</imageurl>
+				<isagent>0</isagent>
+				<isbindhobby>1</isbindhobby>
+				<mobile>+86-17740887033</mobile>
+				<mobileconfirmed>true</mobileconfirmed>
+				<rankname>v0</rankname>
+				<rankpic>http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png</rankpic>
+				<registertype>3</registertype>
+				<sex>0</sex>
+				<uid>7975325267954effa5080d79bdcafab5</uid>
+				<username>Ksewen</username>
+			</MobileLoginData>
+		</MobileLoginBaseLine>
+	</TestCase>
+	<TestCase id="1" name="使用正确的手机号和错误的密码登录">
+		<api>api/User/Login</api>
+		<MobileLoginInput>
+			<mobile>+86-17740887033</mobile>
+			<password>mistake</password>
+		</MobileLoginInput>
+		<MobileLoginBaseLine>
+			<code>1511542</code>
+			<msg>账号或密码错误</msg>
+			<MobileLoginData></MobileLoginData>
+		</MobileLoginBaseLine>
+	</TestCase>
+	<TestCase id="2" name="使用正确的手机号和空密码登录">
+		<api>api/User/Login</api>
+		<MobileLoginInput>
+			<mobile>+86-17740887033</mobile>
+			<password></password>
+		</MobileLoginInput>
+		<MobileLoginBaseLine>
+			<code>1511503</code>
+			<msg>缺少必要的参数</msg>
+			<MobileLoginData></MobileLoginData>
+		</MobileLoginBaseLine>
+	</TestCase>
+	<TestCase id="3" name="使用无国家号的手机号登录">
+		<api>api/User/Login</api>
+		<MobileLoginInput>
+			<mobile>17740887033</mobile>
+			<password>miyahug77126</password>
+		</MobileLoginInput>
+		<MobileLoginBaseLine>
+			<code>1511572</code>
+			<msg>手机号码格式不正确</msg>
+			<MobileLoginData></MobileLoginData>
+		</MobileLoginBaseLine>
+	</TestCase>
+	<TestCase id="4" name="使用不存在的用户手机号登录">
+		<api>api/User/Login</api>
+		<MobileLoginInput>
+			<mobile>+86-12340887033</mobile>
+			<password>miyahug77126</password>
+		</MobileLoginInput>
+		<MobileLoginBaseLine>
+			<code>1511540</code>
+			<msg>用户不存在</msg>
+			<MobileLoginData></MobileLoginData>
+		</MobileLoginBaseLine>
+	</TestCase>
+	<TestCase id="5" name="使用空手机号登录">
+		<api>api/User/Login</api>
+		<MobileLoginInput>
+			<mobile></mobile>
+			<password>miyahug77126</password>
+		</MobileLoginInput>
+		<MobileLoginBaseLine>
+			<code>1511503</code>
+			<msg>缺少必要的参数</msg>
+			<MobileLoginData></MobileLoginData>
+		</MobileLoginBaseLine>
+	</TestCase>
+	<TestCase id="6" name="使用缺少一位的手机号登录">
+		<api>api/User/Login</api>
+		<MobileLoginInput>
+			<mobile>+86-1774088703</mobile>
+			<password>miyahug77126</password>
+		</MobileLoginInput>
+		<MobileLoginBaseLine>
+			<code>1511540</code>
+			<msg>用户不存在</msg>
+			<MobileLoginData></MobileLoginData>
+		</MobileLoginBaseLine>
+	</TestCase>
+	<TestCase id="7" name="使用多一位的手机号登录">
+		<api>api/User/Login</api>
+		<MobileLoginInput>
+			<mobile>+86-177408870333</mobile>
+			<password>miyahug77126</password>
+		</MobileLoginInput>
+		<MobileLoginBaseLine>
+			<code>1511572</code>
+			<msg>手机号码格式不正确</msg>
+			<MobileLoginData></MobileLoginData>
+		</MobileLoginBaseLine>
+	</TestCase>
+	<TestCase id="8" name="使用含错误国家号的手机号登录">
+		<api>api/User/Login</api>
+		<MobileLoginInput>
+			<mobile>86-17740887033</mobile>
+			<password>miyahug77126</password>
+		</MobileLoginInput>
+		<MobileLoginBaseLine>
+			<code>1511572</code>
+			<msg>手机号码格式不正确</msg>
+			<MobileLoginData></MobileLoginData>
+		</MobileLoginBaseLine>
+	</TestCase>
+	<TestCase id="9" name="使用含有中文的手机号登录">
+		<api>api/User/Login</api>
+		<MobileLoginInput>
+			<mobile>手机号</mobile>
+			<password>miyahug77126</password>
+		</MobileLoginInput>
+		<MobileLoginBaseLine>
+			<code>1511572</code>
+			<msg>手机号码格式不正确</msg>
+			<MobileLoginData></MobileLoginData>
+		</MobileLoginBaseLine>
+	</TestCase>
+</TASK>

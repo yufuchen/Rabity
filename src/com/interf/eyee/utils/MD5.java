@@ -35,7 +35,7 @@ public class MD5 {
 	}
 
 	public static String getMd5(String token, String platform) {
-		Properties p = ConfigUtils.getProperties(config);
+		Properties p = ConfigUtil.getProperties(config);
 		String param = null;
 		switch (platform) {
 		case "ios":

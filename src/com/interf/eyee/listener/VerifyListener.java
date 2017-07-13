@@ -6,7 +6,7 @@ import java.util.List;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
-import com.interf.eyee.utils.Verify;
+import com.interf.eyee.utils.assertutils.Verify;
 
 /**
  * @author Ksewen

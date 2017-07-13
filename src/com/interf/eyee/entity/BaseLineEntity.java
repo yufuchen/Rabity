@@ -1,5 +1,8 @@
 package com.interf.eyee.entity;
 
+import java.math.BigInteger;
+import java.util.List;
+
 import javax.xml.bind.annotation.XmlTransient;
 
 /**
@@ -8,6 +11,6 @@ import javax.xml.bind.annotation.XmlTransient;
  */
 
 @XmlTransient
-public abstract class BaseParamEntity {
+public abstract class BaseLineEntity<T extends BaseDataEntity> {
 
 }

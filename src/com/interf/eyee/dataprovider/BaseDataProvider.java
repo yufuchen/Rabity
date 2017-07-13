@@ -5,12 +5,16 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.testng.annotations.DataProvider;
 
-import com.interf.eyee.entity.BaseDataEntity;
-import com.interf.eyee.utils.xmlanalysis.XMLUntils;
+import com.interf.eyee.entity.BaseLineEntity;
+import com.interf.eyee.entity.InputEntity;
+import com.interf.eyee.entity.TestCaseEntity;
+import com.interf.eyee.entity.forcase.MobileLoginTASK;
+import com.interf.eyee.utils.xmlutils.NormalXMLUtil;
 
 
 /**
@@ -19,19 +23,23 @@ import com.interf.eyee.utils.xmlanalysis.XMLUntils;
  */
 public class BaseDataProvider {
 	private static ArrayList<Object[]> testCases = null;
-	private static LinkedHashMap<String, BaseDataEntity> caseMap = null;
+	private static MobileLoginTASK caseMap = null;
 
   @DataProvider(name="BaseData")
   public static Iterator<Object[]> dp(Method method) {
 		String path = "./testdata/" + method.getName() + "Case.xml";
-		caseMap = XMLUntils.readXMLCase(path);
+		String className = "com.interf.eyee.entity.forcase." + method.getName().split("Test")[0] + "TASK";
+		try {
+			caseMap = (MobileLoginTASK) NormalXMLUtil.convertXmlFileToObject(Class.forName(className), path);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		testCases = new ArrayList<Object[]>();
-		for (Map.Entry<String, BaseDataEntity> entry : caseMap.entrySet()) {
-			String testName = entry.getKey();
-			BaseDataEntity testCase = entry.getValue();
-			if (!testName.equals("") && testCase != null) {
-				testCases.add(new Object[] {testName, testCase});
-			}
+		List<TestCaseEntity<? extends InputEntity, ? extends BaseLineEntity>> listArray = caseMap.getTestCase();
+		for (int i = 0; i < listArray.size(); i++) {
+			String testName = listArray.get(i).getId() + "_" + listArray.get(i).getName();
+			testCases.add(new Object[] {testName, listArray.get(i)});
 		}
 		return testCases.iterator();
 	  }

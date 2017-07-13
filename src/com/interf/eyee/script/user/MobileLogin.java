@@ -1,71 +1,50 @@
 package com.interf.eyee.script.user;
 
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.alibaba.fastjson.JSONObject;
 import com.interf.eyee.dataprovider.BaseDataProvider;
-import com.interf.eyee.entity.BaseDataEntity;
-import com.interf.eyee.entity.MobileLoginEntity;
+import com.interf.eyee.entity.BaseLineEntity;
+import com.interf.eyee.entity.InputEntity;
 import com.interf.eyee.entity.ResponseEntity;
+import com.interf.eyee.entity.TestCaseEntity;
+import com.interf.eyee.entity.forcase.MobileLoginBaseLine;
+import com.interf.eyee.entity.forcase.MobileLoginData;
+import com.interf.eyee.entity.forcase.MobileLoginInput;
 import com.interf.eyee.script.BaseCase;
-import com.interf.eyee.utils.HttpUntils;
+import com.interf.eyee.utils.HttpUtil;
 import com.interf.eyee.utils.InitParam;
 import com.interf.eyee.utils.Log;
-import com.interf.eyee.utils.ResponseBody;
-import com.interf.eyee.utils.TokenManager;
-import com.interf.eyee.utils.responseassert.BaseAssert;
-import com.interf.eyee.utils.responseassert.NormalAssert;
-import com.interf.eyee.utils.responseassert.SimpleAssert;
-
-/**
- * @author Ksewen
- *
- */
-
+import com.interf.eyee.utils.ResponseUtil;
+import com.interf.eyee.utils.assertutils.BaseAssertUtil;
+import com.interf.eyee.utils.assertutils.NormalAssertUtil;
 
 public class MobileLogin extends BaseCase {
 	private Log log = new Log(this.getClass());
-	private MobileLoginEntity mobileLoginEntity = null;
-
-	@BeforeClass
-	public void beforeTest() {
-		mobileLoginEntity = new MobileLoginEntity();
-		super.setEntity(mobileLoginEntity);
-		log.info("--------------- " + this.getClass().getName() + " ----------");
-	}
 
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)
-	public void mobileLoginTest(String testName, BaseDataEntity data) {
-		log.info("用例名称 : " + testName);
+	public void MobileLoginTest(String testName,
+			TestCaseEntity<? extends InputEntity, ? extends BaseLineEntity> testCase) {
+		baseApi = testCase.getApi();
 
-		testCase = data.getInput();
-		baseLine = data.getBaseline();
-		baseApi = data.getApi();
-
-		// 封装用例读取的参数
-		mobileLoginEntity.setMobile(InitParam.caseSet(testCase, "mobile"));
-		mobileLoginEntity.setPassword(InitParam.handlePwd(testCase));
-		mobileLoginEntity
-				.setSign(InitParam.handleSign(testCase, mobileLoginEntity.getToken(), mobileLoginEntity.getPlatform()));
-
-		// 调用接口
-		String body = HttpUntils.post(baseUrl + baseApi, mobileLoginEntity);
-		log.info("接口返回 : " + body);
-
-		// 读取返回实体
-		ResponseEntity response = ResponseBody.handle(body);
-
-		//如果请求成功，保存Token
-		if (response.getCode() == 1511200) {
-			JSONObject dataJson = JSONObject.parseObject(response.getData().toString());
-			TokenManager.setToken(dataJson.getString("token"));
-		}
+		MobileLoginInput input = (MobileLoginInput) testCase.getInput();
+		MobileLoginBaseLine baseLine = (MobileLoginBaseLine) testCase.getBaseLine();
 		
-		// 断言		
-		SimpleAssert simple = new SimpleAssert(response, baseLine);
-		simple.assertCode();
-		simple.assertMsg();
-		simple.assertData();
+		log.info(" ------- 用例名称 : " + testName + " ------- ");
+		InitParam.init(input);
+		log.info("默认参数初始化完成 : \n" + input.toString());
+		
+		input.setToken("");
+		InitParam.handleSign(input);
+		InitParam.handlePwd(input);
+		
+		String body = HttpUtil.post(baseUrl + baseApi, input);
+		ResponseEntity<MobileLoginData> response = ResponseUtil.handle(body, new MobileLoginData());
+		
+		BaseAssertUtil verify = new NormalAssertUtil();
+		verify.assertCode(response.getCode(), baseLine.getCode());
+		verify.assertMsg(response.getMsg(), baseLine.getMsg());
+		verify.assertData(response.getData(), baseLine.getMobileLoginData());
+		
+		log.info(" ------- 用例 : " + testName + "  执行结束 ------- ");
 	}
 }
