@@ -1,30 +1,48 @@
 package com.interf.eyee.entity;
 
-import java.math.BigInteger;
-
-import javax.xml.bind.annotation.XmlTransient;
-
 /**
  * @author Ksewen
  *
  */
-@XmlTransient
-public abstract class TestCaseEntity<T extends InputEntity, U extends BaseLineEntity> {
-	protected String api;
-	protected BigInteger id;
-	protected String name;
-	protected T input;
-	protected U baseLine;
+public class TestCaseEntity {
+	private String api;
+	private int id;
+	private String name;
+	private InputEntity input;
+	private BaseLineEntity baseLine;
 	
-	public abstract BigInteger getId();
-	public abstract void setId(BigInteger value);
-	public abstract String getName();
-	public abstract void setName(String value);
-	public abstract String getApi();
-	public abstract void setApi(String value);
-	public abstract T getInput();
-	public abstract void setInput(T value);
-	public abstract U getBaseLine();
-	public abstract void setBaseLine(U value);
+	public String getApi() {
+		return api;
+	}
+	public void setApi(String api) {
+		this.api = api;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public InputEntity getInput() {
+		return input;
+	}
+	public void setInput(InputEntity input) {
+		this.input = input;
+	}
+	public BaseLineEntity getBaseLine() {
+		return baseLine;
+	}
+	public void setBaseLine(BaseLineEntity baseLine) {
+		this.baseLine = baseLine;
+	}
 	
+	
+	
+
 }

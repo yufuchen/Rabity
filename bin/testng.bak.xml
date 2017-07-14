@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Eyee_API_20170630">
+	<test name="MobileLogin">
+		<classes>
+			<class name="com.interf.eyee.script.user.MobileLogin">
+				<methods>
+					<include name="MobileLoginTest" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- MobileLogin -->
+	<test name="AutoLogin">
+		<classes>
+			<class name="com.interf.eyee.script.user.AutoLogin">
+				<methods>
+					<include name="AutoLoginTest" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- AutoLogin -->
+	<test name="Register">
+		<classes>
+			<class name="com.interf.eyee.script.user.Register">
+				<methods>
+					<include name="registerTest" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Register -->
+	<test name="NewProductDetail">
+		<classes>
+			<class name="com.interf.eyee.script.product.NewProductDetail">
+				<methods>
+					<include name="newProductDetailTest" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- NewProductDetail -->
+	<test name="ActPreList">
+		<classes>
+			<class name="com.interf.eyee.script.limit.ActPreList">
+				<methods>
+					<include name="actPreListTest" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- ActPreList -->
+	<test name="BaseValue">
+		<classes>
+			<class name="com.interf.eyee.script.home.BaseValue">
+				<methods>
+					<include name="baseValueTest" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- BaseValue -->
+</suite> <!-- Eyee_API_20170630 -->

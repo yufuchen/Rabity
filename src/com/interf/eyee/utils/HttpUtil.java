@@ -5,9 +5,12 @@ import java.io.IOException;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
 import com.interf.eyee.entity.InputEntity;
@@ -17,9 +20,8 @@ import com.interf.eyee.entity.InputEntity;
  * @author Ksewen
  *
  */
-@SuppressWarnings("deprecation")
 public class HttpUtil {
-	private static HttpClient httpClient = null;
+	private static CloseableHttpClient httpClient = null;
 	private static HttpPost postMethod = null;
 	private static long startTime = 0L;
 	private static long endTime = 0L;
@@ -27,7 +29,7 @@ public class HttpUtil {
 	private static Log log = new Log(HttpUtil.class);
 
 	public static String post(String baseUrl, InputEntity postEntity) {
-		httpClient = new DefaultHttpClient();
+		httpClient = HttpClients.createDefault();
 		postMethod = new HttpPost(baseUrl);
 		String param = postEntity.toString();
 		String body = null;
@@ -43,7 +45,7 @@ public class HttpUtil {
 				postMethod.setEntity(se);
 				startTime = System.currentTimeMillis();
 
-				HttpResponse response = httpClient.execute(postMethod);
+				CloseableHttpResponse response = httpClient.execute(postMethod);
 
 				endTime = System.currentTimeMillis();
 				int statusCode = response.getStatusLine().getStatusCode();

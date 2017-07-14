@@ -9,7 +9,7 @@ import com.interf.eyee.entity.BaseDataEntity;
  *
  */
 public interface BaseAssertUtil {
-	public abstract void assertCode(BigInteger actual, BigInteger expect);
+	public abstract void assertCode(long actual, long expect);
 	public abstract void assertMsg(String actual, String expect);
 	public abstract <T extends BaseDataEntity> void assertData(T actual, T expect);
 }

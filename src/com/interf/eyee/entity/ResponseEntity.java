@@ -1,18 +1,16 @@
 package com.interf.eyee.entity;
 
-import java.math.BigInteger;
-
-public class ResponseEntity<T extends BaseDataEntity> {
-	private BigInteger code;
+public class ResponseEntity {
+	private long code;
 	private String msg;
-	private T data;
+	private BaseDataEntity data;
 	private String serverTime;
 	
 	
-	public BigInteger getCode() {
+	public long getCode() {
 		return code;
 	}
-	public void setCode(BigInteger code) {
+	public void setCode(long code) {
 		this.code = code;
 	}
 	public String getMsg() {
@@ -27,10 +25,10 @@ public class ResponseEntity<T extends BaseDataEntity> {
 	public void setServerTime(String serverTime) {
 		this.serverTime = serverTime;
 	}
-	public T getData() {
+	public BaseDataEntity getData() {
 		return data;
 	}
-	public void setData(T data) {
+	public void setData(BaseDataEntity data) {
 		this.data = data;
 	}
 }

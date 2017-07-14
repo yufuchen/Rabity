@@ -4,8 +4,6 @@ package com.interf.eyee.utils;
  *
  */
 
-import java.math.BigInteger;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
@@ -15,15 +13,15 @@ import com.interf.eyee.entity.ResponseEntity;
 
 public class ResponseUtil {
 	
-	@SuppressWarnings("unchecked")
-	public static <T extends BaseDataEntity> ResponseEntity<T> handle(String body, T data) {
-		ResponseEntity<T> response = new ResponseEntity<T>();
+	public static ResponseEntity handle(String body) {
+		ResponseEntity response = new ResponseEntity();
 		Gson gson = new GsonBuilder().create();
 		JsonObject temp = new JsonParser().parse(body).getAsJsonObject();
-		response.setCode(new BigInteger(temp.get("code").getAsString()));
+		response.setCode(Long.parseLong(temp.get("code").getAsString()));
 		response.setMsg(temp.get("msg").getAsString());
+		BaseDataEntity data = new BaseDataEntity();
 		if (!temp.get("data").toString().equals("null")) {
-			data = (T) gson.fromJson(temp.get("data"), data.getClass());
+			data = (BaseDataEntity) gson.fromJson(temp.get("data"), data.getClass());
 		}
 		response.setData(data);
 		return response;

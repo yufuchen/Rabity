@@ -2,14 +2,20 @@ package com.interf.eyee.entity;
 
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlTransient;
-
 /**
  * @author Ksewen
  *
  */
-@XmlTransient
-public abstract class TaskEntity {
-	protected List<TestCaseEntity<? extends InputEntity, ? extends BaseLineEntity>> testCase;
-	public abstract List<TestCaseEntity<? extends InputEntity, ? extends BaseLineEntity>> getTestCase();
+
+public class TaskEntity {
+	private List<TestCaseEntity> testCase;
+
+	public List<TestCaseEntity> getTestCase() {
+		return testCase;
+	}
+
+	public void setTestCase(List<TestCaseEntity> testCase) {
+		this.testCase = testCase;
+	}
+	
 }

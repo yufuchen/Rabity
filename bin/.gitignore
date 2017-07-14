@@ -1,3 +1,5 @@
+/test-output
+/src/*.java
 /com/
-/log4j2.xml
-/test.class
+/testdata/
+/token.cache

@@ -20,9 +20,9 @@ public class NormalAssertUtil implements BaseAssertUtil {
 	private String keyName = "data";
 
 	@Override
-	public void assertCode(BigInteger actual, BigInteger expect) {
+	public void assertCode(long actual, long expect) {
 		flag = Verify.verifyEquals(actual, expect);
-		HandleLog.write(flag, "code", actual.toString(), expect.toString());
+		HandleLog.write(flag, "code", Long.toString(actual), Long.toString(expect));
 	}
 
 	@Override
