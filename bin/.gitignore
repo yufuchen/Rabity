@@ -1,7 +1,3 @@
 /test-output
 /src/*.java
 /com/
-/testdata/
-/token.cache
-/AssertUtilConfig.xml
-/UtilConfig.xml

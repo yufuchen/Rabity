@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+     xmlns="http://www.springframework.org/schema/beans"  
+     xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!-- Task -->
+	<bean id="Task" class="com.interf.eyee.entity.TaskEntity">
+		<property name="testCase">
+			<list>
+				<ref bean="TestCase1" />
+				<ref bean="TestCase2" />
+			</list>
+		</property>
+	</bean>
+	<!-- TestCase1 -->
+	<bean id="TestCase1" class="com.interf.eyee.entity.TestCaseEntity">
+		<property name="id">
+			<value>0</value>
+		</property>
+		<property name="name">
+			<value>使用正确的信息更新hobby标签</value>
+		</property>
+		<property name="assertType">
+			<value>1</value>
+		</property>
+		<property name="api">
+			<value>api/User/BindHobbyLabels</value>
+		</property>
+		<property name="input">
+			<ref bean="Input1" />
+		</property>
+		<property name="baseLine">
+			<ref bean="BaseLine1" />
+		</property>
+	</bean>
+	<bean id="Input1" class="com.interf.eyee.entity.forcase.BindHobbyLabelsInputEntity">
+		<property name="hobbylabels">
+			<list>
+				<ref bean="Item1" />
+				<ref bean="Item2" />
+				<ref bean="Item3" />
+			</list>
+		</property>
+		<property name="param">
+			<value/>
+		</property>
+	</bean>
+	<bean id="BaseLine1" class="com.interf.eyee.entity.BaseLineEntity">
+		<property name="code">
+			<value>1511200</value>
+		</property>
+		<property name="msg">
+			<value>请求已完成</value>
+		</property>
+		<property name="data">
+			<null/>
+		</property>
+	</bean>
+	<bean id="Item1" class="com.interf.eyee.entity.forcase.BindHobbyLabelsItemEntity">
+		<property name="hobbylabelid">
+			<value>c31e9ce5a856498d9182e8653eb5792e</value>
+		</property>
+	</bean>
+	<bean id="Item2" class="com.interf.eyee.entity.forcase.BindHobbyLabelsItemEntity">
+		<property name="hobbylabelid">
+			<value>06872b3565774e5e9a5d7a14c618467b</value>
+		</property>
+	</bean>
+	<bean id="Item3" class="com.interf.eyee.entity.forcase.BindHobbyLabelsItemEntity">
+		<property name="hobbylabelid">
+			<value>fbfc83e3faa6498d967054886f5044f9</value>
+		</property>
+	</bean>
+	<!-- TestCase2 -->
+	<bean id="TestCase2" class="com.interf.eyee.entity.TestCaseEntity">
+		<property name="id">
+			<value>1</value>
+		</property>
+		<property name="name">
+			<value>使用空的hobbylabels更新hobby标签</value>
+		</property>
+		<property name="assertType">
+			<value>0</value>
+		</property>
+		<property name="api">
+			<value>api/User/BindHobbyLabels</value>
+		</property>
+		<property name="input">
+			<ref bean="Input2" />
+		</property>
+		<property name="baseLine">
+			<ref bean="BaseLine2" />
+		</property>
+	</bean>
+	<bean id="Input2" class="com.interf.eyee.entity.forcase.BindHobbyLabelsInputEntity">
+		<property name="param">
+			<value/>
+		</property>
+	</bean>
+	<bean id="BaseLine2" class="com.interf.eyee.entity.BaseLineEntity">
+		<property name="code">
+			<value>1511503</value>
+		</property>
+		<property name="msg">
+			<value>缺少必要的参数</value>
+		</property>
+		<property name="data">
+			<null/>
+		</property>
+	</bean>
+	<!-- AssertUtil -->
+	<bean id="AssertUtil" class="com.interf.eyee.utils.assertutils.NormalAssertUtil" />
+</beans>

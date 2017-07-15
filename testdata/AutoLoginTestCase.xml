@@ -19,13 +19,13 @@
 			<value>0</value>
 		</property>
 		<property name="name">
-			<value>使用正确的手机号和密码登录</value>
+			<value>使用正确的sign和token登录</value>
 		</property>
 		<property name="assertType">
 			<value>0</value>
 		</property>
 		<property name="api">
-			<value>api/User/Login</value>
+			<value>api/User/LoginAuto</value>
 		</property>
 		<property name="input">
 			<ref bean="Input1" />
@@ -34,13 +34,7 @@
 			<ref bean="BaseLine1" />
 		</property>
 	</bean>
-	<bean id="Input1" class="com.interf.eyee.entity.forcase.MobileLoginInputEntity">
-		<property name="mobile">
-			<value>+86-17740887033</value>
-		</property>
-		<property name="password">
-			<value>miyahug77126</value>
-		</property>
+	<bean id="Input1" class="com.interf.eyee.entity.forcase.EmptyEntity">
 		<property name="param">
 			<value/>
 		</property>
@@ -56,7 +50,7 @@
 			<ref bean="Data1" />
 		</property>
 	</bean>
-	<bean id="Data1" class="com.interf.eyee.entity.forcase.MobileLoginDataEntity">
+	<bean id="Data1" class="com.interf.eyee.entity.forcase.AutoLoginDataEntity">
 		<property name="balance">
 			<value>0.00</value>
 		</property>
@@ -130,13 +124,13 @@
 			<value>1</value>
 		</property>
 		<property name="name">
-			<value>使用正确的手机号和错误的密码登录</value>
+			<value>使用正确的sign和错误格式的token登录</value>
 		</property>
 		<property name="assertType">
 			<value>0</value>
 		</property>
 		<property name="api">
-			<value>api/User/Login</value>
+			<value>api/User/LoginAuto</value>
 		</property>
 		<property name="input">
 			<ref bean="Input2" />
@@ -145,12 +139,9 @@
 			<ref bean="BaseLine2" />
 		</property>
 	</bean>
-	<bean id="Input2" class="com.interf.eyee.entity.forcase.MobileLoginInputEntity">
-		<property name="mobile">
-			<value>+86-17740887033</value>
-		</property>
-		<property name="password">
-			<value>mistake</value>
+	<bean id="Input2" class="com.interf.eyee.entity.forcase.EmptyEntity">
+		<property name="token">
+			<value>tail</value>
 		</property>
 		<property name="param">
 			<value/>
@@ -158,10 +149,10 @@
 	</bean>
 	<bean id="BaseLine2" class="com.interf.eyee.entity.BaseLineEntity">
 		<property name="code">
-			<value>1511542</value>
+			<value>1511543</value>
 		</property>
 		<property name="msg">
-			<value>账号或密码错误</value>
+			<value>无效的用户token</value>
 		</property>
 		<property name="data">
 			<null/>
@@ -173,13 +164,13 @@
 			<value>2</value>
 		</property>
 		<property name="name">
-			<value>使用正确的手机号和空密码登录</value>
+			<value>使用正确的sign和错误内容的token登录</value>
 		</property>
 		<property name="assertType">
 			<value>0</value>
 		</property>
 		<property name="api">
-			<value>api/User/Login</value>
+			<value>api/User/LoginAuto</value>
 		</property>
 		<property name="input">
 			<ref bean="Input3" />
@@ -188,12 +179,9 @@
 			<ref bean="BaseLine3" />
 		</property>
 	</bean>
-	<bean id="Input3" class="com.interf.eyee.entity.forcase.MobileLoginInputEntity">
-		<property name="mobile">
-			<value>+86-17740887033</value>
-		</property>
-		<property name="password">
-			<value></value>
+	<bean id="Input3" class="com.interf.eyee.entity.forcase.EmptyEntity">
+		<property name="token">
+			<value>WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ==</value>
 		</property>
 		<property name="param">
 			<value/>
@@ -201,10 +189,10 @@
 	</bean>
 	<bean id="BaseLine3" class="com.interf.eyee.entity.BaseLineEntity">
 		<property name="code">
-			<value>1511503</value>
+			<value>1511543</value>
 		</property>
 		<property name="msg">
-			<value>缺少必要的参数</value>
+			<value>无效的用户token</value>
 		</property>
 		<property name="data">
 			<null/>
