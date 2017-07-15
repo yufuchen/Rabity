@@ -1,7 +1,5 @@
 package com.interf.eyee.utils.assertutils;
 
-import java.math.BigInteger;
-
 import com.interf.eyee.entity.BaseDataEntity;
 
 /**
@@ -11,5 +9,6 @@ import com.interf.eyee.entity.BaseDataEntity;
 public interface BaseAssertUtil {
 	public abstract void assertCode(long actual, long expect);
 	public abstract void assertMsg(String actual, String expect);
-	public abstract <T extends BaseDataEntity> void assertData(T actual, T expect);
+	public abstract void assertData(Object actual, BaseDataEntity expect);
+	
 }

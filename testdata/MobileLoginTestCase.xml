@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>  
-<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" " http://www.springframework.org/dtd/spring-beans.dtd ">
-<beans>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+     xmlns="http://www.springframework.org/schema/beans"  
+     xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 	<!-- Task -->
 	<bean id="Task" class="com.interf.eyee.entity.TaskEntity">
 		<property name="testCase">
@@ -17,6 +19,9 @@
 		</property>
 		<property name="name">
 			<value>使用正确的手机号和密码登录</value>
+		</property>
+		<property name="assertType">
+			<value>0</value>
 		</property>
 		<property name="api">
 			<value>api/User/Login</value>
@@ -73,7 +78,7 @@
 			<value>false</value>
 		</property>
 		<property name="facevalue">
-			<value>0.00</value>
+			<value>0.0</value>
 		</property>
 		<property name="firstreggift">
 			<value>1</value>
@@ -126,6 +131,9 @@
 		<property name="name">
 			<value>使用正确的手机号和错误的密码登录</value>
 		</property>
+		<property name="assertType">
+			<value>0</value>
+		</property>
 		<property name="api">
 			<value>api/User/Login</value>
 		</property>
@@ -158,4 +166,6 @@
 			<null/>
 		</property>
 	</bean>
+	<!-- AssertUtil -->
+	<bean id="AssertUtil" class="com.interf.eyee.utils.assertutils.NormalAssertUtil" />
 </beans>

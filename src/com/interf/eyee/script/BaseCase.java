@@ -3,6 +3,7 @@ package com.interf.eyee.script;
 import com.interf.eyee.entity.BaseLineEntity;
 import com.interf.eyee.utils.ConfigUtil;
 import com.interf.eyee.utils.Log;
+import com.interf.eyee.utils.WordHandle;
 
 import java.util.Properties;
 
@@ -16,7 +17,10 @@ public class BaseCase {
 	protected static String baseApi;
 	protected boolean flag = false;
 	protected BaseLineEntity baseLine = null;
-
+	//断言类型控制   0: 断言code && msg && data;  1:断言code && msg ;
+	protected int assertType;
+	protected String path = "./testdata/" + WordHandle.getClass(this.getClass().getName()) + "TestCase.xml";
+	
 	private Properties p = ConfigUtil.getProperties(config);
 	private static String config = System.getProperty("user.dir") + "/config.properties";
 	private Log log = new Log(this.getClass());

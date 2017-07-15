@@ -1,6 +1,7 @@
 package com.interf.eyee.entity.forcase;
 
 import com.interf.eyee.entity.BaseDataEntity;
+import com.interf.eyee.utils.assertutils.Verify;
 
 /**
  * @author Ksewen
@@ -14,7 +15,7 @@ public class MobileLoginDataEntity extends BaseDataEntity {
 	private double credits;
 	private double currcredits;
 	private boolean emailconfirmed;
-	private double facevalue;
+	private String facevalue;
 	private int firstreggift;
 	private int haspwd;
 	private int hastradepwd;
@@ -29,6 +30,7 @@ public class MobileLoginDataEntity extends BaseDataEntity {
 	private int sex;
 	private String uid;
 	private String username;
+	
 	public double getBalance() {
 		return balance;
 	}
@@ -71,10 +73,10 @@ public class MobileLoginDataEntity extends BaseDataEntity {
 	public void setEmailconfirmed(boolean emailconfirmed) {
 		this.emailconfirmed = emailconfirmed;
 	}
-	public double getFacevalue() {
+	public String getFacevalue() {
 		return facevalue;
 	}
-	public void setFacevalue(double facevalue) {
+	public void setFacevalue(String facevalue) {
 		this.facevalue = facevalue;
 	}
 	public int getFirstreggift() {
@@ -161,7 +163,4 @@ public class MobileLoginDataEntity extends BaseDataEntity {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	
-	
-	
 }

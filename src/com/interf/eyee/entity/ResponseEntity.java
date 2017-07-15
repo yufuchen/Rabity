@@ -3,7 +3,7 @@ package com.interf.eyee.entity;
 public class ResponseEntity {
 	private long code;
 	private String msg;
-	private BaseDataEntity data;
+	private Object data;
 	private String serverTime;
 	
 	
@@ -25,10 +25,10 @@ public class ResponseEntity {
 	public void setServerTime(String serverTime) {
 		this.serverTime = serverTime;
 	}
-	public BaseDataEntity getData() {
+	public Object getData() {
 		return data;
 	}
-	public void setData(BaseDataEntity data) {
+	public void setData(Object data) {
 		this.data = data;
 	}
 }

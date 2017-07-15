@@ -7,6 +7,7 @@ package com.interf.eyee.entity;
 public class TestCaseEntity {
 	private String api;
 	private int id;
+	private int assertType;
 	private String name;
 	private InputEntity input;
 	private BaseLineEntity baseLine;
@@ -40,6 +41,12 @@ public class TestCaseEntity {
 	}
 	public void setBaseLine(BaseLineEntity baseLine) {
 		this.baseLine = baseLine;
+	}
+	public int getAssertType() {
+		return assertType;
+	}
+	public void setAssertType(int assertType) {
+		this.assertType = assertType;
 	}
 	
 	
