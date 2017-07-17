@@ -4,7 +4,7 @@
      xsi:schemaLocation="http://www.springframework.org/schema/beans 
      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 	<!-- Task -->
-	<bean id="Task" class="com.interf.eyee.entity.TaskEntity">
+	<bean id="Task" class="main.java.com.interf.eyee.entity.TaskEntity">
 		<property name="testCase">
 			<list>
 				<ref bean="TestCase1" />
@@ -14,7 +14,7 @@
 		</property>
 	</bean>
 	<!-- TestCase1 -->
-	<bean id="TestCase1" class="com.interf.eyee.entity.TestCaseEntity">
+	<bean id="TestCase1" class="main.java.com.interf.eyee.entity.TestCaseEntity">
 		<property name="id">
 			<value>0</value>
 		</property>
@@ -34,7 +34,7 @@
 			<ref bean="BaseLine1" />
 		</property>
 	</bean>
-	<bean id="Input1" class="com.interf.eyee.entity.forcase.MobileLoginInputEntity">
+	<bean id="Input1" class="main.java.com.interf.eyee.entity.forcase.MobileLoginInputEntity">
 		<property name="mobile">
 			<value>+86-17740887033</value>
 		</property>
@@ -45,7 +45,7 @@
 			<value/>
 		</property>
 	</bean>
-	<bean id="BaseLine1" class="com.interf.eyee.entity.BaseLineEntity">
+	<bean id="BaseLine1" class="main.java.com.interf.eyee.entity.BaseLineEntity">
 		<property name="code">
 			<value>1511200</value>
 		</property>
@@ -56,7 +56,7 @@
 			<ref bean="Data1" />
 		</property>
 	</bean>
-	<bean id="Data1" class="com.interf.eyee.entity.forcase.MobileLoginDataEntity">
+	<bean id="Data1" class="main.java.com.interf.eyee.entity.forcase.MobileLoginDataEntity">
 		<property name="balance">
 			<value>0.00</value>
 		</property>
@@ -125,7 +125,7 @@
 		</property>
 	</bean>
 	<!-- TestCase2 -->
-	<bean id="TestCase2" class="com.interf.eyee.entity.TestCaseEntity">
+	<bean id="TestCase2" class="main.java.com.interf.eyee.entity.TestCaseEntity">
 		<property name="id">
 			<value>1</value>
 		</property>
@@ -145,7 +145,7 @@
 			<ref bean="BaseLine2" />
 		</property>
 	</bean>
-	<bean id="Input2" class="com.interf.eyee.entity.forcase.MobileLoginInputEntity">
+	<bean id="Input2" class="main.java.com.interf.eyee.entity.forcase.MobileLoginInputEntity">
 		<property name="mobile">
 			<value>+86-17740887033</value>
 		</property>
@@ -156,7 +156,7 @@
 			<value/>
 		</property>
 	</bean>
-	<bean id="BaseLine2" class="com.interf.eyee.entity.BaseLineEntity">
+	<bean id="BaseLine2" class="main.java.com.interf.eyee.entity.BaseLineEntity">
 		<property name="code">
 			<value>1511542</value>
 		</property>
@@ -168,7 +168,7 @@
 		</property>
 	</bean>
 	<!-- TestCase3 -->
-	<bean id="TestCase3" class="com.interf.eyee.entity.TestCaseEntity">
+	<bean id="TestCase3" class="main.java.com.interf.eyee.entity.TestCaseEntity">
 		<property name="id">
 			<value>2</value>
 		</property>
@@ -188,7 +188,7 @@
 			<ref bean="BaseLine3" />
 		</property>
 	</bean>
-	<bean id="Input3" class="com.interf.eyee.entity.forcase.MobileLoginInputEntity">
+	<bean id="Input3" class="main.java.com.interf.eyee.entity.forcase.MobileLoginInputEntity">
 		<property name="mobile">
 			<value>+86-17740887033</value>
 		</property>
@@ -199,7 +199,7 @@
 			<value/>
 		</property>
 	</bean>
-	<bean id="BaseLine3" class="com.interf.eyee.entity.BaseLineEntity">
+	<bean id="BaseLine3" class="main.java.com.interf.eyee.entity.BaseLineEntity">
 		<property name="code">
 			<value>1511503</value>
 		</property>
@@ -211,5 +211,5 @@
 		</property>
 	</bean>
 	<!-- AssertUtil -->
-	<bean id="AssertUtil" class="com.interf.eyee.utils.assertutils.NormalAssertUtil" />
+	<bean id="AssertUtil" class="main.java.com.interf.eyee.utils.assertutils.NormalAssertUtil" />
 </beans>

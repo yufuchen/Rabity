@@ -1,41 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry excluding="src/|logs/|libs/httpClient/|libs/|testdata/" kind="src" path=""/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_131"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/dom4j-2.0.1.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/gson-2.8.0.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/log4j-api-2.8.2.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/log4j-core-2.8.2.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/httpClient/commons-codec-1.9.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/httpClient/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/httpClient/fluent-hc-4.5.2.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/httpClient/httpclient-4.5.2.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/httpClient/httpclient-cache-4.5.2.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/httpClient/httpclient-win-4.5.2.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/httpClient/httpcore-4.4.4.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/httpClient/httpmime-4.5.2.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/httpClient/jna-4.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/httpClient/jna-platform-4.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/fastjson-1.2.9.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-aop-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-aspects-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-beans-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-context-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-core-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-expression-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-instrument-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-jdbc-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-jms-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-messaging-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-orm-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-oxm-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-test-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-tx-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-web-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-webmvc-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-webmvc-portlet-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/eyee_api_v2/libs/spring/spring-websocket-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>

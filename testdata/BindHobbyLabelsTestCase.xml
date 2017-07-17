@@ -4,7 +4,7 @@
      xsi:schemaLocation="http://www.springframework.org/schema/beans 
      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 	<!-- Task -->
-	<bean id="Task" class="com.interf.eyee.entity.TaskEntity">
+	<bean id="Task" class="main.java.com.interf.eyee.entity.TaskEntity">
 		<property name="testCase">
 			<list>
 				<ref bean="TestCase1" />
@@ -13,7 +13,7 @@
 		</property>
 	</bean>
 	<!-- TestCase1 -->
-	<bean id="TestCase1" class="com.interf.eyee.entity.TestCaseEntity">
+	<bean id="TestCase1" class="main.java.com.interf.eyee.entity.TestCaseEntity">
 		<property name="id">
 			<value>0</value>
 		</property>
@@ -33,7 +33,7 @@
 			<ref bean="BaseLine1" />
 		</property>
 	</bean>
-	<bean id="Input1" class="com.interf.eyee.entity.forcase.BindHobbyLabelsInputEntity">
+	<bean id="Input1" class="main.java.com.interf.eyee.entity.forcase.BindHobbyLabelsInputEntity">
 		<property name="hobbylabels">
 			<list>
 				<ref bean="Item1" />
@@ -45,7 +45,7 @@
 			<value/>
 		</property>
 	</bean>
-	<bean id="BaseLine1" class="com.interf.eyee.entity.BaseLineEntity">
+	<bean id="BaseLine1" class="main.java.com.interf.eyee.entity.BaseLineEntity">
 		<property name="code">
 			<value>1511200</value>
 		</property>
@@ -56,23 +56,23 @@
 			<null/>
 		</property>
 	</bean>
-	<bean id="Item1" class="com.interf.eyee.entity.forcase.BindHobbyLabelsItemEntity">
+	<bean id="Item1" class="main.java.com.interf.eyee.entity.forcase.BindHobbyLabelsItemEntity">
 		<property name="hobbylabelid">
 			<value>c31e9ce5a856498d9182e8653eb5792e</value>
 		</property>
 	</bean>
-	<bean id="Item2" class="com.interf.eyee.entity.forcase.BindHobbyLabelsItemEntity">
+	<bean id="Item2" class="main.java.com.interf.eyee.entity.forcase.BindHobbyLabelsItemEntity">
 		<property name="hobbylabelid">
 			<value>06872b3565774e5e9a5d7a14c618467b</value>
 		</property>
 	</bean>
-	<bean id="Item3" class="com.interf.eyee.entity.forcase.BindHobbyLabelsItemEntity">
+	<bean id="Item3" class="main.java.com.interf.eyee.entity.forcase.BindHobbyLabelsItemEntity">
 		<property name="hobbylabelid">
 			<value>fbfc83e3faa6498d967054886f5044f9</value>
 		</property>
 	</bean>
 	<!-- TestCase2 -->
-	<bean id="TestCase2" class="com.interf.eyee.entity.TestCaseEntity">
+	<bean id="TestCase2" class="main.java.com.interf.eyee.entity.TestCaseEntity">
 		<property name="id">
 			<value>1</value>
 		</property>
@@ -92,12 +92,12 @@
 			<ref bean="BaseLine2" />
 		</property>
 	</bean>
-	<bean id="Input2" class="com.interf.eyee.entity.forcase.BindHobbyLabelsInputEntity">
+	<bean id="Input2" class="main.java.com.interf.eyee.entity.forcase.BindHobbyLabelsInputEntity">
 		<property name="param">
 			<value/>
 		</property>
 	</bean>
-	<bean id="BaseLine2" class="com.interf.eyee.entity.BaseLineEntity">
+	<bean id="BaseLine2" class="main.java.com.interf.eyee.entity.BaseLineEntity">
 		<property name="code">
 			<value>1511503</value>
 		</property>
@@ -109,5 +109,5 @@
 		</property>
 	</bean>
 	<!-- AssertUtil -->
-	<bean id="AssertUtil" class="com.interf.eyee.utils.assertutils.NormalAssertUtil" />
+	<bean id="AssertUtil" class="main.java.com.interf.eyee.utils.assertutils.NormalAssertUtil" />
 </beans>
