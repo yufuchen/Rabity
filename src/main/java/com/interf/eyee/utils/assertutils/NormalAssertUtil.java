@@ -9,7 +9,6 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import main.java.com.interf.eyee.entity.BaseDataEntity;
 import main.java.com.interf.eyee.utils.HandleLog;
 
 /**
@@ -32,9 +31,9 @@ public class NormalAssertUtil implements BaseAssertUtil {
 		flag = Verify.verifyEquals(actual, expect);
 		HandleLog.write(flag, "msg", actual, expect);
 	}
-
+	
 	@Override
-	public void assertData(Object actual, BaseDataEntity expect) {
+	public void assertData(Object actual, Object expect, boolean flag) {
 		if (expect != null) {
 			assertData(gson.toJson(actual), gson.toJson(expect));
 		} else {
@@ -46,7 +45,7 @@ public class NormalAssertUtil implements BaseAssertUtil {
 			}
 		}
 	}
-
+	
 	private void assertData(Object actual, Object expect) {
 		if (null == expect || expect.equals("")) {
 			flag = Verify.verifyNull(actual);

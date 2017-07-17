@@ -5,10 +5,10 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.testng.annotations.Test;
 
 import main.java.com.interf.eyee.dataprovider.BaseDataProvider;
+import main.java.com.interf.eyee.entity.InputEntity;
 import main.java.com.interf.eyee.entity.ResponseEntity;
 import main.java.com.interf.eyee.entity.TestCaseEntity;
 import main.java.com.interf.eyee.entity.forcase.AutoLoginDataEntity;
-import main.java.com.interf.eyee.entity.forcase.EmptyEntity;
 import main.java.com.interf.eyee.script.BaseCase;
 import main.java.com.interf.eyee.utils.HttpUtil;
 import main.java.com.interf.eyee.utils.InitParam;
@@ -25,7 +25,7 @@ public class AutoLogin extends BaseCase {
 		baseApi = testCase.getApi();
 		assertType = testCase.getAssertType();
 		
-		EmptyEntity input = (EmptyEntity) testCase.getInput();
+		InputEntity input = testCase.getInput();
 		baseLine = testCase.getBaseLine();
 		
 		log.info(" ------- 用例名称 : " + testName + " ------- ");

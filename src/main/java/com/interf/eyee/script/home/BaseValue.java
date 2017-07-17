@@ -1,4 +1,4 @@
-package main.java.com.interf.eyee.script.user;
+package main.java.com.interf.eyee.script.home;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
@@ -8,7 +8,7 @@ import main.java.com.interf.eyee.dataprovider.BaseDataProvider;
 import main.java.com.interf.eyee.entity.InputEntity;
 import main.java.com.interf.eyee.entity.ResponseEntity;
 import main.java.com.interf.eyee.entity.TestCaseEntity;
-import main.java.com.interf.eyee.entity.forcase.MobileLoginDataEntity;
+import main.java.com.interf.eyee.entity.forcase.BaseValueDataEntity;
 import main.java.com.interf.eyee.script.BaseCase;
 import main.java.com.interf.eyee.utils.HttpUtil;
 import main.java.com.interf.eyee.utils.InitParam;
@@ -17,13 +17,17 @@ import main.java.com.interf.eyee.utils.ResponseUtil;
 import main.java.com.interf.eyee.utils.assertutils.HandleAssert;
 import main.java.com.interf.eyee.utils.assertutils.NormalAssertUtil;
 
-public class BindHobbyLabels extends BaseCase {
+public class BaseValue extends BaseCase {
 	private Log log = new Log(this.getClass());
 	
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)
-	public void bindHobbyLabelsTest(String testName, TestCaseEntity testCase) {
+	public void baseValueTest(String testName, TestCaseEntity testCase) {
 		baseApi = testCase.getApi();
 		assertType = testCase.getAssertType();
+		
+		if (testName.startsWith("0")) {
+			System.err.println(testName);
+		}
 		
 		InputEntity input = testCase.getInput();
 		baseLine = testCase.getBaseLine();
@@ -34,7 +38,7 @@ public class BindHobbyLabels extends BaseCase {
 		
 		String body = HttpUtil.post(baseUrl + baseApi, input);
 		log.info("接口返回 : " + body);
-		ResponseEntity response = ResponseUtil.handle(body, new MobileLoginDataEntity());
+		ResponseEntity response = ResponseUtil.handle(body, new BaseValueDataEntity());
 		
 		@SuppressWarnings("resource")
 		ApplicationContext actx = new FileSystemXmlApplicationContext(path);

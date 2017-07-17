@@ -10,6 +10,7 @@ import main.java.com.interf.eyee.entity.ResponseEntity;
 public class HandleAssert {
 	private int type;
 	private BaseAssertUtil assertUtil;
+	private boolean flag;
 	
 	public HandleAssert(BaseAssertUtil assertUtil) {
 		this.assertUtil = assertUtil;
@@ -26,7 +27,7 @@ public class HandleAssert {
 		case 0:
 			assertUtil.assertCode(actual.getCode(), expect.getCode());
 			assertUtil.assertMsg(actual.getMsg(), expect.getMsg());
-			assertUtil.assertData(actual.getData(), expect.getData());
+			assertUtil.assertData(actual.getData(), expect.getData(), flag);
 			break;
 		case 1:
 			assertUtil.assertCode(actual.getCode(), expect.getCode());

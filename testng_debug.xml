@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Debug">
+  <test name="HobbyLabels">
+    <classes>
+      <class name="main.java.com.interf.eyee.script.user.HobbyLabels">
+       <methods>
+        <include name="hobbyLabelsTest" />
+       </methods>
+      </class>
+    </classes>
+  </test> <!-- HobbyLabels -->
+</suite> <!-- Debug -->

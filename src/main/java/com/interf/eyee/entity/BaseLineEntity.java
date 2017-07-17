@@ -9,7 +9,7 @@ package main.java.com.interf.eyee.entity;
 public class BaseLineEntity {
 	private long code;
 	private String msg;
-	private BaseDataEntity data;
+	private Object data;
 	
 	public long getCode() {
 		return code;
@@ -23,10 +23,10 @@ public class BaseLineEntity {
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
-	public BaseDataEntity getData() {
+	public Object getData() {
 		return data;
 	}
-	public void setData(BaseDataEntity data) {
+	public void setData(Object data) {
 		this.data = data;
 	}
 }

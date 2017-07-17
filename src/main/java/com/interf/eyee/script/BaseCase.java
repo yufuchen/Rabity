@@ -1,6 +1,7 @@
 package main.java.com.interf.eyee.script;
 
 import main.java.com.interf.eyee.entity.BaseLineEntity;
+import main.java.com.interf.eyee.entity.InputEntity;
 import main.java.com.interf.eyee.utils.ConfigUtil;
 import main.java.com.interf.eyee.utils.Log;
 import main.java.com.interf.eyee.utils.WordHandle;
@@ -16,6 +17,7 @@ public class BaseCase {
 	protected static String baseUrl;
 	protected static String baseApi;
 	protected boolean flag = false;
+	protected InputEntity input = null;
 	protected BaseLineEntity baseLine = null;
 	//断言类型控制   0: 断言code && msg && data;  1:断言code && msg ;
 	protected int assertType;

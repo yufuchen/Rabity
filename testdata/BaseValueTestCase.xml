@@ -19,13 +19,13 @@
 			<value>0</value>
 		</property>
 		<property name="name">
-			<value>使用正确的手机号和密码登录</value>
+			<value>使用空的token值拉取基本数据</value>
 		</property>
 		<property name="assertType">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<property name="api">
-			<value>api/User/Login</value>
+			<value>api/Home/BaseValue</value>
 		</property>
 		<property name="input">
 			<ref bean="Input1" />
@@ -34,13 +34,7 @@
 			<ref bean="BaseLine1" />
 		</property>
 	</bean>
-	<bean id="Input1" class="main.java.com.interf.eyee.entity.forcase.MobileLoginInputEntity">
-		<property name="mobile">
-			<value>+86-17740887033</value>
-		</property>
-		<property name="password">
-			<value>miyahug77126</value>
-		</property>
+	<bean id="Input1" class="main.java.com.interf.eyee.entity.forcase.EmptyEntity">
 		<property name="token">
 			<value>empty</value>
 		</property>
@@ -59,72 +53,27 @@
 			<ref bean="Data1" />
 		</property>
 	</bean>
-	<bean id="Data1" class="main.java.com.interf.eyee.entity.forcase.MobileLoginDataEntity">
-		<property name="balance">
-			<value>0.00</value>
+	<bean id="Data1" class="main.java.com.interf.eyee.entity.forcase.BaseValueDataEntity">
+		<property name="aboutus">
+			<value>http://inner.eyee.com/aboutus</value>
 		</property>
-		<property name="bindqq">
-			<value>0</value>
+		<property name="configs">
+			<null/>
 		</property>
-		<property name="bindweibo">
-			<value>0</value>
+		<property name="coupondesc">
+			<value>http://inner.eyee.com/coupondescription</value>
 		</property>
-		<property name="bindweixin">
-			<value>0</value>
+		<property name="launchurl">
+			<value></value>
 		</property>
-		<property name="credits">
-			<value>106.00</value>
+		<property name="shareinfos">
+			<null/>
 		</property>
-		<property name="currcredits">
-			<value>106.00</value>
+		<property name="shoppingtips">
+			<value>http://inner.eyee.com/shoppingtips</value>
 		</property>
-		<property name="emailconfirmed">
-			<value>false</value>
-		</property>
-		<property name="facevalue">
-			<value>0.0</value>
-		</property>
-		<property name="firstreggift">
-			<value>1</value>
-		</property>
-		<property name="haspwd">
-			<value>1</value>
-		</property>
-		<property name="hastradepwd">
-			<value>0</value>
-		</property>
-		<property name="imageurl">
-			<value>http://api.eyee.com/EYEE/Icons/defaulthead.jpg</value>
-		</property>
-		<property name="isagent">
-			<value>0</value>
-		</property>
-		<property name="isbindhobby">
-			<value>1</value>
-		</property>
-		<property name="mobile">
-			<value>+86-17740887033</value>
-		</property>
-		<property name="mobileconfirmed">
-			<value>true</value>
-		</property>
-		<property name="rankname">
-			<value>v0</value>
-		</property>
-		<property name="rankpic">
-			<value>http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png</value>
-		</property>
-		<property name="registertype">
-			<value>3</value>
-		</property>
-		<property name="sex">
-			<value>0</value>
-		</property>
-		<property name="uid">
-			<value>7975325267954effa5080d79bdcafab5</value>
-		</property>
-		<property name="username">
-			<value>Ksewen</value>
+		<property name="slas">
+			<value>http://inner.eyee.com/slas</value>
 		</property>
 	</bean>
 	<!-- TestCase2 -->
@@ -133,13 +82,13 @@
 			<value>1</value>
 		</property>
 		<property name="name">
-			<value>使用正确的手机号和错误的密码登录</value>
+			<value>使用错误的sign值拉取基本数据</value>
 		</property>
 		<property name="assertType">
 			<value>0</value>
 		</property>
 		<property name="api">
-			<value>api/User/Login</value>
+			<value>api/Home/BaseValue</value>
 		</property>
 		<property name="input">
 			<ref bean="Input2" />
@@ -148,15 +97,9 @@
 			<ref bean="BaseLine2" />
 		</property>
 	</bean>
-	<bean id="Input2" class="main.java.com.interf.eyee.entity.forcase.MobileLoginInputEntity">
-		<property name="mobile">
-			<value>+86-17740887033</value>
-		</property>
-		<property name="password">
+	<bean id="Input2" class="main.java.com.interf.eyee.entity.forcase.EmptyEntity">
+		<property name="sign">
 			<value>mistake</value>
-		</property>
-		<property name="token">
-			<value>empty</value>
 		</property>
 		<property name="param">
 			<value/>
@@ -164,10 +107,10 @@
 	</bean>
 	<bean id="BaseLine2" class="main.java.com.interf.eyee.entity.BaseLineEntity">
 		<property name="code">
-			<value>1511542</value>
+			<value>1511501</value>
 		</property>
 		<property name="msg">
-			<value>账号或密码错误</value>
+			<value>无效的请求</value>
 		</property>
 		<property name="data">
 			<null/>
@@ -179,13 +122,13 @@
 			<value>2</value>
 		</property>
 		<property name="name">
-			<value>使用正确的手机号和空密码登录</value>
+			<value>使用错误的token值拉取基本数据</value>
 		</property>
 		<property name="assertType">
 			<value>0</value>
 		</property>
 		<property name="api">
-			<value>api/User/Login</value>
+			<value>api/Home/BaseValue</value>
 		</property>
 		<property name="input">
 			<ref bean="Input3" />
@@ -194,15 +137,9 @@
 			<ref bean="BaseLine3" />
 		</property>
 	</bean>
-	<bean id="Input3" class="main.java.com.interf.eyee.entity.forcase.MobileLoginInputEntity">
-		<property name="mobile">
-			<value>+86-17740887033</value>
-		</property>
-		<property name="password">
-			<value></value>
-		</property>
+	<bean id="Input3" class="main.java.com.interf.eyee.entity.forcase.EmptyEntity">
 		<property name="token">
-			<value>empty</value>
+			<value>WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ==</value>
 		</property>
 		<property name="param">
 			<value/>
@@ -210,10 +147,10 @@
 	</bean>
 	<bean id="BaseLine3" class="main.java.com.interf.eyee.entity.BaseLineEntity">
 		<property name="code">
-			<value>1511503</value>
+			<value>1511543</value>
 		</property>
 		<property name="msg">
-			<value>缺少必要的参数</value>
+			<value>无效的用户token</value>
 		</property>
 		<property name="data">
 			<null/>

@@ -1,126 +1,155 @@
-2017-07-17 11:42:09.040 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: ==== http://140.207.155.74/ - ¿ªÊ¼²âÊÔ ====
-2017-07-17 11:42:09.398 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- ÓÃÀıÃû³Æ : 0_Ê¹ÓÃÕıÈ·µÄÊÖ»úºÅºÍÃÜÂëµÇÂ¼ ------- 
-2017-07-17 11:42:09.406 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: Ä¬ÈÏ²ÎÊı³õÊ¼»¯Íê³É : 
+2017-07-17 18:11:36.787 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: ==== http://140.207.155.74/ - å¼€å§‹æµ‹è¯• ====
+2017-07-17 18:11:37.185 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels:  ------- ç”¨ä¾‹åç§° : 0_ä½¿ç”¨æ­£ç¡®çš„ä¿¡æ¯è¯»å–hobbyåˆ—è¡¨ ------- 
+2017-07-17 18:11:37.206 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: é»˜è®¤å‚æ•°åˆå§‹åŒ–å®Œæˆ : 
 {
-  "mobile": "+86-17740887033",
-  "password": "miyahug77126",
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "9e52ef413200985cad4fe793961d1130",
-  "token": "",
+  "sign": "3d0051d5e23b9432e6c1e6f9f2bff28b",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpf7xYAhO3EbMTHZxj3Ebbsgg\u003d\u003d",
   "param": ""
 }
-2017-07-17 11:42:09.791 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: ÕıÔÚ·¢ÆğÇëÇó : http://140.207.155.74/api/User/Login
-2017-07-17 11:42:09.798 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: ÊäÈë²ÎÊı: 
+2017-07-17 18:11:37.725 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: æ­£åœ¨å‘èµ·è¯·æ±‚ : http://140.207.155.74/api/User/HobbyLabels
+2017-07-17 18:11:37.725 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: è¾“å…¥å‚æ•°: 
 {
-  "mobile": "+86-17740887033",
-  "password": "ce6d4c3fb430931ee2d94671bff91fb7",
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "9e52ef413200985cad4fe793961d1130",
-  "token": "",
+  "sign": "3d0051d5e23b9432e6c1e6f9f2bff28b",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpf7xYAhO3EbMTHZxj3Ebbsgg\u003d\u003d",
   "param": ""
 }
-2017-07-17 11:42:10.301 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
-2017-07-17 11:42:10.302 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: µ÷ÓÃAPI »¨·ÑÊ±¼ä(µ¥Î»£ººÁÃë)£º497
-2017-07-17 11:42:10.304 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: µ÷ÓÃ½Ó¿Ú×´Ì¬£º0
-2017-07-17 11:42:10.305 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: ½Ó¿Ú·µ»Ø : {"code":1511200,"msg":"ÇëÇóÒÑÍê³É","data":{"uid":"7975325267954effa5080d79bdcafab5","username":"Ksewen","mobile":"+86-17740887033","mobileconfirmed":true,"email":null,"emailconfirmed":false,"sex":0,"country":null,"address":null,"birthday":null,"imageurl":"http://api.eyee.com/EYEE/Icons/defaulthead.jpg","credits":106.00,"currcredits":106.00,"lastlogintime":"2017-07-17 11:42:12 +8","balance":0.00,"firstreggift":1,"rankname":"v0","rankpic":"http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png","token":"AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpf03yXTSLFZTeG/qzukqiVuA==","themeurl":null,"registertype":3,"isbindhobby":1,"isagent":0,"promocode":null,"hastradepwd":0,"haspwd":1,"bindweixin":0,"bindweibo":0,"bindqq":0,"facevalue":0.0},"servertime":"2017-07-17 11:42:12 +8"}
-2017-07-17 11:42:10.379 INFO  30 info - main.java.com.interf.eyee.utils.TokenManager: ´¢´ætoken³É¹¦ : AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpf03yXTSLFZTeG/qzukqiVuA==
-2017-07-17 11:42:10.436 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : code   Êµ¼Ê½á¹û : 1511200 ========= Ô¤ÆÚ½á¹û : 1511200
-2017-07-17 11:42:10.436 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : msg   Êµ¼Ê½á¹û : ÇëÇóÒÑÍê³É ========= Ô¤ÆÚ½á¹û : ÇëÇóÒÑÍê³É
-2017-07-17 11:42:10.439 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : balance   Êµ¼Ê½á¹û : 0.0 ========= Ô¤ÆÚ½á¹û : 0.0
-2017-07-17 11:42:10.439 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : bindqq   Êµ¼Ê½á¹û : 0 ========= Ô¤ÆÚ½á¹û : 0
-2017-07-17 11:42:10.440 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : bindweibo   Êµ¼Ê½á¹û : 0 ========= Ô¤ÆÚ½á¹û : 0
-2017-07-17 11:42:10.440 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : bindweixin   Êµ¼Ê½á¹û : 0 ========= Ô¤ÆÚ½á¹û : 0
-2017-07-17 11:42:10.440 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : credits   Êµ¼Ê½á¹û : 106.0 ========= Ô¤ÆÚ½á¹û : 106.0
-2017-07-17 11:42:10.442 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : currcredits   Êµ¼Ê½á¹û : 106.0 ========= Ô¤ÆÚ½á¹û : 106.0
-2017-07-17 11:42:10.443 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : emailconfirmed   Êµ¼Ê½á¹û : false ========= Ô¤ÆÚ½á¹û : false
-2017-07-17 11:42:10.444 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : facevalue   Êµ¼Ê½á¹û : "0.0" ========= Ô¤ÆÚ½á¹û : "0.0"
-2017-07-17 11:42:10.444 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : firstreggift   Êµ¼Ê½á¹û : 1 ========= Ô¤ÆÚ½á¹û : 1
-2017-07-17 11:42:10.444 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : haspwd   Êµ¼Ê½á¹û : 1 ========= Ô¤ÆÚ½á¹û : 1
-2017-07-17 11:42:10.445 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : hastradepwd   Êµ¼Ê½á¹û : 0 ========= Ô¤ÆÚ½á¹û : 0
-2017-07-17 11:42:10.445 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : imageurl   Êµ¼Ê½á¹û : "http://api.eyee.com/EYEE/Icons/defaulthead.jpg" ========= Ô¤ÆÚ½á¹û : "http://api.eyee.com/EYEE/Icons/defaulthead.jpg"
-2017-07-17 11:42:10.446 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : isagent   Êµ¼Ê½á¹û : 0 ========= Ô¤ÆÚ½á¹û : 0
-2017-07-17 11:42:10.446 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : isbindhobby   Êµ¼Ê½á¹û : 1 ========= Ô¤ÆÚ½á¹û : 1
-2017-07-17 11:42:10.447 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : mobile   Êµ¼Ê½á¹û : "+86-17740887033" ========= Ô¤ÆÚ½á¹û : "+86-17740887033"
-2017-07-17 11:42:10.447 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : mobileconfirmed   Êµ¼Ê½á¹û : true ========= Ô¤ÆÚ½á¹û : true
-2017-07-17 11:42:10.447 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : rankname   Êµ¼Ê½á¹û : "v0" ========= Ô¤ÆÚ½á¹û : "v0"
-2017-07-17 11:42:10.448 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : rankpic   Êµ¼Ê½á¹û : "http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png" ========= Ô¤ÆÚ½á¹û : "http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png"
-2017-07-17 11:42:10.448 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : registertype   Êµ¼Ê½á¹û : 3 ========= Ô¤ÆÚ½á¹û : 3
-2017-07-17 11:42:10.449 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : sex   Êµ¼Ê½á¹û : 0 ========= Ô¤ÆÚ½á¹û : 0
-2017-07-17 11:42:10.449 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : uid   Êµ¼Ê½á¹û : "7975325267954effa5080d79bdcafab5" ========= Ô¤ÆÚ½á¹û : "7975325267954effa5080d79bdcafab5"
-2017-07-17 11:42:10.450 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : username   Êµ¼Ê½á¹û : "Ksewen" ========= Ô¤ÆÚ½á¹û : "Ksewen"
-2017-07-17 11:42:10.450 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- ÓÃÀı : 0_Ê¹ÓÃÕıÈ·µÄÊÖ»úºÅºÍÃÜÂëµÇÂ¼  Ö´ĞĞ½áÊø ------- 
-2017-07-17 11:42:10.452 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- ÓÃÀıÃû³Æ : 1_Ê¹ÓÃÕıÈ·µÄÊÖ»úºÅºÍ´íÎóµÄÃÜÂëµÇÂ¼ ------- 
-2017-07-17 11:42:10.453 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: Ä¬ÈÏ²ÎÊı³õÊ¼»¯Íê³É : 
+2017-07-17 18:11:38.197 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-17 18:11:38.211 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: è°ƒç”¨API èŠ±è´¹æ—¶é—´(å•ä½ï¼šæ¯«ç§’)ï¼š468
+2017-07-17 18:11:38.212 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: è°ƒç”¨æ¥å£çŠ¶æ€ï¼š0
+2017-07-17 18:11:38.212 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: æ¥å£è¿”å› : {"code":1511200,"msg":"è¯·æ±‚å·²å®Œæˆ","data":[{"id":"5a3060e8557541f3bf2db95c8e9c42f1","name":"åˆ›æ„","logourl":"http://api.eyee.com/Shop/system/main/7ab0f54d8f30425182170ffd8dd358ed.png","orderby":1},{"id":"c31e9ce5a856498d9182e8653eb5792e","name":"å®¶å±…","logourl":"http://api.eyee.com/Shop/system/main/597f1dc50e4246fa974694f53fd90b5a.png","orderby":2},{"id":"31bc602bb51244919a9b616e228f980b","name":"æ½®æµæ–‡åŒ–","logourl":"http://api.eyee.com/Shop/system/main/6ee25c8e72024df8a180731807bd8943.png","orderby":3},{"id":"ff8db612d6fe4a08af181a99b1c21b21","name":"ç¾å¦†","logourl":"http://api.eyee.com/Shop/system/main/de76ffa9ccf046f9b8b77958b2fa5abd.png","orderby":4},{"id":"02983c0701d94175a649f0d738d653ad","name":"æ•°ç ","logourl":"http://api.eyee.com/Shop/system/main/a621fa45cef84f088fc42504bbf51327.png","orderby":5},{"id":"62d40b5e92d146ef91271193cdba843a","name":"æ‚è´§","logourl":"http://api.eyee.com/Shop/system/main/706c750f90d74fce92a240f13e51231d.png","orderby":6},{"id":"0bd9019f8cbe4d35a0e1cfd683215d80","name":"Sneaker","logourl":"http://api.eyee.com/Shop/system/main/342172f424ac4295bec01216a5b816d3.png","orderby":7},{"id":"677d99475d874fa18d56f4bf7be6a816","name":"æ—…æ¸¸","logourl":"http://api.eyee.com/Shop/system/main/fdd04c8598c54e9ab3f69d829b2fbf1e.png","orderby":8},{"id":"a5025b000f3a4b779d1f744d8927faff","name":"åŠ¨æ¼«","logourl":"http://api.eyee.com/Shop/system/main/1bc8c4ededda4ae3b6e4349fca421b5b.png","orderby":9},{"id":"87c67ed301dd41f9bdcd4cf54c779111","name":"æ­é…","logourl":"http://api.eyee.com/Shop/system/main/db40bfb8dcec4092a0e71674187c659a.png","orderby":10},{"id":"06872b3565774e5e9a5d7a14c618467b","name":"é˜…è¯»","logourl":"http://api.eyee.com/Shop/system/main/42b40b1ea0ea40e0b1093fd041124f03.png","orderby":11},{"id":"8bd556996d384d249f783d596dedd4de","name":"æ‘„å½±","logourl":"http://api.eyee.com/Shop/system/main/422975e6013c411ba1b592c11f3459a5.png","orderby":12},{"id":"2bcd670dfcad42509a22d799cdf10aaf","name":"ç¤¾äº¤","logourl":"http://api.eyee.com/Shop/system/main/f424f49b9daa43dbbc188e336dad6d3a.png","orderby":13},{"id":"f855b666e58146c697efdaf9127761a2","name":"èŒç‰©","logourl":"http://api.eyee.com/Shop/system/main/1d5e14f5f3c5438d9be49018da413298.png","orderby":14},{"id":"b2ab351af8a84aa3873bfd6d2b196815","name":"æ¸¸æˆ","logourl":"http://api.eyee.com/Shop/system/main/c815416d828b4b498eed6653bc927cce.png","orderby":15},{"id":"fbfc83e3faa6498d967054886f5044f9","name":"è¿åŠ¨","logourl":"http://api.eyee.com/Shop/system/main/636aae52deb64f26b39bd8da38d3246b.png","orderby":16}],"servertime":"2017-07-17 18:11:45 +8"}
+2017-07-17 18:11:38.294 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : code   å®é™…ç»“æœ : 1511200 ========= é¢„æœŸç»“æœ : 1511200
+2017-07-17 18:11:38.295 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : msg   å®é™…ç»“æœ : è¯·æ±‚å·²å®Œæˆ ========= é¢„æœŸç»“æœ : è¯·æ±‚å·²å®Œæˆ
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "5a3060e8557541f3bf2db95c8e9c42f1" ========= é¢„æœŸç»“æœ : "5a3060e8557541f3bf2db95c8e9c42f1"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "åˆ›æ„" ========= é¢„æœŸç»“æœ : "åˆ›æ„"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/7ab0f54d8f30425182170ffd8dd358ed.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/7ab0f54d8f30425182170ffd8dd358ed.png"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 1 ========= é¢„æœŸç»“æœ : 1
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "c31e9ce5a856498d9182e8653eb5792e" ========= é¢„æœŸç»“æœ : "c31e9ce5a856498d9182e8653eb5792e"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "å®¶å±…" ========= é¢„æœŸç»“æœ : "å®¶å±…"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/597f1dc50e4246fa974694f53fd90b5a.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/597f1dc50e4246fa974694f53fd90b5a.png"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 2 ========= é¢„æœŸç»“æœ : 2
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "31bc602bb51244919a9b616e228f980b" ========= é¢„æœŸç»“æœ : "31bc602bb51244919a9b616e228f980b"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "æ½®æµæ–‡åŒ–" ========= é¢„æœŸç»“æœ : "æ½®æµæ–‡åŒ–"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/6ee25c8e72024df8a180731807bd8943.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/6ee25c8e72024df8a180731807bd8943.png"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 3 ========= é¢„æœŸç»“æœ : 3
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "ff8db612d6fe4a08af181a99b1c21b21" ========= é¢„æœŸç»“æœ : "ff8db612d6fe4a08af181a99b1c21b21"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "ç¾å¦†" ========= é¢„æœŸç»“æœ : "ç¾å¦†"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/de76ffa9ccf046f9b8b77958b2fa5abd.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/de76ffa9ccf046f9b8b77958b2fa5abd.png"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 4 ========= é¢„æœŸç»“æœ : 4
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "02983c0701d94175a649f0d738d653ad" ========= é¢„æœŸç»“æœ : "02983c0701d94175a649f0d738d653ad"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "æ•°ç " ========= é¢„æœŸç»“æœ : "æ•°ç "
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/a621fa45cef84f088fc42504bbf51327.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/a621fa45cef84f088fc42504bbf51327.png"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 5 ========= é¢„æœŸç»“æœ : 5
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "62d40b5e92d146ef91271193cdba843a" ========= é¢„æœŸç»“æœ : "62d40b5e92d146ef91271193cdba843a"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "æ‚è´§" ========= é¢„æœŸç»“æœ : "æ‚è´§"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/706c750f90d74fce92a240f13e51231d.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/706c750f90d74fce92a240f13e51231d.png"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 6 ========= é¢„æœŸç»“æœ : 6
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "0bd9019f8cbe4d35a0e1cfd683215d80" ========= é¢„æœŸç»“æœ : "0bd9019f8cbe4d35a0e1cfd683215d80"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "Sneaker" ========= é¢„æœŸç»“æœ : "Sneaker"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/342172f424ac4295bec01216a5b816d3.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/342172f424ac4295bec01216a5b816d3.png"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 7 ========= é¢„æœŸç»“æœ : 7
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "677d99475d874fa18d56f4bf7be6a816" ========= é¢„æœŸç»“æœ : "677d99475d874fa18d56f4bf7be6a816"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "æ—…æ¸¸" ========= é¢„æœŸç»“æœ : "æ—…æ¸¸"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/fdd04c8598c54e9ab3f69d829b2fbf1e.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/fdd04c8598c54e9ab3f69d829b2fbf1e.png"
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 8 ========= é¢„æœŸç»“æœ : 8
+2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "a5025b000f3a4b779d1f744d8927faff" ========= é¢„æœŸç»“æœ : "a5025b000f3a4b779d1f744d8927faff"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "åŠ¨æ¼«" ========= é¢„æœŸç»“æœ : "åŠ¨æ¼«"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/1bc8c4ededda4ae3b6e4349fca421b5b.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/1bc8c4ededda4ae3b6e4349fca421b5b.png"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 9 ========= é¢„æœŸç»“æœ : 9
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "87c67ed301dd41f9bdcd4cf54c779111" ========= é¢„æœŸç»“æœ : "87c67ed301dd41f9bdcd4cf54c779111"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "æ­é…" ========= é¢„æœŸç»“æœ : "æ­é…"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/db40bfb8dcec4092a0e71674187c659a.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/db40bfb8dcec4092a0e71674187c659a.png"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 10 ========= é¢„æœŸç»“æœ : 10
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "06872b3565774e5e9a5d7a14c618467b" ========= é¢„æœŸç»“æœ : "06872b3565774e5e9a5d7a14c618467b"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "é˜…è¯»" ========= é¢„æœŸç»“æœ : "é˜…è¯»"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/42b40b1ea0ea40e0b1093fd041124f03.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/42b40b1ea0ea40e0b1093fd041124f03.png"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 11 ========= é¢„æœŸç»“æœ : 11
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "8bd556996d384d249f783d596dedd4de" ========= é¢„æœŸç»“æœ : "8bd556996d384d249f783d596dedd4de"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "æ‘„å½±" ========= é¢„æœŸç»“æœ : "æ‘„å½±"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/422975e6013c411ba1b592c11f3459a5.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/422975e6013c411ba1b592c11f3459a5.png"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 12 ========= é¢„æœŸç»“æœ : 12
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "2bcd670dfcad42509a22d799cdf10aaf" ========= é¢„æœŸç»“æœ : "2bcd670dfcad42509a22d799cdf10aaf"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "ç¤¾äº¤" ========= é¢„æœŸç»“æœ : "ç¤¾äº¤"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/f424f49b9daa43dbbc188e336dad6d3a.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/f424f49b9daa43dbbc188e336dad6d3a.png"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 13 ========= é¢„æœŸç»“æœ : 13
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "f855b666e58146c697efdaf9127761a2" ========= é¢„æœŸç»“æœ : "f855b666e58146c697efdaf9127761a2"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "èŒç‰©" ========= é¢„æœŸç»“æœ : "èŒç‰©"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/1d5e14f5f3c5438d9be49018da413298.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/1d5e14f5f3c5438d9be49018da413298.png"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 14 ========= é¢„æœŸç»“æœ : 14
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "b2ab351af8a84aa3873bfd6d2b196815" ========= é¢„æœŸç»“æœ : "b2ab351af8a84aa3873bfd6d2b196815"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "æ¸¸æˆ" ========= é¢„æœŸç»“æœ : "æ¸¸æˆ"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/c815416d828b4b498eed6653bc927cce.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/c815416d828b4b498eed6653bc927cce.png"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 15 ========= é¢„æœŸç»“æœ : 15
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : id   å®é™…ç»“æœ : "fbfc83e3faa6498d967054886f5044f9" ========= é¢„æœŸç»“æœ : "fbfc83e3faa6498d967054886f5044f9"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : name   å®é™…ç»“æœ : "è¿åŠ¨" ========= é¢„æœŸç»“æœ : "è¿åŠ¨"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : logourl   å®é™…ç»“æœ : "http://api.eyee.com/Shop/system/main/636aae52deb64f26b39bd8da38d3246b.png" ========= é¢„æœŸç»“æœ : "http://api.eyee.com/Shop/system/main/636aae52deb64f26b39bd8da38d3246b.png"
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : orderby   å®é™…ç»“æœ : 16 ========= é¢„æœŸç»“æœ : 16
+2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels:  ------- ç”¨ä¾‹ : 0_ä½¿ç”¨æ­£ç¡®çš„ä¿¡æ¯è¯»å–hobbyåˆ—è¡¨  æ‰§è¡Œç»“æŸ ------- 
+2017-07-17 18:11:38.332 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels:  ------- ç”¨ä¾‹åç§° : 1_ä½¿ç”¨æ­£ç¡®çš„signå’Œé”™è¯¯æ ¼å¼çš„tokenè¯»å–hobbyåˆ—è¡¨ ------- 
+2017-07-17 18:11:38.333 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: é»˜è®¤å‚æ•°åˆå§‹åŒ–å®Œæˆ : 
 {
-  "mobile": "+86-17740887033",
-  "password": "mistake",
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "9e52ef413200985cad4fe793961d1130",
-  "token": "",
+  "sign": "5d3ef1733b73ae3490981ed7a3947bf7",
+  "token": "tail",
   "param": ""
 }
-2017-07-17 11:42:10.458 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: ÕıÔÚ·¢ÆğÇëÇó : http://140.207.155.74/api/User/Login
-2017-07-17 11:42:10.460 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: ÊäÈë²ÎÊı: 
+2017-07-17 18:11:38.343 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: æ­£åœ¨å‘èµ·è¯·æ±‚ : http://140.207.155.74/api/User/HobbyLabels
+2017-07-17 18:11:38.344 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: è¾“å…¥å‚æ•°: 
 {
-  "mobile": "+86-17740887033",
-  "password": "75496dbfbebb296508150e41a03f5788",
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "9e52ef413200985cad4fe793961d1130",
-  "token": "",
+  "sign": "5d3ef1733b73ae3490981ed7a3947bf7",
+  "token": "tail",
   "param": ""
 }
-2017-07-17 11:42:10.892 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
-2017-07-17 11:42:10.893 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: µ÷ÓÃAPI »¨·ÑÊ±¼ä(µ¥Î»£ººÁÃë)£º431
-2017-07-17 11:42:10.894 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: µ÷ÓÃ½Ó¿Ú×´Ì¬£º0
-2017-07-17 11:42:10.894 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: ½Ó¿Ú·µ»Ø : {"code":1511542,"msg":"ÕËºÅ»òÃÜÂë´íÎó","data":null,"servertime":"2017-07-17 11:42:13 +8"}
-2017-07-17 11:42:10.948 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : code   Êµ¼Ê½á¹û : 1511542 ========= Ô¤ÆÚ½á¹û : 1511542
-2017-07-17 11:42:10.948 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : msg   Êµ¼Ê½á¹û : ÕËºÅ»òÃÜÂë´íÎó ========= Ô¤ÆÚ½á¹û : ÕËºÅ»òÃÜÂë´íÎó
-2017-07-17 11:42:10.949 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : data   Êµ¼Ê½á¹û : null ========= Ô¤ÆÚ½á¹û : null
-2017-07-17 11:42:10.949 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- ÓÃÀı : 1_Ê¹ÓÃÕıÈ·µÄÊÖ»úºÅºÍ´íÎóµÄÃÜÂëµÇÂ¼  Ö´ĞĞ½áÊø ------- 
-2017-07-17 11:42:10.950 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- ÓÃÀıÃû³Æ : 2_Ê¹ÓÃÕıÈ·µÄÊÖ»úºÅºÍ¿ÕÃÜÂëµÇÂ¼ ------- 
-2017-07-17 11:42:10.951 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: Ä¬ÈÏ²ÎÊı³õÊ¼»¯Íê³É : 
+2017-07-17 18:11:38.713 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-17 18:11:38.713 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: è°ƒç”¨API èŠ±è´¹æ—¶é—´(å•ä½ï¼šæ¯«ç§’)ï¼š369
+2017-07-17 18:11:38.713 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: è°ƒç”¨æ¥å£çŠ¶æ€ï¼š0
+2017-07-17 18:11:38.713 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: æ¥å£è¿”å› : {"code":1511543,"msg":"æ— æ•ˆçš„ç”¨æˆ·token","data":null,"servertime":"2017-07-17 18:11:45 +8"}
+2017-07-17 18:11:38.785 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : code   å®é™…ç»“æœ : 1511543 ========= é¢„æœŸç»“æœ : 1511543
+2017-07-17 18:11:38.786 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : msg   å®é™…ç»“æœ : æ— æ•ˆçš„ç”¨æˆ·token ========= é¢„æœŸç»“æœ : æ— æ•ˆçš„ç”¨æˆ·token
+2017-07-17 18:11:38.787 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : data   å®é™…ç»“æœ : null ========= é¢„æœŸç»“æœ : null
+2017-07-17 18:11:38.787 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels:  ------- ç”¨ä¾‹ : 1_ä½¿ç”¨æ­£ç¡®çš„signå’Œé”™è¯¯æ ¼å¼çš„tokenè¯»å–hobbyåˆ—è¡¨  æ‰§è¡Œç»“æŸ ------- 
+2017-07-17 18:11:38.796 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels:  ------- ç”¨ä¾‹åç§° : 2_ä½¿ç”¨æ­£ç¡®çš„signå’Œé”™è¯¯å†…å®¹çš„tokenè¯»å–hobbyåˆ—è¡¨ ------- 
+2017-07-17 18:11:38.798 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: é»˜è®¤å‚æ•°åˆå§‹åŒ–å®Œæˆ : 
 {
-  "mobile": "+86-17740887033",
-  "password": "",
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "9e52ef413200985cad4fe793961d1130",
-  "token": "",
+  "sign": "05b85eda9965fe45029c3907721fe3c8",
+  "token": "WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ\u003d\u003d",
   "param": ""
 }
-2017-07-17 11:42:10.955 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: ÕıÔÚ·¢ÆğÇëÇó : http://140.207.155.74/api/User/Login
-2017-07-17 11:42:10.956 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: ÊäÈë²ÎÊı: 
+2017-07-17 18:11:38.807 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: æ­£åœ¨å‘èµ·è¯·æ±‚ : http://140.207.155.74/api/User/HobbyLabels
+2017-07-17 18:11:38.808 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: è¾“å…¥å‚æ•°: 
 {
-  "mobile": "+86-17740887033",
-  "password": "",
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "9e52ef413200985cad4fe793961d1130",
-  "token": "",
+  "sign": "05b85eda9965fe45029c3907721fe3c8",
+  "token": "WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ\u003d\u003d",
   "param": ""
 }
-2017-07-17 11:42:11.342 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
-2017-07-17 11:42:11.342 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: µ÷ÓÃAPI »¨·ÑÊ±¼ä(µ¥Î»£ººÁÃë)£º386
-2017-07-17 11:42:11.343 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: µ÷ÓÃ½Ó¿Ú×´Ì¬£º0
-2017-07-17 11:42:11.343 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: ½Ó¿Ú·µ»Ø : {"code":1511503,"msg":"È±ÉÙ±ØÒªµÄ²ÎÊı","data":null,"servertime":"2017-07-17 11:42:13 +8"}
-2017-07-17 11:42:11.383 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : code   Êµ¼Ê½á¹û : 1511503 ========= Ô¤ÆÚ½á¹û : 1511503
-2017-07-17 11:42:11.384 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : msg   Êµ¼Ê½á¹û : È±ÉÙ±ØÒªµÄ²ÎÊı ========= Ô¤ÆÚ½á¹û : È±ÉÙ±ØÒªµÄ²ÎÊı
-2017-07-17 11:42:11.384 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: ×Ö¶ÎÃû³Æ : data   Êµ¼Ê½á¹û : null ========= Ô¤ÆÚ½á¹û : null
-2017-07-17 11:42:11.385 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- ÓÃÀı : 2_Ê¹ÓÃÕıÈ·µÄÊÖ»úºÅºÍ¿ÕÃÜÂëµÇÂ¼  Ö´ĞĞ½áÊø ------- 
-2017-07-17 11:42:11.401 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: ==== ½áÊø²âÊÔ ====
+2017-07-17 18:11:39.229 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-17 18:11:39.235 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: è°ƒç”¨API èŠ±è´¹æ—¶é—´(å•ä½ï¼šæ¯«ç§’)ï¼š421
+2017-07-17 18:11:39.235 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: è°ƒç”¨æ¥å£çŠ¶æ€ï¼š0
+2017-07-17 18:11:39.235 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: æ¥å£è¿”å› : {"code":1511543,"msg":"æ— æ•ˆçš„ç”¨æˆ·token","data":null,"servertime":"2017-07-17 18:11:46 +8"}
+2017-07-17 18:11:39.269 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : code   å®é™…ç»“æœ : 1511543 ========= é¢„æœŸç»“æœ : 1511543
+2017-07-17 18:11:39.269 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : msg   å®é™…ç»“æœ : æ— æ•ˆçš„ç”¨æˆ·token ========= é¢„æœŸç»“æœ : æ— æ•ˆçš„ç”¨æˆ·token
+2017-07-17 18:11:39.269 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: å­—æ®µåç§° : data   å®é™…ç»“æœ : null ========= é¢„æœŸç»“æœ : null
+2017-07-17 18:11:39.269 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels:  ------- ç”¨ä¾‹ : 2_ä½¿ç”¨æ­£ç¡®çš„signå’Œé”™è¯¯å†…å®¹çš„tokenè¯»å–hobbyåˆ—è¡¨  æ‰§è¡Œç»“æŸ ------- 
+2017-07-17 18:11:39.292 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: ==== ç»“æŸæµ‹è¯• ====
