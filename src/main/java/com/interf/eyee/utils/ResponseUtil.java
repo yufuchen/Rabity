@@ -46,7 +46,6 @@ public class ResponseUtil {
 	
 	public static ResponseEntity handle(String body) {
 		ResponseEntity response = new ResponseEntity();
-		Gson gson = new GsonBuilder().create();
 		JsonObject temp = new JsonParser().parse(body).getAsJsonObject();
 		response.setCode(Long.parseLong(temp.get("code").getAsString()));
 		response.setMsg(temp.get("msg").getAsString());

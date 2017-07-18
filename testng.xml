@@ -3,20 +3,12 @@
 <suite name="Eyee_API_20170630">
 	<test name="MobileLogin">
 		<classes>
-			<class name="main.java.com.interf.eyee.script.user.MobileLogin">
-				<methods>
-					<include name="MobileLoginTest" />
-				</methods>
-			</class>
+			<class name="main.java.com.interf.eyee.script.user.MobileLogin" />
 		</classes>
 	</test> <!-- MobileLogin -->
 	<test name="AutoLogin">
 		<classes>
-			<class name="main.java.com.interf.eyee.script.user.AutoLogin">
-				<methods>
-					<include name="AutoLoginTest" />
-				</methods>
-			</class>
+			<class name="main.java.com.interf.eyee.script.user.AutoLogin" />
 		</classes>
 	</test> <!-- AutoLogin -->
 </suite> <!-- Eyee_API_20170630 -->

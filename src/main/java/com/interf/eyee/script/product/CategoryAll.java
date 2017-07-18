@@ -1,4 +1,4 @@
-package main.java.com.interf.eyee.script.business;
+package main.java.com.interf.eyee.script.product;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
@@ -8,6 +8,7 @@ import main.java.com.interf.eyee.dataprovider.BaseDataProvider;
 import main.java.com.interf.eyee.entity.InputEntity;
 import main.java.com.interf.eyee.entity.ResponseEntity;
 import main.java.com.interf.eyee.entity.TestCaseEntity;
+import main.java.com.interf.eyee.entity.forcase.CategoryAllDataItemEntity;
 import main.java.com.interf.eyee.script.BaseCase;
 import main.java.com.interf.eyee.utils.HttpUtil;
 import main.java.com.interf.eyee.utils.InitParam;
@@ -16,11 +17,11 @@ import main.java.com.interf.eyee.utils.ResponseUtil;
 import main.java.com.interf.eyee.utils.assertutils.HandleAssert;
 import main.java.com.interf.eyee.utils.assertutils.NormalAssertUtil;
 
-public class AddUserLogInfo extends BaseCase {
+public class CategoryAll extends BaseCase {
 	private Log log = new Log(this.getClass());
 	
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)
-	public void addUserLogInfoTest(String testName, TestCaseEntity testCase) {
+	public void categoryAllTest(String testName, TestCaseEntity testCase) {
 		baseApi = testCase.getApi();
 		assertType = testCase.getAssertType();
 		
@@ -33,7 +34,7 @@ public class AddUserLogInfo extends BaseCase {
 		
 		String body = HttpUtil.post(baseUrl + baseApi, input);
 		log.info("接口返回 : " + body);
-		ResponseEntity response = ResponseUtil.handle(body);
+		ResponseEntity response = ResponseUtil.handle(body,CategoryAllDataItemEntity.class);
 		
 		@SuppressWarnings("resource")
 		ApplicationContext actx = new FileSystemXmlApplicationContext(path);
