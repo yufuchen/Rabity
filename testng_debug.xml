@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Debug">
-  <test name="HobbyLabels">
+  <test name="AddUserLogInfo">
     <classes>
-      <class name="main.java.com.interf.eyee.script.user.HobbyLabels">
+      <class name="main.java.com.interf.eyee.script.business.AddUserLogInfo">
        <methods>
-        <include name="hobbyLabelsTest" />
+        <include name="addUserLogInfoTest" />
        </methods>
       </class>
     </classes>
-  </test> <!-- HobbyLabels -->
+  </test> <!-- "AddUserLogInfo" -->
 </suite> <!-- Debug -->

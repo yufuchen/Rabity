@@ -43,4 +43,17 @@ public class ResponseUtil {
 		}
 		return response;
 	}
+	
+	public static ResponseEntity handle(String body) {
+		ResponseEntity response = new ResponseEntity();
+		Gson gson = new GsonBuilder().create();
+		JsonObject temp = new JsonParser().parse(body).getAsJsonObject();
+		response.setCode(Long.parseLong(temp.get("code").getAsString()));
+		response.setMsg(temp.get("msg").getAsString());
+		if (!temp.get("data").toString().equals("null")) {
+			String data = temp.get("data").getAsString();
+			response.setData(data);
+		}
+		return response;
+	}
 }

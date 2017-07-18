@@ -41,7 +41,7 @@ public class NormalAssertUtil implements BaseAssertUtil {
 			if (flag) {
 				HandleLog.write(flag, keyName, "null", "null");
 			} else {
-				HandleLog.write(flag, keyName, "null", gson.toJson(actual));
+				HandleLog.write(flag, keyName, gson.toJson(actual), "null");
 			}
 		}
 	}

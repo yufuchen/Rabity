@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+     xmlns="http://www.springframework.org/schema/beans"  
+     xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!-- Task -->
+	<bean id="Task" class="main.java.com.interf.eyee.entity.TaskEntity">
+		<property name="testCase">
+			<list>
+				<ref bean="TestCase1" />
+				<ref bean="TestCase2" />
+				<ref bean="TestCase3" />
+			</list>
+		</property>
+	</bean>
+	<!-- TestCase1 -->
+	<bean id="TestCase1" class="main.java.com.interf.eyee.entity.TestCaseEntity">
+		<property name="id">
+			<value>0</value>
+		</property>
+		<property name="name">
+			<value>使用空token值拉取列表</value>
+		</property>
+		<property name="assertType">
+			<value>0</value>
+		</property>
+		<property name="api">
+			<value>api/Limit/ActPreList</value>
+		</property>
+		<property name="input">
+			<ref bean="Input1" />
+		</property>
+		<property name="baseLine">
+			<ref bean="BaseLine1" />
+		</property>
+	</bean>
+	<bean id="Input1" class="main.java.com.interf.eyee.entity.forcase.EmptyEntity">
+		<property name="token">
+			<value>empty</value>
+		</property>
+		<property name="param">
+			<value/>
+		</property>
+	</bean>
+	<bean id="BaseLine1" class="main.java.com.interf.eyee.entity.BaseLineEntity">
+		<property name="code">
+			<value>1511200</value>
+		</property>
+		<property name="msg">
+			<value>请求已完成</value>
+		</property>
+		<property name="data">
+			<list>
+				<ref bean="Data1" />
+			</list>
+		</property>
+	</bean>
+	<bean id="Data1" class="main.java.com.interf.eyee.entity.forcase.ActPreListTestCaseDataItemEntity">
+		<property name="productid">
+			<value>aa9a8921842c413bbf9f172af7e66d1f</value>
+		</property>
+		<property name="title">
+			<value>这是个预告的</value>
+		</property>
+		<property name="picurl">
+			<value>http://files.eyee.com/Shop/system/main/f2545f83c0834e18ab9905b2e8421368.jpg</value>
+		</property>
+		<property name="saleprice">
+			<value>1380.0</value>
+		</property>
+		<property name="specialprice">
+			<value>500.0</value>
+		</property>
+		<property name="foreshowtime">
+			<value>2017-05-30 00:00:00 +8</value>
+		</property>
+		<property name="begintime">
+			<value>2017-06-17 17:12:00 +8</value>
+		</property>
+		<property name="endtime">
+			<value>2017-07-31 00:00:00 +8</value>
+		</property>
+		<property name="type">
+			<value>0</value>
+		</property>
+		<property name="stock">
+			<value>11</value>
+		</property>
+		<property name="issoldout">
+			<value>false</value>
+		</property>		
+	</bean>
+	<!-- TestCase2 -->
+	<bean id="TestCase2" class="main.java.com.interf.eyee.entity.TestCaseEntity">
+		<property name="id">
+			<value>1</value>
+		</property>
+		<property name="name">
+			<value>使用正确的sign和错误格式的token拉取列表</value>
+		</property>
+		<property name="assertType">
+			<value>0</value>
+		</property>
+		<property name="api">
+			<value>api/Limit/ActPreList</value>
+		</property>
+		<property name="input">
+			<ref bean="Input2" />
+		</property>
+		<property name="baseLine">
+			<ref bean="BaseLine2" />
+		</property>
+	</bean>
+	<bean id="Input2" class="main.java.com.interf.eyee.entity.forcase.EmptyEntity">
+		<property name="token">
+			<value>tail</value>
+		</property>
+		<property name="param">
+			<value/>
+		</property>
+	</bean>
+	<bean id="BaseLine2" class="main.java.com.interf.eyee.entity.BaseLineEntity">
+		<property name="code">
+			<value>1511543</value>
+		</property>
+		<property name="msg">
+			<value>无效的用户token</value>
+		</property>
+		<property name="data">
+			<null/>
+		</property>
+	</bean>
+	<!-- TestCase3 -->
+	<bean id="TestCase3" class="main.java.com.interf.eyee.entity.TestCaseEntity">
+		<property name="id">
+			<value>2</value>
+		</property>
+		<property name="name">
+			<value>使用正确的sign和错误内容的token拉取列表</value>
+		</property>
+		<property name="assertType">
+			<value>0</value>
+		</property>
+		<property name="api">
+			<value>api/Limit/ActPreList</value>
+		</property>
+		<property name="input">
+			<ref bean="Input3" />
+		</property>
+		<property name="baseLine">
+			<ref bean="BaseLine3" />
+		</property>
+	</bean>
+	<bean id="Input3" class="main.java.com.interf.eyee.entity.forcase.EmptyEntity">
+		<property name="token">
+			<value>WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ==</value>
+		</property>
+		<property name="param">
+			<value/>
+		</property>
+	</bean>
+	<bean id="BaseLine3" class="main.java.com.interf.eyee.entity.BaseLineEntity">
+		<property name="code">
+			<value>1511543</value>
+		</property>
+		<property name="msg">
+			<value>无效的用户token</value>
+		</property>
+		<property name="data">
+			<null/>
+		</property>
+	</bean>
+	<!-- AssertUtil -->
+	<bean id="AssertUtil" class="main.java.com.interf.eyee.utils.assertutils.NormalAssertUtil" />
+</beans>

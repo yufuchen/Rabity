@@ -1,155 +1,94 @@
-2017-07-17 18:11:36.787 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: ==== http://140.207.155.74/ - 开始测试 ====
-2017-07-17 18:11:37.185 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels:  ------- 用例名称 : 0_使用正确的信息读取hobby列表 ------- 
-2017-07-17 18:11:37.206 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: 默认参数初始化完成 : 
+2017-07-18 11:06:11.929 INFO  30 info - main.java.com.interf.eyee.script.business.AddUserLogInfo: ==== http://140.207.155.74/ - 开始测试 ====
+2017-07-18 11:06:12.253 INFO  30 info - main.java.com.interf.eyee.script.business.AddUserLogInfo:  ------- 用例名称 : 0_使用正确的信息增加用户loginfo ------- 
+2017-07-18 11:06:12.263 INFO  30 info - main.java.com.interf.eyee.script.business.AddUserLogInfo: 默认参数初始化完成 : 
+{
+  "content": "{\"log: device_id\":\"b8ccd9578ece423e80230e1bebf886d1\",\"log: tag\":\"2\",\"log: version\":\"2.2.5\",\"log: entapp\":\"1\"}",
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "e328d7f9dc1a87f68d7af6e219391b33",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfcjL2DqLq9NxgmjBsXszSkQ\u003d\u003d",
+  "param": ""
+}
+2017-07-18 11:06:12.684 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/Business/AddUserLogInfo
+2017-07-18 11:06:12.684 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+{
+  "content": "{\"log: device_id\":\"b8ccd9578ece423e80230e1bebf886d1\",\"log: tag\":\"2\",\"log: version\":\"2.2.5\",\"log: entapp\":\"1\"}",
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "e328d7f9dc1a87f68d7af6e219391b33",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfcjL2DqLq9NxgmjBsXszSkQ\u003d\u003d",
+  "param": ""
+}
+2017-07-18 11:06:13.081 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 11:06:13.082 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：394
+2017-07-18 11:06:13.084 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 11:06:13.084 INFO  30 info - main.java.com.interf.eyee.script.business.AddUserLogInfo: 接口返回 : {"code":1511200,"msg":"请求已完成","data":"succeed","servertime":"2017-07-18 11:06:18 +8"}
+2017-07-18 11:06:13.134 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
+2017-07-18 11:06:13.135 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
+2017-07-18 11:06:13.135 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : "succeed" ========= 预期结果 : "succeed"
+2017-07-18 11:06:13.136 INFO  30 info - main.java.com.interf.eyee.script.business.AddUserLogInfo:  ------- 用例 : 0_使用正确的信息增加用户loginfo  执行结束 ------- 
+2017-07-18 11:06:13.138 INFO  30 info - main.java.com.interf.eyee.script.business.AddUserLogInfo:  ------- 用例名称 : 1_使用空的cotent增加用户loginfo ------- 
+2017-07-18 11:06:13.141 INFO  30 info - main.java.com.interf.eyee.script.business.AddUserLogInfo: 默认参数初始化完成 : 
 {
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "3d0051d5e23b9432e6c1e6f9f2bff28b",
-  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpf7xYAhO3EbMTHZxj3Ebbsgg\u003d\u003d",
+  "sign": "e328d7f9dc1a87f68d7af6e219391b33",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfcjL2DqLq9NxgmjBsXszSkQ\u003d\u003d",
   "param": ""
 }
-2017-07-17 18:11:37.725 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/User/HobbyLabels
-2017-07-17 18:11:37.725 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+2017-07-18 11:06:13.147 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/Business/AddUserLogInfo
+2017-07-18 11:06:13.148 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
 {
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "3d0051d5e23b9432e6c1e6f9f2bff28b",
-  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpf7xYAhO3EbMTHZxj3Ebbsgg\u003d\u003d",
+  "sign": "e328d7f9dc1a87f68d7af6e219391b33",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfcjL2DqLq9NxgmjBsXszSkQ\u003d\u003d",
   "param": ""
 }
-2017-07-17 18:11:38.197 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
-2017-07-17 18:11:38.211 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：468
-2017-07-17 18:11:38.212 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
-2017-07-17 18:11:38.212 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: 接口返回 : {"code":1511200,"msg":"请求已完成","data":[{"id":"5a3060e8557541f3bf2db95c8e9c42f1","name":"创意","logourl":"http://api.eyee.com/Shop/system/main/7ab0f54d8f30425182170ffd8dd358ed.png","orderby":1},{"id":"c31e9ce5a856498d9182e8653eb5792e","name":"家居","logourl":"http://api.eyee.com/Shop/system/main/597f1dc50e4246fa974694f53fd90b5a.png","orderby":2},{"id":"31bc602bb51244919a9b616e228f980b","name":"潮流文化","logourl":"http://api.eyee.com/Shop/system/main/6ee25c8e72024df8a180731807bd8943.png","orderby":3},{"id":"ff8db612d6fe4a08af181a99b1c21b21","name":"美妆","logourl":"http://api.eyee.com/Shop/system/main/de76ffa9ccf046f9b8b77958b2fa5abd.png","orderby":4},{"id":"02983c0701d94175a649f0d738d653ad","name":"数码","logourl":"http://api.eyee.com/Shop/system/main/a621fa45cef84f088fc42504bbf51327.png","orderby":5},{"id":"62d40b5e92d146ef91271193cdba843a","name":"杂货","logourl":"http://api.eyee.com/Shop/system/main/706c750f90d74fce92a240f13e51231d.png","orderby":6},{"id":"0bd9019f8cbe4d35a0e1cfd683215d80","name":"Sneaker","logourl":"http://api.eyee.com/Shop/system/main/342172f424ac4295bec01216a5b816d3.png","orderby":7},{"id":"677d99475d874fa18d56f4bf7be6a816","name":"旅游","logourl":"http://api.eyee.com/Shop/system/main/fdd04c8598c54e9ab3f69d829b2fbf1e.png","orderby":8},{"id":"a5025b000f3a4b779d1f744d8927faff","name":"动漫","logourl":"http://api.eyee.com/Shop/system/main/1bc8c4ededda4ae3b6e4349fca421b5b.png","orderby":9},{"id":"87c67ed301dd41f9bdcd4cf54c779111","name":"搭配","logourl":"http://api.eyee.com/Shop/system/main/db40bfb8dcec4092a0e71674187c659a.png","orderby":10},{"id":"06872b3565774e5e9a5d7a14c618467b","name":"阅读","logourl":"http://api.eyee.com/Shop/system/main/42b40b1ea0ea40e0b1093fd041124f03.png","orderby":11},{"id":"8bd556996d384d249f783d596dedd4de","name":"摄影","logourl":"http://api.eyee.com/Shop/system/main/422975e6013c411ba1b592c11f3459a5.png","orderby":12},{"id":"2bcd670dfcad42509a22d799cdf10aaf","name":"社交","logourl":"http://api.eyee.com/Shop/system/main/f424f49b9daa43dbbc188e336dad6d3a.png","orderby":13},{"id":"f855b666e58146c697efdaf9127761a2","name":"萌物","logourl":"http://api.eyee.com/Shop/system/main/1d5e14f5f3c5438d9be49018da413298.png","orderby":14},{"id":"b2ab351af8a84aa3873bfd6d2b196815","name":"游戏","logourl":"http://api.eyee.com/Shop/system/main/c815416d828b4b498eed6653bc927cce.png","orderby":15},{"id":"fbfc83e3faa6498d967054886f5044f9","name":"运动","logourl":"http://api.eyee.com/Shop/system/main/636aae52deb64f26b39bd8da38d3246b.png","orderby":16}],"servertime":"2017-07-17 18:11:45 +8"}
-2017-07-17 18:11:38.294 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
-2017-07-17 18:11:38.295 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "5a3060e8557541f3bf2db95c8e9c42f1" ========= 预期结果 : "5a3060e8557541f3bf2db95c8e9c42f1"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "创意" ========= 预期结果 : "创意"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/7ab0f54d8f30425182170ffd8dd358ed.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/7ab0f54d8f30425182170ffd8dd358ed.png"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 1 ========= 预期结果 : 1
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "c31e9ce5a856498d9182e8653eb5792e" ========= 预期结果 : "c31e9ce5a856498d9182e8653eb5792e"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "家居" ========= 预期结果 : "家居"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/597f1dc50e4246fa974694f53fd90b5a.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/597f1dc50e4246fa974694f53fd90b5a.png"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 2 ========= 预期结果 : 2
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "31bc602bb51244919a9b616e228f980b" ========= 预期结果 : "31bc602bb51244919a9b616e228f980b"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "潮流文化" ========= 预期结果 : "潮流文化"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/6ee25c8e72024df8a180731807bd8943.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/6ee25c8e72024df8a180731807bd8943.png"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 3 ========= 预期结果 : 3
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "ff8db612d6fe4a08af181a99b1c21b21" ========= 预期结果 : "ff8db612d6fe4a08af181a99b1c21b21"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "美妆" ========= 预期结果 : "美妆"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/de76ffa9ccf046f9b8b77958b2fa5abd.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/de76ffa9ccf046f9b8b77958b2fa5abd.png"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 4 ========= 预期结果 : 4
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "02983c0701d94175a649f0d738d653ad" ========= 预期结果 : "02983c0701d94175a649f0d738d653ad"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "数码" ========= 预期结果 : "数码"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/a621fa45cef84f088fc42504bbf51327.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/a621fa45cef84f088fc42504bbf51327.png"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 5 ========= 预期结果 : 5
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "62d40b5e92d146ef91271193cdba843a" ========= 预期结果 : "62d40b5e92d146ef91271193cdba843a"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "杂货" ========= 预期结果 : "杂货"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/706c750f90d74fce92a240f13e51231d.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/706c750f90d74fce92a240f13e51231d.png"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 6 ========= 预期结果 : 6
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "0bd9019f8cbe4d35a0e1cfd683215d80" ========= 预期结果 : "0bd9019f8cbe4d35a0e1cfd683215d80"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "Sneaker" ========= 预期结果 : "Sneaker"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/342172f424ac4295bec01216a5b816d3.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/342172f424ac4295bec01216a5b816d3.png"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 7 ========= 预期结果 : 7
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "677d99475d874fa18d56f4bf7be6a816" ========= 预期结果 : "677d99475d874fa18d56f4bf7be6a816"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "旅游" ========= 预期结果 : "旅游"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/fdd04c8598c54e9ab3f69d829b2fbf1e.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/fdd04c8598c54e9ab3f69d829b2fbf1e.png"
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 8 ========= 预期结果 : 8
-2017-07-17 18:11:38.297 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "a5025b000f3a4b779d1f744d8927faff" ========= 预期结果 : "a5025b000f3a4b779d1f744d8927faff"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "动漫" ========= 预期结果 : "动漫"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/1bc8c4ededda4ae3b6e4349fca421b5b.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/1bc8c4ededda4ae3b6e4349fca421b5b.png"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 9 ========= 预期结果 : 9
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "87c67ed301dd41f9bdcd4cf54c779111" ========= 预期结果 : "87c67ed301dd41f9bdcd4cf54c779111"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "搭配" ========= 预期结果 : "搭配"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/db40bfb8dcec4092a0e71674187c659a.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/db40bfb8dcec4092a0e71674187c659a.png"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 10 ========= 预期结果 : 10
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "06872b3565774e5e9a5d7a14c618467b" ========= 预期结果 : "06872b3565774e5e9a5d7a14c618467b"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "阅读" ========= 预期结果 : "阅读"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/42b40b1ea0ea40e0b1093fd041124f03.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/42b40b1ea0ea40e0b1093fd041124f03.png"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 11 ========= 预期结果 : 11
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "8bd556996d384d249f783d596dedd4de" ========= 预期结果 : "8bd556996d384d249f783d596dedd4de"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "摄影" ========= 预期结果 : "摄影"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/422975e6013c411ba1b592c11f3459a5.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/422975e6013c411ba1b592c11f3459a5.png"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 12 ========= 预期结果 : 12
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "2bcd670dfcad42509a22d799cdf10aaf" ========= 预期结果 : "2bcd670dfcad42509a22d799cdf10aaf"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "社交" ========= 预期结果 : "社交"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/f424f49b9daa43dbbc188e336dad6d3a.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/f424f49b9daa43dbbc188e336dad6d3a.png"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 13 ========= 预期结果 : 13
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "f855b666e58146c697efdaf9127761a2" ========= 预期结果 : "f855b666e58146c697efdaf9127761a2"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "萌物" ========= 预期结果 : "萌物"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/1d5e14f5f3c5438d9be49018da413298.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/1d5e14f5f3c5438d9be49018da413298.png"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 14 ========= 预期结果 : 14
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "b2ab351af8a84aa3873bfd6d2b196815" ========= 预期结果 : "b2ab351af8a84aa3873bfd6d2b196815"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "游戏" ========= 预期结果 : "游戏"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/c815416d828b4b498eed6653bc927cce.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/c815416d828b4b498eed6653bc927cce.png"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 15 ========= 预期结果 : 15
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : id   实际结果 : "fbfc83e3faa6498d967054886f5044f9" ========= 预期结果 : "fbfc83e3faa6498d967054886f5044f9"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : name   实际结果 : "运动" ========= 预期结果 : "运动"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : logourl   实际结果 : "http://api.eyee.com/Shop/system/main/636aae52deb64f26b39bd8da38d3246b.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/636aae52deb64f26b39bd8da38d3246b.png"
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : orderby   实际结果 : 16 ========= 预期结果 : 16
-2017-07-17 18:11:38.313 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels:  ------- 用例 : 0_使用正确的信息读取hobby列表  执行结束 ------- 
-2017-07-17 18:11:38.332 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels:  ------- 用例名称 : 1_使用正确的sign和错误格式的token读取hobby列表 ------- 
-2017-07-17 18:11:38.333 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: 默认参数初始化完成 : 
+2017-07-18 11:06:13.475 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 11:06:13.476 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：326
+2017-07-18 11:06:13.478 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 11:06:13.479 INFO  30 info - main.java.com.interf.eyee.script.business.AddUserLogInfo: 接口返回 : {"code":1511504,"msg":"不合法的参数值","data":"缺少必要的参数:Content","servertime":"2017-07-18 11:06:19 +8"}
+2017-07-18 11:06:13.553 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511504 ========= 预期结果 : 1511504
+2017-07-18 11:06:13.554 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 不合法的参数值 ========= 预期结果 : 不合法的参数值
+2017-07-18 11:06:13.554 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : "缺少必要的参数:Content" ========= 预期结果 : "缺少必要的参数:Content"
+2017-07-18 11:06:13.555 INFO  30 info - main.java.com.interf.eyee.script.business.AddUserLogInfo:  ------- 用例 : 1_使用空的cotent增加用户loginfo  执行结束 ------- 
+2017-07-18 11:06:13.562 INFO  30 info - main.java.com.interf.eyee.script.business.AddUserLogInfo:  ------- 用例名称 : 2_不使用cotent增加用户loginfo ------- 
+2017-07-18 11:06:13.563 INFO  30 info - main.java.com.interf.eyee.script.business.AddUserLogInfo: 默认参数初始化完成 : 
 {
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "5d3ef1733b73ae3490981ed7a3947bf7",
-  "token": "tail",
+  "sign": "e328d7f9dc1a87f68d7af6e219391b33",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfcjL2DqLq9NxgmjBsXszSkQ\u003d\u003d",
   "param": ""
 }
-2017-07-17 18:11:38.343 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/User/HobbyLabels
-2017-07-17 18:11:38.344 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+2017-07-18 11:06:13.568 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/Business/AddUserLogInfo
+2017-07-18 11:06:13.569 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
 {
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "5d3ef1733b73ae3490981ed7a3947bf7",
-  "token": "tail",
+  "sign": "e328d7f9dc1a87f68d7af6e219391b33",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfcjL2DqLq9NxgmjBsXszSkQ\u003d\u003d",
   "param": ""
 }
-2017-07-17 18:11:38.713 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
-2017-07-17 18:11:38.713 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：369
-2017-07-17 18:11:38.713 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
-2017-07-17 18:11:38.713 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: 接口返回 : {"code":1511543,"msg":"无效的用户token","data":null,"servertime":"2017-07-17 18:11:45 +8"}
-2017-07-17 18:11:38.785 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511543 ========= 预期结果 : 1511543
-2017-07-17 18:11:38.786 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的用户token ========= 预期结果 : 无效的用户token
-2017-07-17 18:11:38.787 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-17 18:11:38.787 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels:  ------- 用例 : 1_使用正确的sign和错误格式的token读取hobby列表  执行结束 ------- 
-2017-07-17 18:11:38.796 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels:  ------- 用例名称 : 2_使用正确的sign和错误内容的token读取hobby列表 ------- 
-2017-07-17 18:11:38.798 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: 默认参数初始化完成 : 
-{
-  "version": "2.2.5",
-  "lang": "zh",
-  "platform": "ios",
-  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "05b85eda9965fe45029c3907721fe3c8",
-  "token": "WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ\u003d\u003d",
-  "param": ""
-}
-2017-07-17 18:11:38.807 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/User/HobbyLabels
-2017-07-17 18:11:38.808 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
-{
-  "version": "2.2.5",
-  "lang": "zh",
-  "platform": "ios",
-  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "05b85eda9965fe45029c3907721fe3c8",
-  "token": "WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ\u003d\u003d",
-  "param": ""
-}
-2017-07-17 18:11:39.229 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
-2017-07-17 18:11:39.235 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：421
-2017-07-17 18:11:39.235 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
-2017-07-17 18:11:39.235 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: 接口返回 : {"code":1511543,"msg":"无效的用户token","data":null,"servertime":"2017-07-17 18:11:46 +8"}
-2017-07-17 18:11:39.269 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511543 ========= 预期结果 : 1511543
-2017-07-17 18:11:39.269 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的用户token ========= 预期结果 : 无效的用户token
-2017-07-17 18:11:39.269 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-17 18:11:39.269 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels:  ------- 用例 : 2_使用正确的sign和错误内容的token读取hobby列表  执行结束 ------- 
-2017-07-17 18:11:39.292 INFO  30 info - main.java.com.interf.eyee.script.user.HobbyLabels: ==== 结束测试 ====
+2017-07-18 11:06:13.762 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 11:06:13.763 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：193
+2017-07-18 11:06:13.763 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 11:06:13.763 INFO  30 info - main.java.com.interf.eyee.script.business.AddUserLogInfo: 接口返回 : {"code":1511504,"msg":"不合法的参数值","data":"缺少必要的参数:Content","servertime":"2017-07-18 11:06:19 +8"}
+2017-07-18 11:06:13.797 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511504 ========= 预期结果 : 1511504
+2017-07-18 11:06:13.797 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 不合法的参数值 ========= 预期结果 : 不合法的参数值
+2017-07-18 11:06:13.798 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : "缺少必要的参数:Content" ========= 预期结果 : "缺少必要的参数:Content"
+2017-07-18 11:06:13.798 INFO  30 info - main.java.com.interf.eyee.script.business.AddUserLogInfo:  ------- 用例 : 2_不使用cotent增加用户loginfo  执行结束 ------- 
+2017-07-18 11:06:13.819 INFO  30 info - main.java.com.interf.eyee.script.business.AddUserLogInfo: ==== 结束测试 ====
