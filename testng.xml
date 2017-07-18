@@ -41,4 +41,9 @@
 			<class name="main.java.com.interf.eyee.script.article.GetArticleCategory" />
 		</classes>
 	</test> <!-- GetArticleCategory -->
+	<test name="AddUserLogInfo">
+		<classes>
+			<class name="main.java.com.interf.eyee.script.business.AddUserLogInfo" />
+		</classes>
+	</test> <!-- AddUserLogInfo -->
 </suite> <!-- Eyee_API_20170630 -->
