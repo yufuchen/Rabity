@@ -1,6 +1,6 @@
-2017-07-18 12:09:26.186 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin: ==== http://140.207.155.74/ - 开始测试 ====
-2017-07-18 12:09:26.541 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- 用例名称 : 0_使用正确的手机号和密码登录 ------- 
-2017-07-18 12:09:26.552 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: 默认参数初始化完成 : 
+2017-07-18 15:25:23.957 INFO  30 info - main.java.com.interf.eyee.script.integralmall.UpdateEverydayMissionInfo: ==== http://140.207.155.74/ - 开始测试 ====
+2017-07-18 15:25:24.289 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- 用例名称 : 0_使用正确的手机号和密码登录 ------- 
+2017-07-18 15:25:24.301 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: 默认参数初始化完成 : 
 {
   "mobile": "+86-17740887033",
   "password": "miyahug77126",
@@ -12,8 +12,8 @@
   "token": "",
   "param": ""
 }
-2017-07-18 12:09:26.973 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/User/Login
-2017-07-18 12:09:26.973 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+2017-07-18 15:25:24.700 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/User/Login
+2017-07-18 15:25:24.704 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
 {
   "mobile": "+86-17740887033",
   "password": "ce6d4c3fb430931ee2d94671bff91fb7",
@@ -25,38 +25,38 @@
   "token": "",
   "param": ""
 }
-2017-07-18 12:09:27.414 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
-2017-07-18 12:09:27.414 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：437
-2017-07-18 12:09:27.416 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
-2017-07-18 12:09:27.416 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: 接口返回 : {"code":1511200,"msg":"请求已完成","data":{"uid":"7975325267954effa5080d79bdcafab5","username":"Ksewen","mobile":"+86-17740887033","mobileconfirmed":true,"email":null,"emailconfirmed":false,"sex":0,"country":null,"address":null,"birthday":null,"imageurl":"http://api.eyee.com/EYEE/Icons/defaulthead.jpg","credits":106.00,"currcredits":106.00,"lastlogintime":"2017-07-18 12:09:33 +8","balance":0.00,"firstreggift":1,"rankname":"v0","rankpic":"http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png","token":"AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpf5/nG9G+BLsLu2iDqr22FSg==","themeurl":null,"registertype":3,"isbindhobby":1,"isagent":0,"promocode":null,"hastradepwd":0,"haspwd":1,"bindweixin":0,"bindweibo":0,"bindqq":0,"facevalue":0.0},"servertime":"2017-07-18 12:09:33 +8"}
-2017-07-18 12:09:27.497 INFO  30 info - main.java.com.interf.eyee.utils.TokenManager: 储存token成功 : AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpf5/nG9G+BLsLu2iDqr22FSg==
-2017-07-18 12:09:27.556 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
-2017-07-18 12:09:27.556 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
-2017-07-18 12:09:27.557 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : balance   实际结果 : 0.0 ========= 预期结果 : 0.0
-2017-07-18 12:09:27.558 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : bindqq   实际结果 : 0 ========= 预期结果 : 0
-2017-07-18 12:09:27.558 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : bindweibo   实际结果 : 0 ========= 预期结果 : 0
-2017-07-18 12:09:27.559 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : bindweixin   实际结果 : 0 ========= 预期结果 : 0
-2017-07-18 12:09:27.559 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : credits   实际结果 : 106.0 ========= 预期结果 : 106.0
-2017-07-18 12:09:27.560 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : currcredits   实际结果 : 106.0 ========= 预期结果 : 106.0
-2017-07-18 12:09:27.560 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : emailconfirmed   实际结果 : false ========= 预期结果 : false
-2017-07-18 12:09:27.560 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : facevalue   实际结果 : "0.0" ========= 预期结果 : "0.0"
-2017-07-18 12:09:27.561 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : firstreggift   实际结果 : 1 ========= 预期结果 : 1
-2017-07-18 12:09:27.561 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : haspwd   实际结果 : 1 ========= 预期结果 : 1
-2017-07-18 12:09:27.561 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : hastradepwd   实际结果 : 0 ========= 预期结果 : 0
-2017-07-18 12:09:27.561 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : imageurl   实际结果 : "http://api.eyee.com/EYEE/Icons/defaulthead.jpg" ========= 预期结果 : "http://api.eyee.com/EYEE/Icons/defaulthead.jpg"
-2017-07-18 12:09:27.562 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : isagent   实际结果 : 0 ========= 预期结果 : 0
-2017-07-18 12:09:27.562 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : isbindhobby   实际结果 : 1 ========= 预期结果 : 1
-2017-07-18 12:09:27.562 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : mobile   实际结果 : "+86-17740887033" ========= 预期结果 : "+86-17740887033"
-2017-07-18 12:09:27.563 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : mobileconfirmed   实际结果 : true ========= 预期结果 : true
-2017-07-18 12:09:27.563 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : rankname   实际结果 : "v0" ========= 预期结果 : "v0"
-2017-07-18 12:09:27.563 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : rankpic   实际结果 : "http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png"
-2017-07-18 12:09:27.564 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : registertype   实际结果 : 3 ========= 预期结果 : 3
-2017-07-18 12:09:27.564 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : sex   实际结果 : 0 ========= 预期结果 : 0
-2017-07-18 12:09:27.564 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : uid   实际结果 : "7975325267954effa5080d79bdcafab5" ========= 预期结果 : "7975325267954effa5080d79bdcafab5"
-2017-07-18 12:09:27.564 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : username   实际结果 : "Ksewen" ========= 预期结果 : "Ksewen"
-2017-07-18 12:09:27.565 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- 用例 : 0_使用正确的手机号和密码登录  执行结束 ------- 
-2017-07-18 12:09:27.568 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- 用例名称 : 1_使用正确的手机号和错误的密码登录 ------- 
-2017-07-18 12:09:27.570 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: 默认参数初始化完成 : 
+2017-07-18 15:25:25.207 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 15:25:25.208 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：499
+2017-07-18 15:25:25.209 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 15:25:25.209 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: 接口返回 : {"code":1511200,"msg":"请求已完成","data":{"uid":"7975325267954effa5080d79bdcafab5","username":"Ksewen","mobile":"+86-17740887033","mobileconfirmed":true,"email":null,"emailconfirmed":false,"sex":0,"country":null,"address":null,"birthday":null,"imageurl":"http://api.eyee.com/EYEE/Icons/defaulthead.jpg","credits":106.00,"currcredits":106.00,"lastlogintime":"2017-07-18 15:25:31 +8","balance":0.00,"firstreggift":1,"rankname":"v0","rankpic":"http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png","token":"AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfK/uqrFcBAcuZAtuGwD2fjA==","themeurl":null,"registertype":3,"isbindhobby":1,"isagent":0,"promocode":null,"hastradepwd":0,"haspwd":1,"bindweixin":0,"bindweibo":0,"bindqq":0,"facevalue":0.0},"servertime":"2017-07-18 15:25:31 +8"}
+2017-07-18 15:25:25.281 INFO  30 info - main.java.com.interf.eyee.utils.TokenManager: 储存token成功 : AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfK/uqrFcBAcuZAtuGwD2fjA==
+2017-07-18 15:25:25.334 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
+2017-07-18 15:25:25.338 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
+2017-07-18 15:25:25.338 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : balance   实际结果 : 0.0 ========= 预期结果 : 0.0
+2017-07-18 15:25:25.338 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : bindqq   实际结果 : 0 ========= 预期结果 : 0
+2017-07-18 15:25:25.338 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : bindweibo   实际结果 : 0 ========= 预期结果 : 0
+2017-07-18 15:25:25.338 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : bindweixin   实际结果 : 0 ========= 预期结果 : 0
+2017-07-18 15:25:25.338 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : credits   实际结果 : 106.0 ========= 预期结果 : 106.0
+2017-07-18 15:25:25.338 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : currcredits   实际结果 : 106.0 ========= 预期结果 : 106.0
+2017-07-18 15:25:25.342 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : emailconfirmed   实际结果 : false ========= 预期结果 : false
+2017-07-18 15:25:25.342 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : facevalue   实际结果 : "0.0" ========= 预期结果 : "0.0"
+2017-07-18 15:25:25.342 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : firstreggift   实际结果 : 1 ========= 预期结果 : 1
+2017-07-18 15:25:25.342 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : haspwd   实际结果 : 1 ========= 预期结果 : 1
+2017-07-18 15:25:25.342 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : hastradepwd   实际结果 : 0 ========= 预期结果 : 0
+2017-07-18 15:25:25.342 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : imageurl   实际结果 : "http://api.eyee.com/EYEE/Icons/defaulthead.jpg" ========= 预期结果 : "http://api.eyee.com/EYEE/Icons/defaulthead.jpg"
+2017-07-18 15:25:25.342 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : isagent   实际结果 : 0 ========= 预期结果 : 0
+2017-07-18 15:25:25.342 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : isbindhobby   实际结果 : 1 ========= 预期结果 : 1
+2017-07-18 15:25:25.342 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : mobile   实际结果 : "+86-17740887033" ========= 预期结果 : "+86-17740887033"
+2017-07-18 15:25:25.346 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : mobileconfirmed   实际结果 : true ========= 预期结果 : true
+2017-07-18 15:25:25.346 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : rankname   实际结果 : "v0" ========= 预期结果 : "v0"
+2017-07-18 15:25:25.346 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : rankpic   实际结果 : "http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png"
+2017-07-18 15:25:25.346 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : registertype   实际结果 : 3 ========= 预期结果 : 3
+2017-07-18 15:25:25.346 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : sex   实际结果 : 0 ========= 预期结果 : 0
+2017-07-18 15:25:25.346 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : uid   实际结果 : "7975325267954effa5080d79bdcafab5" ========= 预期结果 : "7975325267954effa5080d79bdcafab5"
+2017-07-18 15:25:25.346 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : username   实际结果 : "Ksewen" ========= 预期结果 : "Ksewen"
+2017-07-18 15:25:25.346 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- 用例 : 0_使用正确的手机号和密码登录  执行结束 ------- 
+2017-07-18 15:25:25.350 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- 用例名称 : 1_使用正确的手机号和错误的密码登录 ------- 
+2017-07-18 15:25:25.350 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: 默认参数初始化完成 : 
 {
   "mobile": "+86-17740887033",
   "password": "mistake",
@@ -68,8 +68,8 @@
   "token": "",
   "param": ""
 }
-2017-07-18 12:09:27.575 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/User/Login
-2017-07-18 12:09:27.576 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+2017-07-18 15:25:25.358 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/User/Login
+2017-07-18 15:25:25.358 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
 {
   "mobile": "+86-17740887033",
   "password": "75496dbfbebb296508150e41a03f5788",
@@ -81,16 +81,16 @@
   "token": "",
   "param": ""
 }
-2017-07-18 12:09:28.051 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
-2017-07-18 12:09:28.052 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：475
-2017-07-18 12:09:28.052 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
-2017-07-18 12:09:28.053 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: 接口返回 : {"code":1511542,"msg":"账号或密码错误","data":null,"servertime":"2017-07-18 12:09:33 +8"}
-2017-07-18 12:09:28.106 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511542 ========= 预期结果 : 1511542
-2017-07-18 12:09:28.106 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 账号或密码错误 ========= 预期结果 : 账号或密码错误
-2017-07-18 12:09:28.106 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-18 12:09:28.106 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- 用例 : 1_使用正确的手机号和错误的密码登录  执行结束 ------- 
-2017-07-18 12:09:28.109 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- 用例名称 : 2_使用正确的手机号和空密码登录 ------- 
-2017-07-18 12:09:28.110 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: 默认参数初始化完成 : 
+2017-07-18 15:25:26.090 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 15:25:26.094 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：732
+2017-07-18 15:25:26.094 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 15:25:26.094 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: 接口返回 : {"code":1511542,"msg":"账号或密码错误","data":null,"servertime":"2017-07-18 15:25:31 +8"}
+2017-07-18 15:25:26.137 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511542 ========= 预期结果 : 1511542
+2017-07-18 15:25:26.141 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 账号或密码错误 ========= 预期结果 : 账号或密码错误
+2017-07-18 15:25:26.141 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-18 15:25:26.141 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- 用例 : 1_使用正确的手机号和错误的密码登录  执行结束 ------- 
+2017-07-18 15:25:26.145 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- 用例名称 : 2_使用正确的手机号和空密码登录 ------- 
+2017-07-18 15:25:26.145 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: 默认参数初始化完成 : 
 {
   "mobile": "+86-17740887033",
   "password": "",
@@ -102,8 +102,8 @@
   "token": "",
   "param": ""
 }
-2017-07-18 12:09:28.114 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/User/Login
-2017-07-18 12:09:28.115 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+2017-07-18 15:25:26.149 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/User/Login
+2017-07-18 15:25:26.149 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
 {
   "mobile": "+86-17740887033",
   "password": "",
@@ -115,78 +115,67 @@
   "token": "",
   "param": ""
 }
-2017-07-18 12:09:28.649 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
-2017-07-18 12:09:28.650 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：534
-2017-07-18 12:09:28.650 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
-2017-07-18 12:09:28.650 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: 接口返回 : {"code":1511503,"msg":"缺少必要的参数","data":null,"servertime":"2017-07-18 12:09:34 +8"}
-2017-07-18 12:09:28.693 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511503 ========= 预期结果 : 1511503
-2017-07-18 12:09:28.696 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 缺少必要的参数 ========= 预期结果 : 缺少必要的参数
-2017-07-18 12:09:28.696 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-18 12:09:28.696 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- 用例 : 2_使用正确的手机号和空密码登录  执行结束 ------- 
-2017-07-18 12:09:28.785 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin:  ------- 用例名称 : 0_使用正确的sign和token登录 ------- 
-2017-07-18 12:09:28.787 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin: 默认参数初始化完成 : 
+2017-07-18 15:25:26.461 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 15:25:26.461 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：312
+2017-07-18 15:25:26.461 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 15:25:26.461 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin: 接口返回 : {"code":1511503,"msg":"缺少必要的参数","data":null,"servertime":"2017-07-18 15:25:32 +8"}
+2017-07-18 15:25:26.499 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511503 ========= 预期结果 : 1511503
+2017-07-18 15:25:26.499 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 缺少必要的参数 ========= 预期结果 : 缺少必要的参数
+2017-07-18 15:25:26.499 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-18 15:25:26.499 INFO  30 info - main.java.com.interf.eyee.script.user.MobileLogin:  ------- 用例 : 2_使用正确的手机号和空密码登录  执行结束 ------- 
+2017-07-18 15:25:26.609 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin:  ------- 用例名称 : 0_使用正确的sign和token登录 ------- 
+2017-07-18 15:25:26.609 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin: 默认参数初始化完成 : 
 {
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "c16013aec10bf78c04481fdc43e366b7",
-  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpf5/nG9G+BLsLu2iDqr22FSg\u003d\u003d",
+  "sign": "78a6843b7c3649d080dd871c0fb21551",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfK/uqrFcBAcuZAtuGwD2fjA\u003d\u003d",
   "param": ""
 }
-2017-07-18 12:09:28.791 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/User/LoginAuto
-2017-07-18 12:09:28.792 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+2017-07-18 15:25:26.612 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/User/LoginAuto
+2017-07-18 15:25:26.612 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
 {
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "c16013aec10bf78c04481fdc43e366b7",
-  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpf5/nG9G+BLsLu2iDqr22FSg\u003d\u003d",
+  "sign": "78a6843b7c3649d080dd871c0fb21551",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfK/uqrFcBAcuZAtuGwD2fjA\u003d\u003d",
   "param": ""
 }
-2017-07-18 12:09:29.217 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
-2017-07-18 12:09:29.218 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：424
-2017-07-18 12:09:29.218 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
-2017-07-18 12:09:29.218 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin: 接口返回 : {"code":1511200,"msg":"请求已完成","data":{"uid":"7975325267954effa5080d79bdcafab5","username":"Ksewen","mobile":"+86-17740887033","mobileconfirmed":true,"email":null,"emailconfirmed":false,"sex":0,"country":null,"address":null,"birthday":null,"imageurl":"http://api.eyee.com/EYEE/Icons/defaulthead.jpg","credits":106.00,"currcredits":106.00,"lastlogintime":"2017-07-18 12:09:33 +8","balance":0.00,"firstreggift":1,"rankname":"v0","rankpic":"http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png","token":"AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpf5/nG9G+BLsLu2iDqr22FSg==","themeurl":null,"registertype":3,"isbindhobby":1,"isagent":0,"promocode":null,"hastradepwd":0,"haspwd":1,"bindweixin":0,"bindweibo":0,"bindqq":0,"facevalue":0.0},"servertime":"2017-07-18 12:09:35 +8"}
-2017-07-18 12:09:29.267 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
-2017-07-18 12:09:29.267 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
-2017-07-18 12:09:29.269 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : balance   实际结果 : 0.0 ========= 预期结果 : 0.0
-2017-07-18 12:09:29.270 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : bindqq   实际结果 : 0 ========= 预期结果 : 0
-2017-07-18 12:09:29.271 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : bindweibo   实际结果 : 0 ========= 预期结果 : 0
-2017-07-18 12:09:29.272 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : bindweixin   实际结果 : 0 ========= 预期结果 : 0
-2017-07-18 12:09:29.272 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : credits   实际结果 : 106.0 ========= 预期结果 : 106.0
-2017-07-18 12:09:29.272 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : currcredits   实际结果 : 106.0 ========= 预期结果 : 106.0
-2017-07-18 12:09:29.273 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : emailconfirmed   实际结果 : false ========= 预期结果 : false
-2017-07-18 12:09:29.273 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : facevalue   实际结果 : "0.0" ========= 预期结果 : "0.0"
-2017-07-18 12:09:29.273 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : firstreggift   实际结果 : 1 ========= 预期结果 : 1
-2017-07-18 12:09:29.273 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : haspwd   实际结果 : 1 ========= 预期结果 : 1
-2017-07-18 12:09:29.273 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : hastradepwd   实际结果 : 0 ========= 预期结果 : 0
-2017-07-18 12:09:29.274 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : imageurl   实际结果 : "http://api.eyee.com/EYEE/Icons/defaulthead.jpg" ========= 预期结果 : "http://api.eyee.com/EYEE/Icons/defaulthead.jpg"
-2017-07-18 12:09:29.274 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : isagent   实际结果 : 0 ========= 预期结果 : 0
-2017-07-18 12:09:29.274 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : isbindhobby   实际结果 : 1 ========= 预期结果 : 1
-2017-07-18 12:09:29.274 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : mobile   实际结果 : "+86-17740887033" ========= 预期结果 : "+86-17740887033"
-2017-07-18 12:09:29.275 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : mobileconfirmed   实际结果 : true ========= 预期结果 : true
-2017-07-18 12:09:29.275 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : rankname   实际结果 : "v0" ========= 预期结果 : "v0"
-2017-07-18 12:09:29.275 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : rankpic   实际结果 : "http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png"
-2017-07-18 12:09:29.275 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : registertype   实际结果 : 3 ========= 预期结果 : 3
-2017-07-18 12:09:29.276 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : sex   实际结果 : 0 ========= 预期结果 : 0
-2017-07-18 12:09:29.276 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : uid   实际结果 : "7975325267954effa5080d79bdcafab5" ========= 预期结果 : "7975325267954effa5080d79bdcafab5"
-2017-07-18 12:09:29.276 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : username   实际结果 : "Ksewen" ========= 预期结果 : "Ksewen"
-2017-07-18 12:09:29.277 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin:  ------- 用例 : 0_使用正确的sign和token登录  执行结束 ------- 
-2017-07-18 12:09:29.278 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin:  ------- 用例名称 : 1_使用正确的sign和错误格式的token登录 ------- 
-2017-07-18 12:09:29.280 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin: 默认参数初始化完成 : 
-{
-  "version": "2.2.5",
-  "lang": "zh",
-  "platform": "ios",
-  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "5d3ef1733b73ae3490981ed7a3947bf7",
-  "token": "tail",
-  "param": ""
-}
-2017-07-18 12:09:29.282 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/User/LoginAuto
-2017-07-18 12:09:29.283 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+2017-07-18 15:25:27.270 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 15:25:27.270 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：658
+2017-07-18 15:25:27.270 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 15:25:27.270 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin: 接口返回 : {"code":1511200,"msg":"请求已完成","data":{"uid":"7975325267954effa5080d79bdcafab5","username":"Ksewen","mobile":"+86-17740887033","mobileconfirmed":true,"email":null,"emailconfirmed":false,"sex":0,"country":null,"address":null,"birthday":null,"imageurl":"http://api.eyee.com/EYEE/Icons/defaulthead.jpg","credits":106.00,"currcredits":106.00,"lastlogintime":"2017-07-18 15:25:31 +8","balance":0.00,"firstreggift":1,"rankname":"v0","rankpic":"http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png","token":"AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfK/uqrFcBAcuZAtuGwD2fjA==","themeurl":null,"registertype":3,"isbindhobby":1,"isagent":0,"promocode":null,"hastradepwd":0,"haspwd":1,"bindweixin":0,"bindweibo":0,"bindqq":0,"facevalue":0.0},"servertime":"2017-07-18 15:25:33 +8"}
+2017-07-18 15:25:27.309 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
+2017-07-18 15:25:27.309 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
+2017-07-18 15:25:27.309 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : balance   实际结果 : 0.0 ========= 预期结果 : 0.0
+2017-07-18 15:25:27.309 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : bindqq   实际结果 : 0 ========= 预期结果 : 0
+2017-07-18 15:25:27.309 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : bindweibo   实际结果 : 0 ========= 预期结果 : 0
+2017-07-18 15:25:27.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : bindweixin   实际结果 : 0 ========= 预期结果 : 0
+2017-07-18 15:25:27.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : credits   实际结果 : 106.0 ========= 预期结果 : 106.0
+2017-07-18 15:25:27.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : currcredits   实际结果 : 106.0 ========= 预期结果 : 106.0
+2017-07-18 15:25:27.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : emailconfirmed   实际结果 : false ========= 预期结果 : false
+2017-07-18 15:25:27.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : facevalue   实际结果 : "0.0" ========= 预期结果 : "0.0"
+2017-07-18 15:25:27.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : firstreggift   实际结果 : 1 ========= 预期结果 : 1
+2017-07-18 15:25:27.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : haspwd   实际结果 : 1 ========= 预期结果 : 1
+2017-07-18 15:25:27.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : hastradepwd   实际结果 : 0 ========= 预期结果 : 0
+2017-07-18 15:25:27.313 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : imageurl   实际结果 : "http://api.eyee.com/EYEE/Icons/defaulthead.jpg" ========= 预期结果 : "http://api.eyee.com/EYEE/Icons/defaulthead.jpg"
+2017-07-18 15:25:27.317 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : isagent   实际结果 : 0 ========= 预期结果 : 0
+2017-07-18 15:25:27.317 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : isbindhobby   实际结果 : 1 ========= 预期结果 : 1
+2017-07-18 15:25:27.317 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : mobile   实际结果 : "+86-17740887033" ========= 预期结果 : "+86-17740887033"
+2017-07-18 15:25:27.317 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : mobileconfirmed   实际结果 : true ========= 预期结果 : true
+2017-07-18 15:25:27.317 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : rankname   实际结果 : "v0" ========= 预期结果 : "v0"
+2017-07-18 15:25:27.317 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : rankpic   实际结果 : "http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png" ========= 预期结果 : "http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png"
+2017-07-18 15:25:27.317 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : registertype   实际结果 : 3 ========= 预期结果 : 3
+2017-07-18 15:25:27.317 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : sex   实际结果 : 0 ========= 预期结果 : 0
+2017-07-18 15:25:27.317 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : uid   实际结果 : "7975325267954effa5080d79bdcafab5" ========= 预期结果 : "7975325267954effa5080d79bdcafab5"
+2017-07-18 15:25:27.317 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : username   实际结果 : "Ksewen" ========= 预期结果 : "Ksewen"
+2017-07-18 15:25:27.321 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin:  ------- 用例 : 0_使用正确的sign和token登录  执行结束 ------- 
+2017-07-18 15:25:27.321 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin:  ------- 用例名称 : 1_使用正确的sign和错误格式的token登录 ------- 
+2017-07-18 15:25:27.325 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin: 默认参数初始化完成 : 
 {
   "version": "2.2.5",
   "lang": "zh",
@@ -196,16 +185,27 @@
   "token": "tail",
   "param": ""
 }
-2017-07-18 12:09:29.745 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
-2017-07-18 12:09:29.746 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：460
-2017-07-18 12:09:29.746 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
-2017-07-18 12:09:29.746 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin: 接口返回 : {"code":1511543,"msg":"无效的用户token","data":null,"servertime":"2017-07-18 12:09:35 +8"}
-2017-07-18 12:09:29.788 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511543 ========= 预期结果 : 1511543
-2017-07-18 12:09:29.789 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的用户token ========= 预期结果 : 无效的用户token
-2017-07-18 12:09:29.789 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-18 12:09:29.790 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin:  ------- 用例 : 1_使用正确的sign和错误格式的token登录  执行结束 ------- 
-2017-07-18 12:09:29.792 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin:  ------- 用例名称 : 2_使用正确的sign和错误内容的token登录 ------- 
-2017-07-18 12:09:29.794 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin: 默认参数初始化完成 : 
+2017-07-18 15:25:27.329 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/User/LoginAuto
+2017-07-18 15:25:27.329 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "5d3ef1733b73ae3490981ed7a3947bf7",
+  "token": "tail",
+  "param": ""
+}
+2017-07-18 15:25:27.853 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 15:25:27.854 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：524
+2017-07-18 15:25:27.855 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 15:25:27.855 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin: 接口返回 : {"code":1511543,"msg":"无效的用户token","data":null,"servertime":"2017-07-18 15:25:34 +8"}
+2017-07-18 15:25:27.911 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511543 ========= 预期结果 : 1511543
+2017-07-18 15:25:27.911 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的用户token ========= 预期结果 : 无效的用户token
+2017-07-18 15:25:27.911 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-18 15:25:27.911 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin:  ------- 用例 : 1_使用正确的sign和错误格式的token登录  执行结束 ------- 
+2017-07-18 15:25:27.919 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin:  ------- 用例名称 : 2_使用正确的sign和错误内容的token登录 ------- 
+2017-07-18 15:25:27.922 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin: 默认参数初始化完成 : 
 {
   "version": "2.2.5",
   "lang": "zh",
@@ -215,8 +215,8 @@
   "token": "WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ\u003d\u003d",
   "param": ""
 }
-2017-07-18 12:09:29.798 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/User/LoginAuto
-2017-07-18 12:09:29.798 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+2017-07-18 15:25:27.926 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/User/LoginAuto
+2017-07-18 15:25:27.926 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
 {
   "version": "2.2.5",
   "lang": "zh",
@@ -226,12 +226,310 @@
   "token": "WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ\u003d\u003d",
   "param": ""
 }
-2017-07-18 12:09:30.263 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
-2017-07-18 12:09:30.263 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：464
-2017-07-18 12:09:30.264 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
-2017-07-18 12:09:30.264 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin: 接口返回 : {"code":1511543,"msg":"无效的用户token","data":null,"servertime":"2017-07-18 12:09:36 +8"}
-2017-07-18 12:09:30.291 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511543 ========= 预期结果 : 1511543
-2017-07-18 12:09:30.291 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的用户token ========= 预期结果 : 无效的用户token
-2017-07-18 12:09:30.291 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
-2017-07-18 12:09:30.292 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin:  ------- 用例 : 2_使用正确的sign和错误内容的token登录  执行结束 ------- 
-2017-07-18 12:09:30.302 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin: ==== 结束测试 ====
+2017-07-18 15:25:28.335 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 15:25:28.335 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：409
+2017-07-18 15:25:28.335 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 15:25:28.335 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin: 接口返回 : {"code":1511543,"msg":"无效的用户token","data":null,"servertime":"2017-07-18 15:25:34 +8"}
+2017-07-18 15:25:28.362 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511543 ========= 预期结果 : 1511543
+2017-07-18 15:25:28.362 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的用户token ========= 预期结果 : 无效的用户token
+2017-07-18 15:25:28.362 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-18 15:25:28.362 INFO  30 info - main.java.com.interf.eyee.script.user.AutoLogin:  ------- 用例 : 2_使用正确的sign和错误内容的token登录  执行结束 ------- 
+2017-07-18 15:25:28.417 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetBeesCountInfo:  ------- 用例名称 : 0_使用正确的信息获取首页蜂蜜信息 ------- 
+2017-07-18 15:25:28.421 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetBeesCountInfo: 默认参数初始化完成 : 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "78a6843b7c3649d080dd871c0fb21551",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfK/uqrFcBAcuZAtuGwD2fjA\u003d\u003d"
+}
+2017-07-18 15:25:28.425 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/IntegralMall/GetBeesCountInfo
+2017-07-18 15:25:28.425 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "78a6843b7c3649d080dd871c0fb21551",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfK/uqrFcBAcuZAtuGwD2fjA\u003d\u003d"
+}
+2017-07-18 15:25:28.778 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 15:25:28.778 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：353
+2017-07-18 15:25:28.778 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 15:25:28.780 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetBeesCountInfo: 接口返回 : {"code":1511200,"msg":"请求已完成","data":{"currcredits":106,"credits":106,"level":"v0","upgradeneedbees":894},"servertime":"2017-07-18 15:25:34 +8"}
+2017-07-18 15:25:28.804 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
+2017-07-18 15:25:28.804 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
+2017-07-18 15:25:28.804 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : credits   实际结果 : 106 ========= 预期结果 : 106
+2017-07-18 15:25:28.804 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : currcredits   实际结果 : 106 ========= 预期结果 : 106
+2017-07-18 15:25:28.804 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : level   实际结果 : "v0" ========= 预期结果 : "v0"
+2017-07-18 15:25:28.807 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : upgradeneedbees   实际结果 : 894 ========= 预期结果 : 894
+2017-07-18 15:25:28.807 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetBeesCountInfo:  ------- 用例 : 0_使用正确的信息获取首页蜂蜜信息  执行结束 ------- 
+2017-07-18 15:25:28.811 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetBeesCountInfo:  ------- 用例名称 : 1_使用正确的sign和错误格式的token获取首页蜂蜜信息 ------- 
+2017-07-18 15:25:28.815 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetBeesCountInfo: 默认参数初始化完成 : 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "5d3ef1733b73ae3490981ed7a3947bf7",
+  "token": "tail",
+  "param": ""
+}
+2017-07-18 15:25:28.823 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/IntegralMall/GetBeesCountInfo
+2017-07-18 15:25:28.823 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "5d3ef1733b73ae3490981ed7a3947bf7",
+  "token": "tail",
+  "param": ""
+}
+2017-07-18 15:25:29.155 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 15:25:29.156 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：332
+2017-07-18 15:25:29.156 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 15:25:29.156 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetBeesCountInfo: 接口返回 : {"code":1511543,"msg":"无效的用户token","data":null,"servertime":"2017-07-18 15:25:35 +8"}
+2017-07-18 15:25:29.178 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511543 ========= 预期结果 : 1511543
+2017-07-18 15:25:29.178 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的用户token ========= 预期结果 : 无效的用户token
+2017-07-18 15:25:29.178 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-18 15:25:29.178 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetBeesCountInfo:  ------- 用例 : 1_使用正确的sign和错误格式的token获取首页蜂蜜信息  执行结束 ------- 
+2017-07-18 15:25:29.186 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetBeesCountInfo:  ------- 用例名称 : 2_使用正确的sign和错误内容的token获取首页蜂蜜信息 ------- 
+2017-07-18 15:25:29.189 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetBeesCountInfo: 默认参数初始化完成 : 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "05b85eda9965fe45029c3907721fe3c8",
+  "token": "WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ\u003d\u003d",
+  "param": ""
+}
+2017-07-18 15:25:29.193 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/IntegralMall/GetBeesCountInfo
+2017-07-18 15:25:29.193 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "05b85eda9965fe45029c3907721fe3c8",
+  "token": "WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ\u003d\u003d",
+  "param": ""
+}
+2017-07-18 15:25:29.520 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 15:25:29.520 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：327
+2017-07-18 15:25:29.520 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 15:25:29.520 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetBeesCountInfo: 接口返回 : {"code":1511543,"msg":"无效的用户token","data":null,"servertime":"2017-07-18 15:25:35 +8"}
+2017-07-18 15:25:29.544 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511543 ========= 预期结果 : 1511543
+2017-07-18 15:25:29.544 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的用户token ========= 预期结果 : 无效的用户token
+2017-07-18 15:25:29.544 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-18 15:25:29.544 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetBeesCountInfo:  ------- 用例 : 2_使用正确的sign和错误内容的token获取首页蜂蜜信息  执行结束 ------- 
+2017-07-18 15:25:29.591 INFO  30 info - main.java.com.interf.eyee.script.product.BrandAll:  ------- 用例名称 : 0_使用正确的信息调用BrandAll接口 ------- 
+2017-07-18 15:25:29.591 INFO  30 info - main.java.com.interf.eyee.script.product.BrandAll: 默认参数初始化完成 : 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "78a6843b7c3649d080dd871c0fb21551",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfK/uqrFcBAcuZAtuGwD2fjA\u003d\u003d",
+  "param": ""
+}
+2017-07-18 15:25:29.595 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/Product/BrandAll
+2017-07-18 15:25:29.595 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "78a6843b7c3649d080dd871c0fb21551",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfK/uqrFcBAcuZAtuGwD2fjA\u003d\u003d",
+  "param": ""
+}
+2017-07-18 15:25:30.059 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 15:25:30.059 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：464
+2017-07-18 15:25:30.063 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 15:25:30.063 INFO  30 info - main.java.com.interf.eyee.script.product.BrandAll: 接口返回 : {"code":1511200,"msg":"请求已完成","data":[{"id":"f247b77a90964234b1327264756f8984","name":"3125C","logourl":"http://api.eyee.com/Shop/system/main/a1a146ea14864425b9722d645398ab06.png","code":"#"},{"id":"df606e0943584c4182f3954e2de856a4","name":"4PKlabs","logourl":"http://api.eyee.com/Shop/system/main/44bfb3ff11eb4daea0fd5c839598dae7.png","code":"#"},{"id":"d7f38ca2299c40ef8f375ed7b51a699e","name":"A.FOUR LABS","logourl":"http://api.eyee.com/Shop/system/main/46334ba41ced4122bd86653397e77332.jpg","code":"A"},{"id":"2b70a1918328455a9454cb7d2d2c6b83","name":"ACU","logourl":"http://api.eyee.com/Shop/system/main/fd656292c01a4f4386a3bab9b688294a.gif","code":"A"},{"id":"95364B43E63849FDA52B73EAE1A8B5EA","name":"adidas Originals","logourl":"http://api.eyee.com/Shop/system/main/1ab7a5f1583245afa32586d298d6c9b1.png","code":"A"},{"id":"F1C1DFF54CAB43BCA5FDC0BE75DC9D7C","name":"Air Jordan","logourl":"http://api.eyee.com/Shop/system/main/3121d2dc500745b0bea6f941797b2ada.jpg","code":"A"},{"id":"51213412fd794cfcafedd9a9f890b8ce","name":"AMBUSH®","logourl":"http://api.eyee.com/Shop/system/main/6b397a5c22924dd2be9f2a088f87d9a2.jpg","code":"A"},{"id":"c5a7245e7a8c4cdfa97bd3f0408c900a","name":"Anti Social Social Club","logourl":"http://api.eyee.com/Shop/system/main/9d176924c7e14cc3b518574cbee3fddb.jpg","code":"A"},{"id":"862c8ceac3a74dadb852a052bb004e1e","name":"Ark Air","logourl":"http://api.eyee.com/Shop/system/main/64cb2622b75a44d5927a1cf5bcf6c9bd.png","code":"A"},{"id":"c794ecc9e49f45829a7d40e226e95b80","name":"BEAT","logourl":"http://api.eyee.com/Shop/system/main/536045b458a04441a07d28b4dfcc42bb.jpg","code":"B"},{"id":"4a4594e3bb2f48d09850a997fb0cb7c9","name":"BRAIN DEAD","logourl":"http://api.eyee.com/Shop/system/main/d53fc5b2bfd14175bd650f6a301d5654.png","code":"B"},{"id":"f66e79972e85420ebba0a0c950a543d7","name":"Buscemi","logourl":"http://api.eyee.com/Shop/system/main/2367ca8c0ad7430d81e927c481dc95db.jpg","code":"B"},{"id":"e72fdb22738448cab9ab7111d46104b5","name":"CASH CA","logourl":"http://api.eyee.com/Shop/system/main/c5bd7e0752cd4d288061ef196bae7c9a.png","code":"C"},{"id":"0db9ddad7d9945de81192273a4da514b","name":"Clot","logourl":"http://api.eyee.com/Shop/system/main/4f9d358504064f599ec36ab92e777962.jpg","code":"C"},{"id":"d9e8a8d36f9f47cfb69687043dbbdd74","name":"COLONY 2139","logourl":"http://api.eyee.com/Shop/system/main/64319f156cd1487787f0923cf654fe5f.jpg","code":"C"},{"id":"3a5db178407048cb9097119e1d5cd8d1","name":"DEVILOCK","logourl":"http://api.eyee.com/Shop/system/main/33dad914065145d883f01d6f879b5e61.png","code":"D"},{"id":"d55bd0a2f90b41eb97b511d0267b224c","name":"Emotionally Unavailable","logourl":"http://api.eyee.com/Shop/system/main/4f0e7632692c46a7ba949a61c798d14a.png","code":"E"},{"id":"6479a24aead740f48d0306640d1b384f","name":"EXPANSION","logourl":"http://api.eyee.com/Shop/system/main/57ba27cddaf043b191777feb42912f31.png","code":"E"},{"id":"93657c5899574f37b8859643aef1cb5c","name":"FR2","logourl":"http://api.eyee.com/Shop/system/main/6d514022410a45c8953537d441bc7c5d.gif","code":"F"},{"id":"47FCEAD089BE47E7A2BDC6266D42B77D","name":"fragment design","logourl":"http://api.eyee.com/Shop/system/main/5984ffa29ab245a1be58854c24c3e988.png","code":"F"},{"id":"a66b394e6e3841a481af897751747872","name":"Freeway","logourl":"http://api.eyee.com/Shop/system/main/5fbe7c7046a34445ba4c9146313a4027.jpg","code":"F"},{"id":"596b9049bb1c4a84b19b2b12f2522f21","name":"GLAD NEWS","logourl":"http://api.eyee.com/Shop/system/main/e9f0675f5f7e4d549074511e08dea5b8.png","code":"G"},{"id":"82fea77bd00e4d28a3e8381f85760bdd","name":"Heather Grey Wall","logourl":"http://api.eyee.com/Shop/system/main/8442d700609747549fb1403dbf4c62d1.jpg","code":"H"},{"id":"1b48f2d17aa1477db0d0638bcb7d1f6c","name":"HELLO!VANQUISH","logourl":"http://api.eyee.com/Shop/system/main/54d370675df146d8b5d75e85014e7cd2.png","code":"H"},{"id":"40bc9216f2434b059e1d7d4d1b3c7979","name":"Hombre Nino","logourl":"http://api.eyee.com/Shop/system/main/8240ebb70415446f9f90a8bd7c247dff.png","code":"H"},{"id":"bb8f023e364844469997f6ace76093da","name":"HOT HEART","logourl":"http://api.eyee.com/Shop/system/main/47846252d0544224b9dbd96eee4c6d6d.png","code":"H"},{"id":"04640e38425344f793ecaa514cddd739","name":"JAM HOME MADE","logourl":"http://api.eyee.com/Shop/system/main/9e4b439ed2994980be67365e1606f47b.jpg","code":"J"},{"id":"49c776508e114fcf99d40238082466d3","name":"JUST LIKE HONEYEE","logourl":"http://api.eyee.com/Shop/system/main/4e0331064d144cf3b5603cfd450e09f4.jpg","code":"J"},{"id":"52daaee40344429d8c6969e90d73d26c","name":"kaffiend","logourl":"http://api.eyee.com/Shop/system/main/59d5e83ac5dc49aa927b7a1bf80988e7.png","code":"K"},{"id":"8b9f43d8b7be47898e7357b657075b23","name":"LEGENDA","logourl":"http://api.eyee.com/Shop/system/main/ed7daf5a41fc43b3b06cde6526b5622e.png","code":"L"},{"id":"5d64382f48b442c8af68bd4240e077f5","name":"Luisa Leitao","logourl":"http://api.eyee.com/Shop/system/main/b1f225d0f5ce4faab71c2f5e4fe18484.jpg","code":"L"},{"id":"b441cde7db3640458dffcade241550b0","name":"LUKER","logourl":"http://api.eyee.com/Shop/system/main/cb374aa7a1db47c9a8f7470c579e63b5.png","code":"L"},{"id":"f4712f68c1e041adb194ca6d6c25fa8f","name":"MARK MCNAIRY","logourl":"http://api.eyee.com/Shop/system/main/fa8e8d522da94189834a87fc0b6a11ef.jpg","code":"M"},{"id":"6089bf522a444602935a291ee9fc06c6","name":"Medicom toy","logourl":"http://api.eyee.com/Shop/system/main/e2203cc8117844cdb1518dd8881876ed.png","code":"M"},{"id":"d6c6137d513d452bbff2ff74f039b36c","name":"NAKEDKING","logourl":"http://api.eyee.com/Shop/system/main/2de1d5a55ca84d74a75927c8e17a11ba.png","code":"N"},{"id":"86233B5CB2FF41BD9BB9CE86922E2D2B","name":"NIKE","logourl":"http://api.eyee.com/Shop/system/main/d793e51627d7417dbc5d81b2773ae185.gif","code":"N"},{"id":"98cb105232b34edb9e2ef877600e7e71","name":"OMIYAGE","logourl":"http://api.eyee.com/Shop/system/main/8513c3004de443889f1037e4ec1877a9.png","code":"O"},{"id":"743d340498a348e09291ea2aa6ad6962","name":"PALACE SKATEBOARDS","logourl":"http://api.eyee.com/Shop/system/main/8710bb46e5b3403783b551741b57ec6a.png","code":"P"},{"id":"997d2321d22e4e5494a1ebe1c722f21d","name":"panacea","logourl":"http://api.eyee.com/Shop/system/main/ee6a707fdbc1493289f00c01ee7e5bca.jpg","code":"P"},{"id":"031f222e71f641ecb9148acf8535d3ad","name":"Parabellum","logourl":"http://api.eyee.com/Shop/system/main/5fe58501092640d9b172de1007dd544e.jpg","code":"P"},{"id":"3aee3eb0214443b09f07f3731539fe50","name":"PHANTACI","logourl":"http://api.eyee.com/Shop/system/main/3b3f7ce782d24a178cad4889fcc080ff.png","code":"P"},{"id":"6a354e3ef59f4333ab9a5e314ad7d6e7","name":"PLEASURES","logourl":"http://api.eyee.com/Shop/system/main/415b4d5eb06a41d29a9d4eb45d992c62.png","code":"P"},{"id":"9a7d20f9d7a74949918a6de31fd748dc","name":"PUMA","logourl":"http://api.eyee.com/Shop/system/main/e6089e953f3c434a857c45d1d8ea98f1.jpg","code":"P"},{"id":"8943b8ec492841b3979f4cf887dc566a","name":"Reebok","logourl":"http://api.eyee.com/Shop/system/main/c813af0fdefe42db95ad87bf1f13d25f.jpg","code":"R"},{"id":"b704bde791da40d9bff2cc7ff3ef6c1a","name":"STAYREAL","logourl":"http://api.eyee.com/Shop/system/main/dad8bf8b2e624d19ac9d79c119a9fef4.png","code":"S"},{"id":"B368E8FE5D1D41C7B7779CF7D89A9C3A","name":"Supreme","logourl":"http://api.eyee.com/Shop/system/main/a7262ac2d9c94183bd507e99a12b068c.gif","code":"S"},{"id":"2538d8ad438b4e6382801a9a13d17351","name":"社会滑板","logourl":"http://api.eyee.com/Shop/system/main/3b7126f55ad64c778f0f4da93fa32095.jpg","code":"S"},{"id":"758f36a176b04f2a8add630309b1afe5","name":"THAT SHIT CRAY","logourl":"http://api.eyee.com/Shop/system/main/a546475c286044cb8a95d17b88c42b17.png","code":"T"},{"id":"e6188bcc0bf54f87b80384edac3e0a7c","name":"THE FOURNESS","logourl":"http://api.eyee.com/Shop/system/main/9ddd6696066d43f293816cf15e6a1d77.png","code":"T"},{"id":"55341ce9fcaa4063b771aa1f9d95f2bf","name":"vanquish","logourl":"http://api.eyee.com/Shop/system/main/88ed5a64e63f43049d457a23b1438883.jpg","code":"V"},{"id":"93aeb7bda29047c1a17ca2cd97739424","name":"VLONE","logourl":"http://api.eyee.com/Shop/system/main/7d5ee6cd50274c86af200909af32148f.jpg","code":"V"},{"id":"29c9fbbf27664ed6bd1f8a032909a15e","name":"White Mountaineering","logourl":"http://api.eyee.com/Shop/system/main/dbd656ec174048c09114cc1373c6a9be.jpg","code":"W"},{"id":"7ec38526a68b4777849d9989c5a17bc1","name":"whiz","logourl":"http://api.eyee.com/Shop/system/main/3d37cd3a25a74e8eb86619149f991fd2.png","code":"W"},{"id":"0f15ded6480d4630a3ad175a4e3f948c","name":"XSPLUS LAB","logourl":"http://api.eyee.com/Shop/system/main/457090a8e55e4a439e0188dfde9242dd.jpg","code":"X"},{"id":"f6677907c31f4778bb143c5f9203d5c7","name":"YEENJOY","logourl":"http://api.eyee.com/Shop/system/main/d144687deea04a66b351d6aa6655f0dd.jpg","code":"Y"},{"id":"252e581b4f96423f9606378b924a68f1","name":"YEEZY","logourl":"http://api.eyee.com/Shop/system/main/884c6f9e5f03430baf6740bf2c95c476.png","code":"Y"}],"servertime":"2017-07-18 15:25:36 +8"}
+2017-07-18 15:25:30.098 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
+2017-07-18 15:25:30.098 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
+2017-07-18 15:25:30.098 INFO  30 info - main.java.com.interf.eyee.script.product.BrandAll:  ------- 用例 : 0_使用正确的信息调用BrandAll接口  执行结束 ------- 
+2017-07-18 15:25:30.110 INFO  30 info - main.java.com.interf.eyee.script.product.BrandAll:  ------- 用例名称 : 1_使用正确的sign和错误格式的token调用BrandAll接口 ------- 
+2017-07-18 15:25:30.118 INFO  30 info - main.java.com.interf.eyee.script.product.BrandAll: 默认参数初始化完成 : 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "5d3ef1733b73ae3490981ed7a3947bf7",
+  "token": "tail",
+  "param": ""
+}
+2017-07-18 15:25:30.122 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/Product/BrandAll
+2017-07-18 15:25:30.122 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "5d3ef1733b73ae3490981ed7a3947bf7",
+  "token": "tail",
+  "param": ""
+}
+2017-07-18 15:25:30.536 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 15:25:30.540 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：414
+2017-07-18 15:25:30.540 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 15:25:30.540 INFO  30 info - main.java.com.interf.eyee.script.product.BrandAll: 接口返回 : {"code":1511543,"msg":"无效的用户token","data":null,"servertime":"2017-07-18 15:25:36 +8"}
+2017-07-18 15:25:30.554 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511543 ========= 预期结果 : 1511543
+2017-07-18 15:25:30.558 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的用户token ========= 预期结果 : 无效的用户token
+2017-07-18 15:25:30.558 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-18 15:25:30.558 INFO  30 info - main.java.com.interf.eyee.script.product.BrandAll:  ------- 用例 : 1_使用正确的sign和错误格式的token调用BrandAll接口  执行结束 ------- 
+2017-07-18 15:25:30.570 INFO  30 info - main.java.com.interf.eyee.script.product.BrandAll:  ------- 用例名称 : 2_使用正确的sign和错误内容的token调用BrandAll接口 ------- 
+2017-07-18 15:25:30.574 INFO  30 info - main.java.com.interf.eyee.script.product.BrandAll: 默认参数初始化完成 : 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "05b85eda9965fe45029c3907721fe3c8",
+  "token": "WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ\u003d\u003d",
+  "param": ""
+}
+2017-07-18 15:25:30.574 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/Product/BrandAll
+2017-07-18 15:25:30.577 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "05b85eda9965fe45029c3907721fe3c8",
+  "token": "WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ\u003d\u003d",
+  "param": ""
+}
+2017-07-18 15:25:30.970 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 15:25:30.970 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：393
+2017-07-18 15:25:30.970 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 15:25:30.970 INFO  30 info - main.java.com.interf.eyee.script.product.BrandAll: 接口返回 : {"code":1511543,"msg":"无效的用户token","data":null,"servertime":"2017-07-18 15:25:37 +8"}
+2017-07-18 15:25:30.986 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511543 ========= 预期结果 : 1511543
+2017-07-18 15:25:30.986 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 无效的用户token ========= 预期结果 : 无效的用户token
+2017-07-18 15:25:30.986 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-18 15:25:30.989 INFO  30 info - main.java.com.interf.eyee.script.product.BrandAll:  ------- 用例 : 2_使用正确的sign和错误内容的token调用BrandAll接口  执行结束 ------- 
+2017-07-18 15:25:31.052 INFO  30 info - main.java.com.interf.eyee.script.integralmall.UpdateEverydayMissionInfo:  ------- 用例名称 : 0_使用正确的信息更新每日任务 ------- 
+2017-07-18 15:25:31.056 INFO  30 info - main.java.com.interf.eyee.script.integralmall.UpdateEverydayMissionInfo: 默认参数初始化完成 : 
+{
+  "items": [
+    {
+      "sumfinish": 0,
+      "type": 0
+    },
+    {
+      "sumfinish": 0,
+      "type": 1
+    },
+    {
+      "sumfinish": 0,
+      "type": 2
+    }
+  ],
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "78a6843b7c3649d080dd871c0fb21551",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfK/uqrFcBAcuZAtuGwD2fjA\u003d\u003d",
+  "param": ""
+}
+2017-07-18 15:25:31.060 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/Integralmall/UpdateEverydayMissionInfo
+2017-07-18 15:25:31.060 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+{
+  "items": [
+    {
+      "sumfinish": 0,
+      "type": 0
+    },
+    {
+      "sumfinish": 0,
+      "type": 1
+    },
+    {
+      "sumfinish": 0,
+      "type": 2
+    }
+  ],
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "78a6843b7c3649d080dd871c0fb21551",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfK/uqrFcBAcuZAtuGwD2fjA\u003d\u003d",
+  "param": ""
+}
+2017-07-18 15:25:31.350 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 15:25:31.350 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：290
+2017-07-18 15:25:31.354 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 15:25:31.354 INFO  30 info - main.java.com.interf.eyee.script.integralmall.UpdateEverydayMissionInfo: 接口返回 : {"code":1511200,"msg":"请求已完成","data":{"success":true},"servertime":"2017-07-18 15:25:37 +8"}
+2017-07-18 15:25:31.397 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
+2017-07-18 15:25:31.405 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
+2017-07-18 15:25:31.409 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : success   实际结果 : true ========= 预期结果 : true
+2017-07-18 15:25:31.409 INFO  30 info - main.java.com.interf.eyee.script.integralmall.UpdateEverydayMissionInfo:  ------- 用例 : 0_使用正确的信息更新每日任务  执行结束 ------- 
+2017-07-18 15:25:31.413 INFO  30 info - main.java.com.interf.eyee.script.integralmall.UpdateEverydayMissionInfo:  ------- 用例名称 : 1_使用空items更新每日任务 ------- 
+2017-07-18 15:25:31.417 INFO  30 info - main.java.com.interf.eyee.script.integralmall.UpdateEverydayMissionInfo: 默认参数初始化完成 : 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "78a6843b7c3649d080dd871c0fb21551",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfK/uqrFcBAcuZAtuGwD2fjA\u003d\u003d",
+  "param": ""
+}
+2017-07-18 15:25:31.425 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/Integralmall/UpdateEverydayMissionInfo
+2017-07-18 15:25:31.425 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "78a6843b7c3649d080dd871c0fb21551",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfK/uqrFcBAcuZAtuGwD2fjA\u003d\u003d",
+  "param": ""
+}
+2017-07-18 15:25:31.630 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 15:25:31.633 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：205
+2017-07-18 15:25:31.633 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 15:25:31.633 INFO  30 info - main.java.com.interf.eyee.script.integralmall.UpdateEverydayMissionInfo: 接口返回 : {"code":1511200,"msg":"请求已完成","data":{"success":false},"servertime":"2017-07-18 15:25:37 +8"}
+2017-07-18 15:25:31.647 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
+2017-07-18 15:25:31.647 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
+2017-07-18 15:25:31.647 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : success   实际结果 : false ========= 预期结果 : false
+2017-07-18 15:25:31.647 INFO  30 info - main.java.com.interf.eyee.script.integralmall.UpdateEverydayMissionInfo:  ------- 用例 : 1_使用空items更新每日任务  执行结束 ------- 
+2017-07-18 15:25:31.655 INFO  30 info - main.java.com.interf.eyee.script.integralmall.UpdateEverydayMissionInfo:  ------- 用例名称 : 2_使用错误的items值更新每日任务 ------- 
+2017-07-18 15:25:31.655 INFO  30 info - main.java.com.interf.eyee.script.integralmall.UpdateEverydayMissionInfo: 默认参数初始化完成 : 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "78a6843b7c3649d080dd871c0fb21551",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfK/uqrFcBAcuZAtuGwD2fjA\u003d\u003d",
+  "param": ""
+}
+2017-07-18 15:25:31.659 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://140.207.155.74/api/Integralmall/UpdateEverydayMissionInfo
+2017-07-18 15:25:31.659 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+{
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "78a6843b7c3649d080dd871c0fb21551",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfK/uqrFcBAcuZAtuGwD2fjA\u003d\u003d",
+  "param": ""
+}
+2017-07-18 15:25:32.446 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-18 15:25:32.446 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：787
+2017-07-18 15:25:32.446 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-18 15:25:32.446 INFO  30 info - main.java.com.interf.eyee.script.integralmall.UpdateEverydayMissionInfo: 接口返回 : {"code":1511200,"msg":"请求已完成","data":{"success":false},"servertime":"2017-07-18 15:25:38 +8"}
+2017-07-18 15:25:32.469 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
+2017-07-18 15:25:32.469 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
+2017-07-18 15:25:32.473 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : success   实际结果 : false ========= 预期结果 : false
+2017-07-18 15:25:32.477 INFO  30 info - main.java.com.interf.eyee.script.integralmall.UpdateEverydayMissionInfo:  ------- 用例 : 2_使用错误的items值更新每日任务  执行结束 ------- 
+2017-07-18 15:25:32.489 INFO  30 info - main.java.com.interf.eyee.script.integralmall.UpdateEverydayMissionInfo: ==== 结束测试 ====

@@ -11,4 +11,19 @@
 			<class name="main.java.com.interf.eyee.script.user.AutoLogin" />
 		</classes>
 	</test> <!-- AutoLogin -->
+	<test name="GetBeesCountInfo">
+		<classes>
+			<class name="main.java.com.interf.eyee.script.integralmall.GetBeesCountInfo" />
+		</classes>
+	</test> <!-- GetBeesCountInfo -->
+	<test name="BrandAll">
+		<classes>
+			<class name="main.java.com.interf.eyee.script.product.BrandAll" />
+		</classes>
+	</test> <!-- BrandAll -->
+	<test name="UpdateEverydayMissionInfo">
+		<classes>
+			<class name="main.java.com.interf.eyee.script.integralmall.UpdateEverydayMissionInfo" />
+		</classes>
+	</test> <!-- UpdateEverydayMissionInfo -->
 </suite> <!-- Eyee_API_20170630 -->
