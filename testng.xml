@@ -31,11 +31,6 @@
 			<class name="main.java.com.interf.eyee.script.user.HobbyLabels" />
 		</classes>
 	</test> <!-- HobbyLabels -->
-	<test name="BindHobbyLabels">
-		<classes>
-			<class name="main.java.com.interf.eyee.script.user.BindHobbyLabels" />
-		</classes>
-	</test> <!-- BindHobbyLabels -->
 	<test name="GetArticleCategory">
 		<classes>
 			<class name="main.java.com.interf.eyee.script.article.GetArticleCategory" />
