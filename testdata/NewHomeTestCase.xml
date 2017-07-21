@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+     xmlns="http://www.springframework.org/schema/beans"  
+     xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!-- Task -->
+	<bean id="Task" class="main.java.com.interf.eyee.entity.TaskEntity">
+		<property name="testCase">
+			<list>
+				<ref bean="TestCase1" />
+				<ref bean="TestCase2" />
+				<ref bean="TestCase3" />
+			</list>
+		</property>
+	</bean>
+	<!-- TestCase1 -->
+	<bean id="TestCase1" class="main.java.com.interf.eyee.entity.TestCaseEntity">
+		<property name="id">
+			<value>0</value>
+		</property>
+		<property name="name">
+			<value>使用正确的信息获取店铺详情</value>
+		</property>
+		<property name="assertType">
+			<value>1</value>
+		</property>
+		<property name="api">
+			<value>api/Business/NewHome</value>
+		</property>
+		<property name="input">
+			<ref bean="Input1" />
+		</property>
+		<property name="baseLine">
+			<ref bean="BaseLine1" />
+		</property>
+	</bean>
+	<bean id="Input1" class="main.java.com.interf.eyee.entity.forcase.NewHomeInputEntity">
+		<property name="businessid">
+			<value>22cddeadd6a044ad83e9bc9ed0796657</value>
+		</property>
+		<property name="param">
+			<value/>
+		</property>
+	</bean>
+	<bean id="BaseLine1" class="main.java.com.interf.eyee.entity.BaseLineEntity">
+		<property name="code">
+			<value>1511200</value>
+		</property>
+		<property name="msg">
+			<value>请求已完成</value>
+		</property>
+		<property name="data">
+			<ref bean="Data1" />
+		</property>
+	</bean>
+	<bean id="Data1" class="main.java.com.interf.eyee.entity.forcase.NewHomeDataEntity" />
+	<!-- TestCase2 -->
+	<bean id="TestCase2" class="main.java.com.interf.eyee.entity.TestCaseEntity">
+		<property name="id">
+			<value>1</value>
+		</property>
+		<property name="name">
+			<value>使用空的businessid获取店铺详情</value>
+		</property>
+		<property name="assertType">
+			<value>0</value>
+		</property>
+		<property name="api">
+			<value>api/Business/NewHome</value>
+		</property>
+		<property name="input">
+			<ref bean="Input2" />
+		</property>
+		<property name="baseLine">
+			<ref bean="BaseLine2" />
+		</property>
+	</bean>
+	<bean id="Input2" class="main.java.com.interf.eyee.entity.forcase.NewHomeInputEntity">
+		<property name="param">
+			<value/>
+		</property>
+	</bean>
+	<bean id="BaseLine2" class="main.java.com.interf.eyee.entity.BaseLineEntity">
+		<property name="code">
+			<value>1511503</value>
+		</property>
+		<property name="msg">
+			<value>缺少必要的参数</value>
+		</property>
+		<property name="data">
+			<value>缺少店铺标识</value>
+		</property>
+	</bean>
+	<!-- TestCase3 -->
+	<bean id="TestCase3" class="main.java.com.interf.eyee.entity.TestCaseEntity">
+		<property name="id">
+			<value>2</value>
+		</property>
+		<property name="name">
+			<value>使用错误的businessid获取店铺详情</value>
+		</property>
+		<property name="assertType">
+			<value>0</value>
+		</property>
+		<property name="api">
+			<value>api/Business/NewHome</value>
+		</property>
+		<property name="input">
+			<ref bean="Input3" />
+		</property>
+		<property name="baseLine">
+			<ref bean="BaseLine3" />
+		</property>
+	</bean>
+	<bean id="Input3" class="main.java.com.interf.eyee.entity.forcase.NewHomeInputEntity">
+		<property name="businessid">
+			<value>false</value>
+		</property>
+		<property name="param">
+			<value/>
+		</property>
+	</bean>
+	<bean id="BaseLine3" class="main.java.com.interf.eyee.entity.BaseLineEntity">
+		<property name="code">
+			<value>1511200</value>
+		</property>
+		<property name="msg">
+			<value>请求已完成</value>
+		</property>
+		<property name="data">
+			<ref bean="Data3" />
+		</property>
+	</bean>
+	<bean id="Data3" class="main.java.com.interf.eyee.entity.forcase.NewHomeDataEntity">
+		<property name="info">
+			<null/>
+		</property>
+		<property name="recommendproducts">
+			<null/>
+		</property>
+		<property name="share">
+			<ref bean="Share3" />
+		</property>
+		<property name="shareurl">
+			<value>http://inner.eyee.com/shop/shopdetail/false</value>
+		</property>
+	</bean>
+	<bean id="Share3" class="main.java.com.interf.eyee.entity.forcase.NewHomeDataShareEntity">
+		<property name="icon">
+			<value>http://files.eyee.com/EYEE/icons/sharelogo.png</value>
+		</property>
+		<property name="title">
+			<value>EYEE蜂潮，潮流生活上蜂潮！</value>
+		</property>
+		<property name="content">
+			<value>EYEE蜂潮，潮流生活上蜂潮！我在这里发现了一家非常不错的店铺，赶紧去看看吧！</value>
+		</property>
+		<property name="url">
+			<null/>
+		</property>
+		<property name="type">
+			<value>1</value>
+		</property>
+	</bean>
+	<!-- AssertUtil -->
+	<bean id="AssertUtil" class="main.java.com.interf.eyee.utils.assertutils.NormalAssertUtil" />
+</beans>

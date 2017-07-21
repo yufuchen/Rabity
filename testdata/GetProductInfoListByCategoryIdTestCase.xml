@@ -7,6 +7,7 @@
 	<bean id="Task" class="main.java.com.interf.eyee.entity.TaskEntity">
 		<property name="testCase">
 			<list>
+				<ref bean="TestCase1" />
 				<ref bean="TestCase2" />
 			</list>
 		</property>
@@ -17,13 +18,13 @@
 			<value>0</value>
 		</property>
 		<property name="name">
-			<value>使用正确的信息更新hobby标签</value>
+			<value>使用正确的信息获取积分商品列表</value>
 		</property>
 		<property name="assertType">
 			<value>1</value>
 		</property>
 		<property name="api">
-			<value>api/User/BindHobbyLabels</value>
+			<value>api/IntegralMall/GetProductInfoListByCategoryId</value>
 		</property>
 		<property name="input">
 			<ref bean="Input1" />
@@ -32,13 +33,9 @@
 			<ref bean="BaseLine1" />
 		</property>
 	</bean>
-	<bean id="Input1" class="main.java.com.interf.eyee.entity.forcase.BindHobbyLabelsInputEntity">
-		<property name="hobbylabels">
-			<list>
-				<ref bean="Item1" />
-				<ref bean="Item2" />
-				<ref bean="Item3" />
-			</list>
+	<bean id="Input1" class="main.java.com.interf.eyee.entity.forcase.GetProductInfoListByCategoryIdInputEntity">
+		<property name="pageindex">
+			<value>1</value>
 		</property>
 		<property name="param">
 			<value/>
@@ -55,34 +52,19 @@
 			<null/>
 		</property>
 	</bean>
-	<bean id="Item1" class="main.java.com.interf.eyee.entity.forcase.BindHobbyLabelsItemEntity">
-		<property name="hobbylabelid">
-			<value>c31e9ce5a856498d9182e8653eb5792e</value>
-		</property>
-	</bean>
-	<bean id="Item2" class="main.java.com.interf.eyee.entity.forcase.BindHobbyLabelsItemEntity">
-		<property name="hobbylabelid">
-			<value>06872b3565774e5e9a5d7a14c618467b</value>
-		</property>
-	</bean>
-	<bean id="Item3" class="main.java.com.interf.eyee.entity.forcase.BindHobbyLabelsItemEntity">
-		<property name="hobbylabelid">
-			<value>fbfc83e3faa6498d967054886f5044f9</value>
-		</property>
-	</bean>
 	<!-- TestCase2 -->
 	<bean id="TestCase2" class="main.java.com.interf.eyee.entity.TestCaseEntity">
 		<property name="id">
 			<value>1</value>
 		</property>
 		<property name="name">
-			<value>使用空的hobbylabels更新hobby标签</value>
+			<value>使用空的pageindex获取积分商品列表</value>
 		</property>
 		<property name="assertType">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<property name="api">
-			<value>api/User/BindHobbyLabels</value>
+			<value>api/IntegralMall/GetProductInfoListByCategoryId</value>
 		</property>
 		<property name="input">
 			<ref bean="Input2" />
@@ -91,17 +73,17 @@
 			<ref bean="BaseLine2" />
 		</property>
 	</bean>
-	<bean id="Input2" class="main.java.com.interf.eyee.entity.forcase.BindHobbyLabelsInputEntity">
+	<bean id="Input2" class="main.java.com.interf.eyee.entity.forcase.GetProductInfoListByCategoryIdInputEntity">
 		<property name="param">
 			<value/>
 		</property>
 	</bean>
 	<bean id="BaseLine2" class="main.java.com.interf.eyee.entity.BaseLineEntity">
 		<property name="code">
-			<value>1511503</value>
+			<value>1511200</value>
 		</property>
 		<property name="msg">
-			<value>缺少必要的参数</value>
+			<value>请求已完成</value>
 		</property>
 		<property name="data">
 			<null/>

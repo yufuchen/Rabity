@@ -31,7 +31,7 @@ public class NormalAssertUtil implements BaseAssertUtil {
 		flag = Verify.verifyEquals(actual, expect);
 		HandleLog.write(flag, "msg", actual, expect);
 	}
-	
+
 	@Override
 	public void assertData(Object actual, Object expect, boolean flag) {
 		if (expect != null) {
@@ -45,7 +45,7 @@ public class NormalAssertUtil implements BaseAssertUtil {
 			}
 		}
 	}
-	
+
 	private void assertData(Object actual, Object expect) {
 		if (null == expect || expect.equals("")) {
 			flag = Verify.verifyNull(actual);
@@ -57,7 +57,7 @@ public class NormalAssertUtil implements BaseAssertUtil {
 		} else if (expect.toString().startsWith("{") && expect.toString().endsWith("}")) {
 			JsonObject expectJson = new JsonParser().parse(expect.toString()).getAsJsonObject();
 			JsonObject actualJson = new JsonParser().parse(actual.toString()).getAsJsonObject();
-			for(Entry<String, JsonElement> entry : expectJson.entrySet()) {
+			for (Entry<String, JsonElement> entry : expectJson.entrySet()) {
 				String key = entry.getKey();
 				keyName = key;
 				assertData(actualJson.get(key), expectJson.get(key));

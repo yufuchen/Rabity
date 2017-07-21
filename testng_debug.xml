@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="GetBeesCountInfo">
-  <test name="BrandAll">
+<suite name="Debug">
+  <test name="NewHome">
     <classes>
-      <class name="main.java.com.interf.eyee.script.integralmall.GetBeesCountInfo" />
+      <class name="main.java.com.interf.eyee.script.business.NewHome" />
     </classes>
-  </test> <!-- "GetBeesCountInfo" -->
+  </test> <!-- NewHome -->
 </suite> <!-- Debug -->

@@ -22,8 +22,12 @@ public class ResponseUtil {
 		response.setCode(Long.parseLong(temp.get("code").getAsString()));
 		response.setMsg(temp.get("msg").getAsString());
 		if (!temp.get("data").toString().equals("null")) {
-			data = gson.fromJson(temp.get("data"), data.getClass());
-			response.setData(data);
+			if (temp.get("data") instanceof JsonObject) {
+				data = gson.fromJson(temp.get("data"), data.getClass());
+				response.setData(data);
+			} else {
+				response.setData(temp.get("data").getAsString());
+			}
 		}
 		return response;
 	}
