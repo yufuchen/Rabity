@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Debug">
-  <test name="NewHome">
+  <test name="RegisterV211">
     <classes>
-      <class name="main.java.com.interf.eyee.script.business.NewHome" />
+      <class name="main.java.com.interf.eyee.script.user.RegisterV211" />
     </classes>
-  </test> <!-- NewHome -->
+  </test> <!-- RegisterV211 -->
 </suite> <!-- Debug -->

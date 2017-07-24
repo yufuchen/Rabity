@@ -1,15 +1,16 @@
-package main.java.com.interf.eyee.script.coupon;
+package main.java.com.interf.eyee.script.user;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.testng.annotations.Test;
 
 import main.java.com.interf.eyee.dataprovider.BaseDataProvider;
-import main.java.com.interf.eyee.entity.InputEntity;
 import main.java.com.interf.eyee.entity.ResponseEntity;
 import main.java.com.interf.eyee.entity.TestCaseEntity;
-import main.java.com.interf.eyee.entity.forcase.ListCanAllDataItemEntity;
+import main.java.com.interf.eyee.entity.forcase.RegisterV211DataEntity;
+import main.java.com.interf.eyee.entity.forcase.RegisterV211InputEntity;
 import main.java.com.interf.eyee.script.BaseCase;
+import main.java.com.interf.eyee.utils.DBUtil;
 import main.java.com.interf.eyee.utils.HttpUtil;
 import main.java.com.interf.eyee.utils.InitParam;
 import main.java.com.interf.eyee.utils.Log;
@@ -17,15 +18,15 @@ import main.java.com.interf.eyee.utils.ResponseUtil;
 import main.java.com.interf.eyee.utils.assertutils.HandleAssert;
 import main.java.com.interf.eyee.utils.assertutils.NormalAssertUtil;
 
-public class ListCanAll extends BaseCase {
+public class RegisterV211 extends BaseCase {
 	private Log log = new Log(this.getClass());
 	
 	@Test(dataProvider = "BaseData", dataProviderClass = BaseDataProvider.class)
-	public void listCanAllTest(String testName, TestCaseEntity testCase) {
+	public void registerV211Test(String testName, TestCaseEntity testCase) {
 		baseApi = testCase.getApi();
 		assertType = testCase.getAssertType();
 		
-		InputEntity input = testCase.getInput();
+		RegisterV211InputEntity input = (RegisterV211InputEntity) testCase.getInput();
 		baseLine = testCase.getBaseLine();
 		
 		log.info(" ------- 用例名称 : " + testName + " ------- ");
@@ -34,8 +35,13 @@ public class ListCanAll extends BaseCase {
 		
 		String body = HttpUtil.post(baseUrl + baseApi, input);
 		log.info("接口返回 : " + body);
-		ResponseEntity response = ResponseUtil.handle(body, ListCanAllDataItemEntity.class);
-
+		ResponseEntity response = ResponseUtil.handle(body, new RegisterV211DataEntity());
+		
+		//如果请求成功，删除新增的用户
+		if (1511200 == response.getCode()) {
+			DBUtil.deleteFromTable("e_user", input.getMobile());
+		}
+		
 		@SuppressWarnings("resource")
 		ApplicationContext actx = new FileSystemXmlApplicationContext(path);
 		NormalAssertUtil assertUtil = (NormalAssertUtil) actx.getBean("AssertUtil");

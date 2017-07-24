@@ -11,6 +11,11 @@
 			<class name="main.java.com.interf.eyee.script.user.AutoLogin" />
 		</classes>
 	</test> <!-- AutoLogin -->
+	<test name="RegisterV211">
+		<classes>
+			<class name="main.java.com.interf.eyee.script.user.RegisterV211" />
+		</classes>
+	</test> <!-- RegisterV211 -->
 	<test name="GetBeesCountInfo">
 		<classes>
 			<class
@@ -102,4 +107,19 @@
 			<class name="main.java.com.interf.eyee.script.business.NewHome" />
 		</classes>
 	</test> <!-- NewHome -->
+	<test name="NewProductDetail">
+		<classes>
+			<class name="main.java.com.interf.eyee.script.product.NewProductDetail" />
+		</classes>
+	</test> <!-- NewProductDetail -->
+	<test name="ActPreList">
+		<classes>
+			<class name="main.java.com.interf.eyee.script.limit.ActPreList" />
+		</classes>
+	</test> <!-- ActPreList -->
+	<test name="NewSearchV218">
+		<classes>
+			<class name="main.java.com.interf.eyee.script.product.NewSearchV218" />
+		</classes>
+	</test> <!-- NewSearchV218 -->
 </suite> <!-- Eyee_API_20170630 -->

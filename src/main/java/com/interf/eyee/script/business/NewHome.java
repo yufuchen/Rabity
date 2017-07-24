@@ -25,10 +25,6 @@ public class NewHome extends BaseCase {
 		baseApi = testCase.getApi();
 		assertType = testCase.getAssertType();
 		
-		if (testName.startsWith("0")) {
-			System.err.println(testName);
-		}
-		
 		InputEntity input = testCase.getInput();
 		baseLine = testCase.getBaseLine();
 		
