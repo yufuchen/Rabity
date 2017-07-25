@@ -1,64 +1,106 @@
-2017-07-25 11:46:42.507 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetProductInfoListByCategoryId: ==== http://192.168.10.3/ - 开始测试 ====
-2017-07-25 11:46:42.885 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetProductInfoListByCategoryId:  ------- 用例名称 : 0_使用正确的信息获取积分商品列表 ------- 
-2017-07-25 11:46:42.899 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetProductInfoListByCategoryId: 默认参数初始化完成 : 
+2017-07-25 18:30:02.435 INFO  30 info - main.java.com.interf.eyee.script.user.FindPassword: ==== http://192.168.10.3/ - 开始测试 ====
+2017-07-25 18:30:02.832 INFO  30 info - main.java.com.interf.eyee.script.user.FindPassword:  ------- 用例名称 : 0_使用正确的信息找回密码 ------- 
+2017-07-25 18:30:02.844 INFO  30 info - main.java.com.interf.eyee.script.user.FindPassword: 默认参数初始化完成 : 
 {
-  "pageindex": 1,
+  "mobile": "+86-17740887033",
+  "password": "ce6d4c3fb430931ee2d94671bff91fb7",
+  "validcode": "9999",
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "2d70b19360244460d4278e1a92aaf403",
-  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpf3QJcAF/KfTfhnCfmFn1d6Q\u003d\u003d",
+  "sign": "9765eb9e089502eb9a0d068152ed2575",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfLButuFunD+YTq4sYsWZXZQ\u003d\u003d",
   "param": ""
 }
-2017-07-25 11:46:43.328 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://192.168.10.3/api/IntegralMall/GetProductInfoListByCategoryId
-2017-07-25 11:46:43.329 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+2017-07-25 18:30:03.269 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://192.168.10.3/api/User/FindPassword
+2017-07-25 18:30:03.269 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
 {
-  "pageindex": 1,
+  "mobile": "+86-17740887033",
+  "password": "ce6d4c3fb430931ee2d94671bff91fb7",
+  "validcode": "9999",
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "2d70b19360244460d4278e1a92aaf403",
-  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpf3QJcAF/KfTfhnCfmFn1d6Q\u003d\u003d",
+  "sign": "9765eb9e089502eb9a0d068152ed2575",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfLButuFunD+YTq4sYsWZXZQ\u003d\u003d",
   "param": ""
 }
-2017-07-25 11:46:43.774 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
-2017-07-25 11:46:43.775 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：443
-2017-07-25 11:46:43.778 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
-2017-07-25 11:46:43.778 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetProductInfoListByCategoryId: 接口返回 : {"code":1511200,"msg":"请求已完成","data":[{"id":"f9ebe478bd7d42f4b757f767dd48336a","name":"BASKET MID DEE& RICKY BIGA","mainpic":"http://api.eyee.com/Shop/system/main/c0b9a68be0084eee8b4a66bfa138b81e.jpg!w650","brandname":"PUMA","price":0.0,"bees":40000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"f9d371209ff1493aa52b0e700489f9da","name":"香片卡(朗姆柑橘香型)","mainpic":"http://api.eyee.com/Shop/system/main/5b3f6a2e10dd4e16a2b44413117a61f6.jpg!w650","brandname":"COLONY 2139","price":2.95,"bees":2979,"isallexchange":0,"syntaxrate":0.119,"isoverseas":true},{"id":"cf4e0383fb5641ebb05c5eb897c052c2","name":"BASKET × DEE & RICKY","mainpic":"http://api.eyee.com/Shop/system/main/1cd28e10fe62471e86dc8616bd9fc617.jpg!w650","brandname":"PUMA","price":698.0,"bees":15000,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"c77de72cf7e8420989b020adaae654b1","name":"Men's short pants","mainpic":"http://api.eyee.com/Shop/system/main/11790912a7b94f6d8f383aff4ceb3b82.jpg!w650","brandname":"HELLO!VANQUISH","price":399.45,"bees":1000,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"b5ef15ad0a38478681a7b8aaba530c3b","name":"布洛克皮鞋","mainpic":"http://api.eyee.com/Shop/system/main/70971589855a479291f143738f4f924f.jpg!w650","brandname":"MARK MCNAIRY","price":2474.02,"bees":20,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"a8dc38237a684fff886a7b9413a143b8","name":"ACU x Heather Grey Wall LOGO TEE","mainpic":"http://api.eyee.com/Shop/system/main/81b692c6bc724da5ad2fc9ca2c7f0504.jpg!w650","brandname":"ACU","price":0.0,"bees":1000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"87c6206a1e794b92ab1ef5f6bbf0754b","name":"花色休闲短裤","mainpic":"http://api.eyee.com/Shop/system/main/5bf7ee99893048b9af48af7debc16858.jpg!w650","brandname":"HELLO!VANQUISH","price":0.0,"bees":30000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"84c09bb270234eee925b31b8fef2a7ce","name":"朗姆柑橘香型玻璃清洁剂","mainpic":"http://api.eyee.com/Shop/system/main/5bc2b198f8214854af82ca682549c945.jpg!w650","brandname":"COLONY 2139","price":88888.0,"bees":10000,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"83e842c2b0114d0cb2796ceead1222f9","name":"SUEDE × CAREAUX","mainpic":"http://api.eyee.com/Shop/system/main/e49f3b55376846159aeb45f803696a7f.jpg!w650","brandname":"PUMA","price":698.0,"bees":2000,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"6fbc1c8ba91f4c85835e88be67dcc56d","name":"PARABELLUM牛皮腰带","mainpic":"http://api.eyee.com/Shop/system/main/4719bafe1c3344c4b21f17250d43882a.jpg!w650","brandname":"Parabellum","price":0.0,"bees":12000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"5ee02d810a944920b9ec10a6bcc0e7d8","name":"MESSAGE TYVEK CLUTCH BAG","mainpic":"http://api.eyee.com/Shop/system/main/b3c908123f8f4b0caa22d5f733c1b45c.jpg!w650","brandname":"LEGENDA","price":275.34,"bees":200,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"5b84995c598d4be4a484354e637dbc05","name":"Heather Grey Wall × CLARKS","mainpic":"http://api.eyee.com/Shop/system/main/abba4741e2df474d8d7cf9f294d65b63.jpg!w650","brandname":"CASH CA","price":0.0,"bees":32000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"569f5cce71424342b929815089c5869d","name":"PLAY NUDE","mainpic":"http://api.eyee.com/Shop/system/main/a1bb4716a3d94d06a0a4cf1aecfbf86b.jpg!w650","brandname":"PUMA","price":838.0,"bees":12000,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"3e565118687448359c16cfaec656baa2","name":"Chambray print bd shirt","mainpic":"http://api.eyee.com/Shop/system/main/e0dce52166224bdda8366bc0a3ba4462.jpg!w650","brandname":"HELLO!VANQUISH","price":0.0,"bees":60000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"3a338253142449cf97dbb28ebdcfdecb","name":"BEAT TAKESHI表情Tee","mainpic":"http://api.eyee.com/Shop/system/main/b0e380be9c804d73bd39e02848f8020b.jpg!w650","brandname":"BEAT","price":300.0,"bees":500,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"2e2fa403884447da8304a8e3235b75f0","name":"社会滑板 LOGO拉链连帽卫衣","mainpic":"http://api.eyee.com/Shop/system/main/7edf54a21ff8476e84c78b6be2df4271.jpg!w650","brandname":"社会滑板","price":487.0,"bees":10000,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"272ae628520143f583ea26677cb13234","name":"high claim item TEE","mainpic":"http://api.eyee.com/Shop/system/main/609922af99f84476b0025a96717763d9.jpg!w650","brandname":"BEAT","price":0.0,"bees":300,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"242ad83fd3d94dbeb5743eccbf52d28f","name":"PLAY NUDE","mainpic":"http://api.eyee.com/Shop/system/main/0182d7bedda54d7eb077266061babaae.jpg!w650","brandname":"PUMA","price":0.0,"bees":50000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"1c31b7c9660a47a3836bc60fd7f1578d","name":"ACU x Heather Grey Wall LOGO Hoodie","mainpic":"http://api.eyee.com/Shop/system/main/d60ddfc6380747719bafcbbf0c4e158f.jpg!w650","brandname":"ACU","price":29.55,"bees":50,"isallexchange":0,"syntaxrate":0.119,"isoverseas":true},{"id":"15d4602a7da9458fa14d143454e37f8d","name":"Men's chino short pants","mainpic":"http://api.eyee.com/Shop/system/main/6e12ebb19b9447cb87fe2d87ddf28021.jpg!w650","brandname":"HELLO!VANQUISH","price":0.0,"bees":20000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false}],"servertime":"2017-07-25 11:46:44 +8"}
-2017-07-25 11:46:43.841 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
-2017-07-25 11:46:43.841 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
-2017-07-25 11:46:43.841 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetProductInfoListByCategoryId:  ------- 用例 : 0_使用正确的信息获取积分商品列表  执行结束 ------- 
-2017-07-25 11:46:43.844 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetProductInfoListByCategoryId:  ------- 用例名称 : 1_使用为0的pageindex获取积分商品列表 ------- 
-2017-07-25 11:46:43.845 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetProductInfoListByCategoryId: 默认参数初始化完成 : 
+2017-07-25 18:30:03.712 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-25 18:30:03.714 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：440
+2017-07-25 18:30:03.717 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-25 18:30:03.718 INFO  30 info - main.java.com.interf.eyee.script.user.FindPassword: 接口返回 : {"code":1511502,"msg":"不合法的请求","data":null,"servertime":"2017-07-25 18:30:13 +8"}
+2017-07-25 18:30:03.780 ERROR 46 error - main.java.com.interf.eyee.utils.HandleLog: 字段名称 :code   实际结果 : 1511502 ========= 预期结果 : 1511200
+2017-07-25 18:30:03.781 ERROR 46 error - main.java.com.interf.eyee.utils.HandleLog: 字段名称 :msg   实际结果 : 不合法的请求 ========= 预期结果 : 请求已完成
+2017-07-25 18:30:03.786 INFO  30 info - main.java.com.interf.eyee.script.user.FindPassword:  ------- 用例名称 : 1_使用空的新密码找回密码 ------- 
+2017-07-25 18:30:03.787 INFO  30 info - main.java.com.interf.eyee.script.user.FindPassword: 默认参数初始化完成 : 
 {
-  "pageindex": 0,
+  "mobile": "+86-17740777033",
+  "validcode": "9999",
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "2d70b19360244460d4278e1a92aaf403",
-  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpf3QJcAF/KfTfhnCfmFn1d6Q\u003d\u003d",
+  "sign": "9765eb9e089502eb9a0d068152ed2575",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfLButuFunD+YTq4sYsWZXZQ\u003d\u003d",
   "param": ""
 }
-2017-07-25 11:46:43.851 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://192.168.10.3/api/IntegralMall/GetProductInfoListByCategoryId
-2017-07-25 11:46:43.852 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+2017-07-25 18:30:03.792 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://192.168.10.3/api/User/FindPassword
+2017-07-25 18:30:03.793 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
 {
-  "pageindex": 0,
+  "mobile": "+86-17740777033",
+  "validcode": "9999",
   "version": "2.2.5",
   "lang": "zh",
   "platform": "ios",
   "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
-  "sign": "2d70b19360244460d4278e1a92aaf403",
-  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpf3QJcAF/KfTfhnCfmFn1d6Q\u003d\u003d",
+  "sign": "9765eb9e089502eb9a0d068152ed2575",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfLButuFunD+YTq4sYsWZXZQ\u003d\u003d",
   "param": ""
 }
-2017-07-25 11:46:44.235 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
-2017-07-25 11:46:44.237 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：383
-2017-07-25 11:46:44.238 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
-2017-07-25 11:46:44.239 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetProductInfoListByCategoryId: 接口返回 : {"code":1511200,"msg":"请求已完成","data":[{"id":"f9ebe478bd7d42f4b757f767dd48336a","name":"BASKET MID DEE& RICKY BIGA","mainpic":"http://api.eyee.com/Shop/system/main/c0b9a68be0084eee8b4a66bfa138b81e.jpg!w650","brandname":"PUMA","price":0.0,"bees":40000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"f9d371209ff1493aa52b0e700489f9da","name":"香片卡(朗姆柑橘香型)","mainpic":"http://api.eyee.com/Shop/system/main/5b3f6a2e10dd4e16a2b44413117a61f6.jpg!w650","brandname":"COLONY 2139","price":2.95,"bees":2979,"isallexchange":0,"syntaxrate":0.119,"isoverseas":true},{"id":"cf4e0383fb5641ebb05c5eb897c052c2","name":"BASKET × DEE & RICKY","mainpic":"http://api.eyee.com/Shop/system/main/1cd28e10fe62471e86dc8616bd9fc617.jpg!w650","brandname":"PUMA","price":698.0,"bees":15000,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"c77de72cf7e8420989b020adaae654b1","name":"Men's short pants","mainpic":"http://api.eyee.com/Shop/system/main/11790912a7b94f6d8f383aff4ceb3b82.jpg!w650","brandname":"HELLO!VANQUISH","price":399.45,"bees":1000,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"b5ef15ad0a38478681a7b8aaba530c3b","name":"布洛克皮鞋","mainpic":"http://api.eyee.com/Shop/system/main/70971589855a479291f143738f4f924f.jpg!w650","brandname":"MARK MCNAIRY","price":2474.02,"bees":20,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"a8dc38237a684fff886a7b9413a143b8","name":"ACU x Heather Grey Wall LOGO TEE","mainpic":"http://api.eyee.com/Shop/system/main/81b692c6bc724da5ad2fc9ca2c7f0504.jpg!w650","brandname":"ACU","price":0.0,"bees":1000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"87c6206a1e794b92ab1ef5f6bbf0754b","name":"花色休闲短裤","mainpic":"http://api.eyee.com/Shop/system/main/5bf7ee99893048b9af48af7debc16858.jpg!w650","brandname":"HELLO!VANQUISH","price":0.0,"bees":30000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"84c09bb270234eee925b31b8fef2a7ce","name":"朗姆柑橘香型玻璃清洁剂","mainpic":"http://api.eyee.com/Shop/system/main/5bc2b198f8214854af82ca682549c945.jpg!w650","brandname":"COLONY 2139","price":88888.0,"bees":10000,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"83e842c2b0114d0cb2796ceead1222f9","name":"SUEDE × CAREAUX","mainpic":"http://api.eyee.com/Shop/system/main/e49f3b55376846159aeb45f803696a7f.jpg!w650","brandname":"PUMA","price":698.0,"bees":2000,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"6fbc1c8ba91f4c85835e88be67dcc56d","name":"PARABELLUM牛皮腰带","mainpic":"http://api.eyee.com/Shop/system/main/4719bafe1c3344c4b21f17250d43882a.jpg!w650","brandname":"Parabellum","price":0.0,"bees":12000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"5ee02d810a944920b9ec10a6bcc0e7d8","name":"MESSAGE TYVEK CLUTCH BAG","mainpic":"http://api.eyee.com/Shop/system/main/b3c908123f8f4b0caa22d5f733c1b45c.jpg!w650","brandname":"LEGENDA","price":275.34,"bees":200,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"5b84995c598d4be4a484354e637dbc05","name":"Heather Grey Wall × CLARKS","mainpic":"http://api.eyee.com/Shop/system/main/abba4741e2df474d8d7cf9f294d65b63.jpg!w650","brandname":"CASH CA","price":0.0,"bees":32000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"569f5cce71424342b929815089c5869d","name":"PLAY NUDE","mainpic":"http://api.eyee.com/Shop/system/main/a1bb4716a3d94d06a0a4cf1aecfbf86b.jpg!w650","brandname":"PUMA","price":838.0,"bees":12000,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"3e565118687448359c16cfaec656baa2","name":"Chambray print bd shirt","mainpic":"http://api.eyee.com/Shop/system/main/e0dce52166224bdda8366bc0a3ba4462.jpg!w650","brandname":"HELLO!VANQUISH","price":0.0,"bees":60000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"3a338253142449cf97dbb28ebdcfdecb","name":"BEAT TAKESHI表情Tee","mainpic":"http://api.eyee.com/Shop/system/main/b0e380be9c804d73bd39e02848f8020b.jpg!w650","brandname":"BEAT","price":300.0,"bees":500,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"2e2fa403884447da8304a8e3235b75f0","name":"社会滑板 LOGO拉链连帽卫衣","mainpic":"http://api.eyee.com/Shop/system/main/7edf54a21ff8476e84c78b6be2df4271.jpg!w650","brandname":"社会滑板","price":487.0,"bees":10000,"isallexchange":0,"syntaxrate":0.119,"isoverseas":false},{"id":"272ae628520143f583ea26677cb13234","name":"high claim item TEE","mainpic":"http://api.eyee.com/Shop/system/main/609922af99f84476b0025a96717763d9.jpg!w650","brandname":"BEAT","price":0.0,"bees":300,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"242ad83fd3d94dbeb5743eccbf52d28f","name":"PLAY NUDE","mainpic":"http://api.eyee.com/Shop/system/main/0182d7bedda54d7eb077266061babaae.jpg!w650","brandname":"PUMA","price":0.0,"bees":50000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false},{"id":"1c31b7c9660a47a3836bc60fd7f1578d","name":"ACU x Heather Grey Wall LOGO Hoodie","mainpic":"http://api.eyee.com/Shop/system/main/d60ddfc6380747719bafcbbf0c4e158f.jpg!w650","brandname":"ACU","price":29.55,"bees":50,"isallexchange":0,"syntaxrate":0.119,"isoverseas":true},{"id":"15d4602a7da9458fa14d143454e37f8d","name":"Men's chino short pants","mainpic":"http://api.eyee.com/Shop/system/main/6e12ebb19b9447cb87fe2d87ddf28021.jpg!w650","brandname":"HELLO!VANQUISH","price":0.0,"bees":20000,"isallexchange":1,"syntaxrate":0.0,"isoverseas":false}],"servertime":"2017-07-25 11:46:44 +8"}
-2017-07-25 11:46:44.303 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511200 ========= 预期结果 : 1511200
-2017-07-25 11:46:44.303 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 请求已完成 ========= 预期结果 : 请求已完成
-2017-07-25 11:46:44.304 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetProductInfoListByCategoryId:  ------- 用例 : 1_使用为0的pageindex获取积分商品列表  执行结束 ------- 
-2017-07-25 11:46:44.334 INFO  30 info - main.java.com.interf.eyee.script.integralmall.GetProductInfoListByCategoryId: ==== 结束测试 ====
+2017-07-25 18:30:04.416 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-25 18:30:04.417 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：623
+2017-07-25 18:30:04.418 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-25 18:30:04.418 INFO  30 info - main.java.com.interf.eyee.script.user.FindPassword: 接口返回 : {"code":1511503,"msg":"缺少必要的参数","data":null,"servertime":"2017-07-25 18:30:13 +8"}
+2017-07-25 18:30:04.459 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511503 ========= 预期结果 : 1511503
+2017-07-25 18:30:04.459 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 缺少必要的参数 ========= 预期结果 : 缺少必要的参数
+2017-07-25 18:30:04.460 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-25 18:30:04.460 INFO  30 info - main.java.com.interf.eyee.script.user.FindPassword:  ------- 用例 : 1_使用空的新密码找回密码  执行结束 ------- 
+2017-07-25 18:30:04.467 INFO  30 info - main.java.com.interf.eyee.script.user.FindPassword:  ------- 用例名称 : 2_使用错误的验证码找回密码 ------- 
+2017-07-25 18:30:04.468 INFO  30 info - main.java.com.interf.eyee.script.user.FindPassword: 默认参数初始化完成 : 
+{
+  "mobile": "+86-17740887033",
+  "password": "ce6d4c3fb430931ee2d94671bff91fb7",
+  "validcode": "7777",
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "9765eb9e089502eb9a0d068152ed2575",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfLButuFunD+YTq4sYsWZXZQ\u003d\u003d",
+  "param": ""
+}
+2017-07-25 18:30:04.471 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 正在发起请求 : http://192.168.10.3/api/User/FindPassword
+2017-07-25 18:30:04.472 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 输入参数: 
+{
+  "mobile": "+86-17740887033",
+  "password": "ce6d4c3fb430931ee2d94671bff91fb7",
+  "validcode": "7777",
+  "version": "2.2.5",
+  "lang": "zh",
+  "platform": "ios",
+  "deviceudid": "b8ccd9578ece423e80230e1bebf886d1",
+  "sign": "9765eb9e089502eb9a0d068152ed2575",
+  "token": "AyL6MTjlaPxHtKh/d1CzMOzoiVBlddqYBfW80n5rlF96PrEESHB5LuHrDe5Jez8B4WMy+06Fo+H66rATzKdtJAF/QN4NMrpfLButuFunD+YTq4sYsWZXZQ\u003d\u003d",
+  "param": ""
+}
+2017-07-25 18:30:04.982 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: statusCode:200
+2017-07-25 18:30:04.982 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用API 花费时间(单位：毫秒)：510
+2017-07-25 18:30:04.982 INFO  30 info - main.java.com.interf.eyee.utils.HttpUtil: 调用接口状态：0
+2017-07-25 18:30:04.983 INFO  30 info - main.java.com.interf.eyee.script.user.FindPassword: 接口返回 : {"code":1511502,"msg":"不合法的请求","data":null,"servertime":"2017-07-25 18:30:14 +8"}
+2017-07-25 18:30:05.020 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : code   实际结果 : 1511502 ========= 预期结果 : 1511502
+2017-07-25 18:30:05.021 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : msg   实际结果 : 不合法的请求 ========= 预期结果 : 不合法的请求
+2017-07-25 18:30:05.022 INFO  30 info - main.java.com.interf.eyee.utils.HandleLog: 字段名称 : data   实际结果 : null ========= 预期结果 : null
+2017-07-25 18:30:05.022 INFO  30 info - main.java.com.interf.eyee.script.user.FindPassword:  ------- 用例 : 2_使用错误的验证码找回密码  执行结束 ------- 
+2017-07-25 18:30:05.046 INFO  30 info - main.java.com.interf.eyee.script.user.FindPassword: ==== 结束测试 ====

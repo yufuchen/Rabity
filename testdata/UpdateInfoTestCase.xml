@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+     xmlns="http://www.springframework.org/schema/beans"  
+     xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!-- Task -->
+	<bean id="Task" class="main.java.com.interf.eyee.entity.TaskEntity">
+		<property name="testCase">
+			<list>
+				<ref bean="TestCase1" />
+				<ref bean="TestCase2" />
+				<ref bean="TestCase3" />
+			</list>
+		</property>
+	</bean>
+	<!-- TestCase1 -->
+	<bean id="TestCase1" class="main.java.com.interf.eyee.entity.TestCaseEntity">
+		<property name="id">
+			<value>0</value>
+		</property>
+		<property name="name">
+			<value>使用正确的信息修改用户信息</value>
+		</property>
+		<property name="assertType">
+			<value>0</value>
+		</property>
+		<property name="api">
+			<value>api/User/UpdateInfo</value>
+		</property>
+		<property name="input">
+			<ref bean="Input1" />
+		</property>
+		<property name="baseLine">
+			<ref bean="BaseLine1" />
+		</property>
+	</bean>
+	<bean id="Input1" class="main.java.com.interf.eyee.entity.forcase.UpdateInfoInputEntity">
+		<property name="username">
+			<value>Ksewen</value>
+		</property>
+		<property name="imageurl">
+			<value>http://api.eyee.com/EYEE/Icons/defaulthead.jpg</value>
+		</property>
+		<property name="sex">
+			<value>0</value>
+		</property>
+		<property name="param">
+			<value/>
+		</property>
+	</bean>
+	<bean id="BaseLine1" class="main.java.com.interf.eyee.entity.BaseLineEntity">
+		<property name="code">
+			<value>1511200</value>
+		</property>
+		<property name="msg">
+			<value>请求已完成</value>
+		</property>
+		<property name="data">
+			<ref bean="Data1" />
+		</property>
+	</bean>
+	<bean id="Data1" class="main.java.com.interf.eyee.entity.forcase.UpdateInfoDataEntity">
+		<property name="balance">
+			<value>0.00</value>
+		</property>
+		<property name="bindqq">
+			<value>0</value>
+		</property>
+		<property name="bindweibo">
+			<value>0</value>
+		</property>
+		<property name="bindweixin">
+			<value>0</value>
+		</property>
+		<property name="credits">
+			<value>106.00</value>
+		</property>
+		<property name="currcredits">
+			<value>106.00</value>
+		</property>
+		<property name="emailconfirmed">
+			<value>false</value>
+		</property>
+		<property name="facevalue">
+			<value>0.0</value>
+		</property>
+		<property name="firstreggift">
+			<value>1</value>
+		</property>
+		<property name="haspwd">
+			<value>1</value>
+		</property>
+		<property name="hastradepwd">
+			<value>0</value>
+		</property>
+		<property name="imageurl">
+			<value>http://api.eyee.com/EYEE/Icons/defaulthead.jpg</value>
+		</property>
+		<property name="isagent">
+			<value>0</value>
+		</property>
+		<property name="isbindhobby">
+			<value>1</value>
+		</property>
+		<property name="mobile">
+			<value>+86-17740887033</value>
+		</property>
+		<property name="mobileconfirmed">
+			<value>true</value>
+		</property>
+		<property name="rankname">
+			<value>v0</value>
+		</property>
+		<property name="rankpic">
+			<value>http://api.eyee.com/Shop/system/main/06387432020f4d4e85a5d0f831a7cea3.png</value>
+		</property>
+		<property name="registertype">
+			<value>3</value>
+		</property>
+		<property name="sex">
+			<value>0</value>
+		</property>
+		<property name="uid">
+			<value>7975325267954effa5080d79bdcafab5</value>
+		</property>
+		<property name="username">
+			<value>Ksewen</value>
+		</property>		
+	</bean>
+	<!-- TestCase2 -->
+	<bean id="TestCase2" class="main.java.com.interf.eyee.entity.TestCaseEntity">
+		<property name="id">
+			<value>1</value>
+		</property>
+		<property name="name">
+			<value>使用正确的sign和错误格式的token修改用户信息</value>
+		</property>
+		<property name="assertType">
+			<value>0</value>
+		</property>
+		<property name="api">
+			<value>api/User/UpdateInfo</value>
+		</property>
+		<property name="input">
+			<ref bean="Input2" />
+		</property>
+		<property name="baseLine">
+			<ref bean="BaseLine2" />
+		</property>
+	</bean>
+	<bean id="Input2" class="main.java.com.interf.eyee.entity.forcase.UpdateInfoInputEntity">
+		<property name="username">
+			<value>Ksewen</value>
+		</property>
+		<property name="imageurl">
+			<value>http://api.eyee.com/EYEE/Icons/defaulthead.jpg</value>
+		</property>
+		<property name="sex">
+			<value>0</value>
+		</property>
+		<property name="token">
+			<value>tail</value>
+		</property>
+		<property name="param">
+			<value/>
+		</property>
+	</bean>
+	<bean id="BaseLine2" class="main.java.com.interf.eyee.entity.BaseLineEntity">
+		<property name="code">
+			<value>1511543</value>
+		</property>
+		<property name="msg">
+			<value>无效的用户token</value>
+		</property>
+		<property name="data">
+			<null/>
+		</property>
+	</bean>
+	<!-- TestCase3 -->
+	<bean id="TestCase3" class="main.java.com.interf.eyee.entity.TestCaseEntity">
+		<property name="id">
+			<value>2</value>
+		</property>
+		<property name="name">
+			<value>使用正确的sign和错误内容的token修改用户信息</value>
+		</property>
+		<property name="assertType">
+			<value>0</value>
+		</property>
+		<property name="api">
+			<value>api/User/UpdateInfo</value>
+		</property>
+		<property name="input">
+			<ref bean="Input3" />
+		</property>
+		<property name="baseLine">
+			<ref bean="BaseLine3" />
+		</property>
+	</bean>
+	<bean id="Input3" class="main.java.com.interf.eyee.entity.forcase.UpdateInfoInputEntity">
+		<property name="username">
+			<value>Ksewen</value>
+		</property>
+		<property name="imageurl">
+			<value>http://api.eyee.com/EYEE/Icons/defaulthead.jpg</value>
+		</property>
+		<property name="sex">
+			<value>0</value>
+		</property>
+		<property name="token">
+			<value>WztP3jyQQv+tnVGhz1Re6xyK4FNRVw8Sg9IJfyAbsGZnhkkd+zvq9goo3X1R5FUN7miMmORUXuE0a9JLmVYsMPFAdQnUXAQAgCoUWXUxlhibNvX7ebOBfQ==</value>
+		</property>
+		<property name="param">
+			<value/>
+		</property>
+	</bean>
+	<bean id="BaseLine3" class="main.java.com.interf.eyee.entity.BaseLineEntity">
+		<property name="code">
+			<value>1511543</value>
+		</property>
+		<property name="msg">
+			<value>无效的用户token</value>
+		</property>
+		<property name="data">
+			<null/>
+		</property>
+	</bean>
+	<!-- AssertUtil -->
+	<bean id="AssertUtil" class="main.java.com.interf.eyee.utils.assertutils.NormalAssertUtil" />
+</beans>

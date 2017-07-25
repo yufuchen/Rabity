@@ -13,11 +13,17 @@ public class DBUtil {
 	private static JdbcTemplate jdbcTemplate = (JdbcTemplate) atcx.getBean("mssqlJdbcTemplate");
 	private static Log log = new Log(DBUtil.class);
 	
-	public static int deleteFromTable(String tableName, String keyName) {
-		String sql = "DELETE FROM " + tableName + " WHERE mobile=?";
-		int count = jdbcTemplate.update(sql, keyName);
-		log.info("即将执行Sql : " + sql.substring(0, sql.length() - 1) + "\'" + keyName + "\';");
-		log.info("从表 : " + tableName +  " 删除记录,共计 : " + count + "条...");
+	public static int delete(String sql, String keyValue) {
+		int count = jdbcTemplate.update(sql, keyValue);
+		log.info("即将执行Sql : " + sql.substring(0, sql.length() - 1) + "\'" + keyValue + "\';");
+		log.info("删除记录,共计 : " + count + "条...");
 		return count;
+	}
+	
+	public static String queryForString(String sql) {
+		String str = jdbcTemplate.queryForObject(sql, String.class);
+		log.info("即将执行Sql : " + sql + ";");
+		log.info("查询结果  : " + str);
+		return str;
 	}
 }

@@ -34,7 +34,7 @@ public class CategoryAll extends BaseCase {
 		
 		String body = HttpUtil.post(baseUrl + baseApi, input);
 		log.info("接口返回 : " + body);
-		ResponseEntity response = ResponseUtil.handle(body,CategoryAllDataItemEntity.class);
+		ResponseEntity response = ResponseUtil.handle(body, CategoryAllDataItemEntity.class);
 		
 		@SuppressWarnings("resource")
 		ApplicationContext actx = new FileSystemXmlApplicationContext(path);

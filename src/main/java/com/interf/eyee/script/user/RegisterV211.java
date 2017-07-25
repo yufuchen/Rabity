@@ -39,7 +39,8 @@ public class RegisterV211 extends BaseCase {
 		
 		//如果请求成功，删除新增的用户
 		if (1511200 == response.getCode()) {
-			DBUtil.deleteFromTable("e_user", input.getMobile());
+			String sql = "DELETE FROM E_USER WHERE MOBILE=?";
+			DBUtil.delete(sql, input.getMobile());
 		}
 		
 		@SuppressWarnings("resource")

@@ -11,6 +11,16 @@
 			<class name="main.java.com.interf.eyee.script.user.AutoLogin" />
 		</classes>
 	</test> <!-- AutoLogin -->
+	<test name="UpdateInfo">
+		<classes>
+			<class name="main.java.com.interf.eyee.script.user.UpdateInfo" />
+		</classes>
+	</test> <!-- UpdateInfo -->
+	<test name="UpdatePassword">
+		<classes>
+			<class name="main.java.com.interf.eyee.script.user.UpdatePassword" />
+		</classes>
+	</test> <!-- UpdatePassword -->
 	<test name="RegisterV211">
 		<classes>
 			<class name="main.java.com.interf.eyee.script.user.RegisterV211" />
@@ -127,4 +137,19 @@
 			<class name="main.java.com.interf.eyee.script.business.SiftProdut" />
 		</classes>
 	</test> <!-- SiftProdut -->
+	<test name="TabBrands">
+		<classes>
+			<class name="main.java.com.interf.eyee.script.product.TabBrands" />
+		</classes>
+	</test> <!-- TabBrands -->
+	<test name="UserCouponPage">
+		<classes>
+			<class name="main.java.com.interf.eyee.script.coupon.UserCouponPage" />
+		</classes>
+	</test> <!-- UserCouponPage -->
+	<test name="SendMsgV210">
+		<classes>
+			<class name="main.java.com.interf.eyee.script.user.SendMsgV210" />
+		</classes>
+	</test> <!-- SendMsgV210 -->
 </suite> <!-- Eyee_API_20170630 -->
