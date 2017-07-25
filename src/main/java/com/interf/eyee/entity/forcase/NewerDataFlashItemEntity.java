@@ -1,4 +1,5 @@
 package main.java.com.interf.eyee.entity.forcase;
+
 /**
  * @author Ksewen
  *
@@ -6,46 +7,57 @@ package main.java.com.interf.eyee.entity.forcase;
 public class NewerDataFlashItemEntity {
 	private String id;
 	private String name;
-	private int type;
+	private Integer type;
 	private String contentid;
 	private String picurl;
-	private int articletype;
-	
+	private Integer articletype;
+
 	public String getId() {
 		return id;
 	}
+
 	public void setId(String id) {
 		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getType() {
+
+	public Integer getType() {
 		return type;
 	}
-	public void setType(int type) {
+
+	public void setType(Integer type) {
 		this.type = type;
 	}
+
 	public String getContentid() {
 		return contentid;
 	}
+
 	public void setContentid(String contentid) {
 		this.contentid = contentid;
 	}
+
 	public String getPicurl() {
 		return picurl;
 	}
+
 	public void setPicurl(String picurl) {
 		this.picurl = picurl;
 	}
-	public int getArticletype() {
+
+	public Integer getArticletype() {
 		return articletype;
 	}
-	public void setArticletype(int articletype) {
+
+	public void setArticletype(Integer articletype) {
 		this.articletype = articletype;
 	}
-	
+
 }

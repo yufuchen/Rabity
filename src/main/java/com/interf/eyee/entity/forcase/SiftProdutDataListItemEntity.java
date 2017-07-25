@@ -4,7 +4,7 @@ package main.java.com.interf.eyee.entity.forcase;
  * @author Ksewen
  *
  */
-public class NewSearchV218DataListItemEntity {
+public class SiftProdutDataListItemEntity {
 	private String businessid;
 	private String contentid;
 	private String name;

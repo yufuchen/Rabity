@@ -1,4 +1,5 @@
 package main.java.com.interf.eyee.entity.forcase;
+
 /**
  * @author Ksewen
  *
@@ -6,94 +7,120 @@ package main.java.com.interf.eyee.entity.forcase;
 public class NewerDataShopStreetItemProductEntity {
 	private String name;
 	private String brandname;
-	private int stock;
+	private Integer stock;
 	private String brandid;
 	private String businessid;
-	private boolean isoverseas;
+	private Boolean isoverseas;
 	private String prokey;
-	private double saleprice;
-	private double specialprice;
+	private Double saleprice;
+	private Double specialprice;
 	private String mainpic;
 	private String currencyid;
-	private int overseasprice;
+	private Integer overseasprice;
 	private String id;
-	
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getBrandname() {
 		return brandname;
 	}
+
 	public void setBrandname(String brandname) {
 		this.brandname = brandname;
 	}
-	public int getStock() {
+
+	public Integer getStock() {
 		return stock;
 	}
-	public void setStock(int stock) {
+
+	public void setStock(Integer stock) {
 		this.stock = stock;
 	}
+
 	public String getBrandid() {
 		return brandid;
 	}
+
 	public void setBrandid(String brandid) {
 		this.brandid = brandid;
 	}
+
 	public String getBusinessid() {
 		return businessid;
 	}
+
 	public void setBusinessid(String businessid) {
 		this.businessid = businessid;
 	}
-	public boolean isIsoverseas() {
+
+	public Boolean getIsoverseas() {
 		return isoverseas;
 	}
-	public void setIsoverseas(boolean isoverseas) {
+
+	public void setIsoverseas(Boolean isoverseas) {
 		this.isoverseas = isoverseas;
 	}
+
 	public String getProkey() {
 		return prokey;
 	}
+
 	public void setProkey(String prokey) {
 		this.prokey = prokey;
 	}
-	public double getSaleprice() {
+
+	public Double getSaleprice() {
 		return saleprice;
 	}
-	public void setSaleprice(double saleprice) {
+
+	public void setSaleprice(Double saleprice) {
 		this.saleprice = saleprice;
 	}
-	public double getSpecialprice() {
+
+	public Double getSpecialprice() {
 		return specialprice;
 	}
-	public void setSpecialprice(double specialprice) {
+
+	public void setSpecialprice(Double specialprice) {
 		this.specialprice = specialprice;
 	}
+
 	public String getMainpic() {
 		return mainpic;
 	}
+
 	public void setMainpic(String mainpic) {
 		this.mainpic = mainpic;
 	}
+
 	public String getCurrencyid() {
 		return currencyid;
 	}
+
 	public void setCurrencyid(String currencyid) {
 		this.currencyid = currencyid;
 	}
-	public int getOverseasprice() {
+
+	public Integer getOverseasprice() {
 		return overseasprice;
 	}
-	public void setOverseasprice(int overseasprice) {
+
+	public void setOverseasprice(Integer overseasprice) {
 		this.overseasprice = overseasprice;
 	}
+
 	public String getId() {
 		return id;
 	}
+
 	public void setId(String id) {
 		this.id = id;
 	}
+
 }

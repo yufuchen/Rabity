@@ -16,6 +16,7 @@ public class DBUtil {
 	public static int deleteFromTable(String tableName, String keyName) {
 		String sql = "DELETE FROM " + tableName + " WHERE mobile=?";
 		int count = jdbcTemplate.update(sql, keyName);
+		log.info("即将执行Sql : " + sql.substring(0, sql.length() - 1) + "\'" + keyName + "\';");
 		log.info("从表 : " + tableName +  " 删除记录,共计 : " + count + "条...");
 		return count;
 	}

@@ -122,4 +122,9 @@
 			<class name="main.java.com.interf.eyee.script.product.NewSearchV218" />
 		</classes>
 	</test> <!-- NewSearchV218 -->
+	<test name="SiftProdut">
+		<classes>
+			<class name="main.java.com.interf.eyee.script.business.SiftProdut" />
+		</classes>
+	</test> <!-- SiftProdut -->
 </suite> <!-- Eyee_API_20170630 -->

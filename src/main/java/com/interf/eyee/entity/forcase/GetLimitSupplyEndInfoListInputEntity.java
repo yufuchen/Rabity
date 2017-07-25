@@ -7,14 +7,14 @@ import main.java.com.interf.eyee.entity.InputEntity;
  *
  */
 public class GetLimitSupplyEndInfoListInputEntity extends InputEntity {
-	private int pageindex;
+	private Integer pageindex;
 
-	public int getPageindex() {
+	public Integer getPageindex() {
 		return pageindex;
 	}
 
-	public void setPageindex(int pageindex) {
+	public void setPageindex(Integer pageindex) {
 		this.pageindex = pageindex;
 	}
-	
+
 }

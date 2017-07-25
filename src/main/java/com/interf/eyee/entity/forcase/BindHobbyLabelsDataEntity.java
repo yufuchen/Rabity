@@ -7,5 +7,5 @@ import main.java.com.interf.eyee.entity.BaseDataEntity;
  *
  */
 public class BindHobbyLabelsDataEntity extends BaseDataEntity {
-	
+
 }

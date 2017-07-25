@@ -1,9 +1,9 @@
 package main.java.com.interf.eyee.entity.forcase;
+
 /**
  * @author Ksewen
  *
  */
-
 
 public class NewProductDetailDataRelativesEntity {
 	private String id;
@@ -12,99 +12,125 @@ public class NewProductDetailDataRelativesEntity {
 	private String businessid;
 	private String contentid;
 	private String mainpic;
-	private double saleprice;
-	private double specialprice;
-	private int pstatus;
+	private Double saleprice;
+	private Double specialprice;
+	private Integer pstatus;
 	private String sendplace;
 	private String flag;
-	private int type;
-	private boolean isoverseas;
-	private int isnew;
-	
+	private Integer type;
+	private Boolean isoverseas;
+	private Integer isnew;
+
 	public String getId() {
 		return id;
 	}
+
 	public void setId(String id) {
 		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getBrandname() {
 		return brandname;
 	}
+
 	public void setBrandname(String brandname) {
 		this.brandname = brandname;
 	}
+
 	public String getBusinessid() {
 		return businessid;
 	}
+
 	public void setBusinessid(String businessid) {
 		this.businessid = businessid;
 	}
+
 	public String getContentid() {
 		return contentid;
 	}
+
 	public void setContentid(String contentid) {
 		this.contentid = contentid;
 	}
+
 	public String getMainpic() {
 		return mainpic;
 	}
+
 	public void setMainpic(String mainpic) {
 		this.mainpic = mainpic;
 	}
-	public double getSaleprice() {
+
+	public Double getSaleprice() {
 		return saleprice;
 	}
-	public void setSaleprice(double saleprice) {
+
+	public void setSaleprice(Double saleprice) {
 		this.saleprice = saleprice;
 	}
-	public double getSpecialprice() {
+
+	public Double getSpecialprice() {
 		return specialprice;
 	}
-	public void setSpecialprice(double specialprice) {
+
+	public void setSpecialprice(Double specialprice) {
 		this.specialprice = specialprice;
 	}
-	public int getPstatus() {
+
+	public Integer getPstatus() {
 		return pstatus;
 	}
-	public void setPstatus(int pstatus) {
+
+	public void setPstatus(Integer pstatus) {
 		this.pstatus = pstatus;
 	}
+
 	public String getSendplace() {
 		return sendplace;
 	}
+
 	public void setSendplace(String sendplace) {
 		this.sendplace = sendplace;
 	}
+
 	public String getFlag() {
 		return flag;
 	}
+
 	public void setFlag(String flag) {
 		this.flag = flag;
 	}
-	public int getType() {
+
+	public Integer getType() {
 		return type;
 	}
-	public void setType(int type) {
+
+	public void setType(Integer type) {
 		this.type = type;
 	}
-	public boolean isIsoverseas() {
+
+	public Boolean getIsoverseas() {
 		return isoverseas;
 	}
-	public void setIsoverseas(boolean isoverseas) {
+
+	public void setIsoverseas(Boolean isoverseas) {
 		this.isoverseas = isoverseas;
 	}
-	public int getIsnew() {
+
+	public Integer getIsnew() {
 		return isnew;
 	}
-	public void setIsnew(int isnew) {
+
+	public void setIsnew(Integer isnew) {
 		this.isnew = isnew;
 	}
 
-	
 }

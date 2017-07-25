@@ -16,5 +16,5 @@ public class AddUserLogInfoInputEntity extends InputEntity {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	
+
 }

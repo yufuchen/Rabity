@@ -19,13 +19,13 @@
 			<value>0</value>
 		</property>
 		<property name="name">
-			<value>使用正确的必填信息获取所有类目</value>
+			<value>使用正确的信息获取店铺详情</value>
 		</property>
 		<property name="assertType">
 			<value>1</value>
 		</property>
 		<property name="api">
-			<value>api/Product/NewSearchV218</value>
+			<value>api/Business/SiftProdut</value>
 		</property>
 		<property name="input">
 			<ref bean="Input1" />
@@ -34,12 +34,15 @@
 			<ref bean="BaseLine1" />
 		</property>
 	</bean>
-	<bean id="Input1" class="main.java.com.interf.eyee.entity.forcase.NewSearchV218InputEntity">
-		<property name="issearchall">
-			<value>1</value>
+	<bean id="Input1" class="main.java.com.interf.eyee.entity.forcase.SiftProdutInputEntity">
+		<property name="businessid">
+			<value>22cddeadd6a044ad83e9bc9ed0796657</value>
 		</property>
 		<property name="pageindex">
 			<value>1</value>
+		</property>
+		<property name="sorttype">
+			<value>2</value>
 		</property>
 		<property name="param">
 			<value/>
@@ -53,10 +56,10 @@
 			<value>请求已完成</value>
 		</property>
 		<property name="data">
-			<null/>
+			<ref bean="Data1" />
 		</property>
 	</bean>
-	<bean id="Data1" class="main.java.com.interf.eyee.entity.forcase.NewSearchV218DataEntity">
+	<bean id="Data1" class="main.java.com.interf.eyee.entity.forcase.SiftProdutDataEntity">
 		
 	</bean>
 	<!-- TestCase2 -->
@@ -65,13 +68,13 @@
 			<value>1</value>
 		</property>
 		<property name="name">
-			<value>使用空的pageindex获取所有类目</value>
+			<value>使用空pageindex获取店铺详情</value>
 		</property>
 		<property name="assertType">
 			<value>0</value>
 		</property>
 		<property name="api">
-			<value>api/Product/NewSearchV218</value>
+			<value>api/Business/SiftProdut</value>
 		</property>
 		<property name="input">
 			<ref bean="Input2" />
@@ -80,9 +83,15 @@
 			<ref bean="BaseLine2" />
 		</property>
 	</bean>
-	<bean id="Input2" class="main.java.com.interf.eyee.entity.forcase.NewSearchV218InputEntity">
-		<property name="issearchall">
-			<value>1</value>
+	<bean id="Input2" class="main.java.com.interf.eyee.entity.forcase.SiftProdutInputEntity">
+		<property name="businessid">
+			<value>22cddeadd6a044ad83e9bc9ed0796657</value>
+		</property>
+		<property name="pageindex">
+			<null/>
+		</property>
+		<property name="sorttype">
+			<value>2</value>
 		</property>
 		<property name="param">
 			<value/>
@@ -96,7 +105,7 @@
 			<value>缺少必要的参数</value>
 		</property>
 		<property name="data">
-			<value>页码，是否搜全部</value>
+			<value>页码，店铺标识</value>
 		</property>
 	</bean>
 	<!-- TestCase3 -->
@@ -105,13 +114,13 @@
 			<value>2</value>
 		</property>
 		<property name="name">
-			<value>使用空的issearchall获取所有类目</value>
+			<value>使用空businessid获取店铺详情</value>
 		</property>
 		<property name="assertType">
 			<value>0</value>
 		</property>
 		<property name="api">
-			<value>api/Product/NewSearchV218</value>
+			<value>api/Business/SiftProdut</value>
 		</property>
 		<property name="input">
 			<ref bean="Input3" />
@@ -120,9 +129,12 @@
 			<ref bean="BaseLine3" />
 		</property>
 	</bean>
-	<bean id="Input3" class="main.java.com.interf.eyee.entity.forcase.NewSearchV218InputEntity">
+	<bean id="Input3" class="main.java.com.interf.eyee.entity.forcase.SiftProdutInputEntity">
 		<property name="pageindex">
 			<value>1</value>
+		</property>
+		<property name="sorttype">
+			<value>2</value>
 		</property>
 		<property name="param">
 			<value/>
@@ -136,7 +148,7 @@
 			<value>缺少必要的参数</value>
 		</property>
 		<property name="data">
-			<value>页码，是否搜全部</value>
+			<value>页码，店铺标识</value>
 		</property>
 	</bean>
 	<!-- AssertUtil -->

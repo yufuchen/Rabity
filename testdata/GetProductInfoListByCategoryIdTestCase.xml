@@ -58,7 +58,7 @@
 			<value>1</value>
 		</property>
 		<property name="name">
-			<value>使用空的pageindex获取积分商品列表</value>
+			<value>使用为0的pageindex获取积分商品列表</value>
 		</property>
 		<property name="assertType">
 			<value>1</value>
@@ -74,6 +74,9 @@
 		</property>
 	</bean>
 	<bean id="Input2" class="main.java.com.interf.eyee.entity.forcase.GetProductInfoListByCategoryIdInputEntity">
+		<property name="pageindex">
+			<value>0</value>
+		</property>
 		<property name="param">
 			<value/>
 		</property>

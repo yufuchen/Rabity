@@ -9,65 +9,82 @@ public class GetProductInfoListByCategoryIdDataItemEntity {
 	private String name;
 	private String mainpic;
 	private String brandname;
-	private double price;
-	private int bees;
-	private int isallexchange;
-	private int syntaxrate;
-	private boolean isoverseas;
+	private Double price;
+	private Integer bees;
+	private Integer isallexchange;
+	private Integer syntaxrate;
+	private Boolean isoverseas;
+
 	public String getId() {
 		return id;
 	}
+
 	public void setId(String id) {
 		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getMainpic() {
 		return mainpic;
 	}
+
 	public void setMainpic(String mainpic) {
 		this.mainpic = mainpic;
 	}
+
 	public String getBrandname() {
 		return brandname;
 	}
+
 	public void setBrandname(String brandname) {
 		this.brandname = brandname;
 	}
-	public double getPrice() {
+
+	public Double getPrice() {
 		return price;
 	}
-	public void setPrice(double price) {
+
+	public void setPrice(Double price) {
 		this.price = price;
 	}
-	public int getBees() {
+
+	public Integer getBees() {
 		return bees;
 	}
-	public void setBees(int bees) {
+
+	public void setBees(Integer bees) {
 		this.bees = bees;
 	}
-	public int getIsallexchange() {
+
+	public Integer getIsallexchange() {
 		return isallexchange;
 	}
-	public void setIsallexchange(int isallexchange) {
+
+	public void setIsallexchange(Integer isallexchange) {
 		this.isallexchange = isallexchange;
 	}
-	public int getSyntaxrate() {
+
+	public Integer getSyntaxrate() {
 		return syntaxrate;
 	}
-	public void setSyntaxrate(int syntaxrate) {
+
+	public void setSyntaxrate(Integer syntaxrate) {
 		this.syntaxrate = syntaxrate;
 	}
-	public boolean isIsoverseas() {
+
+	public Boolean getIsoverseas() {
 		return isoverseas;
 	}
-	public void setIsoverseas(boolean isoverseas) {
+
+	public void setIsoverseas(Boolean isoverseas) {
 		this.isoverseas = isoverseas;
 	}
-	
-	
+
 }

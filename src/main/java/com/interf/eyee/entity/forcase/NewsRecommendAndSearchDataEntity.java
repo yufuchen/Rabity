@@ -7,5 +7,5 @@ import main.java.com.interf.eyee.entity.BaseDataEntity;
  *
  */
 public class NewsRecommendAndSearchDataEntity extends BaseDataEntity {
-	
+
 }

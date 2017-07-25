@@ -6,24 +6,22 @@ import main.java.com.interf.eyee.entity.InputEntity;
  * @author Ksewen
  *
  */
-public class NewSearchV218InputEntity extends InputEntity {
-	private Integer issearchall;
-	private Integer pageindex;
-	private String brandid;
-	private String categoryid;
+public class SiftProdutInputEntity extends InputEntity {
 	private String businessid;
+	private Integer pageindex;
 	private Integer beginprice;
 	private Integer endprice;
-	private String keyword;
+	private String categoryid;
+	private String brandid;
 	private Integer sorttype;
 	private Integer ordertype;
 
-	public Integer getIssearchall() {
-		return issearchall;
+	public String getBusinessid() {
+		return businessid;
 	}
 
-	public void setIssearchall(Integer issearchall) {
-		this.issearchall = issearchall;
+	public void setBusinessid(String businessid) {
+		this.businessid = businessid;
 	}
 
 	public Integer getPageindex() {
@@ -32,30 +30,6 @@ public class NewSearchV218InputEntity extends InputEntity {
 
 	public void setPageindex(Integer pageindex) {
 		this.pageindex = pageindex;
-	}
-
-	public String getBrandid() {
-		return brandid;
-	}
-
-	public void setBrandid(String brandid) {
-		this.brandid = brandid;
-	}
-
-	public String getCategoryid() {
-		return categoryid;
-	}
-
-	public void setCategoryid(String categoryid) {
-		this.categoryid = categoryid;
-	}
-
-	public String getBusinessid() {
-		return businessid;
-	}
-
-	public void setBusinessid(String businessid) {
-		this.businessid = businessid;
 	}
 
 	public Integer getBeginprice() {
@@ -74,12 +48,20 @@ public class NewSearchV218InputEntity extends InputEntity {
 		this.endprice = endprice;
 	}
 
-	public String getKeyword() {
-		return keyword;
+	public String getCategoryid() {
+		return categoryid;
 	}
 
-	public void setKeyword(String keyword) {
-		this.keyword = keyword;
+	public void setCategoryid(String categoryid) {
+		this.categoryid = categoryid;
+	}
+
+	public String getBrandid() {
+		return brandid;
+	}
+
+	public void setBrandid(String brandid) {
+		this.brandid = brandid;
 	}
 
 	public Integer getSorttype() {
@@ -97,5 +79,4 @@ public class NewSearchV218InputEntity extends InputEntity {
 	public void setOrdertype(Integer ordertype) {
 		this.ordertype = ordertype;
 	}
-
 }

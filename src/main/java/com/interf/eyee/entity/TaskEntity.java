@@ -17,5 +17,5 @@ public class TaskEntity {
 	public void setTestCase(List<TestCaseEntity> testCase) {
 		this.testCase = testCase;
 	}
-	
+
 }

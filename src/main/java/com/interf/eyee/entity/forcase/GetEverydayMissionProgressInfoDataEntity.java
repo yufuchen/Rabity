@@ -7,27 +7,32 @@ import main.java.com.interf.eyee.entity.BaseDataEntity;
  *
  */
 public class GetEverydayMissionProgressInfoDataEntity extends BaseDataEntity {
-	private int userbees;
-	private int missionsumbees;
-	private int receivebees;
-	
-	public int getUserbees() {
+	private Integer userbees;
+	private Integer missionsumbees;
+	private Integer receivebees;
+
+	public Integer getUserbees() {
 		return userbees;
 	}
-	public void setUserbees(int userbees) {
+
+	public void setUserbees(Integer userbees) {
 		this.userbees = userbees;
 	}
-	public int getMissionsumbees() {
+
+	public Integer getMissionsumbees() {
 		return missionsumbees;
 	}
-	public void setMissionsumbees(int missionsumbees) {
+
+	public void setMissionsumbees(Integer missionsumbees) {
 		this.missionsumbees = missionsumbees;
 	}
-	public int getReceivebees() {
+
+	public Integer getReceivebees() {
 		return receivebees;
 	}
-	public void setReceivebees(int receivebees) {
+
+	public void setReceivebees(Integer receivebees) {
 		this.receivebees = receivebees;
 	}
-	
+
 }

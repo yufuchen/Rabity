@@ -8,20 +8,22 @@ import main.java.com.interf.eyee.entity.InputEntity;
  */
 public class ListCanAllInputEntity extends InputEntity {
 	private String businessid;
-	private int platformtype;
-	
+	private Integer platformtype;
+
 	public String getBusinessid() {
 		return businessid;
 	}
+
 	public void setBusinessid(String businessid) {
 		this.businessid = businessid;
 	}
-	public int getPlatformtype() {
+
+	public Integer getPlatformtype() {
 		return platformtype;
 	}
-	public void setPlatformtype(int platformtype) {
+
+	public void setPlatformtype(Integer platformtype) {
 		this.platformtype = platformtype;
 	}
-	
-	
+
 }

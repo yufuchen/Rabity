@@ -35,6 +35,9 @@
 		</property>
 	</bean>
 	<bean id="Input1" class="main.java.com.interf.eyee.entity.forcase.GetLimitSupplyEndInfoListInputEntity">
+		<property name="pageindex">
+			<value>1</value>
+		</property>
 		<property name="param">
 			<value/>
 		</property>

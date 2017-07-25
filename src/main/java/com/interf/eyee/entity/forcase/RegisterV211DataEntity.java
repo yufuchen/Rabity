@@ -8,189 +8,237 @@ import main.java.com.interf.eyee.entity.BaseDataEntity;
  */
 public class RegisterV211DataEntity extends BaseDataEntity {
 	private String mobile;
-	private boolean mobileconfirmed;
+	private Boolean mobileconfirmed;
 	private String email;
-	private boolean emailconfirmed;
-	private int sex;
+	private Boolean emailconfirmed;
+	private Integer sex;
 	private String country;
 	private String address;
 	private String birthday;
 	private String imageurl;
-	private double credits;
-	private double currcredits;
-	private double balance;
-	private int firstreggift;
+	private Double credits;
+	private Double currcredits;
+	private Double balance;
+	private Integer firstreggift;
 	private String rankname;
 	private String rankpic;
 	private String themeurl;
-	private int registertype;
-	private int isbindhobby;
-	private int isagent;
-	private int promocode;
-	private int hastradepwd;
-	private int haspwd;
-	private int bindweixin;
-	private int bindweibo;
-	private int bindqq;
-	private double facevalue;
-	
+	private Integer registertype;
+	private Integer isbindhobby;
+	private Integer isagent;
+	private Integer promocode;
+	private Integer hastradepwd;
+	private Integer haspwd;
+	private Integer bindweixin;
+	private Integer bindweibo;
+	private Integer bindqq;
+	private Double facevalue;
+
 	public String getMobile() {
 		return mobile;
 	}
+
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
-	public boolean isMobileconfirmed() {
+
+	public Boolean getMobileconfirmed() {
 		return mobileconfirmed;
 	}
-	public void setMobileconfirmed(boolean mobileconfirmed) {
+
+	public void setMobileconfirmed(Boolean mobileconfirmed) {
 		this.mobileconfirmed = mobileconfirmed;
 	}
+
 	public String getEmail() {
 		return email;
 	}
+
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public boolean isEmailconfirmed() {
+
+	public Boolean getEmailconfirmed() {
 		return emailconfirmed;
 	}
-	public void setEmailconfirmed(boolean emailconfirmed) {
+
+	public void setEmailconfirmed(Boolean emailconfirmed) {
 		this.emailconfirmed = emailconfirmed;
 	}
-	public int getSex() {
+
+	public Integer getSex() {
 		return sex;
 	}
-	public void setSex(int sex) {
+
+	public void setSex(Integer sex) {
 		this.sex = sex;
 	}
+
 	public String getCountry() {
 		return country;
 	}
+
 	public void setCountry(String country) {
 		this.country = country;
 	}
+
 	public String getAddress() {
 		return address;
 	}
+
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
 	public String getBirthday() {
 		return birthday;
 	}
+
 	public void setBirthday(String birthday) {
 		this.birthday = birthday;
 	}
+
 	public String getImageurl() {
 		return imageurl;
 	}
+
 	public void setImageurl(String imageurl) {
 		this.imageurl = imageurl;
 	}
-	public double getCredits() {
+
+	public Double getCredits() {
 		return credits;
 	}
-	public void setCredits(double credits) {
+
+	public void setCredits(Double credits) {
 		this.credits = credits;
 	}
-	public double getCurrcredits() {
+
+	public Double getCurrcredits() {
 		return currcredits;
 	}
-	public void setCurrcredits(double currcredits) {
+
+	public void setCurrcredits(Double currcredits) {
 		this.currcredits = currcredits;
 	}
-	public double getBalance() {
+
+	public Double getBalance() {
 		return balance;
 	}
-	public void setBalance(double balance) {
+
+	public void setBalance(Double balance) {
 		this.balance = balance;
 	}
-	public int getFirstreggift() {
+
+	public Integer getFirstreggift() {
 		return firstreggift;
 	}
-	public void setFirstreggift(int firstreggift) {
+
+	public void setFirstreggift(Integer firstreggift) {
 		this.firstreggift = firstreggift;
 	}
+
 	public String getRankname() {
 		return rankname;
 	}
+
 	public void setRankname(String rankname) {
 		this.rankname = rankname;
 	}
+
 	public String getRankpic() {
 		return rankpic;
 	}
+
 	public void setRankpic(String rankpic) {
 		this.rankpic = rankpic;
 	}
+
 	public String getThemeurl() {
 		return themeurl;
 	}
+
 	public void setThemeurl(String themeurl) {
 		this.themeurl = themeurl;
 	}
-	public int getRegistertype() {
+
+	public Integer getRegistertype() {
 		return registertype;
 	}
-	public void setRegistertype(int registertype) {
+
+	public void setRegistertype(Integer registertype) {
 		this.registertype = registertype;
 	}
-	public int getIsbindhobby() {
+
+	public Integer getIsbindhobby() {
 		return isbindhobby;
 	}
-	public void setIsbindhobby(int isbindhobby) {
+
+	public void setIsbindhobby(Integer isbindhobby) {
 		this.isbindhobby = isbindhobby;
 	}
-	public int getIsagent() {
+
+	public Integer getIsagent() {
 		return isagent;
 	}
-	public void setIsagent(int isagent) {
+
+	public void setIsagent(Integer isagent) {
 		this.isagent = isagent;
 	}
-	public int getPromocode() {
+
+	public Integer getPromocode() {
 		return promocode;
 	}
-	public void setPromocode(int promocode) {
+
+	public void setPromocode(Integer promocode) {
 		this.promocode = promocode;
 	}
-	public int getHastradepwd() {
+
+	public Integer getHastradepwd() {
 		return hastradepwd;
 	}
-	public void setHastradepwd(int hastradepwd) {
+
+	public void setHastradepwd(Integer hastradepwd) {
 		this.hastradepwd = hastradepwd;
 	}
-	public int getHaspwd() {
+
+	public Integer getHaspwd() {
 		return haspwd;
 	}
-	public void setHaspwd(int haspwd) {
+
+	public void setHaspwd(Integer haspwd) {
 		this.haspwd = haspwd;
 	}
-	public int getBindweixin() {
+
+	public Integer getBindweixin() {
 		return bindweixin;
 	}
-	public void setBindweixin(int bindweixin) {
+
+	public void setBindweixin(Integer bindweixin) {
 		this.bindweixin = bindweixin;
 	}
-	public int getBindweibo() {
+
+	public Integer getBindweibo() {
 		return bindweibo;
 	}
-	public void setBindweibo(int bindweibo) {
+
+	public void setBindweibo(Integer bindweibo) {
 		this.bindweibo = bindweibo;
 	}
-	public int getBindqq() {
+
+	public Integer getBindqq() {
 		return bindqq;
 	}
-	public void setBindqq(int bindqq) {
+
+	public void setBindqq(Integer bindqq) {
 		this.bindqq = bindqq;
 	}
-	public double getFacevalue() {
+
+	public Double getFacevalue() {
 		return facevalue;
 	}
-	public void setFacevalue(double facevalue) {
+
+	public void setFacevalue(Double facevalue) {
 		this.facevalue = facevalue;
 	}
-	
-	
-	
 }

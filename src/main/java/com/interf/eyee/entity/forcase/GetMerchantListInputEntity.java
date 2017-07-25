@@ -7,13 +7,13 @@ import main.java.com.interf.eyee.entity.InputEntity;
  *
  */
 public class GetMerchantListInputEntity extends InputEntity {
-	private int pageindex;
+	private Integer pageindex;
 	private String categoryid;
 	
-	public int getPageindex() {
+	public Integer getPageindex() {
 		return pageindex;
 	}
-	public void setPageindex(int pageindex) {
+	public void setPageindex(Integer pageindex) {
 		this.pageindex = pageindex;
 	}
 	public String getCategoryid() {

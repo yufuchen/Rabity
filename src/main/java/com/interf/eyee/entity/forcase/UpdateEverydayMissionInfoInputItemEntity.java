@@ -1,24 +1,27 @@
 package main.java.com.interf.eyee.entity.forcase;
+
 /**
  * @author Ksewen
  *
  */
 public class UpdateEverydayMissionInfoInputItemEntity {
-	private int sumfinish;
-	private int type;
-	
-	public int getSumfinish() {
+	private Integer sumfinish;
+	private Integer type;
+
+	public Integer getSumfinish() {
 		return sumfinish;
 	}
-	public void setSumfinish(int sumfinish) {
+
+	public void setSumfinish(Integer sumfinish) {
 		this.sumfinish = sumfinish;
 	}
-	public int getType() {
+
+	public Integer getType() {
 		return type;
 	}
-	public void setType(int type) {
+
+	public void setType(Integer type) {
 		this.type = type;
 	}
-	
-	
+
 }

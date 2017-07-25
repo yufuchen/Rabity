@@ -7,33 +7,40 @@ import main.java.com.interf.eyee.entity.BaseDataEntity;
  *
  */
 public class GetBeesCountInfoDataEntity extends BaseDataEntity {
-	private int credits;
-	private int currcredits;
+	private Integer credits;
+	private Integer currcredits;
 	private String level;
-	private int upgradeneedbees;
-	
-	public int getCredits() {
+	private Integer upgradeneedbees;
+
+	public Integer getCredits() {
 		return credits;
 	}
-	public void setCredits(int credits) {
+
+	public void setCredits(Integer credits) {
 		this.credits = credits;
 	}
-	public int getCurrcredits() {
+
+	public Integer getCurrcredits() {
 		return currcredits;
 	}
-	public void setCurrcredits(int currcredits) {
+
+	public void setCurrcredits(Integer currcredits) {
 		this.currcredits = currcredits;
 	}
+
 	public String getLevel() {
 		return level;
 	}
+
 	public void setLevel(String level) {
 		this.level = level;
 	}
-	public int getUpgradeneedbees() {
+
+	public Integer getUpgradeneedbees() {
 		return upgradeneedbees;
 	}
-	public void setUpgradeneedbees(int upgradeneedbees) {
+
+	public void setUpgradeneedbees(Integer upgradeneedbees) {
 		this.upgradeneedbees = upgradeneedbees;
 	}
 }

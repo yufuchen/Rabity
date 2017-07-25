@@ -16,5 +16,5 @@ public class NewProductDetailInputEntity extends InputEntity {
 	public void setProductid(String productid) {
 		this.productid = productid;
 	}
-	
+
 }

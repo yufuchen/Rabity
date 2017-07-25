@@ -26,7 +26,7 @@ public class InputEntity {
 		this.token = null;
 		this.param = null;
 	}
-	
+
 	@Override
 	public String toString() {
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
@@ -88,6 +88,5 @@ public class InputEntity {
 	public void setParam(Object param) {
 		this.param = param;
 	}
-	
-	
+
 }

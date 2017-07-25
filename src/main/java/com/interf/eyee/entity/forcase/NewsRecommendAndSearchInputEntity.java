@@ -7,48 +7,58 @@ import main.java.com.interf.eyee.entity.InputEntity;
  *
  */
 public class NewsRecommendAndSearchInputEntity extends InputEntity {
-	private int isrecommendover;
-	private int type;
-	private int pageindex;
+	private Integer isrecommendover;
+	private Integer type;
+	private Integer pageindex;
 	private String keyword;
 	private String categoryid;
-	private int sorttype;
-	
-	public int getIsrecommendover() {
+	private Integer sorttype;
+
+	public Integer getIsrecommendover() {
 		return isrecommendover;
 	}
-	public void setIsrecommendover(int isrecommendover) {
+
+	public void setIsrecommendover(Integer isrecommendover) {
 		this.isrecommendover = isrecommendover;
 	}
-	public int getType() {
+
+	public Integer getType() {
 		return type;
 	}
-	public void setType(int type) {
+
+	public void setType(Integer type) {
 		this.type = type;
 	}
-	public int getPageindex() {
+
+	public Integer getPageindex() {
 		return pageindex;
 	}
-	public void setPageindex(int pageindex) {
+
+	public void setPageindex(Integer pageindex) {
 		this.pageindex = pageindex;
 	}
+
 	public String getKeyword() {
 		return keyword;
 	}
+
 	public void setKeyword(String keyword) {
 		this.keyword = keyword;
 	}
+
 	public String getCategoryid() {
 		return categoryid;
 	}
+
 	public void setCategoryid(String categoryid) {
 		this.categoryid = categoryid;
 	}
-	public int getSorttype() {
+
+	public Integer getSorttype() {
 		return sorttype;
 	}
-	public void setSorttype(int sorttype) {
+
+	public void setSorttype(Integer sorttype) {
 		this.sorttype = sorttype;
 	}
-	
 }

@@ -8,29 +8,11 @@ import main.java.com.interf.eyee.entity.BaseDataEntity;
  * @author Ksewen
  *
  */
-public class NewSearchV218DataEntity extends BaseDataEntity {
-	private Integer isrecommendover;
-	private String brand;
+public class SiftProdutDataEntity extends BaseDataEntity {
 	private Integer pageindex;
 	private Integer pagesize;
 	private Integer sumcount;
-	private List<NewSearchV218DataListItemEntity> list;
-
-	public Integer getIsrecommendover() {
-		return isrecommendover;
-	}
-
-	public void setIsrecommendover(Integer isrecommendover) {
-		this.isrecommendover = isrecommendover;
-	}
-
-	public String getBrand() {
-		return brand;
-	}
-
-	public void setBrand(String brand) {
-		this.brand = brand;
-	}
+	private List<SiftProdutDataListItemEntity> list;
 
 	public Integer getPageindex() {
 		return pageindex;
@@ -56,11 +38,11 @@ public class NewSearchV218DataEntity extends BaseDataEntity {
 		this.sumcount = sumcount;
 	}
 
-	public List<NewSearchV218DataListItemEntity> getList() {
+	public List<SiftProdutDataListItemEntity> getList() {
 		return list;
 	}
 
-	public void setList(List<NewSearchV218DataListItemEntity> list) {
+	public void setList(List<SiftProdutDataListItemEntity> list) {
 		this.list = list;
 	}
 }

@@ -10,57 +10,68 @@ import main.java.com.interf.eyee.entity.BaseDataEntity;
  *
  */
 public class GetEveryDayCheckInInfoDataEntity extends BaseDataEntity {
-	private int checkinday;
-	private int checkintodybees;
-	private int monthcheckindays;
-	private int checkintomorrowbees;
-	private boolean istodaycheckin;
+	private Integer checkinday;
+	private Integer checkintodybees;
+	private Integer monthcheckindays;
+	private Integer checkintomorrowbees;
+	private Boolean istodaycheckin;
 	private GetEveryDayCheckInInfoProductsEntity products;
 	private List<ArrayList<String>> checkindaydetailslist;
-	
-	
-	public int getCheckinday() {
+
+	public Integer getCheckinday() {
 		return checkinday;
 	}
-	public void setCheckinday(int checkinday) {
+
+	public void setCheckinday(Integer checkinday) {
 		this.checkinday = checkinday;
 	}
-	public int getCheckintodybees() {
+
+	public Integer getCheckintodybees() {
 		return checkintodybees;
 	}
-	public void setCheckintodybees(int checkintodybees) {
+
+	public void setCheckintodybees(Integer checkintodybees) {
 		this.checkintodybees = checkintodybees;
 	}
-	public int getMonthcheckindays() {
+
+	public Integer getMonthcheckindays() {
 		return monthcheckindays;
 	}
-	public void setMonthcheckindays(int monthcheckindays) {
+
+	public void setMonthcheckindays(Integer monthcheckindays) {
 		this.monthcheckindays = monthcheckindays;
 	}
-	public int getCheckintomorrowbees() {
+
+	public Integer getCheckintomorrowbees() {
 		return checkintomorrowbees;
 	}
-	public void setCheckintomorrowbees(int checkintomorrowbees) {
+
+	public void setCheckintomorrowbees(Integer checkintomorrowbees) {
 		this.checkintomorrowbees = checkintomorrowbees;
 	}
-	public boolean isIstodaycheckin() {
+
+	public Boolean isIstodaycheckin() {
 		return istodaycheckin;
 	}
-	public void setIstodaycheckin(boolean istodaycheckin) {
+
+	public void setIstodaycheckin(Boolean istodaycheckin) {
 		this.istodaycheckin = istodaycheckin;
 	}
+
 	public GetEveryDayCheckInInfoProductsEntity getProducts() {
 		return products;
 	}
+
 	public void setProducts(GetEveryDayCheckInInfoProductsEntity products) {
 		this.products = products;
 	}
+
 	public List<ArrayList<String>> getCheckindaydetailslist() {
 		return checkindaydetailslist;
 	}
+
 	public void setCheckindaydetailslist(List<ArrayList<String>> checkindaydetailslist) {
 		this.checkindaydetailslist = checkindaydetailslist;
 	}
-	
-	
+
 }

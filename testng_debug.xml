@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Debug">
-  <test name="RegisterV211">
+  <test name="GetProductInfoListByCategoryId">
     <classes>
-      <class name="main.java.com.interf.eyee.script.user.RegisterV211" />
+      <class name="main.java.com.interf.eyee.script.integralmall.GetProductInfoListByCategoryId" />
     </classes>
-  </test> <!-- RegisterV211 -->
+  </test> <!-- GetProductInfoListByCategoryId -->
 </suite> <!-- Debug -->
